@@ -1,0 +1,27 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+There are four locations in this story: the hospital admissions room, exam room A, exam room B, and exam room C. There are two kinds of diseases. Disease A causes symptom A and can be treated with treatment A. Disease B causes symptom B and can be treated with treatment B. There are four characters in this story. Hathaway is a doctor. Hathaway wants all hospital patients to be healthy. Jones is a hospital patient. Jones wants to be alive and healthy. Ross is a hospital patient. Ross wants to be alive and healthy. Young is a hospital patient. Young wants to be alive and healthy. There are four kinds of actions characters can take in the story. A doctor can admit a patient who is in the admission room by assigning them to an exam room. Admitting a patient to an exam room does not change the patient’s location. Admitting a patient increases the doctor’s workload by one. A character can walk from one room to another. A doctor can assess a patient who is in their assigned exam room to see what symptoms they are showing. If a doctor’s workload is three or more, the doctor may make a mistake and believe the patient has a different disease than what they actually have. A doctor can treat a patient who is in their assigned exam room for a disease. If a doctor treats a patient with the treatment that matches their symptoms, the patient becomes healthy, otherwise the patient dies. Regardless of the outcome, treating a patient reduces the doctor’s workload by one.
+
+ 
+
+ Available actions for you are : 
+admit(doctor : doctor, patient : patient, room : examroom),walk(character : character, from : room, to : room),assess(doctor : doctor, patient : patient, symptom : symptom, room : examroom),treat(doctor : doctor, patient : patient, treatment : treatment, room : examroom)
+
+
+ These events have already happened in the story: 
+admit(Hathaway, Young, PatientRoomA); admit(Hathaway, Ross, PatientRoomC); walk(Young, Admissions, PatientRoomA); walk(Hathaway, PatientRoomA, PatientRoomB); walk(Young, PatientRoomA, PatientRoomB); admit(Hathaway, Young, PatientRoomB)
+
+
+ This is the current situation after those events:
+alive(Jones) = True; alive(Ross) = True; alive(Young) = True; assigned(PatientRoomA) = Young; assigned(PatientRoomB) = Young; assigned(PatientRoomC) = Ross; at(Hathaway) = PatientRoomB; at(Jones) = Admissions; at(Ross) = Admissions; at(Young) = PatientRoomB; symptom(Jones) = ?; symptom(Ross) = ?; symptom(Young) = ?; workload(Hathaway) = 3; believes(Hathaway, alive(Jones)) = True; believes(Hathaway, alive(Ross)) = True; believes(Hathaway, alive(Young)) = True; believes(Hathaway, at(Hathaway)) = PatientRoomB; believes(Hathaway, at(Jones)) = Admissions; believes(Hathaway, at(Ross)) = Admissions; believes(Hathaway, at(Young)) = PatientRoomB; believes(Hathaway, symptom(Jones)) = ?; believes(Hathaway, symptom(Ross)) = ?; believes(Hathaway, symptom(Young)) = ?; believes(Jones, alive(Jones)) = True; believes(Jones, alive(Ross)) = True; believes(Jones, alive(Young)) = True; believes(Jones, at(Hathaway)) = PatientRoomA; believes(Jones, at(Jones)) = Admissions; believes(Jones, at(Ross)) = Admissions; believes(Jones, at(Young)) = PatientRoomA; believes(Jones, symptom(Jones)) = ?; believes(Jones, symptom(Ross)) = ?; believes(Jones, symptom(Young)) = ?; believes(Jones, believes(Hathaway, symptom(Jones))) = ?; believes(Ross, alive(Jones)) = True; believes(Ross, alive(Ross)) = True; believes(Ross, alive(Young)) = True; believes(Ross, at(Hathaway)) = PatientRoomA; believes(Ross, at(Jones)) = Admissions; believes(Ross, at(Ross)) = Admissions; believes(Ross, at(Young)) = PatientRoomA; believes(Ross, symptom(Jones)) = ?; believes(Ross, symptom(Ross)) = ?; believes(Ross, symptom(Young)) = ?; believes(Ross, believes(Hathaway, symptom(Ross))) = ?; believes(Young, alive(Jones)) = True; believes(Young, alive(Ross)) = True; believes(Young, alive(Young)) = True; believes(Young, at(Hathaway)) = PatientRoomB; believes(Young, at(Jones)) = Admissions; believes(Young, at(Ross)) = Admissions; believes(Young, at(Young)) = PatientRoomB; believes(Young, symptom(Jones)) = ?; believes(Young, symptom(Ross)) = ?; believes(Young, symptom(Young)) = ?; believes(Young, believes(Hathaway, symptom(Young))) = ?; 
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+ where Hathaway  achieves their goal.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+
+ While keeping the story complete, a smaller story is preferred. Suggested maximum number of the actions in the story: 6.

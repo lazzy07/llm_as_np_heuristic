@@ -1,0 +1,26 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+There are six locations in this story: a prison cell block, a prison laundry room, a prison kitchen, a prison gym, a prison hallway, and the highway outside the prison. There are three items in this story: a pack of cigarettes, a set of civilian clothes, and a knife. There are two days in the story: day one and day two. There are three characters in this story. Ernest is a prisoner. Ernest wants to be alive, does not want to be threatened, and wants to have a pack of cigarettes. Roy is a prisoner. Roy wants to be alive, does not want to be threatened, and wants to have a pack of cigarettes. Ernest and Roy are friends. Ernest and Roy are the main characters. The prison bully is a prisoner. The bully wants to kill people he has threatened and wants to spend time in the gym. The bully owns the pack of cigarettes. There are thirteen kinds of actions characters can take. A main character can steal an item which is at their current location. If a main character steals the bully’s cigarettes, the bully threatens both Ernest and Roy. The bully can kill a main character in any room except for the cell block. The prison guards can confiscate an item from one of the main characters and punish the main character by making them clean the highway or clean the gym. A main character can go to the laundry room or the kitchen to do their daily chores. The bully can go to the gym for recreation time. A main character can move from any room to the hallway. A main character who is in the hallway can crawl through the vents to get to either the highway or the gym. If a main character is on the highway or in the hallway they can put on the civilian clothes to disguise themselves. A main character who is in the hallway can lock the gym door. A main character can kill the bully with a knife in any room except the cell block. The prison guards can thwart a main character who is carrying the civilian clothes or the knife by killing the main character. If a main character is wearing the civilian clothes disguise and are on the highway they can escape from the prison. If a main character is locked in the gym with the bully and has the knife, the main character can get revenge by killing the bully. Day one can end at any time and day two begins.
+
+ 
+
+ Available actions for you are : 
+confiscate(main : main, item : item, place : place, punishment : place),chores(main : main, place : place),disguise(main : main, Clothes, place : place),escape(main : main, Highway),go(main : main, Hall),kill(Bully, main : main, place : place),lock_gym(main : main, place : place),next_day(),recreation(Bully, Gym),revenge(main : main, Bully, Gym),steal(main : main, item : item, place : place),thwart(main : main, Hall),vent(main : main, place : place)
+
+
+ These events have already happened in the story: 
+recreation(Bully, Gym); steal(Roy, Cigarettes, Cells); chores(Roy, Laundry); steal(Roy, Clothes, Laundry); confiscate(Roy, Cigarettes, Laundry, Gym); go(Roy, Hall); lock_gym(Roy, Hall); chores(Roy, Kitchen); steal(Roy, Knife, Kitchen)
+
+
+ This is the current situation after those events:
+alive(Ernest) = True; alive(Roy) = True; alive(Bully) = True; chores(Ernest) = False; chores(Roy) = True; disguised(Ernest) = False; disguised(Roy) = False; location(Ernest) = Cells; location(Roy) = Kitchen; location(Bully) = Gym; location(Cigarettes) = ?; location(Clothes) = Roy; location(Knife) = Roy; locked(Gym) = True; threatened(Ernest) = True; threatened(Roy) = True; time() = Day1; believes(Ernest, location(Ernest)) = Cells; believes(Ernest, location(Roy)) = Kitchen; believes(Ernest, location(Bully)) = Gym; believes(Roy, location(Ernest)) = Cells; believes(Roy, location(Roy)) = Kitchen; believes(Roy, location(Bully)) = Gym; believes(Bully, location(Ernest)) = Cells; believes(Bully, location(Roy)) = Kitchen; believes(Bully, location(Bully)) = Gym; 
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+ where Roy  achieves their goal.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+

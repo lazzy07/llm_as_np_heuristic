@@ -1,0 +1,26 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+There are three locations in this story: the house, the bank, and the forest. There are three items in this story: a rifle, some ammunition, and some money. There are three characters in this story: Bubba is a human. The bank clerk is a human. Bambi is a deer. Bambi wants to be alive. There are eight kinds of actions characters can take in the story. A character can become greedy, and then they will want to have money. A character can become hungry, and then they will want to eat. A character can pick up an item at their location. A character can load ammunition into a rifle. A character can go from one location to another. One character can steal an item from a second character if the first character has a loaded gun. One character can shoot and kill another character if the first character has a loaded gun. One character can eat an animal if the animal is dead.
+
+ 
+
+ Available actions for you are : 
+decide_to_get_money(character : human),decide_to_eat(character : human), pickup(character : human, item : item, place : place), load(character : human, gun : gun, ammo : ammo), go(character : character, from : place, to : place), steal(thief : human, victim : human, gun : gun, place : place), shoot(shooter : human, target : character, gun : gun, place : place), eat(character : human, food : animal, place : place) 
+
+
+ These events have already happened in the story: 
+decide_to_get_money(Bubba); pickup(Bubba, Rifle, House); pickup(Bubba, Ammo, House); go(Bubba, House, Forest); go(Bubba, Forest, Bank); decide_to_eat(Bubba); go(Bubba, Bank, Forest); go(Bubba, Forest, Bank); load(Bubba, Rifle, Ammo)
+
+
+ This is the current situation after those events:
+alive(Bubba) = True; alive(Clerk) = True; alive(Bambi) = True; at(Bubba) = Bank; at(Clerk) = Bank; at(Bambi) = Forest; at(Rifle) = Bubba; at(Ammo) = Rifle; greed(Bubba) = 1; greed(Clerk) = 1; hungry(Bubba) = True; hungry(Clerk) = False; money(Bubba) = 0; money(Clerk) = 1; believes(Bubba, alive(Bubba)) = True; believes(Bubba, alive(Clerk)) = True; believes(Bubba, alive(Bambi)) = True; believes(Bubba, at(Rifle)) = Bubba; believes(Bubba, at(Ammo)) = Rifle; believes(Bubba, money(Bubba)) = 0; believes(Bubba, money(Clerk)) = 1; believes(Clerk, alive(Bubba)) = True; believes(Clerk, alive(Clerk)) = True; believes(Clerk, alive(Bambi)) = True; believes(Clerk, at(Rifle)) = Bubba; believes(Clerk, at(Ammo)) = ?; believes(Clerk, money(Bubba)) = 0; believes(Clerk, money(Clerk)) = 1; believes(Bambi, alive(Bubba)) = True; believes(Bambi, alive(Clerk)) = True; believes(Bambi, alive(Bambi)) = True; believes(Bambi, at(Rifle)) = Bubba; believes(Bambi, at(Ammo)) = Bubba; believes(Bambi, money(Bubba)) = 0; believes(Bambi, money(Clerk)) = 1; 
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+that ends with Bubba having the money or Bambi being dead or both.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+

@@ -1,0 +1,27 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+There are two locations in this story: a village and a cave. There are two items in this story: some money and some treasure. There are four characters in this story. Talia is a human. Talia wants to be happy and wealthy. Talia does not care if she is hungry. Rory is a human. Rory wants to be happy, wealthy, and not hungry. Vince is a human. Vince wants to be happy and not hungry. Vince does not care if he is rich. Gargax is a dragon. Gargax wants to be wealthy and not hungry. Gargax does not care about being happy. There are eight kinds of actions characters can take in the story. One human can propose marriage to another human. One human can accept the proposal of a second human that has proposed to them, and then both characters are happy. Two humans can get married if one has proposed and the other has accepted. A character can travel from one location to another. A character can pick up an item at their location. One character can take an item from the dead body of a second character at their location if the second character is dead. A character can become hungry. A dragon can eat a human who is at their location.
+
+ 
+
+ Available actions for you are : 
+pickup(character : character, item : item, place : place), take(taker : character, item : item, victim : character, place : place), get_hungry(character : character), eat(monster : monster, victim : character, place : place), travel(character : character, from : place, to : place), marry(lover : character, beloved : character, place : place), accept(beloved : character, lover : character, place : place), propose(lover : character, beloved : character, place : place),eat(monster : monster, victim : character, place : place)
+
+
+ These events have already happened in the story: 
+propose(Rory, Talia, Village); propose(Vince, Talia, Village); travel(Talia, Village, Cave); travel(Rory, Village, Cave); travel(Vince, Village, Cave); accept(Talia, Vince, Cave); marry(Vince, Talia, Cave)
+
+
+ This is the current situation after those events:
+alive(Talia) = True; alive(Rory) = True; alive(Vince) = True; at(Talia) = Cave; at(Rory) = Cave; at(Vince) = Cave; at(Gargax) = Cave; at(Money) = Vince; at(Treasure) = Cave; happiness(Talia) = 0; happiness(Rory) = 0; happiness(Vince) = 1; has(Talia, Money) = 1; has(Talia, Treasure) = 0; has(Rory, Money) = 0; has(Rory, Treasure) = 0; has(Vince, Money) = 1; has(Vince, Treasure) = 0; has(Gargax, Money) = 0; has(Gargax, Treasure) = 0; hunger(Talia) = 0; hunger(Rory) = 0; hunger(Vince) = 0; hunger(Gargax) = 0; relationship(Talia, Rory) = ?; relationship(Talia, Vince) = Married; relationship(Rory, Talia) = Proposed; relationship(Vince, Talia) = Married; wealth(Talia) = 1; wealth(Rory) = 0; wealth(Vince) = 1; wealth(Gargax) = 0; believes(Talia, alive(Talia)) = True; believes(Talia, alive(Rory)) = True; believes(Talia, alive(Vince)) = True; believes(Talia, at(Talia)) = Cave; believes(Talia, at(Rory)) = Cave; believes(Talia, at(Vince)) = Cave; believes(Talia, at(Gargax)) = Cave; believes(Talia, at(Money)) = Vince; believes(Talia, at(Treasure)) = Cave; believes(Rory, alive(Talia)) = True; believes(Rory, alive(Rory)) = True; believes(Rory, alive(Vince)) = True; believes(Rory, at(Talia)) = Cave; believes(Rory, at(Rory)) = Cave; believes(Rory, at(Vince)) = Cave; believes(Rory, at(Gargax)) = Cave; believes(Rory, at(Money)) = Vince; believes(Rory, at(Treasure)) = Cave; believes(Vince, alive(Talia)) = True; believes(Vince, alive(Rory)) = True; believes(Vince, alive(Vince)) = True; believes(Vince, at(Talia)) = Cave; believes(Vince, at(Rory)) = Cave; believes(Vince, at(Vince)) = Cave; believes(Vince, at(Gargax)) = Cave; believes(Vince, at(Money)) = Vince; believes(Vince, at(Treasure)) = Cave; believes(Gargax, alive(Talia)) = True; believes(Gargax, alive(Rory)) = True; believes(Gargax, alive(Vince)) = True; believes(Gargax, at(Talia)) = Cave; believes(Gargax, at(Rory)) = Cave; believes(Gargax, at(Vince)) = Cave; believes(Gargax, at(Gargax)) = Cave; believes(Gargax, at(Money)) = Vince; believes(Gargax, at(Treasure)) = Cave; 
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+that ends with Talia becoming happy or Talia becoming wealthy or both.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+
+ While keeping the story complete, a smaller story is preferred. Suggested maximum number of the actions in the story: 5.

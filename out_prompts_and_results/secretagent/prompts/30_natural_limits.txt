@@ -1,0 +1,24 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+There are six locations in this story: the headquarters, the dropbox, the lobby, the office, the cache, and the courtyard. There is a path between the headquarters and the dropbox. There is a path between the dropbox and courtyard. There is a path between the courtyard and the lobby. There is a path between the lobby and the cache. There is a path between the lobby and the office. There is a path between the cache and the office. There are two items: some papers and a gun. There are two characters in this story. The secret agent wants the mastermind to be dead. The mastermind wants to be alive. There are four kinds of actions characters can take in the story. A character can move from one location to another. If a character moves from the courtyard to the lobby, they must be holding the papers and not holding the gun. A character can pick up an item at their current location. If an item is missing, a character can discover it at their current location. One character with a gun can kill a second character at their current location.
+
+ Characters can move, pick up, kill, and find.
+
+
+ These events have already happened in the story: 
+The secret agent moves from the headquarters to the dropbox.The secret agent picks up the papers.The secret agent moves from the dropbox to the courtyard.The secret agent moves from the courtyard to the lobby.The secret agent moves from the lobby to the office.The secret agent finds the gun in the office.
+
+
+ This is the current situation after those events:
+The secret agent is alive.  The mastermind is alive.  The secret agent is at the office.  The secret agent has the papers.  The gun is at the office.  The secret agent believes that the secret agent is alive.  The secret agent believes that the mastermind is alive.  The secret agent believes that the secret agent has the papers.  The secret agent believes that the gun is at the office.  The mastermind believes that the secret agent is alive.  The mastermind believes that the mastermind is alive.  The mastermind believes that the secret agent is at the office.  The mastermind believes that the secret agent has the papers.  The mastermind believes that the gun is at the office.  
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+that ends with the mastermind being dead.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+
+ While keeping the story complete, a smaller story is preferred. Suggested maximum number of the actions in the story: 6.

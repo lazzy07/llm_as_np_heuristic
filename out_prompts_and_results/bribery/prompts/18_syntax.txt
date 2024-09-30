@@ -1,0 +1,26 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+All events take place in one location, a bank. There is one item in the game: money. There are three characters in this story. The president of the United States is a character. The hero is a character. The villain is a character. The villain wants to control the president. There are five kinds of actions characters can take in the story. Characters can steal an item which is at their location. If one character has the money, they can bribe a second character by giving money to the second character to gain control over them. One character can threaten a second character, causing the second character to be afraid of the first character. One character can coerce a second character into wanting a third character to have an item if the second character fears the first character. One character can give an item to another character.
+
+ 
+
+ Available actions for you are : 
+steal(character : character, item : item, place : place), bribe(character : character, target : character, money : money), threaten(character : character, victim : character), coerce(character : character, victim : character, item : item), give(character : character, target : character, item : item) 
+
+
+ These events have already happened in the story: 
+threaten(Villain, Hero); coerce(Villain, Hero, Money); steal(Hero, Money, Bank); bribe(Hero, Villain, Money); bribe(Villain, President, Money)
+
+
+ This is the current situation after those events:
+at(Money) = President; controls(Hero, Villain) = True; controls(Hero, President) = False; controls(Villain, Hero) = False; controls(Villain, President) = True; controls(President, Hero) = False; controls(President, Villain) = False; fears(Hero, Villain) = True; fears(Hero, President) = False; fears(Villain, Hero) = False; fears(Villain, President) = False; fears(President, Hero) = False; fears(President, Villain) = False; intends(Hero, Money) = Villain; intends(Villain, Money) = ?; intends(President, Money) = ?; 
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+ where Villain  achieves their goal.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+
