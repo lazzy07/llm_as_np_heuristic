@@ -24,9 +24,10 @@ import r7.domaintext.TreasureText;
 public class Main {
 	public static void main(String[] args) {
 		final boolean PROMPT_ONLY = true;
+		final HeuristicSearchTypes SEARCH_TYPE = HeuristicSearchTypes.SYNTAX_ONLY;
 		NodeCollection.SAMPLE_LIMIT = 1000;
-		String MODEL = "ChatGpt-40-Mini";
-		String PROBLEM = "bribery";
+		String MODEL = "ChatGpt-4o-Mini";
+		String PROBLEM = "treasure";
 		String CSV_FILE = "./data_new/" + PROBLEM + ".csv";
 		String PROBLEM_FILE = "./problems/" + PROBLEM + ".txt";
 		String DESCRIPTION_PATH = "./descriptions_new";
@@ -45,7 +46,7 @@ public class Main {
 		
 		int GOAL = 1;
 		
-		DomainText domain = new BriberyText(s.getCompiledProblem().initial, GOAL);
+		DomainText domain = DomainText.get(s.getCompiledProblem(), GOAL);
 		
 		if(!PROMPT_ONLY) {
 			Embeddings.fetchEmbeddings(s.getCompiledProblem(), domain);
@@ -68,8 +69,7 @@ public class Main {
 		LLMNaturalPromptBulder naturalLimitPromptBuilder = new LLMNaturalPromptBulder(PROBLEM, DESCRIPTION_PATH, true, domain, s.getCompiledProblem());
 		int i=1;
 		
-		for(Node node: NodeCollection.SELECTED_NODES) {
-			System.out.println("\n************** Node : " + i + " ***********************");
+		for(Node node : NodeCollection.SELECTED_NODES) {
 			String sabrePrompt = sabrePromptBuilder.buildPrompt(node);
 			String naturalPrompt = naturalPromptBuilder.buildPrompt(node);
 			String sabreLimitPrompt = sabreLimitPromptBuilder.buildPrompt(node);
@@ -79,21 +79,44 @@ public class Main {
 			node.promptToFile(PROBLEM, "natural", naturalPrompt);
 			node.promptToFile(PROBLEM, "syntax_limits", sabreLimitPrompt);
 			node.promptToFile(PROBLEM, "natural_limits", naturalLimitPrompt);
-			
-			if(!PROMPT_ONLY) {
+		}
+		
+		if(!PROMPT_ONLY) {
+			for(Node node: NodeCollection.SELECTED_NODES) {
+				System.out.println("\n************** Node : " + i + " ***********************");
+				String sabrePrompt = node.promptFromFile(PROBLEM, "syntax");
+				String naturalPrompt = node.promptFromFile(PROBLEM, "natural");
+				String sabreLimitPrompt = node.promptFromFile(PROBLEM, "syntax_limits");
+				String naturalLimitPrompt = node.promptFromFile(PROBLEM, "natural_limits");
+				
 				GptResponseManager responseManager = new GptResponseManager();
 				
-				String sabreResponse = responseManager.getLLMResponse(sabrePrompt);
-				String naturalResponse = responseManager.getLLMResponse(naturalPrompt);
-				String sabreLimitResponse = responseManager.getLLMResponse(sabreLimitPrompt);
-				String naturalLimitResponse = responseManager.getLLMResponse(naturalLimitPrompt);
 				
-				node.resultsToFile(PROBLEM, "syntax", sabreResponse);
-				node.resultsToFile(PROBLEM, "natural", naturalResponse);
-				node.resultsToFile(PROBLEM, "syntax_limits", sabreLimitResponse);
-				node.resultsToFile(PROBLEM, "natural_limits", naturalLimitResponse);
+				if(SEARCH_TYPE == HeuristicSearchTypes.SYNTAX_ONLY || SEARCH_TYPE == HeuristicSearchTypes.SYNTAX_AND_NATURAL) {
+					String sabreResponse = "";
+					String sabreLimitResponse = "";
+					sabreResponse = responseManager.getLLMResponse(sabrePrompt);
+					sabreLimitResponse = responseManager.getLLMResponse(sabreLimitPrompt);				
+					node.resultsToFile(PROBLEM, "syntax", sabreResponse);
+					node.resultsToFile(PROBLEM, "syntax_limits", sabreLimitResponse);
+				}
+				
+				if(SEARCH_TYPE == HeuristicSearchTypes.NATURAL_ONLY || SEARCH_TYPE == HeuristicSearchTypes.SYNTAX_AND_NATURAL) {
+					String naturalResponse = "";
+					String naturalLimitResponse = "";
+					naturalResponse = responseManager.getLLMResponse(naturalPrompt);
+					naturalLimitResponse = responseManager.getLLMResponse(naturalLimitPrompt);					
+					node.resultsToFile(PROBLEM, "natural", naturalResponse);
+					node.resultsToFile(PROBLEM, "natural_limits", naturalLimitResponse);
+				}				
 				
 				try {
+					String sabreResponse = node.resultsFromFile(PROBLEM, "syntax");
+					String naturalResponse = node.resultsFromFile(PROBLEM, "natural");
+					String sabreLimitResponse = node.resultsFromFile(PROBLEM, "syntax_limits");
+					String naturalLimitResponse = node.resultsFromFile(PROBLEM, "natural_limits");
+					
+					
 					String[] sabrePlan = responseManager.extractPlanFromResponse(sabreResponse);
 					String[] naturalPlan = responseManager.extractPlanFromResponse(naturalResponse);
 					String[] sabreLimitPlan = responseManager.extractPlanFromResponse(sabreLimitResponse);
@@ -114,12 +137,12 @@ public class Main {
 					node.naturalLLMSuggestion = naturalSuggestion;
 					node.naturalWithLimitsLLMSuggestion = naturalLimitSuggestion;
 					
-			}catch(Exception e) {
+				}catch(Exception e) {
 					System.err.print(e);
 				}
+	
+				i++;
 			}
-
-			i++;
 		}
 		
 		if(!PROMPT_ONLY) {

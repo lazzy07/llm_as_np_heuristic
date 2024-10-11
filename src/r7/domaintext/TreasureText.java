@@ -55,7 +55,7 @@ public class TreasureText extends DomainText {
 		String str = believesStr(fluent, value);
 		ArrayList<String> args = new ArrayList<>();
 		for(Parameter arg : fluent.signature.arguments)
-			args.add(arg.toString().equals("?") ? "Unknown" : arg.toString());
+			args.add(arg.toString());
 		String arg0 = args.get(0);
 		switch(fluent.signature.name) {
 		case "at": 
@@ -63,15 +63,15 @@ public class TreasureText extends DomainText {
 				str += arg0 + " is at " + value;
 			else if(agents.containsKey(value))
 				str += value + " has " + arg0;
-			else if(value.equals("Unknown"))
-				str += arg0 + " could be anywhere";
+			else if(value.equals("?"))
+				str += "where " + arg0 + " is";
 			else 
 				str += arg0 + " is " + value;
 			break;
 		default:
 			str += fluent + " = " + value;
 		}
-		return clean(str) + ". ";
+		return clean(str).replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	@Override

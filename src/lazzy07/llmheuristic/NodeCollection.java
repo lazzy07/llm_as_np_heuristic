@@ -8,7 +8,7 @@ public class NodeCollection {
 	public static int SAMPLE_LIMIT = 0;
 	public static ArrayList<Node> ALL_NODES = new ArrayList<Node>();
 	public static ArrayList<Node> SELECTED_NODES = new ArrayList<Node>();
-	public static int MAX_PLAN_SIZE = 12;
+	public static int MAX_PLAN_SIZE = 8;
 	private static Random random = new Random(100);
 	
 	public static void sampleNodes() {

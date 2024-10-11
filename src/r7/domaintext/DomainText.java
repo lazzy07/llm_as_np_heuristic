@@ -51,7 +51,7 @@ public abstract class DomainText {
 	public String believesStr(Fluent fluent, String value) {
 		String str = "";
 		for(int i=0; i<fluent.characters.size(); i++) {
-			if(!value.equals("Unknown") || (i+1 < fluent.characters.size()))
+			if(!value.equals("?") || (i+1 < fluent.characters.size()))
 				str += fluent.characters.get(i) + " believes that ";
 			else
 				str += fluent.characters.get(i) + " does not know ";
@@ -82,13 +82,18 @@ public abstract class DomainText {
 		return str;
 	}
 
-	public String standardLocation(String arg0, String value){
+	public String standardLocation(String arg0, String value, String prefix){
 		if(places.containsKey(value))
 			return arg0 + " is at " + value;
 		else if(containers.containsKey(value))
 			return arg0 + " is in " + value;
-		else if(value.equals("?"))
-			return "where " + arg0 + " is";
+		else if(value.equals("?")) {
+			if(prefix.length() > 0) {
+				return "where " + arg0 + " is";							
+			}
+			
+			return "location of " + arg0 + " is unknown";
+		}
 		return value + " has " + arg0;
 	}
 	

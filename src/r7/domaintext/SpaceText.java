@@ -137,7 +137,7 @@ public class SpaceText extends DomainText {
 		default:
 			str += fluent + " = " + value;
 		}
-		return clean(str) + ". ";
+		return clean(str).replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	@Override

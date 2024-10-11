@@ -37,12 +37,14 @@ public class BasketballText extends DomainText {
 	public String fluent(Fluent fluent, Expression value) {
 		String str = believes(fluent, value);
 		ArrayList<String> args = new ArrayList<>();
+		
 		for(Parameter arg : fluent.signature.arguments)
 			args.add(arg.toString());
+		
 		String arg0 = args.get(0);
 		switch(fluent.signature.name) {
 		case "at":
-			str += standardLocation(arg0, value.toString());
+			str += standardLocation(arg0, value.toString(), str);
 			break;
 		case "has":
 			str += value + " has " + arg0;
@@ -87,11 +89,11 @@ public class BasketballText extends DomainText {
 		String str = believesStr(fluent, value);
 		ArrayList<String> args = new ArrayList<>();
 		for(Parameter arg : fluent.signature.arguments)
-			args.add(arg.toString().equals("?") ? "Unknown" : arg.toString());
+			args.add(arg.toString());
 		String arg0 = args.get(0);
 		switch(fluent.signature.name) {
 		case "at":
-			str += standardLocation(arg0, value.toString());
+			str += standardLocation(arg0, value.toString(), str);
 			break;
 		case "has":
 			str += value + " has " + arg0;
@@ -128,7 +130,7 @@ public class BasketballText extends DomainText {
 		default:
 			str += fluent + " = " + value;
 		}
-		return clean(str).replaceAll("at downtown", "downtown") + ". ";
+		return clean(str).replaceAll("at downtown", "downtown").replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	@Override

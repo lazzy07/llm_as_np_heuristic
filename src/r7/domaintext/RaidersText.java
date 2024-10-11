@@ -112,7 +112,7 @@ public class RaidersText extends DomainText {
 		String str = believesStr(fluent, value);
 		ArrayList<String> args = new ArrayList<>();
 		for(Parameter arg : fluent.signature.arguments)
-			args.add(arg.toString().equals("?") ? "Unknown" : arg.toString());
+			args.add(arg.toString());
 		String arg0 = args.get(0);
 		
 		switch(fluent.signature.name) {
@@ -129,8 +129,8 @@ public class RaidersText extends DomainText {
 				str += arg0 + " is not dangerous";
 			break;
 		case "at":
-			if(value.equals("Unknown")) {
-				str += arg0 + " could be anywhere";
+			if(value.equals("?")) {
+				str += " location of " + arg0;
 			} else if(!isLocation(value.toString())) {
 				str += value + " has " + arg0;
 			} else {
@@ -157,7 +157,8 @@ public class RaidersText extends DomainText {
 				.replaceAll("Nazis is", "Nazis are")
 				.replaceAll("Nazis has", "Nazis have") 
 				.replaceAll("Nazis believes", "Nazis believe") 
-				.replaceAll("Nazis does", "Nazis do") + ". ";
+				.replaceAll("Nazis does", "Nazis do")
+				.replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	private boolean isLocation(String str) {

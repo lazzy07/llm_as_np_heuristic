@@ -32,7 +32,7 @@ public class TemplateText extends DomainText {
 		String arg0 = args.get(0);
 		switch(fluent.signature.name) {
 		case "at": // Handle location first. Most domains do it like this
-			str += standardLocation(arg0, value.toString()); 
+			str += standardLocation(arg0, value.toString(), str); 
 			break;
 		case "alive": // Handle booleans like this
 			if(value.equals(True.TRUE))

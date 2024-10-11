@@ -1,6 +1,8 @@
 package lazzy07.llmheuristic;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -186,6 +188,36 @@ public class Node {
         }
 	}
 	
+	public String promptFromFile(String domain, String type) {
+	    // Construct the directory path and the file name
+	    String directoryPath = "./out_prompts_and_results/" + domain + "/prompts";
+	    String filePath = directoryPath + "/" + this.id + "_" + type + ".txt";
+	    
+	    // Initialize a StringBuilder to store the file content
+	    StringBuilder promptContent = new StringBuilder();
+	    
+	    // Read the prompt from the file
+	    File file = new File(filePath);
+	    
+	    if (file.exists()) {
+	        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+	            String line;
+	            while ((line = reader.readLine()) != null) {
+	                promptContent.append(line).append("\n");
+	            }
+	        } catch (IOException e) {
+	            System.out.println("An error occurred while reading from the file.");
+	            return "";
+	        }
+	    } else {
+	        System.out.println("The file does not exist: " + filePath);
+	        return "";
+	    }
+	    
+	    // Return the content of the file as a String
+	    return promptContent.toString();
+	}
+	
 	public void resultsToFile(String domain, String type, String result) {
 		// Construct the directory path and the file name
         String directoryPath = "./out_prompts_and_results/" + domain + "/results";
@@ -205,6 +237,36 @@ public class Node {
             System.out.println("An error occurred while writing to the file.");
             e.printStackTrace();
         }
+	}
+	
+	public String resultsFromFile(String domain, String type) {
+	    // Construct the directory path and the file name
+	    String directoryPath = "./out_prompts_and_results/" + domain + "/results";
+	    String filePath = directoryPath + "/" + this.id + "_" + type + ".txt";
+	    
+	    // Initialize a StringBuilder to store the file content
+	    StringBuilder resultContent = new StringBuilder();
+	    
+	    // Read the result from the file
+	    File file = new File(filePath);
+	    
+	    if (file.exists()) {
+	        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+	            String line;
+	            while ((line = reader.readLine()) != null) {
+	                resultContent.append(line).append("\n");
+	            }
+	        } catch (IOException e) {
+	            System.out.println("An error occurred while reading from the file.");
+	            return "";
+	        }
+	    } else {
+	        System.out.println("The file does not exist: " + filePath);
+	        return "";
+	    }
+	    
+	    // Return the content of the file as a String
+	    return resultContent.toString();
 	}
 	
 	public String[] toCSV() {

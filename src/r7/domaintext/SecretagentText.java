@@ -51,7 +51,7 @@ public class SecretagentText extends DomainText {
 			else str += arg0 + " is not alive";
 			break;
 		case "at":
-			str += standardLocation(arg0, value.toString());
+			str += standardLocation(arg0, value.toString(), str);
 			break;
 		default:
 			str += fluent + " = " + value;
@@ -65,7 +65,7 @@ public class SecretagentText extends DomainText {
 		ArrayList<String> args = new ArrayList<>();
 		
 		for(Parameter arg : fluent.signature.arguments)
-			args.add(arg.toString().equals("?") ? "Unknown" : arg.toString());
+			args.add(arg.toString());
 		String arg0 = args.get(0);
 		switch(fluent.signature.name) {
 		case "path":
@@ -77,13 +77,13 @@ public class SecretagentText extends DomainText {
 			else str += arg0 + " is not alive";
 			break;
 		case "at":
-			str += standardLocation(arg0, value.toString());
+			str += standardLocation(arg0, value.toString(), str);
 			break;
 		default:
 			str += fluent + " = " + value;
 		}
 		return clean(str)
-				.replaceAll("papers is", "papers are")+ ". ";
+				.replaceAll("papers is", "papers are").replaceAll("\\?", "Unknown") + ". ";
 		
 	}
 	

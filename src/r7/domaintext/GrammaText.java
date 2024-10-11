@@ -157,7 +157,7 @@ public class GrammaText extends DomainText {
 		default:
 			str += fluent + " = " + value;
 		}
-		return clean(str) + ". ";
+		return clean(str).replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	private boolean isItem(String str) {

@@ -49,7 +49,7 @@ public class DeerhunterText extends DomainText {
 			else str += arg0 + " is not alive";
 			break;
 		case "at":
-			str += standardLocation(arg0, value.toString());
+			str += standardLocation(arg0, value.toString(), str);
 			break;
 		case "rich":
 			if(value.equals(True.TRUE))
@@ -77,7 +77,7 @@ public class DeerhunterText extends DomainText {
 		String str = believesStr(fluent, value);
 		ArrayList<String> args = new ArrayList<>();
 		for(Parameter arg : fluent.signature.arguments)
-			args.add(arg.toString().equals("?") ? "Unknown" : arg.toString());
+			args.add(arg.toString());
 		String arg0 = args.get(0);
 		switch(fluent.signature.name) {
 		case "path":
@@ -91,7 +91,7 @@ public class DeerhunterText extends DomainText {
 			else str += arg0 + " is not alive";
 			break;
 		case "at":
-			str += standardLocation(arg0, value.toString());
+			str += standardLocation(arg0, value.toString(), str);
 			break;
 		case "rich":
 			if(value.equals("True"))
@@ -112,7 +112,7 @@ public class DeerhunterText extends DomainText {
 		default:
 			str += fluent + " = " + value;
 		}
-		return clean(str) + ". ";
+		return clean(str).replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	@Override

@@ -42,7 +42,7 @@ public class JailbreakText extends DomainText {
 			args.add(arg.toString());
 		switch(fluent.signature.name) {
 		case "location":
-			str += standardLocation(args.get(0), value.toString()).replace(" at "," in ");
+			str += standardLocation(args.get(0), value.toString(), str).replace(" at "," in ");
 			break;
 		case "alive":
 			if(value.equals(True.TRUE))
@@ -95,11 +95,11 @@ public class JailbreakText extends DomainText {
 		String str = believesStr(fluent, value);
 		ArrayList<String> args = new ArrayList<>();
 		for(Parameter arg : fluent.signature.arguments)
-			args.add(arg.toString().equals("?") ? "Unknown" : arg.toString());
+			args.add(arg.toString());
 		
 		switch(fluent.signature.name) {
 		case "location":
-			str += standardLocation(args.get(0), value.toString()).replace(" at "," in ");
+			str += standardLocation(args.get(0), value.toString(), str).replace(" at "," in ");
 			break;
 		case "alive":
 			if(value.equals("True"))
@@ -145,7 +145,8 @@ public class JailbreakText extends DomainText {
 				.replaceAll(" What ", " what ")
 				.replaceAll(" It ", " it ")
 				.replaceAll("cigarettes is", "cigarettes are")
-				.replaceAll("clothes is", "clothes are") + ". ";
+				.replaceAll("clothes is", "clothes are")
+				.replaceAll("\\?", "Unknown") + ". ";
 	}
 	
 	@Override
