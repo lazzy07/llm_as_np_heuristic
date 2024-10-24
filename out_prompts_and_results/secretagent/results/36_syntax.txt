@@ -1,0 +1,27 @@
+To complete the story with the desired ending of the mastermind being dead, the following actions will be taken:
+
+1. **move(SecretAgent, Office, Lobby)**: The Secret Agent moves from the Office to the Lobby. This is necessary because the Mastermind is believed to be in the Lobby, and the Secret Agent needs to confront them there.
+
+2. **move(SecretAgent, Lobby, Courtyard)**: The Secret Agent moves from the Lobby to the Courtyard. This action is taken to position the Secret Agent closer to the Mastermind, who is likely to be in the vicinity.
+
+3. **move(SecretAgent, Courtyard, Lobby)**: The Secret Agent moves back to the Lobby. This is necessary to ensure that the Secret Agent is in the correct location to confront the Mastermind.
+
+4. **kill(SecretAgent, Mastermind, Gun, Lobby)**: The Secret Agent uses the Gun to kill the Mastermind in the Lobby. This is the final action that achieves the goal of the Secret Agent, which is to eliminate the Mastermind.
+
+### Explanation of Actions:
+- The first move is essential to get to the Lobby where the Mastermind is believed to be.
+- The second move to the Courtyard is a strategic positioning action, allowing the Secret Agent to prepare for the confrontation.
+- The third move back to the Lobby is necessary to ensure the Secret Agent is in the right place to execute the final action.
+- The kill action is the culmination of the Secret Agent's goal to ensure the Mastermind is dead.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "move(SecretAgent, Office, Lobby)",
+    "move(SecretAgent, Lobby, Courtyard)",
+    "move(SecretAgent, Courtyard, Lobby)",
+    "kill(SecretAgent, Mastermind, Gun, Lobby)"
+  ]
+}
+```

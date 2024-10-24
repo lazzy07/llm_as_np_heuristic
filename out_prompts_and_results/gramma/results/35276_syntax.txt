@@ -1,0 +1,29 @@
+To achieve the bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **walk(Bandit, Cottage, Crossroads)**: The bandit starts at the cottage and walks to the crossroads to be in a position to interact with Tom, who is at the market.
+
+2. **walk(Bandit, Crossroads, Market)**: The bandit continues to the market where Tom is located. This is necessary for the bandit to confront Tom and potentially rob him.
+
+3. **rob(Bandit, TomCoin, Tom, Market)**: The bandit, armed with a sword, robs Tom, who is not armed. This action allows the bandit to take the coins that Tom is carrying.
+
+4. **walk(Bandit, Market, Crossroads)**: After robbing Tom, the bandit walks back to the crossroads to head towards the bandit camp.
+
+5. **walk(Bandit, Crossroads, Camp)**: Finally, the bandit walks to the camp, where she can store the coins in the chest, achieving her goal.
+
+### Explanation of Actions:
+- The bandit needs to move from the cottage to the crossroads and then to the market to confront Tom. 
+- Robbing Tom is essential as it allows the bandit to acquire coins without becoming a criminal in the eyes of the guard, since Tom is not armed.
+- The bandit then returns to the crossroads and heads to the camp to secure the coins in the chest, fulfilling her goal of having coins in the camp.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Bandit, Cottage, Crossroads)",
+    "walk(Bandit, Crossroads, Market)",
+    "rob(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Crossroads)",
+    "walk(Bandit, Crossroads, Camp)"
+  ]
+}
+```

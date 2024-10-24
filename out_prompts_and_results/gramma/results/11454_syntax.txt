@@ -1,0 +1,31 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following actions will be taken:
+
+1. **walk(Bandit, Crossroads, Market)**: The bandit moves to the market where the guard is located. This is necessary because the bandit needs to be in a position to interact with the guard and potentially steal coins from Tom.
+
+2. **report(Bandit, location(Tom), Market)**: The bandit reports Tom's location to the guard. This action is strategic as it distracts the guard and allows the bandit to take advantage of the situation.
+
+3. **walk(Guard, Market, Cottage)**: The guard moves to the cottage to confront Tom. This is necessary for the guard to fulfill his goal of eliminating criminals, which leaves the bandit free to act.
+
+4. **walk(Bandit, Market, Crossroads)**: The bandit returns to the crossroads, where they can access the chest containing the coins.
+
+5. **take(Bandit, BanditCoin, Chest, Camp)**: The bandit takes the coins from the chest at the camp. This is the final action that allows the bandit to achieve their goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- The bandit first moves to the market to set up the next actions.
+- Reporting Tom's location to the guard is a clever tactic to remove the guard from the crossroads and distract him.
+- The guard's movement to the cottage allows the bandit to operate without interference.
+- The bandit then returns to the crossroads to access the chest.
+- Finally, taking the coins from the chest fulfills the bandit's goal.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Market)",
+    "report(Bandit, location(Tom), Market)",
+    "walk(Guard, Market, Cottage)",
+    "walk(Bandit, Market, Crossroads)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

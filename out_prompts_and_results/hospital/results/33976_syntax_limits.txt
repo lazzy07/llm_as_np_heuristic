@@ -1,0 +1,45 @@
+**Story Completion:**
+
+After admitting Young to Exam Room B, Hathaway assesses Young's symptoms. Since Young is in Exam Room B, Hathaway can accurately assess Young without making a mistake due to workload. 
+
+1. **Assess Young**: Hathaway assesses Young in Exam Room B. Young shows no symptoms of Flaze or Jarkis, indicating that Young is healthy. This action is necessary for Hathaway to confirm Young's health status.
+
+2. **Treat Young**: Since Young is healthy, Hathaway does not need to treat Young, but this action is implied as Hathaway would not treat a healthy patient. 
+
+3. **Walk to Admissions**: Hathaway then walks to the Admissions room to assess the other patients, Jones and Ross, who are still waiting.
+
+4. **Admit Jones**: Hathaway admits Jones to Exam Room A, where he can be assessed next.
+
+5. **Assess Jones**: Hathaway assesses Jones in Exam Room A. If Jones shows symptoms of Flaze (fever), Hathaway will treat him with antibiotics, ensuring he becomes healthy.
+
+6. **Treat Jones**: If Jones is diagnosed with Flaze, Hathaway treats him with antibiotics, making him healthy.
+
+7. **Assess Ross**: Hathaway then assesses Ross in the Admissions room. If Ross shows symptoms of Jarkis (rash), Hathaway treats him with steroids, ensuring he becomes healthy.
+
+8. **Treat Ross**: If Ross is diagnosed with Jarkis, Hathaway treats him with steroids, making him healthy.
+
+By following these steps, Hathaway ensures that all patients are assessed and treated correctly, achieving the goal of having all patients healthy.
+
+**Explanation of Actions:**
+- **Assess Young**: Necessary to confirm Young's health status.
+- **Walk to Admissions**: Allows Hathaway to check on the other patients.
+- **Admit Jones**: Necessary to ensure Jones is seen and treated.
+- **Assess Jones**: Important to determine Jones's condition.
+- **Treat Jones**: Ensures Jones becomes healthy if diagnosed with Flaze.
+- **Assess Ross**: Important to determine Ross's condition.
+- **Treat Ross**: Ensures Ross becomes healthy if diagnosed with Jarkis.
+
+**Final Plan in JSON format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom, PatientRoomB)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "admit(Hathaway, Jones, PatientRoomA)",
+    "assess(Hathaway, Jones, symptom, PatientRoomA)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomA)",
+    "assess(Hathaway, Ross, symptom, Admissions)",
+    "treat(Hathaway, Ross, steroids, Admissions)"
+  ]
+}
+```

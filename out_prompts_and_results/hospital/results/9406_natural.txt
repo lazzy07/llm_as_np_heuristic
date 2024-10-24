@@ -1,0 +1,39 @@
+**Story Completion:**
+
+Dr. Hathaway assesses Young in Patient Room C and confirms that Young has a rash, indicating Jarkis. Since Dr. Hathaway's workload is 2, they can correctly identify the disease without making a mistake. Dr. Hathaway then treats Young with steroids, the appropriate treatment for Jarkis, which makes Young healthy.
+
+Next, Dr. Hathaway walks back to the admissions room to admit Jones to an exam room. Dr. Hathaway assigns Jones to Patient Room B. Dr. Hathaway then assesses Jones, who is still experiencing unknown symptoms. However, since Jones is alive, Dr. Hathaway can treat Jones with antibiotics, assuming that Jones has Flaze, as it is the only other disease. This treatment is successful, and Jones becomes healthy.
+
+Finally, Dr. Hathaway walks back to the admissions room to admit Ross to an exam room. Dr. Hathaway assigns Ross to Patient Room A. Dr. Hathaway assesses Ross, who is also experiencing unknown symptoms. Dr. Hathaway treats Ross with antibiotics, assuming he has Flaze as well, and this treatment is successful, making Ross healthy.
+
+At the end of these actions, all patients are healthy, achieving Dr. Hathaway's goal.
+
+**Explanation of Actions:**
+1. **Assess Young**: This action is necessary to identify Young's symptoms and determine the correct treatment.
+2. **Treat Young**: Administering the correct treatment (steroids) for Jarkis ensures Young becomes healthy.
+3. **Walk to Admissions**: Dr. Hathaway needs to return to admit the next patient, Jones.
+4. **Admit Jones to Patient Room B**: This action is necessary to assign Jones to an exam room for assessment.
+5. **Assess Jones**: This action is necessary to determine Jones's condition and decide on treatment.
+6. **Treat Jones**: Administering antibiotics for Flaze ensures Jones becomes healthy.
+7. **Walk to Admissions**: Dr. Hathaway needs to return to admit the next patient, Ross.
+8. **Admit Ross to Patient Room A**: This action is necessary to assign Ross to an exam room for assessment.
+9. **Assess Ross**: This action is necessary to determine Ross's condition and decide on treatment.
+10. **Treat Ross**: Administering antibiotics for Flaze ensures Ross becomes healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess Young",
+    "treat Young",
+    "walk to Admissions",
+    "admit Jones to Patient Room B",
+    "assess Jones",
+    "treat Jones",
+    "walk to Admissions",
+    "admit Ross to Patient Room A",
+    "assess Ross",
+    "treat Ross"
+  ]
+}
+```

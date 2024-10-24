@@ -1,0 +1,35 @@
+**Story Completion:**
+
+1. **Action: lock_gym(Roy, Gym)**  
+   - **Explanation:** Roy locks the gym door while the bully is inside. This prevents the bully from leaving and gives Roy a chance to confront him without the threat of escape.
+
+2. **Action: revenge(Roy, Bully, Gym)**  
+   - **Explanation:** With the gym locked, Roy takes the opportunity to kill the bully with the knife he previously stole. This action eliminates the immediate threat to both him and Ernest.
+
+3. **Action: disguise(Roy, Clothes, Gym)**  
+   - **Explanation:** After killing the bully, Roy quickly puts on the civilian clothes to disguise himself. This is crucial for his escape plan.
+
+4. **Action: vent(Roy, Gym)**  
+   - **Explanation:** Roy crawls through the vents to reach the hallway, avoiding detection by the guards and ensuring he can escape.
+
+5. **Action: go(Roy, Hall)**  
+   - **Explanation:** Roy moves from the gym to the hallway, where he can access the highway.
+
+6. **Action: escape(Roy, Highway)**  
+   - **Explanation:** Finally, Roy escapes from the prison by using the civilian disguise on the highway, successfully overcoming the threats he faced.
+
+**Ending:** Roy survives and escapes the prison, while the bully is dead, thus eliminating the threat to both him and Ernest.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "lock_gym(Roy, Gym)",
+    "revenge(Roy, Bully, Gym)",
+    "disguise(Roy, Clothes, Gym)",
+    "vent(Roy, Gym)",
+    "go(Roy, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

@@ -1,0 +1,27 @@
+To complete the story, we need to ensure that the volcano erupts, resulting in a character dying, while also allowing for Zoe and the Lizard to become friends. The following sequence of actions will achieve this:
+
+1. **walk(Lizard, Cave, Surface)**: The Lizard walks from the cave to the surface, which is necessary for the Lizard to be in the same location as Zoe, allowing for potential interaction.
+
+2. **walk(Zoe, Ship, Surface)**: Zoe walks from the spaceship to the surface. This action is necessary for Zoe to be present on the surface where the volcano is located, and it also allows her to interact with the Lizard.
+
+3. **begin_erupt(Surface)**: The volcano begins to erupt. This action is crucial as it sets the stage for the eruption, which will lead to a character's demise.
+
+4. **make_peace(Zoe, Lizard, Surface)**: Zoe and the Lizard make peace with each other. This action is important as it allows them to become friends, fulfilling Zoe's goal of making friends with other creatures.
+
+5. **erupt(Surface)**: The volcano erupts. This action results in the death of Zoe, as she is on the surface when the eruption occurs.
+
+In summary, the actions taken ensure that the Lizard and Zoe are in the same location, allowing them to make peace and become friends, while also leading to the eruption of the volcano that ultimately results in Zoe's death.
+
+Here is the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Lizard, Cave, Surface)",
+    "walk(Zoe, Ship, Surface)",
+    "begin_erupt(Surface)",
+    "make_peace(Zoe, Lizard, Surface)",
+    "erupt(Surface)"
+  ]
+}
+```

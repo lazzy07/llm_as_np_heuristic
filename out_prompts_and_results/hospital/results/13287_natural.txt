@@ -1,0 +1,45 @@
+**Story Completion:**
+
+Dr. Hathaway assesses Ross in Patient Room A and observes a rash. Since the symptom matches the disease Jarkis, Dr. Hathaway treats Ross with steroids. Ross becomes healthy.
+
+Next, Dr. Hathaway walks from Patient Room A to Admissions to assess Jones. Since Jones is still in Admissions, Dr. Hathaway admits Jones to Patient Room B. 
+
+Dr. Hathaway then assesses Jones in Patient Room B. Since Jones is experiencing unknown symptoms, Dr. Hathaway cannot determine the disease. However, since Jones is alive and healthy, Dr. Hathaway decides to treat Jones with antibiotics, assuming it might be Flaze. 
+
+Dr. Hathaway treats Jones with antibiotics. Since Jones does not have Flaze, this treatment fails, and Jones dies.
+
+Finally, Dr. Hathaway walks back to Admissions to assess Young. Dr. Hathaway admits Young to Patient Room C. Dr. Hathaway assesses Young in Patient Room C. Young is also experiencing unknown symptoms, so Dr. Hathaway treats Young with antibiotics, assuming it might be Flaze. 
+
+Dr. Hathaway treats Young with antibiotics. Since Young does not have Flaze, this treatment fails, and Young dies.
+
+In the end, Dr. Hathaway has treated both patients, but only Ross has survived. Dr. Hathaway achieves their goal of ensuring that at least one patient is healthy.
+
+**Explanation of Actions:**
+1. **Assess Ross**: To determine the disease based on symptoms.
+2. **Treat Ross**: To cure Ross of Jarkis, which he has, ensuring he becomes healthy.
+3. **Walk to Admissions**: To assess the next patient, Jones.
+4. **Admit Jones to Patient Room B**: To assign Jones to an exam room for assessment.
+5. **Assess Jones**: To determine the disease based on symptoms.
+6. **Treat Jones with antibiotics**: To attempt to cure Jones, even though the symptoms are unknown.
+7. **Walk to Admissions**: To assess the next patient, Young.
+8. **Admit Young to Patient Room C**: To assign Young to an exam room for assessment.
+9. **Assess Young**: To determine the disease based on symptoms.
+10. **Treat Young with antibiotics**: To attempt to cure Young, even though the symptoms are unknown.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess Ross",
+    "treat Ross",
+    "walk to Admissions",
+    "admit Jones to Patient Room B",
+    "assess Jones",
+    "treat Jones with antibiotics",
+    "walk to Admissions",
+    "admit Young to Patient Room C",
+    "assess Young",
+    "treat Young with antibiotics"
+  ]
+}
+```

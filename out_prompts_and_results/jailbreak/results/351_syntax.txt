@@ -1,0 +1,40 @@
+**Story Completion:**
+
+After completing their chores in the laundry, Ernest and Roy find themselves in a precarious situation. They know the bully is in the gym, and they are currently threatened because Ernest has stolen the bully's pack of cigarettes. 
+
+1. **Action: go(Roy, Hall)** - Roy decides to move to the hallway to create some distance from the bully and think of a plan. This action is necessary to allow Roy to access the gym or the vents later.
+
+2. **Action: go(Ernest, Hall)** - Following Roy, Ernest also moves to the hallway. This keeps them together and allows them to strategize.
+
+3. **Action: vent(Ernest, Gym)** - Ernest crawls through the vents to the gym, where the bully is. This action is crucial because it allows Ernest to confront the bully without being seen by the guards.
+
+4. **Action: lock_gym(Roy, Gym)** - While Ernest is in the gym, Roy locks the gym door from the hallway. This prevents the bully from escaping and ensures that they can deal with him without interference.
+
+5. **Action: kill(Bully, Ernest, Gym)** - With the bully trapped and no way to escape, Ernest uses the knife he has in the kitchen to kill the bully. This action is essential for Ernest to eliminate the threat posed by the bully.
+
+6. **Action: disguise(Ernest, Clothes, Hall)** - After dealing with the bully, Ernest quickly puts on the civilian clothes he stole from the laundry. This disguise is necessary for him to escape without being recognized.
+
+7. **Action: escape(Ernest, Highway)** - Finally, Ernest makes his way to the highway and escapes from the prison. This action fulfills his goal of being alive and free.
+
+**Explanation of Actions:**
+- Moving to the hallway allows both characters to strategize and avoid immediate threats.
+- Venting into the gym gives Ernest the opportunity to confront the bully without being seen by guards.
+- Locking the gym door ensures that the bully cannot escape and that they can deal with him safely.
+- Killing the bully removes the immediate threat to both Ernest and Roy.
+- Disguising in civilian clothes is crucial for a successful escape.
+- Escaping to the highway is the final step to achieving Ernest's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "lock_gym(Roy, Gym)",
+    "kill(Bully, Ernest, Gym)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

@@ -1,0 +1,36 @@
+**Story Completion:**
+
+Hathaway, wanting all hospital patients to be healthy, assesses Ross in Exam Room A to determine his symptoms. 
+
+1. **Action: assess(Hathaway, Ross, symptom, PatientRoomA)**  
+   - Explanation: Hathaway needs to assess Ross to identify his symptoms and determine the appropriate treatment. 
+
+After assessing Ross, Hathaway finds that he has a fever, indicating that he has Flaze. Hathaway then treats Ross with antibiotics.
+
+2. **Action: treat(Hathaway, Ross, antibiotics, PatientRoomA)**  
+   - Explanation: Since Ross has Flaze, the correct treatment is antibiotics. This action will help Ross become healthy.
+
+Next, Hathaway walks to Admissions to assess Young, who is waiting there.
+
+3. **Action: walk(Hathaway, PatientRoomA, Admissions)**  
+   - Explanation: Hathaway needs to check on Young to ensure he is also healthy. 
+
+In Admissions, Hathaway assesses Young and finds that he has a rash, indicating that he has Jarkis. Hathaway treats Young with steroids.
+
+4. **Action: treat(Hathaway, Young, steroids, Admissions)**  
+   - Explanation: Since Young has Jarkis, the correct treatment is steroids. This action will help Young become healthy.
+
+By completing these actions, Hathaway successfully treats both Ross and Young, achieving the goal of ensuring all hospital patients are healthy.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, symptom, PatientRoomA)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "assess(Hathaway, Young, symptom, Admissions)",
+    "treat(Hathaway, Young, steroids, Admissions)"
+  ]
+}
+```

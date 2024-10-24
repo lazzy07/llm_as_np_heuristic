@@ -1,0 +1,27 @@
+To complete the story, we need to ensure that Talia becomes happy or wealthy or both. Given the current situation, Talia has treasure, which contributes to her wealth, and Rory has proposed to her, which can lead to happiness if she accepts. 
+
+Here’s the sequence of actions that will achieve the goal:
+
+1. **accept(Rory, Talia, Cave)**: Talia accepts Rory's marriage proposal. This action will make both Talia and Rory happy, as they are now in a relationship. Talia's happiness will increase, fulfilling her desire to be happy.
+
+2. **travel(Rory, Cave, Village)**: Rory travels back to the village. This action is not strictly necessary for Talia's happiness but can be seen as a logical step for Rory to return to his home after the proposal.
+
+3. **travel(Talia, Cave, Village)**: Talia travels back to the village as well. This action allows Talia to be with Rory in the village, where they can start their new life together.
+
+After these actions, Talia will be happy due to her acceptance of Rory's proposal, and she will also retain her wealth from the treasure she picked up in the cave.
+
+### Explanation of Actions:
+- **accept(Rory, Talia, Cave)**: This is the crucial action that directly leads to Talia's happiness, fulfilling her goal.
+- **travel(Rory, Cave, Village)**: This action is logical for Rory after the proposal, but it does not affect Talia's happiness directly.
+- **travel(Talia, Cave, Village)**: This action allows Talia to join Rory, reinforcing their relationship and ensuring they can be happy together.
+
+### Final Plan in JSON format:
+```json
+{
+  "plan": [
+    "accept(Rory, Talia, Cave)",
+    "travel(Rory, Cave, Village)",
+    "travel(Talia, Cave, Village)"
+  ]
+}
+```

@@ -1,0 +1,31 @@
+**Story Completion:**
+
+Hathaway, with a workload of 3, is in Patient Room C. She knows that Ross is in Patient Room A and Young is in Patient Room B. Since she has admitted both patients, she needs to assess them to determine their symptoms.
+
+1. **Assess Ross in Patient Room A**: Hathaway assesses Ross to see what symptoms he is showing. This action is necessary to identify if Ross has Flaze or Jarkis, which will guide her treatment decision.
+
+2. **Assess Young in Patient Room B**: After assessing Ross, Hathaway moves to Patient Room B to assess Young. This is crucial to ensure that both patients receive the correct treatment based on their symptoms.
+
+3. **Treat Ross with the correct treatment**: Once Hathaway has assessed Ross and determined his symptoms, she treats him accordingly. If he has Flaze, she will administer antibiotics; if he has Jarkis, she will give him steroids. This action is essential for Ross's recovery.
+
+4. **Treat Young with the correct treatment**: After treating Ross, Hathaway treats Young based on the symptoms she assessed. This ensures that both patients are treated properly and can recover.
+
+By following these steps, Hathaway successfully treats both patients, achieving her goal of ensuring all hospital patients are healthy.
+
+**Explanation of Actions:**
+- **Assess Ross**: Necessary to determine his condition and decide on treatment.
+- **Assess Young**: Important to ensure Young's health is also addressed.
+- **Treat Ross**: Critical for Ross's recovery based on the assessment.
+- **Treat Young**: Ensures Young receives the necessary treatment for his condition.
+
+**Final Plan in JSON format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, ?, PatientRoomA)",
+    "assess(Hathaway, Young, ?, PatientRoomB)",
+    "treat(Hathaway, Ross, treatment, PatientRoomA)",
+    "treat(Hathaway, Young, treatment, PatientRoomB)"
+  ]
+}
+```

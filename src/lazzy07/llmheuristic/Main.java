@@ -24,7 +24,8 @@ import r7.domaintext.TreasureText;
 public class Main {
 	public static void main(String[] args) {
 		final boolean PROMPT_ONLY = true;
-		final HeuristicSearchTypes SEARCH_TYPE = HeuristicSearchTypes.SYNTAX_ONLY;
+		final HeuristicSearchTypes SEARCH_TYPE = HeuristicSearchTypes.NONE;
+		final FetchTypes FETCH_TYPE = FetchTypes.ALL;
 		NodeCollection.SAMPLE_LIMIT = 1000;
 		String MODEL = "ChatGpt-4o-Mini";
 		String PROBLEM = "treasure";
@@ -95,19 +96,30 @@ public class Main {
 				if(SEARCH_TYPE == HeuristicSearchTypes.SYNTAX_ONLY || SEARCH_TYPE == HeuristicSearchTypes.SYNTAX_AND_NATURAL) {
 					String sabreResponse = "";
 					String sabreLimitResponse = "";
-					sabreResponse = responseManager.getLLMResponse(sabrePrompt);
-					sabreLimitResponse = responseManager.getLLMResponse(sabreLimitPrompt);				
-					node.resultsToFile(PROBLEM, "syntax", sabreResponse);
-					node.resultsToFile(PROBLEM, "syntax_limits", sabreLimitResponse);
+					if(node.shouldCallLLM(FETCH_TYPE, PROBLEM, "syntax")) {
+						sabreResponse = responseManager.getLLMResponse(sabrePrompt);
+						node.resultsToFile(PROBLEM, "syntax", sabreResponse);						
+					}
+					
+					if(node.shouldCallLLM(FETCH_TYPE, PROBLEM, "syntax_limits")) {
+						sabreLimitResponse = responseManager.getLLMResponse(sabreLimitPrompt);				
+						node.resultsToFile(PROBLEM, "syntax_limits", sabreLimitResponse);						
+					}
 				}
 				
 				if(SEARCH_TYPE == HeuristicSearchTypes.NATURAL_ONLY || SEARCH_TYPE == HeuristicSearchTypes.SYNTAX_AND_NATURAL) {
 					String naturalResponse = "";
 					String naturalLimitResponse = "";
-					naturalResponse = responseManager.getLLMResponse(naturalPrompt);
-					naturalLimitResponse = responseManager.getLLMResponse(naturalLimitPrompt);					
-					node.resultsToFile(PROBLEM, "natural", naturalResponse);
-					node.resultsToFile(PROBLEM, "natural_limits", naturalLimitResponse);
+					
+					if(node.shouldCallLLM(FETCH_TYPE, PROBLEM, "natural")) {
+						naturalResponse = responseManager.getLLMResponse(naturalPrompt);
+						node.resultsToFile(PROBLEM, "natural", naturalResponse);						
+					}
+					
+					if(node.shouldCallLLM(FETCH_TYPE, PROBLEM, "natural_limits")) {
+						naturalLimitResponse = responseManager.getLLMResponse(naturalLimitPrompt);					
+						node.resultsToFile(PROBLEM, "natural_limits", naturalLimitResponse);						
+					}
 				}				
 				
 				try {

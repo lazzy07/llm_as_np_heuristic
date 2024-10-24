@@ -1,0 +1,36 @@
+### Story Completion
+
+Hathaway, the doctor, is currently in Patient Room A with Young, who has been admitted to both Patient Room A and Patient Room B. Hathaway's workload is at 3, which means there is a risk of making a mistake if they assess or treat a patient. 
+
+1. **Assess Young in Patient Room A**: Hathaway decides to assess Young to determine their symptoms. Since Young is the only patient in the room, this action is necessary to understand if Young has Flaze or Jarkis. 
+
+2. **Treat Young with Antibiotics**: After assessing Young, Hathaway finds that Young has a fever, indicating Flaze. Hathaway treats Young with antibiotics, which is the correct treatment for Flaze. This action is crucial for achieving Hathaway's goal of ensuring all patients are healthy.
+
+3. **Walk to Admissions**: After treating Young, Hathaway walks to the Admissions room to assess the other patients, Jones and Ross, who are still waiting.
+
+4. **Admit Jones to Exam Room B**: Hathaway admits Jones to Exam Room B, which is necessary to ensure that Jones can be assessed and treated.
+
+5. **Assess Jones in Exam Room B**: Hathaway assesses Jones and finds that he has a rash, indicating Jarkis. Hathaway then treats Jones with steroids, which is the correct treatment for Jarkis.
+
+By following these actions, Hathaway successfully treats both Young and Jones, ensuring they are healthy.
+
+### Explanation of Actions
+- **Assess Young**: This action is necessary to identify Young's symptoms and determine the correct treatment.
+- **Treat Young with Antibiotics**: This action is essential to cure Young of Flaze, fulfilling Hathaway's goal of making patients healthy.
+- **Walk to Admissions**: This action allows Hathaway to check on the other patients and continue their treatment.
+- **Admit Jones to Exam Room B**: This action is necessary to ensure Jones receives the attention he needs.
+- **Assess Jones in Exam Room B**: This action is crucial to identify Jones's symptoms and provide the appropriate treatment.
+
+### JSON Object with Final Plan
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, fever, PatientRoomA)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Jones, PatientRoomB)",
+    "assess(Hathaway, Jones, rash, PatientRoomB)",
+    "treat(Hathaway, Jones, steroids, PatientRoomB)"
+  ]
+}
+```

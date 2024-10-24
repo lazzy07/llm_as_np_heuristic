@@ -1,0 +1,32 @@
+To ensure Rory achieves their goal of being happy, wealthy, and not hungry, we need to focus on actions that will lead to his happiness through marriage with Talia, while also ensuring he retains the treasure he has picked up. Here’s the shortest story that accomplishes this:
+
+1. **accept(Talia, Rory, Cave)**: Talia accepts Rory's marriage proposal. This action makes both Talia and Rory happy, fulfilling Rory's goal of happiness.
+
+2. **travel(Rory, Cave, Village)**: Rory travels back to the village with Talia. This action is necessary for Rory to be in a location where he can interact with Vince and ensure he is not hungry.
+
+3. **travel(Talia, Cave, Village)**: Talia travels back to the village with Rory. This keeps them together and allows them to enjoy their new relationship.
+
+4. **pickup(Vince, Money, Village)**: Vince picks up the money in the village. This action is necessary for Rory to ensure that he is wealthy, as he will later take the money from Vince.
+
+5. **take(Rory, Money, Vince, Village)**: Rory takes the money from Vince. This action allows Rory to achieve his goal of wealth.
+
+At this point, Rory is happy due to his marriage with Talia, wealthy because he has the treasure and the money, and not hungry since he has not taken any actions that would lead to hunger.
+
+### Explanation of Actions:
+- **accept**: This is crucial for Rory's happiness as it solidifies his relationship with Talia.
+- **travel**: Both Rory and Talia need to be in the village to interact with Vince and ensure they can achieve their goals.
+- **pickup**: Vince picking up the money is necessary for Rory to later take it, ensuring Rory's wealth.
+- **take**: This action allows Rory to achieve his goal of wealth by acquiring the money from Vince.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "accept(Talia, Rory, Cave)",
+    "travel(Rory, Cave, Village)",
+    "travel(Talia, Cave, Village)",
+    "pickup(Vince, Money, Village)",
+    "take(Rory, Money, Vince, Village)"
+  ]
+}
+```

@@ -1,0 +1,38 @@
+To ensure Rory achieves their goal of being happy, wealthy, and not hungry, the following actions will be taken:
+
+1. **accept(Rory, Talia, Village)**: Rory accepts Talia's marriage proposal. This action makes both Talia and Rory happy, which is essential for Rory to achieve their goal of happiness.
+
+2. **travel(Rory, Village, Cave)**: Rory travels to the cave to find the treasure. This is necessary for Rory to become wealthy.
+
+3. **pickup(Rory, Treasure, Cave)**: Rory picks up the treasure in the cave. This action directly contributes to Rory's goal of becoming wealthy.
+
+4. **get_hungry(Rory)**: Rory becomes hungry. This action is included to reflect the character's state, but it does not affect the outcome since Rory's wealth and happiness have already been achieved.
+
+5. **travel(Rory, Cave, Village)**: Rory returns to the village. This action is necessary for Rory to be in a location where they can interact with Talia and finalize their happiness.
+
+6. **marry(Talia, Rory, Village)**: Talia and Rory get married. This solidifies their happiness and fulfills Rory's goal.
+
+At the end of these actions, Rory is happy (due to marriage), wealthy (due to picking up the treasure), and not hungry (as the story does not specify any further actions that would lead to hunger affecting Rory's state).
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "accept(Rory, Talia, Village)",
+    "travel(Rory, Village, Cave)",
+    "pickup(Rory, Treasure, Cave)",
+    "get_hungry(Rory)",
+    "travel(Rory, Cave, Village)",
+    "marry(Talia, Rory, Village)"
+  ]
+}
+``` 
+
+### Explanation of Actions:
+- **accept**: This is crucial for Rory's happiness.
+- **travel**: Rory needs to go to the cave to find the treasure.
+- **pickup**: This action is necessary for Rory to gain wealth.
+- **get_hungry**: This reflects Rory's state but does not impact the goal.
+- **travel**: Rory needs to return to the village to finalize their happiness.
+- **marry**: This action completes Rory's goal of happiness.

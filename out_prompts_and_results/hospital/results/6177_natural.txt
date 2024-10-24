@@ -1,0 +1,65 @@
+Dr. Hathaway needs to assess and treat the patients to ensure they are healthy. Given that there are three patients (Jones, Ross, and Young) and Hathaway's current workload is 2, she can safely assess and treat two patients without making a mistake. 
+
+Here’s the sequence of actions:
+
+1. **Dr. Hathaway admits Young to Patient Room B.**  
+   - This action is necessary to assign Young to an exam room, allowing Hathaway to assess and treat him later.
+
+2. **Dr. Hathaway walks from Admissions to Patient Room C.**  
+   - Hathaway needs to assess Jones, who is currently in Patient Room C.
+
+3. **Dr. Hathaway assesses Jones in Patient Room C.**  
+   - This action is crucial to determine Jones's symptoms, which are currently unknown.
+
+4. **Dr. Hathaway treats Jones in Patient Room C.**  
+   - Assuming Jones has Flaze (fever), Hathaway treats him with antibiotics, which will make him healthy.
+
+5. **Dr. Hathaway walks from Patient Room C to Patient Room A.**  
+   - Hathaway needs to assess Ross next, who is in Patient Room A.
+
+6. **Dr. Hathaway assesses Ross in Patient Room A.**  
+   - This action is necessary to determine Ross's symptoms.
+
+7. **Dr. Hathaway treats Ross in Patient Room A.**  
+   - Assuming Ross has Jarkis (rash), Hathaway treats him with steroids, which will make him healthy.
+
+8. **Dr. Hathaway walks from Patient Room A to Patient Room B.**  
+   - Hathaway needs to assess Young, who is now in Patient Room B.
+
+9. **Dr. Hathaway assesses Young in Patient Room B.**  
+   - This action is necessary to determine Young's symptoms.
+
+10. **Dr. Hathaway treats Young in Patient Room B.**  
+    - Assuming Young has Flaze (fever), Hathaway treats him with antibiotics, which will make him healthy.
+
+By following this sequence, Dr. Hathaway successfully assesses and treats all three patients, ensuring they are all healthy.
+
+### Explanation of Actions:
+- **Admitting Young**: Necessary to ensure all patients are assigned to exam rooms.
+- **Walking to Patient Room C**: Required to assess Jones.
+- **Assessing Jones**: Critical to identify his symptoms.
+- **Treating Jones**: Essential to make him healthy based on the assumed diagnosis.
+- **Walking to Patient Room A**: Needed to assess Ross next.
+- **Assessing Ross**: Important to identify his symptoms.
+- **Treating Ross**: Essential to make him healthy based on the assumed diagnosis.
+- **Walking to Patient Room B**: Needed to assess Young.
+- **Assessing Young**: Important to identify his symptoms.
+- **Treating Young**: Essential to make him healthy based on the assumed diagnosis.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "admit Young to Patient Room B",
+    "walk from Admissions to Patient Room C",
+    "assess Jones in Patient Room C",
+    "treat Jones in Patient Room C",
+    "walk from Patient Room C to Patient Room A",
+    "assess Ross in Patient Room A",
+    "treat Ross in Patient Room A",
+    "walk from Patient Room A to Patient Room B",
+    "assess Young in Patient Room B",
+    "treat Young in Patient Room B"
+  ]
+}
+```

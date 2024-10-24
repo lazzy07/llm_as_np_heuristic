@@ -1,0 +1,39 @@
+**Story Completion:**
+
+1. Dr. Hathaway walks from Patient Room A to Admissions. (Hathaway needs to assess the patients in Admissions to determine their symptoms.)
+2. Dr. Hathaway admits Jones to Patient Room C. (Hathaway needs to assign Jones to an exam room to assess and treat him.)
+3. Dr. Hathaway walks from Admissions to Patient Room C. (Hathaway needs to be in the same room as Jones to assess him.)
+4. Dr. Hathaway assesses Jones in Patient Room C. (Hathaway needs to determine what symptoms Jones is experiencing.)
+5. Dr. Hathaway treats Jones for Flaze. (Assuming Jones has a fever, Hathaway treats him with antibiotics, which is the correct treatment for Flaze.)
+6. Dr. Hathaway walks from Patient Room C to Admissions. (Hathaway needs to assess Young next.)
+7. Dr. Hathaway admits Young to Patient Room A. (Hathaway needs to assign Young to an exam room to assess and treat him.)
+8. Dr. Hathaway walks from Admissions to Patient Room A. (Hathaway needs to be in the same room as Young to assess him.)
+9. Dr. Hathaway assesses Young in Patient Room A. (Hathaway needs to determine what symptoms Young is experiencing.)
+10. Dr. Hathaway treats Young for Jarkis. (Assuming Young has a rash, Hathaway treats him with steroids, which is the correct treatment for Jarkis.)
+11. Dr. Hathaway walks from Patient Room A to Admissions. (Hathaway needs to return to Admissions to assess Ross.)
+12. Dr. Hathaway assesses Ross in Patient Room A. (Hathaway needs to determine what symptoms Ross is experiencing.)
+13. Dr. Hathaway treats Ross for Flaze. (Assuming Ross has a fever, Hathaway treats him with antibiotics, which is the correct treatment for Flaze.)
+
+**Explanation of Actions:**
+- The actions taken by Dr. Hathaway are necessary to assess and treat each patient in order to ensure they all become healthy. Each step is aimed at moving between locations to admit, assess, and treat the patients based on their symptoms. The sequence ensures that Hathaway's workload remains manageable (below three) to avoid mistakes in diagnosis and treatment.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "Dr. Hathaway walks from Patient Room A to Admissions.",
+    "Dr. Hathaway admits Jones to Patient Room C.",
+    "Dr. Hathaway walks from Admissions to Patient Room C.",
+    "Dr. Hathaway assesses Jones in Patient Room C.",
+    "Dr. Hathaway treats Jones for Flaze.",
+    "Dr. Hathaway walks from Patient Room C to Admissions.",
+    "Dr. Hathaway admits Young to Patient Room A.",
+    "Dr. Hathaway walks from Admissions to Patient Room A.",
+    "Dr. Hathaway assesses Young in Patient Room A.",
+    "Dr. Hathaway treats Young for Jarkis.",
+    "Dr. Hathaway walks from Patient Room A to Admissions.",
+    "Dr. Hathaway assesses Ross in Patient Room A.",
+    "Dr. Hathaway treats Ross for Flaze."
+  ]
+}
+```

@@ -1,0 +1,44 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy leaves the laundry room and moves to the hallway. This action is necessary for Roy to access the civilian clothes and to eventually escape.
+
+2. **Action: go(Ernest, Hall)**  
+   - Ernest leaves the kitchen and moves to the hallway. This allows both characters to be in the same location and plan their next move together.
+
+3. **Action: disguise(Roy, Clothes, Hall)**  
+   - Roy puts on the civilian clothes in the hallway. This is essential for him to disguise himself for the escape.
+
+4. **Action: vent(Roy, Highway)**  
+   - Roy crawls through the vents to reach the highway. This action is crucial for him to escape the prison.
+
+5. **Action: disguise(Ernest, Clothes, Hall)**  
+   - Ernest puts on the civilian clothes in the hallway. This is necessary for him to also disguise himself for the escape.
+
+6. **Action: vent(Ernest, Highway)**  
+   - Ernest crawls through the vents to reach the highway. This allows him to escape alongside Roy.
+
+7. **Action: escape(Roy, Highway)**  
+   - Roy successfully escapes from the prison. This action fulfills his goal of being alive and free.
+
+8. **Action: escape(Ernest, Highway)**  
+   - Ernest successfully escapes from the prison. This action fulfills his goal of being alive and free.
+
+**Explanation of Actions:**
+- The actions taken by Roy and Ernest are focused on moving from their respective locations to the hallway, disguising themselves, and then escaping through the vents to the highway. Each action is necessary to ensure that both characters can achieve their goal of being alive and free without being threatened by the bully or the guards.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "go(Ernest, Hall)",
+    "disguise(Roy, Clothes, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Ernest, Clothes, Hall)",
+    "vent(Ernest, Highway)",
+    "escape(Roy, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

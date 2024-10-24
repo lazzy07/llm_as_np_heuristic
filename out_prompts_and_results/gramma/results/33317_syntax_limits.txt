@@ -1,0 +1,17 @@
+In this story, the Bandit is currently at the Crossroads and has the Medicine that Tom was trying to carry. The Bandit’s goal is to have as many coins as possible, either on her person or in the chest at the bandit camp. Since the Bandit has already attacked the Merchant and taken her sword, she can now rob Tom, who is at the Market, to take his coin.
+
+The Bandit will take the following action:
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit will rob Tom of the coin he is carrying while he is at the Market. This action is necessary for the Bandit to achieve her goal of carrying more coins.
+
+After this action, the Bandit will have succeeded in her goal of carrying more coins.
+
+### Explanation of the Action:
+- The Bandit robs Tom because he is the only character in the Market with a coin, and since the Bandit is armed, she can successfully take the coin from him. This action directly contributes to her goal of accumulating coins.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

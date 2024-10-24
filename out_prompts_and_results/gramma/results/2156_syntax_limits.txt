@@ -1,0 +1,21 @@
+In this story, the Bandit aims to carry as many coins as possible or have coins in the chest at the bandit camp. The Bandit has already robbed Tom of a coin and looted medicine from the Merchant. The Bandit is currently at the Crossroads and can take actions to achieve her goal.
+
+1. **walk(Bandit, Crossroads, Camp)**: The Bandit walks to the Bandit Camp, where she can store her coins. This action is necessary for the Bandit to secure her coins in a safe location.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: Once at the Bandit Camp, the Bandit takes the coins from the chest. This action ensures that the Bandit has the coins she desires, fulfilling her goal.
+
+With these two actions, the Bandit successfully achieves her objective of having coins in the chest at the bandit camp.
+
+### Explanation of Actions:
+- **walk(Bandit, Crossroads, Camp)**: This action is essential for the Bandit to reach her preferred location, the Bandit Camp, where she can safely store her coins.
+- **take(Bandit, BanditCoin, Chest, Camp)**: This action allows the Bandit to secure the coins in the chest, which is a direct fulfillment of her goal.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

@@ -1,0 +1,26 @@
+To achieve the goal of having the mastermind dead, the secret agent must first find the gun, then move to the office where the mastermind is likely to be, and finally kill the mastermind. Here’s the completed story:
+
+1. **Find the Gun**: The secret agent needs to find the gun, which is currently unaccounted for. The gun must be in the lobby since it hasn't been mentioned as being anywhere else.
+   - Action: `find(SecretAgent, Gun, Lobby)`
+
+2. **Move to the Office**: After finding the gun, the secret agent must move to the office where the mastermind is likely to be.
+   - Action: `move(SecretAgent, Lobby, Office)`
+
+3. **Kill the Mastermind**: Now that the secret agent is in the office with the gun, they can kill the mastermind.
+   - Action: `kill(SecretAgent, Mastermind, Gun, Office)`
+
+### Explanation of Actions:
+- **Finding the Gun**: This action is necessary because the secret agent needs a weapon to achieve their goal of killing the mastermind.
+- **Moving to the Office**: The secret agent must be in the same location as the mastermind to carry out the kill.
+- **Killing the Mastermind**: This is the final action that fulfills the secret agent's goal of ensuring the mastermind is dead.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "find(SecretAgent, Gun, Lobby)",
+    "move(SecretAgent, Lobby, Office)",
+    "kill(SecretAgent, Mastermind, Gun, Office)"
+  ]
+}
+```

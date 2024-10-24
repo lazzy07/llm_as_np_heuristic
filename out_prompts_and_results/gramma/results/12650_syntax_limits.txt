@@ -1,0 +1,17 @@
+In this story, the Bandit wants to be carrying as many coins as possible or to have coins in the chest at the bandit camp. Given the current situation, the Bandit can achieve her goal by taking the coins from the Merchant's corpse after she has attacked and killed her.
+
+Here’s the sequence of actions:
+
+1. **loot(Bandit, TomCoin, Merchant, Market)**: The Bandit loots the coins from the Merchant's corpse after attacking her. This action allows the Bandit to acquire the coins she desires.
+
+This single action is sufficient for the Bandit to achieve her goal of carrying coins, as she can now take the coins from the Merchant.
+
+### Explanation of the Action:
+- The Bandit has already attacked the Merchant, which means the Merchant is dead and the Bandit can now loot her for the coins. This action directly fulfills the Bandit's goal of acquiring coins.
+
+### Final Plan in JSON format:
+```json
+{
+  "plan": ["loot(Bandit, TomCoin, Merchant, Market)"]
+}
+```

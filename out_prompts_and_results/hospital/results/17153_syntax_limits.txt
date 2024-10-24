@@ -1,0 +1,46 @@
+### Story Completion
+
+After assessing Young in Exam Room A, Hathaway realizes that Young is showing symptoms of Jarkis (the rash). To ensure Young receives the correct treatment, Hathaway decides to treat Young with steroids, which is the appropriate treatment for Jarkis.
+
+Next, Hathaway walks back to the admissions room to admit the other patients, Jones and Ross, to the exam rooms. Since both patients are currently in the admissions room, Hathaway admits Jones to Exam Room B and Ross to Exam Room C. 
+
+After admitting both patients, Hathaway assesses Jones and Ross in their respective exam rooms. Since both patients are healthy, Hathaway believes they are alive and healthy. 
+
+Finally, Hathaway treats both Jones and Ross with the appropriate treatments based on their symptoms, ensuring that all patients are healthy.
+
+### Explanation of Actions
+
+1. **treat(Hathaway, Young, steroids, PatientRoomA)**: This action is necessary to treat Young for Jarkis, ensuring that Young becomes healthy. This is the first step in achieving Hathaway's goal of having all patients healthy.
+
+2. **walk(Hathaway, PatientRoomA, Admissions)**: Hathaway needs to return to the admissions room to admit the other patients, which is essential for managing the workload and ensuring all patients are seen.
+
+3. **admit(Hathaway, Jones, PatientRoomB)**: Admitting Jones to Exam Room B is necessary to assess and treat him, contributing to Hathaway's goal of ensuring all patients are healthy.
+
+4. **admit(Hathaway, Ross, PatientRoomC)**: Similarly, admitting Ross to Exam Room C is crucial for his assessment and treatment, furthering Hathaway's goal.
+
+5. **assess(Hathaway, Jones, SymptomA, PatientRoomB)**: Assessing Jones allows Hathaway to determine his symptoms and decide on the appropriate treatment.
+
+6. **treat(Hathaway, Jones, antibiotics, PatientRoomB)**: Treating Jones with antibiotics ensures he becomes healthy, which is essential for Hathaway's goal.
+
+7. **assess(Hathaway, Ross, SymptomA, PatientRoomC)**: Assessing Ross is necessary to identify his symptoms and determine the correct treatment.
+
+8. **treat(Hathaway, Ross, antibiotics, PatientRoomC)**: Treating Ross with antibiotics ensures he becomes healthy, completing Hathaway's goal.
+
+### Final Plan in JSON Format
+
+```json
+{
+  "plan": [
+    "treat(Hathaway, Young, steroids, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Jones, PatientRoomB)",
+    "admit(Hathaway, Ross, PatientRoomC)",
+    "assess(Hathaway, Jones, SymptomA, PatientRoomB)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomB)",
+    "assess(Hathaway, Ross, SymptomA, PatientRoomC)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomC)"
+  ]
+}
+``` 
+
+This plan ensures that all patients are treated correctly and become healthy, fulfilling Hathaway's goal.

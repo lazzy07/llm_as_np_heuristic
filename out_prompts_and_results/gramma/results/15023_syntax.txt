@@ -1,0 +1,21 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **walk(Bandit, Crossroads, Camp)**: The Bandit will walk from the Crossroads to the Bandit Camp to deposit the coins she has collected. This action is necessary for the Bandit to secure her coins in a safe location.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will take the coins from her inventory and place them in the chest at the Bandit Camp. This action ensures that the Bandit achieves her goal of having coins in the chest.
+
+The Bandit successfully completes her goal by securing her coins in the chest at the Bandit Camp.
+
+### Explanation of Actions:
+- **walk(Bandit, Crossroads, Camp)**: This action is essential for the Bandit to move to a location where she can safely store her coins.
+- **take(Bandit, BanditCoin, Chest, Camp)**: This action is crucial as it allows the Bandit to fulfill her goal of having coins in the chest.
+
+### Final Plan in JSON format:
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

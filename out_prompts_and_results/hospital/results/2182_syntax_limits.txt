@@ -1,0 +1,33 @@
+### Story Completion
+
+After admitting Jones to Exam Room A and Ross to Exam Room C, Hathaway walks back to the admissions room to assess Young, who is still waiting there. 
+
+1. **Assess Young**: Hathaway assesses Young in the admissions room to determine if they are showing any symptoms. This is necessary to understand Young's health status and decide on the next steps.
+
+2. **Admit Young to Exam Room B**: After assessing Young, Hathaway finds that Young is healthy and does not show any symptoms. Hathaway admits Young to Exam Room B to ensure they are monitored and can be treated if necessary.
+
+3. **Walk to Exam Room C**: Hathaway then walks to Exam Room C to assess Ross, who is also waiting for evaluation.
+
+4. **Assess Ross**: Hathaway assesses Ross in Exam Room C. If Ross shows symptoms of Flaze (fever), Hathaway can treat him accordingly.
+
+5. **Treat Ross**: If Ross is diagnosed with Flaze, Hathaway treats him with antibiotics, ensuring he becomes healthy.
+
+### Explanation of Actions
+- **Assess Young**: This action is crucial to determine Young's health status and ensure that all patients are accounted for.
+- **Admit Young to Exam Room B**: This action is necessary to keep Young in the system and ready for any potential treatment.
+- **Walk to Exam Room C**: This action allows Hathaway to check on Ross, ensuring that all patients are being attended to.
+- **Assess Ross**: This action is essential to identify Ross's symptoms and determine the correct treatment.
+- **Treat Ross**: This action is the final step to ensure that Ross receives the appropriate care, leading to his recovery.
+
+### Final Plan in JSON Format
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, ?, Admissions)",
+    "admit(Hathaway, Young, PatientRoomB)",
+    "walk(Hathaway, Admissions, PatientRoomC)",
+    "assess(Hathaway, Ross, ?, PatientRoomC)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomC)"
+  ]
+}
+```

@@ -1,0 +1,26 @@
+In this story, the Bandit wants to be carrying as many coins as possible or have coins in the chest at the bandit camp. The Bandit is currently at the Cottage, and the Bandit has a sword, which allows her to rob others. The Bandit knows that the Merchant is at the Crossroads and is carrying a coin. 
+
+To achieve her goal, the Bandit will take the following action:
+
+1. **Rob the Merchant**: The Bandit will walk from the Cottage to the Crossroads and then rob the Merchant to take one of the coins she is carrying. This action is necessary because it allows the Bandit to increase her coin count without needing to go to the market or engage in a more complex plan.
+
+Here’s the complete story with the action:
+
+1. **walk(Bandit, Cottage, Crossroads)**: The Bandit moves to the Crossroads to confront the Merchant.
+2. **rob(Bandit, TomCoin, Merchant, Crossroads)**: The Bandit robs the Merchant, taking one coin.
+
+After this action, the Bandit will have one more coin, achieving her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- **walk(Bandit, Cottage, Crossroads)**: This action is necessary for the Bandit to reach the Merchant, who is at the Crossroads.
+- **rob(Bandit, TomCoin, Merchant, Crossroads)**: This action allows the Bandit to take a coin from the Merchant, directly contributing to her goal of increasing her coin count.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "walk(Bandit, Cottage, Crossroads)",
+    "rob(Bandit, TomCoin, Merchant, Crossroads)"
+  ]
+}
+```

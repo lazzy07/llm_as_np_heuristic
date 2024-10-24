@@ -1,0 +1,21 @@
+To ensure the guard achieves his goal of killing criminals, the following actions will take place:
+
+1. **report(Merchant, spot: Bandit, place: Market)**: The merchant, who is alive and not a criminal, will report the bandit’s presence to the guard. This action is necessary because it informs the guard about the criminal's location, allowing him to take action.
+
+2. **attack(Guard, Bandit, Market)**: The guard will then attack the bandit in the market. This action is crucial as it directly leads to the guard's goal of killing a criminal.
+
+3. **loot(Guard, BanditSword, Bandit, Market)**: After the bandit is killed, the guard will loot the bandit’s sword. This action is not necessary for achieving the guard's goal but adds to the narrative by showing the guard's efficiency in dealing with criminals.
+
+The story is concise and focuses on the guard's actions to achieve his goal of eliminating the criminal. The merchant's report is pivotal as it provides the guard with the information needed to act.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "report(Merchant, Bandit, Market)",
+    "attack(Guard, Bandit, Market)",
+    "loot(Guard, BanditSword, Bandit, Market)"
+  ]
+}
+```

@@ -1,0 +1,23 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **rob(Bandit, BanditCoin, Tom, Market)**: The Bandit will rob Tom, who is currently in the Market and is armed with a sword. Since Tom is not a criminal, the Bandit can successfully take the coins from him. This action helps the Bandit to increase her coin count.
+
+2. **walk(Bandit, Market, Camp)**: After robbing Tom, the Bandit will walk back to the Camp with the stolen coins. This action allows the Bandit to secure her loot in the chest at the bandit camp.
+
+3. **take(Bandit, BanditCoin, Chest, Camp)**: Finally, the Bandit will take the coins she just stole and place them in the chest at the bandit camp. This action ensures that the Bandit achieves her goal of having coins in the chest.
+
+### Explanation of Actions:
+- **Robbing Tom**: This is essential for the Bandit to acquire coins without becoming a criminal in the eyes of the guard, as Tom is not a criminal and is armed.
+- **Walking to Camp**: This action is necessary to transport the stolen coins to a safe location where they can be stored.
+- **Taking Coins to the Chest**: This final action secures the Bandit's goal of having coins in the chest, fulfilling her objective.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "rob(Bandit, BanditCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

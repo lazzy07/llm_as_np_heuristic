@@ -1,0 +1,20 @@
+In this story, the Merchant's goal is to acquire as many coins as possible without becoming a criminal. Given the current situation, the Merchant has already taken one BanditCoin from the Bandit and placed it in the chest at the Bandit camp. The Merchant is currently at the Bandit camp with Tom, who is unarmed and unaware of the Merchant's intentions.
+
+To achieve her goal, the Merchant can take the following action:
+
+1. **rob(Merchant, BanditCoin, Bandit, Camp)**: The Merchant can rob the Bandit, who is currently at the Crossroads. Since the Bandit is armed and the Merchant is also armed, this action is valid. The Merchant will take the BanditCoin from the Bandit, increasing her total coins.
+
+This action is necessary because it allows the Merchant to acquire more coins without becoming a criminal, as she is simply taking from another criminal.
+
+After this action, the Merchant will have two coins, fulfilling her goal of acquiring as many coins as possible.
+
+Here’s the explanation of the action:
+- The Merchant robs the Bandit, taking one BanditCoin. This increases her total coins to two, which is her goal.
+
+The final plan in JSON format is as follows:
+
+```json
+{
+  "plan": ["rob(Merchant, BanditCoin, Bandit, Camp)"]
+}
+```

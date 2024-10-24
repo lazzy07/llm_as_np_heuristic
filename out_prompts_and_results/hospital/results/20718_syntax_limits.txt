@@ -1,0 +1,27 @@
+**Story Completion:**
+
+1. **Assess Hathaway, Ross, Rash, PatientRoomC**: Hathaway assesses Ross in Exam Room C. Since Hathaway's workload is 3, there is a risk of making a mistake, but Ross is the only patient in that room. Hathaway believes Ross has a rash, which is a symptom of Jarkis.
+
+2. **Treat Hathaway, Ross, Steroids, PatientRoomC**: Hathaway treats Ross with steroids, the correct treatment for Jarkis. This successfully makes Ross healthy.
+
+3. **Assess Hathaway, Young, Rash, Admissions**: Hathaway then walks to the Admissions room to assess Young. Young is the only patient left in Admissions, and Hathaway assesses them for symptoms. Since Young is the only patient left, Hathaway correctly identifies that Young has a rash, which is also a symptom of Jarkis.
+
+4. **Treat Hathaway, Young, Steroids, Admissions**: Hathaway treats Young with steroids, successfully making Young healthy as well.
+
+**Explanation of Actions:**
+- The first action is necessary to determine Ross's condition and ensure he receives the correct treatment.
+- The second action is crucial as it treats Ross with the appropriate medication, fulfilling Hathaway's goal of making patients healthy.
+- The third action is to assess Young, ensuring that all patients are evaluated and treated.
+- The fourth action treats Young, completing Hathaway's goal of ensuring all patients are healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, rash, PatientRoomC)",
+    "treat(Hathaway, Ross, steroids, PatientRoomC)",
+    "assess(Hathaway, Young, rash, Admissions)",
+    "treat(Hathaway, Young, steroids, Admissions)"
+  ]
+}
+```

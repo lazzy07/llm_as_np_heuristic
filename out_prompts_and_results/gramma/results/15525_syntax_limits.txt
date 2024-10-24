@@ -1,0 +1,19 @@
+In this story, the Bandit aims to carry as many coins as possible or have coins in the chest at the bandit camp. Given the current situation, the Bandit is already at the Market, where the Merchant has the medicine and Tom's coins. The Bandit can take advantage of the situation to achieve her goal.
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit can rob Tom, who is currently at the Crossroads and is not armed. This action allows the Bandit to take Tom's coins, increasing her wealth.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: After robbing Tom, the Bandit can then take the coins she has acquired and place them in the chest at the bandit camp, ensuring that her goal of having coins in the chest is achieved.
+
+### Explanation of Actions:
+- The first action is necessary for the Bandit to acquire coins without becoming a criminal, as Tom is not armed and is not a threat. This action directly contributes to her goal of carrying more coins.
+- The second action allows the Bandit to secure her coins in the chest at the bandit camp, fulfilling her objective of having coins stored safely.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

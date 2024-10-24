@@ -1,0 +1,34 @@
+**Story Completion:**
+
+After the events that have transpired, Roy is in the laundry room, and he knows he needs to act quickly to ensure both he and Ernest can escape the prison. 
+
+1. **Action: go(Roy, Hall)**  
+   - Roy moves from the laundry room to the hallway to access the vents or the gym. This is necessary for him to either lock the gym door or escape.
+
+2. **Action: lock_gym(Roy, Hall)**  
+   - Roy locks the gym door to prevent the bully from coming out and threatening them. This action is crucial for ensuring their safety and gives them time to plan their next move.
+
+3. **Action: vent(Roy, Highway)**  
+   - Roy crawls through the vents to reach the highway. This is a strategic move to avoid detection by the guards and the bully.
+
+4. **Action: disguise(Roy, Clothes, Highway)**  
+   - Once on the highway, Roy puts on the civilian clothes to disguise himself. This is essential for his escape, as it will help him blend in and avoid being recognized as a prisoner.
+
+5. **Action: escape(Roy, Highway)**  
+   - Finally, Roy escapes from the prison. This is the ultimate goal, and by successfully disguising himself, he can leave without being caught.
+
+**Explanation of Actions:**
+- Each action taken by Roy is aimed at ensuring his safety and achieving his goal of escaping the prison. Moving to the hallway allows him to access the gym and the vents. Locking the gym door prevents the bully from threatening him and Ernest. Crawling through the vents is a stealthy way to reach the highway. Disguising himself is critical for blending in and avoiding capture. Finally, escaping is the culmination of all his efforts.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "lock_gym(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

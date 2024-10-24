@@ -1,0 +1,35 @@
+**Story Completion:**
+
+After completing his chores in the laundry, Ernest is aware that Roy has successfully escaped to the highway, disguised in civilian clothes. However, he is still threatened by the bully, who is in the gym. Ernest knows he needs to find a way to help Roy escape and ensure his own safety.
+
+1. **go(Ernest, Hall)**: Ernest decides to leave the laundry room and head to the hallway. This action is necessary for him to move closer to the gym and potentially help Roy.
+
+2. **vent(Ernest, Gym)**: Once in the hallway, Ernest crawls through the vents to reach the gym. This action allows him to confront the bully without being in the open hallway where he could be threatened.
+
+3. **kill(Bully, Ernest, Gym)**: In the gym, Ernest finds the bully and, feeling threatened, he takes the opportunity to kill him with the knife he has. This action is crucial for ensuring his own safety and eliminating the threat posed by the bully.
+
+4. **next_day()**: The day ends, and it is now day two. This transition is necessary to move the story forward.
+
+5. **go(Ernest, Hall)**: Ernest moves back to the hallway from the gym, now that the bully is no longer a threat.
+
+6. **disguise(Ernest, Clothes, Hall)**: Ernest puts on the civilian clothes he found in the laundry. This action is essential for him to disguise himself and prepare for escape.
+
+7. **escape(Ernest, Highway)**: Finally, Ernest makes his way to the highway and escapes from the prison. This action fulfills his goal of being alive and free.
+
+**Explanation of Actions:**
+- Each action taken by Ernest is aimed at ensuring his survival and ultimately escaping the prison. By first confronting the bully, he removes the immediate threat to himself and Roy. The transition to day two allows for the escape to be executed without the threat of the bully looming over them. The disguise is critical for both characters to avoid detection as they make their escape.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "kill(Bully, Ernest, Gym)",
+    "next_day()",
+    "go(Ernest, Hall)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

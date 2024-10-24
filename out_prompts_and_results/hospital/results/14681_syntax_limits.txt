@@ -1,0 +1,32 @@
+**Story Completion:**
+
+1. **Assess Hathaway, Ross, Fever, PatientRoomA**: Hathaway assesses Ross in Exam Room A. Since Ross is the only patient in that room, Hathaway can determine his symptoms. If Ross has a fever, he may have Flaze.
+
+2. **Treat Hathaway, Ross, Antibiotics, PatientRoomA**: After assessing Ross and confirming he has a fever, Hathaway treats him with antibiotics, which is the correct treatment for Flaze. This action ensures Ross becomes healthy.
+
+3. **Assess Hathaway, Young, Rash, Admissions**: Hathaway then walks back to the admissions room to assess Young. Since Young is the only patient left in the admissions room, Hathaway can determine his symptoms. If Young has a rash, he may have Jarkis.
+
+4. **Treat Hathaway, Young, Steroids, Admissions**: After assessing Young and confirming he has a rash, Hathaway treats him with steroids, which is the correct treatment for Jarkis. This action ensures Young becomes healthy.
+
+**Explanation of Actions:**
+
+- **Assessing Ross**: This action is necessary to identify Ross's symptoms and determine the appropriate treatment. It is crucial for Hathaway to know if Ross has Flaze.
+  
+- **Treating Ross**: This action is essential to ensure Ross's health. By treating him with antibiotics, Hathaway successfully cures him of Flaze.
+
+- **Assessing Young**: This action is necessary to identify Young's symptoms and determine the appropriate treatment. It is crucial for Hathaway to know if Young has Jarkis.
+
+- **Treating Young**: This action is essential to ensure Young's health. By treating him with steroids, Hathaway successfully cures him of Jarkis.
+
+**Final Plan in JSON Format:**
+
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, Fever, PatientRoomA)",
+    "treat(Hathaway, Ross, Antibiotics, PatientRoomA)",
+    "assess(Hathaway, Young, Rash, Admissions)",
+    "treat(Hathaway, Young, Steroids, Admissions)"
+  ]
+}
+```

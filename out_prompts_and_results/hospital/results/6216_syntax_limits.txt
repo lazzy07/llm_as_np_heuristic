@@ -1,0 +1,31 @@
+**Story Completion:**
+
+Hathaway, wanting all hospital patients to be healthy, decides to assess the patients in the admissions room. 
+
+1. **Assess Ross**: Hathaway assesses Ross to determine his symptoms. This is necessary to identify if Ross has Flaze or Jarkis, which will guide the treatment.
+   
+2. **Assess Young**: Hathaway then assesses Young to determine his symptoms as well. This ensures that both patients are evaluated for their conditions.
+
+3. **Treat Ross**: After assessing Ross, Hathaway determines he has a fever (indicating Flaze) and treats him with antibiotics. This action is crucial as it directly addresses Ross's health issue.
+
+4. **Treat Young**: Hathaway assesses Young and finds he has a rash (indicating Jarkis) and treats him with steroids. This ensures that Young's health issue is also addressed.
+
+By taking these actions, Hathaway successfully treats both patients, ensuring they are healthy.
+
+**Explanation of Actions:**
+- **Assess Ross**: Necessary to identify Ross's condition.
+- **Assess Young**: Necessary to identify Young's condition.
+- **Treat Ross**: Directly addresses Ross's health issue, leading to his recovery.
+- **Treat Young**: Directly addresses Young's health issue, leading to his recovery.
+
+**Final Plan in JSON format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, ?, PatientRoomA)",
+    "assess(Hathaway, Young, ?, PatientRoomC)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomA)",
+    "treat(Hathaway, Young, steroids, PatientRoomC)"
+  ]
+}
+```

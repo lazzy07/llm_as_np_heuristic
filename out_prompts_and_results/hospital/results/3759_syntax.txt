@@ -1,0 +1,43 @@
+To complete the story, we need to ensure that Hathaway, the doctor, successfully treats all patients and achieves their goal of making them healthy. Given the current situation, we will focus on assessing and treating the patients in the admissions room.
+
+### Story Completion:
+
+1. **Assess Ross**: Hathaway assesses Ross in the admissions room to determine his symptoms. This is necessary to identify if Ross has Flaze or Jarkis, which will guide the treatment.
+   
+2. **Assess Young**: Hathaway then assesses Young in the admissions room to determine his symptoms. This is also necessary for the same reason as above.
+
+3. **Admit Ross to Exam Room A**: After assessing Ross, Hathaway admits him to Exam Room A. This allows Hathaway to treat Ross in a designated exam room.
+
+4. **Admit Young to Exam Room B**: Hathaway admits Young to Exam Room B after assessing him. This allows Hathaway to treat Young in a designated exam room.
+
+5. **Walk to Exam Room A**: Hathaway walks to Exam Room A to treat Ross.
+
+6. **Treat Ross**: Hathaway treats Ross based on the symptoms identified during the assessment. If Ross has Flaze, he will receive antibiotics; if he has Jarkis, he will receive steroids.
+
+7. **Walk to Exam Room B**: Hathaway walks to Exam Room B to treat Young.
+
+8. **Treat Young**: Hathaway treats Young based on the symptoms identified during the assessment. Similar to Ross, he will receive the appropriate treatment based on his diagnosis.
+
+### Explanation of Actions:
+- **Assessing Ross and Young**: These actions are crucial to determine the correct treatment for each patient, ensuring Hathaway does not make a mistake due to workload.
+- **Admitting Patients**: Admitting Ross and Young to their respective exam rooms is necessary for Hathaway to treat them properly.
+- **Walking to Exam Rooms**: These actions are required for Hathaway to reach the patients in their assigned exam rooms to provide treatment.
+- **Treating Patients**: The final actions of treating Ross and Young are essential to achieve Hathaway's goal of making all patients healthy.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, symptom, Admissions)",
+    "assess(Hathaway, Young, symptom, Admissions)",
+    "admit(Hathaway, Ross, ExamRoomA)",
+    "admit(Hathaway, Young, ExamRoomB)",
+    "walk(Hathaway, Admissions, ExamRoomA)",
+    "treat(Hathaway, Ross, treatment, ExamRoomA)",
+    "walk(Hathaway, Admissions, ExamRoomB)",
+    "treat(Hathaway, Young, treatment, ExamRoomB)"
+  ]
+}
+``` 
+
+This plan ensures that Hathaway successfully assesses and treats both patients, achieving the goal of making them healthy.

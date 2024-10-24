@@ -1,0 +1,35 @@
+**Story Completion:**
+
+After Roy successfully disguised himself in civilian clothes and escaped through the vent to the highway, he realized he needed to ensure Ernest could also escape safely. 
+
+1. **go(Roy, Hall)**: Roy moves back into the prison hallway to find a way to help Ernest.
+2. **go(Roy, Cells)**: Roy heads to the cell block where Ernest is located.
+3. **thwart(Roy, Hall)**: Roy locks the gym door to prevent the bully from coming after them.
+4. **disguise(Ernest, Clothes, Cells)**: Roy gives Ernest the civilian clothes he stole from the laundry, allowing him to disguise himself.
+5. **go(Ernest, Hall)**: Ernest moves into the hallway, now disguised.
+6. **vent(Ernest, Highway)**: Ernest crawls through the vents to reach the highway.
+7. **escape(Ernest, Highway)**: Both Roy and Ernest are now on the highway, successfully escaping the prison.
+
+**Explanation of Actions:**
+- **go(Roy, Hall)**: Roy needs to return to the hallway to plan his next move.
+- **go(Roy, Cells)**: He goes to the cell block to help Ernest escape.
+- **thwart(Roy, Hall)**: Locking the gym door prevents the bully from following them, ensuring their safety.
+- **disguise(Ernest, Clothes, Cells)**: By giving Ernest the civilian clothes, Roy enables him to escape as well.
+- **go(Ernest, Hall)**: Ernest needs to move to the hallway to access the vent.
+- **vent(Ernest, Highway)**: This action allows Ernest to reach the highway without being seen.
+- **escape(Ernest, Highway)**: This final action achieves the goal of both characters escaping the prison.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "go(Roy, Cells)",
+    "thwart(Roy, Hall)",
+    "disguise(Ernest, Clothes, Cells)",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

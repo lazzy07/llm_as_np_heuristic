@@ -1,0 +1,23 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **walk(Bandit, Market, Crossroads)**: The Bandit will walk from the Market to the Crossroads to get closer to the Bandit Camp and to ensure that she is not in the same location as the Guard, who could potentially attack her.
+
+2. **walk(Bandit, Crossroads, Camp)**: The Bandit will then walk from the Crossroads to the Bandit Camp, where she can safely store her coins.
+
+3. **take(Bandit, BanditCoin, Chest, Camp)**: Finally, the Bandit will take the coins she has (TomCoin) and place them in the chest at the Bandit Camp, achieving her goal of having coins in the chest.
+
+### Explanation of Actions:
+- The first action is necessary to move the Bandit away from the Market, where she is at risk of being attacked by the Guard.
+- The second action allows the Bandit to reach her safe haven, the Bandit Camp, where she can secure her coins.
+- The third action is crucial as it fulfills the Bandit's goal of having coins in the chest at the Bandit Camp.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Bandit, Market, Crossroads)",
+    "walk(Bandit, Crossroads, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

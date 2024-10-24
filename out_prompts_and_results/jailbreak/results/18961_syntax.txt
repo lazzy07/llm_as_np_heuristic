@@ -1,0 +1,47 @@
+**Story Completion:**
+
+After locking the gym door, Ernest knows he needs to act quickly to ensure both he and Roy can escape the prison. He decides to crawl through the vents to reach the kitchen where the knife is located. 
+
+1. **vent(Ernest, Kitchen)**: Ernest crawls through the vents to the kitchen to retrieve the knife. This action is necessary for him to defend himself against the bully if needed.
+
+Once in the kitchen, Ernest grabs the knife.
+
+2. **steal(Ernest, Knife, Kitchen)**: Ernest steals the knife from the kitchen. This is crucial for his plan to confront the bully.
+
+Now armed with the knife, Ernest heads back to the hallway.
+
+3. **go(Ernest, Hall)**: Ernest returns to the hallway to prepare for his next move.
+
+He knows the bully is still in the gym, and he has locked the door, which gives him a moment to strategize. He decides to confront the bully.
+
+4. **revenge(Ernest, Bully, Gym)**: Ernest uses the knife to kill the bully in the gym. This action is essential to eliminate the threat the bully poses to both him and Roy.
+
+With the bully out of the way, Ernest can now focus on escaping. He returns to the hallway and puts on the civilian clothes he stole earlier.
+
+5. **disguise(Ernest, Clothes, Hall)**: Ernest puts on the civilian clothes to disguise himself, which is necessary for his escape.
+
+Finally, he makes his way to the highway.
+
+6. **escape(Ernest, Highway)**: Ernest escapes from the prison, achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+- **vent**: Allows Ernest to access the knife without being seen by the bully.
+- **steal**: Necessary to arm himself for the confrontation.
+- **go**: Moves Ernest back to a strategic position.
+- **revenge**: Eliminates the bully, ensuring safety for both him and Roy.
+- **disguise**: Prepares Ernest for a successful escape.
+- **escape**: Final action that fulfills Ernest's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "vent(Ernest, Kitchen)",
+    "steal(Ernest, Knife, Kitchen)",
+    "go(Ernest, Hall)",
+    "revenge(Ernest, Bully, Gym)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

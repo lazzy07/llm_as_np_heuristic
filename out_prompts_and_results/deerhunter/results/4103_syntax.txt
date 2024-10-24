@@ -1,0 +1,21 @@
+To complete the story, we need to ensure that Bubba ends up with the money from the bank clerk. Since Bubba is already in the bank and has a loaded rifle, he can use it to intimidate the bank clerk into giving him the money. The actions will be as follows:
+
+1. **steal(Bubba, Clerk, Rifle, Bank)**: Bubba will use his loaded rifle to threaten the bank clerk and demand the money. This action is necessary because it allows Bubba to take the money from the clerk without needing to shoot him, which would be unnecessary and could lead to complications.
+
+2. **go(Bubba, Bank, House)**: After stealing the money, Bubba will leave the bank and go back to the house. This action is included to show that Bubba is moving to a safe location after acquiring the money.
+
+The final story will consist of these two actions, leading to the desired outcome of Bubba having the money.
+
+### Explanation of Actions:
+- **steal**: This action is crucial as it allows Bubba to obtain the money from the clerk without killing him, ensuring that Bubba achieves his goal of acquiring wealth.
+- **go**: This action signifies Bubba's departure from the bank after successfully stealing the money, indicating that he is now in a safe place with his new wealth.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "steal(Bubba, Clerk, Rifle, Bank)",
+    "go(Bubba, Bank, House)"
+  ]
+}
+```

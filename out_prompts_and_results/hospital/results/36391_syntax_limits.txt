@@ -1,0 +1,41 @@
+**Story Completion:**
+
+Hathaway, the doctor, is in the admissions room and sees that both Jones and Ross are still waiting to be assigned to an exam room. Young is already in exam room C. Hathaway decides to admit Ross to exam room B.
+
+1. **Action:** admit(Hathaway, Ross, PatientRoomB)  
+   **Explanation:** Hathaway admits Ross to exam room B to ensure he receives medical attention. This increases Hathaway's workload to 2.
+
+Next, Hathaway assesses Young in exam room C to determine his symptoms.
+
+2. **Action:** assess(Hathaway, Young, symptom(Young), PatientRoomC)  
+   **Explanation:** Hathaway assesses Young to identify his symptoms. Since Young is the only patient in exam room C, this is necessary to determine if he has Flaze or Jarkis.
+
+Assuming Young shows no symptoms of either disease (as it is not specified), Hathaway then treats Young with antibiotics, as a precaution.
+
+3. **Action:** treat(Hathaway, Young, antibiotics, PatientRoomC)  
+   **Explanation:** Hathaway treats Young with antibiotics, which is the treatment for Flaze. If Young had Flaze, he would become healthy. If not, this action is still beneficial as it does not harm him.
+
+Next, Hathaway assesses Ross in exam room B.
+
+4. **Action:** assess(Hathaway, Ross, symptom(Ross), PatientRoomB)  
+   **Explanation:** Hathaway assesses Ross to identify his symptoms. This is necessary to determine the correct treatment for him.
+
+Assuming Ross shows symptoms of Jarkis, Hathaway treats him with steroids.
+
+5. **Action:** treat(Hathaway, Ross, steroids, PatientRoomB)  
+   **Explanation:** Hathaway treats Ross with steroids, which is the correct treatment for Jarkis. This ensures that Ross becomes healthy.
+
+At this point, both Young and Ross are treated appropriately, achieving Hathaway's goal of ensuring all patients are healthy.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "admit(Hathaway, Ross, PatientRoomB)",
+    "assess(Hathaway, Young, symptom(Young), PatientRoomC)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomC)",
+    "assess(Hathaway, Ross, symptom(Ross), PatientRoomB)",
+    "treat(Hathaway, Ross, steroids, PatientRoomB)"
+  ]
+}
+```

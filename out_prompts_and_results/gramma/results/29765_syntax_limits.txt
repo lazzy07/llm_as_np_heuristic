@@ -1,0 +1,15 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the Bandit can take the following action:
+
+1. **rob(Bandit, BanditCoin, Tom, Market)**: The Bandit can rob Tom, who is currently at the Crossroads. Since Tom is not armed, the Bandit can take the coin that Tom is carrying. This action allows the Bandit to increase her coin count without any risk of being attacked.
+
+This single action is sufficient for the Bandit to achieve her goal of carrying more coins.
+
+### Explanation of the Action:
+- The Bandit is already at the Market, where Tom has just arrived. By robbing Tom, the Bandit can take the coin he is carrying, thus increasing her wealth without needing to engage in a more complex series of actions.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": ["rob(Bandit, BanditCoin, Tom, Market)"]
+}
+```

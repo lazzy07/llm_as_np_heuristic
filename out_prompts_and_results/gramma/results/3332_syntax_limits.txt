@@ -1,0 +1,21 @@
+In this story, the Bandit wants to carry as many coins as possible or have coins in the chest at the bandit camp. The Bandit is currently at the Market and has already robbed a coin from the Merchant. The Bandit can take the coin to the chest at the bandit camp to achieve her goal.
+
+### Story Completion:
+
+1. **walk(Bandit, Market, BanditCamp)**: The Bandit walks from the Market to the Bandit Camp, carrying the coin she just stole from the Merchant. This action is necessary for the Bandit to reach her preferred location where she can store her coins.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: Once at the Bandit Camp, the Bandit takes the coin she has and places it in the chest. This action fulfills her goal of having coins in the chest at the bandit camp.
+
+### Explanation of Actions:
+- The first action is essential for the Bandit to move to a location where she can secure her stolen coin. 
+- The second action is crucial as it directly achieves the Bandit's goal of having coins in the chest at the bandit camp.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "walk(Bandit, Market, BanditCamp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

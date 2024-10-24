@@ -1,0 +1,36 @@
+### Story Completion
+
+1. **The bandit walks from the crossroads to the market.**  
+   - This action is necessary for the bandit to be in the same location as the merchant and the guard, allowing her to interact with them.
+
+2. **The bandit attacks the merchant and kills her.**  
+   - The bandit needs to eliminate the merchant to take the hero's coin, which the merchant is currently carrying. Since the merchant is not armed, the bandit can successfully attack.
+
+3. **The bandit loots the coin from the corpse of the merchant.**  
+   - After killing the merchant, the bandit can take the coin that the merchant had, which helps her achieve her goal of carrying as many coins as possible.
+
+4. **The guard reports the location of the bandit.**  
+   - The guard, upon witnessing the attack, will report the bandit’s location, but this action does not affect the bandit’s goal directly.
+
+5. **The bandit walks from the market to the bandit camp.**  
+   - The bandit needs to return to her camp to secure her coins and avoid being caught by the guard.
+
+6. **The bandit places the coin in the chest at the bandit camp.**  
+   - This action ensures that the bandit has successfully stored her coins, achieving her goal of having coins in the chest at the bandit camp.
+
+### Explanation of Actions
+- The bandit first moves to the market to confront the merchant. By attacking and killing the merchant, she eliminates a potential threat and gains access to the coin. Looting the coin from the merchant's corpse directly fulfills her goal of acquiring coins. The guard's action of reporting the bandit does not hinder her since she has already secured her goal. Finally, the bandit returns to her camp to store the coin, completing her objective.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "The bandit walks from the crossroads to the market.",
+    "The bandit attacks the merchant and kills her.",
+    "The bandit loots the coin from the corpse of the merchant.",
+    "The guard reports the location of the bandit.",
+    "The bandit walks from the market to the bandit camp.",
+    "The bandit places the coin in the chest at the bandit camp."
+  ]
+}
+```

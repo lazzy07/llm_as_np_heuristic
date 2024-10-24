@@ -1,0 +1,21 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, TomCoin, Tom, Cottage)**: The Bandit will loot Tom's coin from his corpse after attacking him. This action is necessary because Tom is now dead, and the Bandit can take the coin to increase her wealth.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will take the coins from the chest at the bandit camp. This action is necessary to ensure that the Bandit has the maximum amount of coins possible.
+
+The Bandit will not need to take any further actions since she will have achieved her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- **Looting Tom's Coin**: This action is essential because it allows the Bandit to gain an additional coin, which contributes to her goal of accumulating wealth.
+- **Taking Coins from the Chest**: This action ensures that the Bandit maximizes her coin collection, fulfilling her objective of having coins in her possession.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Cottage)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

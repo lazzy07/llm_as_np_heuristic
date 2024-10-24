@@ -1,0 +1,23 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following actions will take place:
+
+1. **The bandit loots the merchant's corpse.** 
+   - This action is necessary because the merchant is dead and the bandit can take the hero's coin that the merchant was carrying. This directly contributes to the bandit's goal of acquiring coins.
+
+2. **The bandit walks from the crossroads to the bandit camp.**
+   - After looting the coin, the bandit needs to return to the bandit camp to secure the coins in the chest, which is part of her goal.
+
+At this point, the bandit has successfully achieved her goal of carrying coins, as she now has the hero's coin in addition to any coins she may have had in the chest at the bandit camp.
+
+### Explanation of Actions:
+- **Looting the merchant's corpse** allows the bandit to acquire the hero's coin, which is essential for her goal of having coins.
+- **Walking to the bandit camp** ensures that the bandit can store her coins safely, fulfilling her desire to have coins in the chest.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "bandit loots the merchant's corpse",
+    "bandit walks from the crossroads to the bandit camp"
+  ]
+}
+```

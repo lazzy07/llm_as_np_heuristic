@@ -1,0 +1,41 @@
+**Story Completion:**
+
+Hathaway, the doctor, is currently in exam room C. With a workload of 2, she knows she needs to assess and treat the patients in the admissions room to ensure they are healthy. 
+
+1. **Assess Ross**: Hathaway walks back to the admissions room to assess Ross. She needs to determine his symptoms to provide the correct treatment. 
+   - **Action**: `walk(Hathaway, PatientRoomC, Admissions)`
+
+2. **Assess Young**: After assessing Ross, Hathaway assesses Young to check for any symptoms he may have.
+   - **Action**: `assess(Hathaway, Ross, symptom(Ross), Admissions)`
+
+3. **Admit Ross to Exam Room A**: Hathaway admits Ross to exam room A, where she can treat him based on the symptoms she has assessed.
+   - **Action**: `admit(Hathaway, Ross, PatientRoomA)`
+
+4. **Admit Young to Exam Room B**: Hathaway admits Young to exam room B, allowing her to treat him as well.
+   - **Action**: `admit(Hathaway, Young, PatientRoomB)`
+
+5. **Treat Ross**: Hathaway treats Ross with the appropriate treatment based on his symptoms, ensuring he becomes healthy.
+   - **Action**: `treat(Hathaway, Ross, treatment(Ross), PatientRoomA)`
+
+6. **Treat Young**: Finally, Hathaway treats Young with the correct treatment based on his symptoms, ensuring he also becomes healthy.
+   - **Action**: `treat(Hathaway, Young, treatment(Young), PatientRoomB)`
+
+**Explanation of Actions:**
+- The first action is necessary for Hathaway to return to the admissions room to assess the patients, which is crucial for determining their conditions.
+- The second action is to assess Young after Ross, ensuring both patients are evaluated.
+- The third and fourth actions are to admit both patients to their respective exam rooms, which is necessary for Hathaway to treat them.
+- The last two actions are to treat both patients with the correct treatments, which is essential for achieving Hathaway's goal of ensuring all patients are healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "walk(Hathaway, PatientRoomC, Admissions)",
+    "assess(Hathaway, Ross, symptom(Ross), Admissions)",
+    "admit(Hathaway, Ross, PatientRoomA)",
+    "admit(Hathaway, Young, PatientRoomB)",
+    "treat(Hathaway, Ross, treatment(Ross), PatientRoomA)",
+    "treat(Hathaway, Young, treatment(Young), PatientRoomB)"
+  ]
+}
+```

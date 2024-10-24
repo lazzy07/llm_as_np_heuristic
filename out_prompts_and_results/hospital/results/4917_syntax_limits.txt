@@ -1,0 +1,27 @@
+**Story Completion:**
+
+After walking to Exam Room B, Young finds themselves feeling unwell. They decide to assess their own symptoms, realizing they have a rash, which indicates they might have Jarkis. 
+
+Young then walks to the admissions room to find Dr. Hathaway. They inform Hathaway about their symptoms. Hathaway, wanting all patients to be healthy, admits Young to Exam Room B and assesses them. 
+
+Hathaway confirms that Young has a rash and believes they have Jarkis. With a workload of 1, Hathaway is able to treat Young with steroids, the correct treatment for Jarkis. Young feels better and is now healthy.
+
+**Explanation of Actions:**
+
+1. **walk(Young, PatientRoomC, PatientRoomB)**: Young moves to Exam Room B to assess their symptoms, which is necessary for determining their condition.
+   
+2. **assess(Hathaway, Young, rash, PatientRoomB)**: Hathaway assesses Young's symptoms to confirm the diagnosis of Jarkis, which is essential for providing the correct treatment.
+
+3. **treat(Hathaway, Young, steroids, PatientRoomB)**: Hathaway treats Young with steroids, the appropriate treatment for Jarkis, ensuring Young's health is restored.
+
+**Final Plan in JSON Format:**
+
+```json
+{
+  "plan": [
+    "walk(Young, PatientRoomC, PatientRoomB)",
+    "assess(Hathaway, Young, rash, PatientRoomB)",
+    "treat(Hathaway, Young, steroids, PatientRoomB)"
+  ]
+}
+```

@@ -1,0 +1,17 @@
+In the current situation, the Bandit is at the Market, where she can see both the Guard and Tom. The Bandit wants to carry as many coins as possible or have coins in the chest at the bandit camp. Since Tom is now a criminal and has the Medicine, the Bandit can take advantage of the situation.
+
+The Bandit will take the following action:
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit will rob Tom of the coin he obtained from the Merchant. This action is possible because Tom is not carrying a sword, making him vulnerable to being robbed. By taking the coin, the Bandit increases her wealth without needing to resort to violence or further criminal actions.
+
+After this action, the Bandit will have the coin she desired, achieving her goal of carrying as many coins as possible.
+
+### Explanation of the Action:
+- The Bandit robs Tom because he is a criminal and is not armed, making him an easy target. This action directly contributes to her goal of acquiring coins.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

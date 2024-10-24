@@ -1,0 +1,53 @@
+**Story Completion:**
+
+After locking the gym door, Ernest knows he needs to act quickly to ensure both his and Roy's safety. He decides to crawl through the vents to the kitchen, where he can find the knife. 
+
+1. **vent(Ernest, Kitchen)**: Ernest crawls through the vents to reach the kitchen, where he can find the knife. This action is necessary for him to obtain a means of defense against the bully.
+
+Once in the kitchen, Ernest retrieves the knife.
+
+2. **steal(Ernest, Knife, Kitchen)**: Ernest steals the knife from the kitchen. This is crucial for him to confront the bully and eliminate the threat.
+
+Now armed with the knife, Ernest heads back to the hallway.
+
+3. **go(Ernest, Hall)**: Ernest moves back to the hallway to prepare for his confrontation with the bully.
+
+Next, he unlocks the gym door to confront the bully.
+
+4. **lock_gym(Ernest, Hall)**: Ernest unlocks the gym door, allowing him to enter and face the bully directly.
+
+Inside the gym, Ernest confronts the bully.
+
+5. **revenge(Ernest, Bully, Gym)**: Ernest kills the bully in the gym. This action is essential for ensuring that both he and Roy are no longer threatened.
+
+With the bully out of the way, Ernest can now focus on escaping.
+
+6. **disguise(Ernest, Clothes, Hall)**: Ernest puts on the civilian clothes to disguise himself, making it easier to escape without being recognized.
+
+Finally, he makes his way to the highway.
+
+7. **escape(Ernest, Highway)**: Ernest escapes from the prison, achieving his goal of staying alive and free.
+
+**Explanation of Actions:**
+- **vent**: Necessary to access the knife without being seen by the bully.
+- **steal**: Essential to arm himself for the confrontation.
+- **go**: Required to position himself for the next steps.
+- **lock_gym**: Important to ensure he can confront the bully without interference.
+- **revenge**: Critical to eliminate the threat posed by the bully.
+- **disguise**: Needed to avoid detection while escaping.
+- **escape**: The final action that fulfills Ernest's goal of staying alive and free.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "vent(Ernest, Kitchen)",
+    "steal(Ernest, Knife, Kitchen)",
+    "go(Ernest, Hall)",
+    "lock_gym(Ernest, Hall)",
+    "revenge(Ernest, Bully, Gym)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

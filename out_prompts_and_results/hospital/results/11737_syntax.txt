@@ -1,0 +1,47 @@
+To complete the story and ensure that Hathaway achieves their goal of making all hospital patients healthy, we need to take the following actions:
+
+1. **Assess Jones in PatientRoomA**: Since Hathaway is currently in PatientRoomC, they will walk to PatientRoomA to assess Jones. This is necessary to determine Jones's symptoms and decide on the appropriate treatment.
+
+2. **Assess Young in PatientRoomB**: After assessing Jones, Hathaway will walk to PatientRoomB to assess Young. This is also necessary to determine Young's symptoms and decide on the appropriate treatment.
+
+3. **Assess Ross in Admissions**: Finally, Hathaway will walk to the Admissions room to assess Ross. This is necessary to determine Ross's symptoms and decide on the appropriate treatment.
+
+4. **Treat Jones**: After assessing Jones, if Jones is found to have a fever (indicating Flaze), Hathaway will treat Jones with antibiotics. This will make Jones healthy.
+
+5. **Treat Young**: After assessing Young, if Young is found to have a rash (indicating Jarkis), Hathaway will treat Young with steroids. This will make Young healthy.
+
+6. **Treat Ross**: After assessing Ross, if Ross is found to have a rash (indicating Jarkis), Hathaway will treat Ross with steroids. This will make Ross healthy.
+
+Now, let's outline the actions in the story:
+
+1. **walk(Hathaway, PatientRoomC, PatientRoomA)**: Hathaway moves to assess Jones.
+2. **assess(Hathaway, Jones, symptom(Jones), PatientRoomA)**: Hathaway assesses Jones to determine symptoms.
+3. **walk(Hathaway, PatientRoomA, PatientRoomB)**: Hathaway moves to assess Young.
+4. **assess(Hathaway, Young, symptom(Young), PatientRoomB)**: Hathaway assesses Young to determine symptoms.
+5. **walk(Hathaway, PatientRoomB, Admissions)**: Hathaway moves to assess Ross.
+6. **assess(Hathaway, Ross, symptom(Ross), Admissions)**: Hathaway assesses Ross to determine symptoms.
+7. **treat(Hathaway, Jones, antibiotics, PatientRoomA)**: Hathaway treats Jones with antibiotics if Jones has Flaze.
+8. **treat(Hathaway, Young, steroids, PatientRoomB)**: Hathaway treats Young with steroids if Young has Jarkis.
+9. **treat(Hathaway, Ross, steroids, Admissions)**: Hathaway treats Ross with steroids if Ross has Jarkis.
+
+By following these actions, Hathaway will ensure that all patients are treated correctly based on their symptoms, leading to their health.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Hathaway, PatientRoomC, PatientRoomA)",
+    "assess(Hathaway, Jones, symptom(Jones), PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, PatientRoomB)",
+    "assess(Hathaway, Young, symptom(Young), PatientRoomB)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "assess(Hathaway, Ross, symptom(Ross), Admissions)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomA)",
+    "treat(Hathaway, Young, steroids, PatientRoomB)",
+    "treat(Hathaway, Ross, steroids, Admissions)"
+  ]
+}
+``` 
+
+Each action is necessary to ensure that Hathaway can assess and treat each patient correctly, ultimately achieving the goal of making all patients healthy.

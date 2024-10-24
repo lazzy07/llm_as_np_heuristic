@@ -1,0 +1,29 @@
+To achieve the Bandit's goal of carrying as many coins as possible, the following actions will be taken:
+
+1. **Rob Tom**: The Bandit will rob Tom to take the medicine he is carrying. This action is necessary because the Bandit needs to eliminate Tom as a threat and gain an item that could be valuable or useful.
+
+2. **Rob Merchant**: The Bandit will then rob the Merchant to take the coins she is carrying. This action is crucial for the Bandit to fulfill her goal of acquiring coins.
+
+3. **Walk to the Bandit Camp**: Finally, the Bandit will walk back to the Bandit Camp to secure the coins in the chest. This action ensures that the Bandit can store her loot safely.
+
+Here’s the complete sequence of actions:
+
+1. **rob(Bandit, Medicine, Tom, Market)**: The Bandit robs Tom to take the medicine. This eliminates Tom as a competitor and allows the Bandit to gain an item.
+2. **rob(Bandit, TomCoin, Merchant, Market)**: The Bandit robs the Merchant to take the coins. This directly contributes to the Bandit's goal of carrying as many coins as possible.
+3. **walk(Bandit, Market, Camp)**: The Bandit walks to the Bandit Camp to secure her coins in the chest, ensuring her goal is achieved.
+
+### Explanation of Actions:
+- **Robbing Tom**: This action is necessary to remove Tom from the equation and gain the medicine, which could be useful for the Bandit or a bargaining chip.
+- **Robbing the Merchant**: This action is essential for the Bandit to acquire coins, which is her primary goal.
+- **Walking to the Bandit Camp**: This action is needed to secure the coins in a safe location, fulfilling the Bandit's objective of having coins in the chest.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "rob(Bandit, Medicine, Tom, Market)",
+    "rob(Bandit, TomCoin, Merchant, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

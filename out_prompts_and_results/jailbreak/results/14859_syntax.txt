@@ -1,0 +1,47 @@
+**Story Completion:**
+
+After locking the gym door, Roy knows he needs to act quickly to ensure both he and Ernest can escape the prison. He decides to crawl through the vents to reach the kitchen, where he can grab the knife. 
+
+1. **vent(Roy, Kitchen)** - Roy crawls through the vents to the kitchen to retrieve the knife, which is essential for his plan to deal with the bully.
+
+Once in the kitchen, Roy picks up the knife.
+
+2. **steal(Roy, Knife, Kitchen)** - Roy steals the knife from the kitchen, arming himself for the confrontation with the bully.
+
+Next, Roy returns to the hallway and prepares to confront the bully.
+
+3. **go(Roy, Hall)** - Roy moves back to the hallway, where he can access the gym.
+
+Now, with the knife in hand, Roy unlocks the gym door and confronts the bully.
+
+4. **revenge(Roy, Bully, Gym)** - Roy takes his chance to get revenge on the bully by killing him in the gym, ensuring that he and Ernest are no longer threatened.
+
+With the bully out of the way, Roy can now focus on escaping.
+
+5. **disguise(Roy, Clothes, Hall)** - Roy puts on the civilian clothes he stole earlier to disguise himself, making it easier to escape.
+
+Finally, Roy makes his way to the highway.
+
+6. **escape(Roy, Highway)** - Roy escapes from the prison, successfully achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+- **vent(Roy, Kitchen)**: Necessary for Roy to access the knife, which is crucial for his safety and to eliminate the threat posed by the bully.
+- **steal(Roy, Knife, Kitchen)**: Roy needs the knife to confront the bully and ensure he is no longer threatened.
+- **go(Roy, Hall)**: Moving to the hallway allows Roy to access the gym where the bully is locked in.
+- **revenge(Roy, Bully, Gym)**: This action is essential for Roy to eliminate the bully, ensuring both he and Ernest are safe.
+- **disguise(Roy, Clothes, Hall)**: Putting on civilian clothes is necessary for Roy to escape without being recognized.
+- **escape(Roy, Highway)**: The final action that allows Roy to achieve his goal of being alive and free.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "vent(Roy, Kitchen)",
+    "steal(Roy, Knife, Kitchen)",
+    "go(Roy, Hall)",
+    "revenge(Roy, Bully, Gym)",
+    "disguise(Roy, Clothes, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

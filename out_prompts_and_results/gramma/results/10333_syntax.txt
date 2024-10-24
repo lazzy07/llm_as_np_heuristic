@@ -1,0 +1,27 @@
+To ensure the Guard achieves their goal of killing criminals, the following actions will take place:
+
+1. **report(Guard, location(Bandit), Crossroads)**: The Guard reports the location of the Bandit to the authorities, confirming that the Bandit is a criminal and is currently at the Crossroads. This action is necessary for the Guard to fulfill their duty of eliminating criminals.
+
+2. **walk(Guard, Crossroads, Market)**: The Guard walks to the Market to prepare for any further actions or to gather more information. This action is necessary for the Guard to be in a position to act against any potential criminals.
+
+3. **walk(Guard, Market, Crossroads)**: The Guard returns to the Crossroads, where the Bandit was reported to be. This action is necessary to confront the Bandit directly.
+
+4. **attack(Guard, Bandit, Crossroads)**: The Guard attacks the Bandit, who is now confirmed to be a criminal. This action is the culmination of the Guard's goal to eliminate the Bandit.
+
+5. **loot(Guard, BanditCoin, Bandit, Crossroads)**: After successfully attacking the Bandit, the Guard loots the Bandit's coins from their corpse. This action allows the Guard to gain the coins that the Bandit was carrying, further fulfilling their goal of dealing with criminals.
+
+The sequence of actions ensures that the Guard effectively identifies, confronts, and eliminates the Bandit, achieving their goal of killing a criminal.
+
+Here is the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "report(Guard, location(Bandit), Crossroads)",
+    "walk(Guard, Crossroads, Market)",
+    "walk(Guard, Market, Crossroads)",
+    "attack(Guard, Bandit, Crossroads)",
+    "loot(Guard, BanditCoin, Bandit, Crossroads)"
+  ]
+}
+```

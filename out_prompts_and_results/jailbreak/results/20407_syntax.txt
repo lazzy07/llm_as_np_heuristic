@@ -1,0 +1,39 @@
+**Story Completion:**
+
+After completing his chores in the laundry, Roy decides to head to the hallway to find Ernest. He knows that Ernest is in a precarious situation, having stolen the bully's cigarettes. 
+
+1. **go(Roy, Hall)**: Roy moves to the hallway to search for Ernest and check on him.
+   
+2. **vent(Roy, Gym)**: Roy crawls through the vents to reach the gym, where he knows the bully is locked in. He hopes to find a way to help Ernest.
+
+3. **unlock_gym(Roy, Hall)**: Once in the gym, Roy finds the door locked. He uses his knowledge of the prison to unlock the gym door, allowing Ernest to confront the bully.
+
+4. **kill(Bully, Ernest, Gym)**: With the bully now vulnerable and locked in the gym, Ernest uses the knife he has in the kitchen to kill the bully, ensuring that he and Roy are no longer threatened.
+
+5. **next_day()**: The day ends, and it is now day two.
+
+6. **escape(Ernest, Highway)**: With the bully out of the way and the threat eliminated, Ernest, still disguised in civilian clothes, makes his way to the highway to escape the prison.
+
+**Explanation of Actions:**
+
+- **go(Roy, Hall)**: This action is necessary for Roy to find Ernest and ensure he is safe.
+- **vent(Roy, Gym)**: Roy needs to reach the gym to help Ernest deal with the bully.
+- **unlock_gym(Roy, Hall)**: This action allows Ernest to confront the bully without the risk of being threatened.
+- **kill(Bully, Ernest, Gym)**: This is a crucial action for Ernest to eliminate the threat posed by the bully.
+- **next_day()**: This signifies the transition to the next day, allowing for the escape to occur.
+- **escape(Ernest, Highway)**: This is the final action that allows Ernest to achieve his goal of being alive and free.
+
+**Final Plan in JSON Format:**
+
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "unlock_gym(Roy, Hall)",
+    "kill(Bully, Ernest, Gym)",
+    "next_day()",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

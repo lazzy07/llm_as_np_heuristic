@@ -1,0 +1,21 @@
+To achieve the bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **rob(Bandit, TomCoin, Tom, Crossroads)**: The bandit will rob Tom, who is currently at the Crossroads and does not have a sword. This action allows the bandit to take the coins that Tom is carrying.
+
+2. **walk(Bandit, Crossroads, Camp)**: After robbing Tom, the bandit will walk back to the bandit camp, where she can store the coins in the chest.
+
+This sequence of actions ensures that the bandit successfully achieves her goal of carrying coins.
+
+### Explanation of Actions:
+- **Robbing Tom**: The bandit takes advantage of Tom's lack of a sword to rob him of the coins he is carrying. This is a direct action towards the bandit's goal of acquiring coins.
+- **Walking to the Camp**: After acquiring the coins, the bandit moves to the camp to secure her loot in the chest, ensuring that she has the coins safely stored.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Tom, Crossroads)",
+    "walk(Bandit, Crossroads, Camp)"
+  ]
+}
+```

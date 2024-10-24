@@ -1,0 +1,57 @@
+**Story Completion:**
+
+After completing their chores, Roy is in the kitchen and notices the knife on the counter. He knows that the bully is in the gym and that he and Ernest are threatened. To ensure their safety and to get the cigarettes, he decides to take the knife.
+
+1. **Action: steal(Roy, Knife, Kitchen)** - Roy steals the knife from the kitchen. This action is necessary for him to defend himself and Ernest against the bully.
+
+Next, Roy moves to the hallway to find a way to confront the bully.
+
+2. **Action: go(Roy, Hall)** - Roy moves to the hallway. This action is necessary for him to access the gym where the bully is located.
+
+Once in the hallway, Roy locks the gym door to prevent the bully from escaping.
+
+3. **Action: lock_gym(Roy, Hall)** - Roy locks the gym door. This action is crucial to ensure that the bully cannot escape and that Roy can confront him without fear of retaliation.
+
+Now, Roy can confront the bully without the risk of being threatened.
+
+4. **Action: revenge(Roy, Bully, Gym)** - Roy kills the bully in the gym. This action is necessary to eliminate the threat to both him and Ernest.
+
+With the bully gone, Roy can now safely return to Ernest.
+
+5. **Action: go(Roy, Laundry)** - Roy moves back to the laundry where Ernest is located.
+
+Finally, Roy and Ernest can now plan their escape.
+
+6. **Action: disguise(Roy, Clothes, Laundry)** - Roy puts on the civilian clothes he stole earlier. This action is necessary for him to disguise himself for the escape.
+
+7. **Action: disguise(Ernest, Cigarettes, Laundry)** - Ernest takes the pack of cigarettes and disguises himself as well. This action is necessary for him to join Roy in the escape.
+
+8. **Action: vent(Roy, Highway)** - Roy crawls through the vents to reach the highway.
+
+9. **Action: vent(Ernest, Highway)** - Ernest follows Roy through the vents to the highway.
+
+10. **Action: escape(Roy, Highway)** - Roy escapes from the prison.
+
+11. **Action: escape(Ernest, Highway)** - Ernest escapes from the prison.
+
+**Explanation of Actions:**
+- Each action taken by Roy and Ernest is aimed at eliminating the threat posed by the bully and ensuring their survival. The actions are sequential and build upon each other, leading to their successful escape from the prison.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "steal(Roy, Knife, Kitchen)",
+    "go(Roy, Hall)",
+    "lock_gym(Roy, Hall)",
+    "revenge(Roy, Bully, Gym)",
+    "go(Roy, Laundry)",
+    "disguise(Roy, Clothes, Laundry)",
+    "disguise(Ernest, Cigarettes, Laundry)",
+    "vent(Roy, Highway)",
+    "vent(Ernest, Highway)",
+    "escape(Roy, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

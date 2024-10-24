@@ -1,0 +1,35 @@
+**Story Completion:**
+
+After the events that have transpired, Ernest is in the kitchen with the knife, while Roy is still in the cell block. The bully is in the gym, and both Ernest and Roy are threatened by him. 
+
+1. **Action: go(Roy, Hall)** - Roy decides to leave the cell block and move to the hallway. This action is necessary for him to access the gym or the laundry room and to potentially help Ernest.
+
+2. **Action: vent(Roy, Gym)** - From the hallway, Roy crawls through the vents to reach the gym. This is a stealthy way to get to Ernest's location without being seen by the bully.
+
+3. **Action: lock_gym(Roy, Gym)** - Once in the gym, Roy locks the door behind him. This action prevents the bully from escaping and ensures that they can confront him without interference.
+
+4. **Action: revenge(Roy, Bully, Gym)** - With the bully trapped inside the gym, Roy takes the opportunity to kill him. This action eliminates the threat to both him and Ernest, allowing them to be safe.
+
+5. **Action: disguise(Roy, Clothes, Gym)** - After killing the bully, Roy puts on the civilian clothes he found in the laundry room. This disguise will help him escape the prison without being recognized.
+
+6. **Action: go(Roy, Hall)** - Roy then moves back to the hallway, ready to escape.
+
+7. **Action: escape(Roy, Highway)** - Finally, Roy makes his way to the highway and escapes from the prison, achieving his goal of survival.
+
+**Explanation of Actions:**
+- Each action is taken to ensure that either Roy or Ernest can overcome the bully's threats. By locking the gym, Roy ensures that they can confront the bully without fear of retaliation. Killing the bully removes the immediate danger, and disguising himself allows for a successful escape. The sequence of actions is designed to maximize safety and achieve the goal of survival.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "lock_gym(Roy, Gym)",
+    "revenge(Roy, Bully, Gym)",
+    "disguise(Roy, Clothes, Gym)",
+    "go(Roy, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

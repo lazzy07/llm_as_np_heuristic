@@ -1,0 +1,39 @@
+**Story Completion:**
+
+Ernest, currently in the locked gym with the bully, knows he must act quickly to ensure his survival and secure the pack of cigarettes. He decides to take revenge on the bully, using the knife he stole earlier. 
+
+1. **revenge(Ernest, Bully, Gym)**: Ernest kills the bully with the knife. This action is crucial as it eliminates the immediate threat to both him and Roy, allowing them to feel safe and secure.
+
+After killing the bully, Ernest takes the pack of cigarettes and the civilian clothes. He then moves to the hallway.
+
+2. **go(Ernest, Hall)**: This action allows Ernest to leave the gym and enter the hallway, where he can access the vents or the highway.
+
+Next, Ernest puts on the civilian clothes to disguise himself.
+
+3. **disguise(Ernest, Clothes, Hall)**: By disguising himself, Ernest can avoid detection by the guards and increase his chances of escaping the prison.
+
+Finally, he makes his way to the highway.
+
+4. **vent(Ernest, Highway)**: This action allows Ernest to escape the prison through the vents, reaching the highway safely.
+
+5. **escape(Ernest, Highway)**: With the disguise on, Ernest successfully escapes from the prison, achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+- **Revenge**: This action is necessary to eliminate the bully, who poses a direct threat to Ernest and Roy.
+- **Go**: Moving to the hallway is essential for Ernest to access the next steps toward his escape.
+- **Disguise**: Putting on civilian clothes is critical for avoiding detection by prison guards.
+- **Vent**: Using the vents to reach the highway is a strategic move to bypass any guards in the hallway.
+- **Escape**: This final action fulfills Ernest's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "revenge(Ernest, Bully, Gym)",
+    "go(Ernest, Hall)",
+    "disguise(Ernest, Clothes, Hall)",
+    "vent(Ernest, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

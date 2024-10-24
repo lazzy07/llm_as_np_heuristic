@@ -1,0 +1,25 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **rob(Bandit, TomCoin, Merchant, Market)**: The Bandit will rob the Merchant to take the coin that Tom had just bought. This action is necessary because it allows the Bandit to acquire coins without needing to go to the chest at the camp.
+
+2. **walk(Bandit, Market, Camp)**: After acquiring the coin, the Bandit will walk to the Bandit Camp. This action is necessary to secure the coin in the chest at the Bandit Camp, fulfilling the Bandit's goal.
+
+The story unfolds as follows:
+
+- The Bandit, seeing the commotion in the Market, decides to take advantage of the situation. She robs the Merchant, taking the coin that Tom had just purchased. This action is quick and effective, allowing her to gain wealth without drawing attention to herself.
+- With the coin in hand, the Bandit then walks to the Bandit Camp, where she can safely store her newly acquired coin in the chest. This action ensures that she has successfully achieved her goal of carrying coins.
+
+The Bandit now has the coin secured in the chest at the Bandit Camp, fulfilling her objective.
+
+Here’s the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Merchant, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+``` 
+
+Each action is essential for the Bandit to achieve her goal of acquiring coins, either by taking them from the Merchant or securing them in her camp.

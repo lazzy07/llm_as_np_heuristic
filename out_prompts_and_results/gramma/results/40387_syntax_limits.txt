@@ -1,0 +1,17 @@
+In this story, the Bandit wants to be carrying as many coins as possible or to have coins in the chest at the bandit camp. The Bandit currently has one TomCoin after looting Tom, and the Bandit also has access to the BanditCoin in the chest at the camp. 
+
+To achieve her goal, the Bandit will take the following action:
+
+1. **Take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will take the coins from the chest at the bandit camp. This action is necessary because it allows the Bandit to achieve her goal of carrying as many coins as possible.
+
+After this action, the Bandit will have both TomCoin and BanditCoin, fulfilling her objective.
+
+### Explanation of the Action:
+- The Bandit takes the BanditCoin from the chest at the camp, which increases her total number of coins. This is the most efficient action to achieve her goal of maximizing her coin collection.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["take(Bandit, BanditCoin, Chest, Camp)"]
+}
+```

@@ -1,0 +1,32 @@
+**Story Completion:**
+
+1. **Assess Hathaway, Young, symptom: ?, room: PatientRoomA**  
+   - Explanation: Hathaway needs to assess Young to determine their symptoms. Since Young is currently in the admissions room, Hathaway must first admit Young to an exam room. However, since Young is not yet assigned to an exam room, this action is necessary to understand Young's condition.
+
+2. **Admit Hathaway, Young, room: PatientRoomB**  
+   - Explanation: Hathaway admits Young to exam room B. This action is necessary to allow Hathaway to assess Young's symptoms in the next step.
+
+3. **Walk Hathaway, PatientRoomA, PatientRoomB**  
+   - Explanation: Hathaway walks to exam room B where Young has just been admitted. This is necessary for Hathaway to perform the assessment.
+
+4. **Assess Hathaway, Young, symptom: ?, room: PatientRoomB**  
+   - Explanation: Hathaway assesses Young in exam room B to determine their symptoms. This is crucial for Hathaway to decide on the appropriate treatment.
+
+5. **Treat Hathaway, Young, treatment: steroids, room: PatientRoomB**  
+   - Explanation: After assessing Young, Hathaway determines that Young has Jarkis (the rash symptom) and treats them with steroids, which is the correct treatment. This action ensures that Young becomes healthy.
+
+**Final Explanation:**
+The actions taken ensure that Hathaway can assess and treat Young effectively. By admitting Young to an exam room and then assessing their symptoms, Hathaway can provide the correct treatment, achieving the goal of ensuring all patients are healthy.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom: ?, room: PatientRoomA)",
+    "admit(Hathaway, Young, room: PatientRoomB)",
+    "walk(Hathaway, PatientRoomA, PatientRoomB)",
+    "assess(Hathaway, Young, symptom: ?, room: PatientRoomB)",
+    "treat(Hathaway, Young, treatment: steroids, room: PatientRoomB)"
+  ]
+}
+```

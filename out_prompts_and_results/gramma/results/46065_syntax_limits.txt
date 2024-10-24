@@ -1,0 +1,23 @@
+In this story, the Bandit wants to be carrying as many coins as possible or have coins in the chest at the bandit camp. The Bandit is currently at the Crossroads, while Tom is at the Market with the Medicine. The Merchant is also at the Market, and the Guard is there as well. 
+
+To achieve her goal, the Bandit can take the following action:
+
+1. **walk(Bandit, Crossroads, Market)**: The Bandit walks to the Market where she can attempt to rob Tom, who is carrying the Medicine but is unarmed. This action is necessary for the Bandit to get closer to Tom and potentially take the coins he has.
+
+2. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit robs Tom of the coin he has. This action is crucial as it allows the Bandit to gain a coin without becoming a criminal in the eyes of the Guard, who is also present at the Market.
+
+After these actions, the Bandit will have succeeded in acquiring a coin, thus achieving her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- **walk(Bandit, Crossroads, Market)**: This action is necessary for the Bandit to reach Tom and attempt to rob him.
+- **rob(Bandit, TomCoin, Tom, Market)**: This action allows the Bandit to take a coin from Tom, fulfilling her goal of carrying more coins.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Market)",
+    "rob(Bandit, TomCoin, Tom, Market)"
+  ]
+}
+```

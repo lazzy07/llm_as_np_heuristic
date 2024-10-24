@@ -1,0 +1,25 @@
+To achieve the guard's goal of killing criminals, the following sequence of actions will take place:
+
+1. **walk(Guard, Crossroads, Bandit Camp)**: The guard will walk to the bandit camp, as he believes the bandit is there and wants to confront her.
+
+2. **attack(Guard, Bandit, Bandit Camp)**: Upon reaching the bandit camp, the guard will attack the bandit, as she is a criminal and he is armed with a sword.
+
+3. **loot(Guard, BanditSword, Bandit, Bandit Camp)**: After successfully attacking the bandit, the guard will loot her sword from her corpse, ensuring he has another weapon.
+
+This sequence of actions ensures that the guard achieves his goal of killing a criminal, specifically the bandit, who is the only remaining criminal in the story.
+
+### Explanation of Actions:
+- **walk(Guard, Crossroads, Bandit Camp)**: The guard needs to move to the bandit camp to confront the bandit, as he believes she is there.
+- **attack(Guard, Bandit, Bandit Camp)**: The guard attacks the bandit because she is a criminal, and he is fulfilling his duty to eliminate criminals.
+- **loot(Guard, BanditSword, Bandit, Bandit Camp)**: After killing the bandit, the guard loots her sword to enhance his own armament, which is a practical action for a guard.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Guard, Crossroads, Bandit Camp)",
+    "attack(Guard, Bandit, Bandit Camp)",
+    "loot(Guard, BanditSword, Bandit, Bandit Camp)"
+  ]
+}
+```

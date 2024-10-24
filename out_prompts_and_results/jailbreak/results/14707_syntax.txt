@@ -1,0 +1,47 @@
+**Story Completion:**
+
+After locking the gym door, Roy knows he needs to act quickly to ensure both he and Ernest can escape the prison. He decides to crawl through the vents to reach the kitchen where the knife is located. 
+
+1. **vent(Roy, Kitchen)**: Roy crawls through the vents to the kitchen to retrieve the knife. This action is necessary because he needs the knife to defend himself and potentially kill the bully if he encounters him.
+
+Once in the kitchen, Roy retrieves the knife.
+
+2. **steal(Roy, Knife, Kitchen)**: Roy takes the knife from the kitchen. This is essential for his plan to confront the bully.
+
+Now armed with the knife, Roy heads back to the hallway.
+
+3. **go(Roy, Hall)**: Roy moves back to the hallway to prepare for his next move. This keeps him out of the gym where the bully is, allowing him to strategize.
+
+Next, Roy decides to disguise himself in the civilian clothes he stole earlier.
+
+4. **disguise(Roy, Clothes, Hall)**: Roy puts on the civilian clothes to disguise himself. This is crucial for his escape plan, as he needs to avoid detection by the guards.
+
+With the disguise on, Roy can now make his way to the highway.
+
+5. **vent(Roy, Highway)**: Roy crawls through the vents again, this time to reach the highway. This action is necessary for his escape.
+
+Finally, once on the highway, Roy can escape from the prison.
+
+6. **escape(Roy, Highway)**: Roy successfully escapes from the prison. This is the ultimate goal of his actions, ensuring his survival and freedom.
+
+**Explanation of Actions:**
+- **vent(Roy, Kitchen)**: Necessary to access the knife for protection.
+- **steal(Roy, Knife, Kitchen)**: Essential to arm himself against the bully.
+- **go(Roy, Hall)**: Keeps him safe from the bully while he plans.
+- **disguise(Roy, Clothes, Hall)**: Critical for avoiding detection during escape.
+- **vent(Roy, Highway)**: Required to reach the escape route.
+- **escape(Roy, Highway)**: Achieves the goal of survival and freedom.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "vent(Roy, Kitchen)",
+    "steal(Roy, Knife, Kitchen)",
+    "go(Roy, Hall)",
+    "disguise(Roy, Clothes, Hall)",
+    "vent(Roy, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

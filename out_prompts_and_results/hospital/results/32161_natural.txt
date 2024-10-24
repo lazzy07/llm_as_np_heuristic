@@ -1,0 +1,56 @@
+**Story Completion:**
+
+1. **Dr. Hathaway walks from Patient Room B to Admissions.**  
+   - This action is necessary for Dr. Hathaway to assess the patients waiting in Admissions, specifically Jones and Ross, who are both experiencing unknown symptoms.
+
+2. **Dr. Hathaway admits Jones to Patient Room B.**  
+   - By admitting Jones to an exam room, Dr. Hathaway can begin the assessment process. This increases Dr. Hathaway's workload to 3, but it is necessary to ensure all patients are seen.
+
+3. **Dr. Hathaway assesses Jones in Patient Room B.**  
+   - This action allows Dr. Hathaway to determine Jones's symptoms. Since Jones is experiencing unknown symptoms, Dr. Hathaway will have to make a decision based on the information available.
+
+4. **Dr. Hathaway treats Jones for Flaze.**  
+   - Assuming Jones has a fever (the symptom of Flaze), Dr. Hathaway treats him with antibiotics. This is a critical action to ensure Jones becomes healthy.
+
+5. **Dr. Hathaway walks from Admissions to Patient Room C.**  
+   - Dr. Hathaway needs to assess Young, who is currently in Patient Room C.
+
+6. **Dr. Hathaway assesses Young in Patient Room C.**  
+   - This action allows Dr. Hathaway to determine Young's symptoms. Since Young is experiencing unknown symptoms, Dr. Hathaway will again have to make a decision based on the information available.
+
+7. **Dr. Hathaway treats Young for Flaze.**  
+   - Assuming Young also has a fever, Dr. Hathaway treats him with antibiotics, ensuring Young becomes healthy.
+
+8. **Dr. Hathaway walks back to Admissions.**  
+   - Dr. Hathaway needs to assess Ross, who is still in Admissions.
+
+9. **Dr. Hathaway admits Ross to Patient Room A.**  
+   - This action allows Dr. Hathaway to begin the assessment process for Ross.
+
+10. **Dr. Hathaway assesses Ross in Patient Room A.**  
+    - This action allows Dr. Hathaway to determine Ross's symptoms. 
+
+11. **Dr. Hathaway treats Ross for Jarkis.**  
+    - Assuming Ross has a rash (the symptom of Jarkis), Dr. Hathaway treats him with steroids, ensuring Ross becomes healthy.
+
+**Explanation of Actions:**
+- Each action is taken to ensure that Dr. Hathaway can assess and treat each patient effectively. The sequence of admitting, assessing, and treating is crucial to achieving the goal of making all patients healthy. The assumption of symptoms is based on the need to treat patients with the available information, and the actions are structured to minimize the risk of mistakes while managing the workload.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "Dr. Hathaway walks from Patient Room B to Admissions.",
+    "Dr. Hathaway admits Jones to Patient Room B.",
+    "Dr. Hathaway assesses Jones in Patient Room B.",
+    "Dr. Hathaway treats Jones for Flaze.",
+    "Dr. Hathaway walks from Admissions to Patient Room C.",
+    "Dr. Hathaway assesses Young in Patient Room C.",
+    "Dr. Hathaway treats Young for Flaze.",
+    "Dr. Hathaway walks back to Admissions.",
+    "Dr. Hathaway admits Ross to Patient Room A.",
+    "Dr. Hathaway assesses Ross in Patient Room A.",
+    "Dr. Hathaway treats Ross for Jarkis."
+  ]
+}
+```

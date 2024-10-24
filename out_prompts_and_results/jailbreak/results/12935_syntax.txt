@@ -1,0 +1,43 @@
+**Story Completion:**
+
+On day two, Roy is in the hallway, having just stolen a knife from the kitchen. He knows that Ernest is in the cell block, and the bully is in the gym. Roy wants to ensure both he and Ernest can escape the prison safely. 
+
+1. **Lock the Gym**: Roy decides to lock the gym door to prevent the bully from coming out and threatening them. This action is crucial because it isolates the bully, reducing the immediate threat to both him and Ernest. 
+   - Action: `lock_gym(Roy, Hall)`
+
+2. **Go to the Cells**: After locking the gym, Roy moves to the cell block to inform Ernest of the plan and to prepare for their escape.
+   - Action: `go(Roy, Cells)`
+
+3. **Disguise Ernest**: Once in the cell block, Roy gives Ernest the civilian clothes he stole from the laundry. This disguise is essential for their escape plan, as it will help them blend in outside the prison.
+   - Action: `disguise(Ernest, Clothes, Cells)`
+
+4. **Go to the Hall**: With Ernest now disguised, both Roy and Ernest move to the hallway to access the highway.
+   - Action: `go(Roy, Hall)`
+
+5. **Vent to the Highway**: From the hallway, they crawl through the vents to reach the highway, where they can escape the prison.
+   - Action: `vent(Roy, Highway)`
+
+6. **Escape**: Finally, once on the highway, both Roy and Ernest put on their civilian clothes and escape from the prison, achieving their goal of being alive and free.
+   - Action: `escape(Roy, Highway)`
+
+**Explanation of Actions:**
+- **Locking the gym** prevents the bully from threatening them, ensuring their safety.
+- **Going to the cells** allows Roy to communicate with Ernest and prepare for their escape.
+- **Disguising Ernest** is necessary for their successful escape, as it helps them avoid detection.
+- **Moving to the hallway** is a step towards reaching the exit.
+- **Crawling through the vents** is a strategic move to bypass any guards or obstacles.
+- **Escaping** is the final action that fulfills their goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "lock_gym(Roy, Hall)",
+    "go(Roy, Cells)",
+    "disguise(Ernest, Clothes, Cells)",
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

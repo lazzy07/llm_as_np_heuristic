@@ -1,0 +1,24 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will take place:
+
+1. **loot(Bandit, TomCoin, Tom, Market)**: The Bandit will loot the coins from Tom's corpse. This action is necessary because it allows the Bandit to acquire coins, which is part of her goal.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will then take the coins from the chest at the bandit camp. This action is necessary to ensure that the Bandit has coins in her possession, fulfilling her goal of carrying as many coins as possible.
+
+The story unfolds as follows:
+
+- After the Bandit attacks Tom and the Merchant, she loots the Medicine from Tom. However, her primary goal is to acquire coins.
+- The Bandit then loots Tom's corpse to take the coins he had, which allows her to increase her wealth.
+- Finally, the Bandit returns to her camp and takes the coins from the chest, ensuring she has a significant amount of coins.
+
+This sequence of actions allows the Bandit to achieve her goal effectively.
+
+Here is the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

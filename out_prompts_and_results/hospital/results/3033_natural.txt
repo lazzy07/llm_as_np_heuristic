@@ -1,0 +1,46 @@
+**Story Completion:**
+
+Dr. Hathaway assesses Young in Patient Room B to determine their symptoms. Since Young is experiencing Unknown symptoms, Dr. Hathaway cannot identify the disease yet. However, Dr. Hathaway's workload remains at 2.
+
+Next, Dr. Hathaway walks from Patient Room B to Admissions to admit Ross to Patient Room C. This action increases Dr. Hathaway's workload to 3.
+
+Dr. Hathaway then walks back to Patient Room C to assess Ross. Again, Ross is experiencing Unknown symptoms, and Dr. Hathaway cannot identify the disease. The workload is now at 3, which means Dr. Hathaway is at risk of making a mistake.
+
+Dr. Hathaway treats Ross with antibiotics, mistakenly believing he has Flaze due to the high workload. Unfortunately, Ross does not have Flaze and dies.
+
+Dr. Hathaway, now aware of the mistake, returns to Patient Room B to treat Young with steroids, believing Young has Jarkis. This time, Young does have Jarkis and becomes healthy.
+
+Finally, Dr. Hathaway walks back to Admissions to assess Jones. Since Jones is still in Admissions, Dr. Hathaway can now admit Jones to Patient Room A. Dr. Hathaway assesses Jones, who is also experiencing Unknown symptoms. Dr. Hathaway treats Jones with antibiotics, mistakenly believing he has Flaze. However, Jones does not have Flaze and dies.
+
+In the end, Dr. Hathaway successfully treats Young, achieving the goal of ensuring at least one patient is healthy.
+
+**Explanation of Actions:**
+1. **Assess Young**: To determine symptoms and identify the disease.
+2. **Walk to Admissions**: To admit Ross to Patient Room C.
+3. **Assess Ross**: To determine symptoms and identify the disease.
+4. **Treat Ross with antibiotics**: Mistakenly believing he has Flaze due to high workload.
+5. **Walk to Patient Room B**: To treat Young after realizing the mistake with Ross.
+6. **Treat Young with steroids**: Correctly treating Young for Jarkis, leading to recovery.
+7. **Walk to Admissions**: To assess and admit Jones.
+8. **Assess Jones**: To determine symptoms and identify the disease.
+9. **Treat Jones with antibiotics**: Mistakenly believing he has Flaze, leading to Jones's death.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "assess Young",
+    "walk to Admissions",
+    "admit Ross to Patient Room C",
+    "walk to Patient Room C",
+    "assess Ross",
+    "treat Ross with antibiotics",
+    "walk to Patient Room B",
+    "treat Young with steroids",
+    "walk to Admissions",
+    "admit Jones to Patient Room A",
+    "assess Jones",
+    "treat Jones with antibiotics"
+  ]
+}
+```

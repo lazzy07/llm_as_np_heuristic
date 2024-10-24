@@ -1,0 +1,28 @@
+The bandit, wanting to carry as many coins as possible, takes the following actions:
+
+1. **The bandit walks from the crossroads to the market.**  
+   - This action is necessary for the bandit to reach the market where the merchant and the guard are located, allowing her to interact with them.
+
+2. **The bandit attacks the merchant.**  
+   - The bandit is armed and the merchant is not, making this a viable action. By attacking the merchant, the bandit can potentially take the hero's coin that the merchant is carrying.
+
+3. **The bandit loots the item from the corpse of the merchant.**  
+   - After successfully attacking the merchant, the bandit can loot the coin that the merchant had, thus achieving her goal of carrying more coins.
+
+At this point, the bandit has successfully acquired the coin from the merchant, fulfilling her desire to carry as many coins as possible.
+
+### Explanation of Actions:
+- The first action is essential for the bandit to move to the market where the merchant is located.
+- The second action allows the bandit to eliminate the merchant, who is a barrier to obtaining the coin.
+- The third action enables the bandit to collect the coin from the merchant's corpse, directly achieving her goal.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "The bandit walks from the crossroads to the market.",
+    "The bandit attacks the merchant.",
+    "The bandit loots the item from the corpse of the merchant."
+  ]
+}
+```

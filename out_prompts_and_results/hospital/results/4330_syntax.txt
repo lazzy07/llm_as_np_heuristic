@@ -1,0 +1,46 @@
+To complete the story, we need to ensure that Hathaway, the doctor, assesses and treats the patients correctly to achieve the goal of having all patients healthy. Given the current situation, we will take the following actions:
+
+1. **Assess Jones in PatientRoomA**: Since Jones is currently in the admissions room, Hathaway needs to assess him to determine his symptoms. This is necessary to identify if he has Flaze or Jarkis.
+
+2. **Assess Ross in Admissions**: After assessing Jones, Hathaway will assess Ross, who is also in the admissions room. This will help determine Ross's symptoms.
+
+3. **Assess Young in Admissions**: Finally, Hathaway will assess Young to determine his symptoms as well.
+
+4. **Treat Jones**: Based on the assessment of Jones, Hathaway will treat him with the appropriate treatment (antibiotics for Flaze or steroids for Jarkis).
+
+5. **Treat Ross**: After treating Jones, Hathaway will treat Ross with the appropriate treatment based on his symptoms.
+
+6. **Treat Young**: Lastly, Hathaway will treat Young with the appropriate treatment based on his symptoms.
+
+This sequence ensures that Hathaway assesses each patient to determine their symptoms and then treats them accordingly, which is essential for achieving the goal of having all patients healthy.
+
+Here’s the complete story with explanations:
+
+1. **assess(Hathaway, Jones, ?, PatientRoomA)**: Hathaway assesses Jones to determine his symptoms. This is crucial for deciding the correct treatment.
+   
+2. **assess(Hathaway, Ross, ?, Admissions)**: Hathaway assesses Ross to determine his symptoms. This is necessary for his treatment.
+
+3. **assess(Hathaway, Young, ?, Admissions)**: Hathaway assesses Young to determine his symptoms. This is also necessary for his treatment.
+
+4. **treat(Hathaway, Jones, antibiotics, PatientRoomA)**: After assessing Jones, Hathaway treats him with antibiotics if he has Flaze, ensuring he becomes healthy.
+
+5. **treat(Hathaway, Ross, steroids, Admissions)**: After assessing Ross, Hathaway treats him with steroids if he has Jarkis, ensuring he becomes healthy.
+
+6. **treat(Hathaway, Young, steroids, Admissions)**: After assessing Young, Hathaway treats him with steroids if he has Jarkis, ensuring he becomes healthy.
+
+By following this plan, Hathaway successfully treats all patients, achieving the goal of having them all healthy.
+
+Here’s the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "assess(Hathaway, Jones, ?, PatientRoomA)",
+    "assess(Hathaway, Ross, ?, Admissions)",
+    "assess(Hathaway, Young, ?, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomA)",
+    "treat(Hathaway, Ross, steroids, Admissions)",
+    "treat(Hathaway, Young, steroids, Admissions)"
+  ]
+}
+```

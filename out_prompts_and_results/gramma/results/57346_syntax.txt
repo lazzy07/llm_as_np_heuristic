@@ -1,0 +1,21 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, TomCoin, Tom, Market)**: The Bandit has already looted Tom's coin after attacking him. This action is necessary to ensure the Bandit has at least one coin, which is part of her goal.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will take the coins from the chest at the bandit camp. This action is necessary to fulfill her goal of having coins in the chest.
+
+The Bandit will not need to take any further actions since she has already achieved her goal of having coins in the chest.
+
+### Explanation of Actions:
+- **loot(Bandit, TomCoin, Tom, Market)**: This action allows the Bandit to acquire Tom's coin, which is essential for her goal of accumulating coins.
+- **take(Bandit, BanditCoin, Chest, Camp)**: This action allows the Bandit to secure her coins in the chest at the bandit camp, fulfilling her goal of having coins stored there.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

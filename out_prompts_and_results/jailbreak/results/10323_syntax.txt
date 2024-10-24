@@ -1,0 +1,41 @@
+**Story Completion:**
+
+After completing his chores in the kitchen, Roy decides to check on Ernest. He believes Ernest is in the hallway, so he moves there. 
+
+1. **go(Roy, Hall)**: Roy moves to the hallway to find Ernest, as he believes that is where he is.
+
+Once in the hallway, Roy sees that Ernest is disguised in civilian clothes. Ernest tells Roy about the pack of cigarettes he stole from the bully and how they need to escape. 
+
+2. **disguise(Roy, Clothes, Hall)**: Roy puts on the civilian clothes he finds in the hallway to disguise himself, making it easier for them to escape.
+
+Now both Ernest and Roy are disguised. They decide to crawl through the vents to reach the highway.
+
+3. **vent(Ernest, Highway)**: Ernest crawls through the vents to the highway, as he is ready to escape.
+
+4. **vent(Roy, Highway)**: Roy follows Ernest through the vents to the highway.
+
+Once they reach the highway, they can finally escape from the prison.
+
+5. **escape(Ernest, Highway)**: Ernest escapes from the prison, achieving his goal of being alive and free.
+
+6. **escape(Roy, Highway)**: Roy also escapes from the prison, ensuring both friends are safe.
+
+**Explanation of Actions:**
+- **go(Roy, Hall)**: This action is necessary for Roy to reunite with Ernest and discuss their escape plan.
+- **disguise(Roy, Clothes, Hall)**: Roy needs to disguise himself to avoid being recognized by the guards and the bully, which is crucial for their escape.
+- **vent(Ernest, Highway)** and **vent(Roy, Highway)**: Crawling through the vents is the only way for them to reach the highway without being caught.
+- **escape(Ernest, Highway)** and **escape(Roy, Highway)**: These actions are the culmination of their efforts, allowing both characters to achieve their goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "disguise(Roy, Clothes, Hall)",
+    "vent(Ernest, Highway)",
+    "vent(Roy, Highway)",
+    "escape(Ernest, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

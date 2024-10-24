@@ -1,0 +1,44 @@
+**Story Completion:**
+
+After completing his chores in the kitchen, Ernest decides to take action to ensure both his and Roy's safety. He knows that the bully is a threat, and he needs to secure his position. 
+
+1. **go(Ernest, Hall)**: Ernest moves to the hallway to assess the situation and plan his next move.
+2. **vent(Ernest, Gym)**: Ernest crawls through the vents to reach the gym, where the bully is currently located.
+3. **lock_gym(Ernest, Gym)**: Once inside the gym, Ernest locks the door to prevent the bully from escaping.
+4. **steal(Ernest, Knife, Kitchen)**: While in the gym, Ernest remembers that he can retrieve the knife from the kitchen. He quickly goes back through the vents to grab it.
+5. **go(Ernest, Gym)**: Ernest returns to the gym with the knife.
+6. **revenge(Ernest, Bully, Gym)**: With the knife in hand and the door locked, Ernest confronts the bully and kills him, eliminating the threat.
+
+Now that the bully is no longer a danger, Ernest can focus on his escape plan.
+
+7. **go(Ernest, Hall)**: Ernest exits the gym and heads back to the hallway.
+8. **disguise(Ernest, Clothes, Hall)**: He puts on the civilian clothes to disguise himself.
+9. **escape(Ernest, Highway)**: Finally, Ernest makes his way to the highway and escapes from the prison.
+
+**Explanation of Actions:**
+- **go(Ernest, Hall)**: This action is necessary for Ernest to move away from the kitchen and towards the gym where the bully is.
+- **vent(Ernest, Gym)**: Crawling through the vents allows Ernest to sneak up on the bully without being detected.
+- **lock_gym(Ernest, Gym)**: Locking the gym door ensures that the bully cannot escape and that Ernest can confront him safely.
+- **steal(Ernest, Knife, Kitchen)**: Retrieving the knife is crucial for Ernest to defend himself and take revenge on the bully.
+- **go(Ernest, Gym)**: Returning to the gym with the knife is necessary to confront the bully.
+- **revenge(Ernest, Bully, Gym)**: This action is the climax of the story, where Ernest eliminates the threat posed by the bully.
+- **go(Ernest, Hall)**: After dealing with the bully, Ernest needs to return to the hallway to prepare for his escape.
+- **disguise(Ernest, Clothes, Hall)**: Putting on civilian clothes is essential for Ernest to blend in and avoid detection while escaping.
+- **escape(Ernest, Highway)**: This final action fulfills Ernest's goal of escaping the prison and ensuring his survival.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "lock_gym(Ernest, Gym)",
+    "steal(Ernest, Knife, Kitchen)",
+    "go(Ernest, Gym)",
+    "revenge(Ernest, Bully, Gym)",
+    "go(Ernest, Hall)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

@@ -1,0 +1,24 @@
+To ensure that the Lizard achieves its goal of being healthy, safe, and making friends with other creatures, the following actions will be taken:
+
+1. **make_peace(Zoe, Lizard, Cave)**: Zoe and the Lizard are currently in the same location (the Cave) and are not fighting. Zoe wants to make friends with the Lizard, and since the Lizard is also looking to make friends, this action will help both characters achieve their goals. By making peace, they can establish a friendly relationship.
+
+2. **walk(Zoe, Cave, Surface)**: After making peace, Zoe can walk to the Surface. This action is necessary for Zoe to ensure her safety, as the Surface is currently dangerous due to the volcano that has begun to erupt. However, since she has made peace with the Lizard, she can leave without causing any conflict.
+
+3. **walk(Lizard, Cave, Surface)**: The Lizard will follow Zoe to the Surface. This action is important for the Lizard to stay close to Zoe, as they have just made peace and want to maintain their friendship. 
+
+4. **erupt(Surface)**: The volcano erupts, but since both Zoe and the Lizard have already left the Surface, they are safe. This action is included to show the consequence of the earlier events and to highlight that both characters have successfully avoided danger.
+
+By following these actions, both Zoe and the Lizard achieve their goals of being healthy, safe, and making friends.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "make_peace(Zoe, Lizard, Cave)",
+    "walk(Zoe, Cave, Surface)",
+    "walk(Lizard, Cave, Surface)",
+    "erupt(Surface)"
+  ]
+}
+```

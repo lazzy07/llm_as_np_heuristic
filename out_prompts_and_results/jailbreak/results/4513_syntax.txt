@@ -1,0 +1,40 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy leaves the kitchen and moves to the hallway. This action is necessary for Roy to access the gym and potentially help Ernest.
+
+2. **Action: go(Ernest, Hall)**  
+   - Ernest leaves the laundry room and moves to the hallway. This allows both characters to be in the same location and strategize together.
+
+3. **Action: lock_gym(Roy, Hall)**  
+   - Roy locks the gym door while the bully is inside. This prevents the bully from coming out and threatening them, ensuring their safety.
+
+4. **Action: disguise(Ernest, Clothes, Hall)**  
+   - Ernest puts on the civilian clothes to disguise himself. This is crucial for his escape plan.
+
+5. **Action: vent(Ernest, Highway)**  
+   - Ernest crawls through the vents to reach the highway. This action is necessary for him to escape the prison.
+
+6. **Action: escape(Roy, Highway)**  
+   - Roy, now in the hallway and having locked the gym, puts on the civilian clothes and escapes through the highway. This ensures both characters achieve their goal of being alive and free.
+
+**Explanation of Actions:**
+- The first two actions allow both characters to regroup and plan their next steps.
+- Locking the gym door is a defensive move to protect themselves from the bully.
+- Disguising in civilian clothes is essential for both characters to avoid detection while escaping.
+- Crawling through the vents is a stealthy way to reach the highway without being caught.
+- Finally, escaping ensures that both characters achieve their goal of being alive and free from the prison.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "go(Ernest, Hall)",
+    "lock_gym(Roy, Hall)",
+    "disguise(Ernest, Clothes, Hall)",
+    "vent(Ernest, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

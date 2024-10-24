@@ -1,0 +1,15 @@
+In the current situation, the Bandit has successfully looted the Medicine from the Merchant after attacking her. The Bandit is now in the Market with the Medicine and is also aware that Tom is present in the Market. To achieve her goal of carrying as many coins as possible, the Bandit can take the following action:
+
+1. **Rob Tom**: The Bandit can rob Tom, who is currently unarmed, and take the coin he is carrying.
+
+This action allows the Bandit to increase her coin count without any risk of retaliation since Tom is not armed. After this action, the Bandit will have the coin she desired, fulfilling her goal.
+
+### Explanation of the Action:
+- **rob(Bandit, TomCoin, Tom, Market)**: The Bandit robs Tom of the coin he is carrying. This action is necessary for the Bandit to achieve her goal of carrying as many coins as possible.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

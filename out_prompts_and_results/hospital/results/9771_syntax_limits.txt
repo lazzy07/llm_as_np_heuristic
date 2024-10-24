@@ -1,0 +1,29 @@
+### Story Completion
+
+After admitting Young and Ross to their respective exam rooms, Hathaway realizes that she needs to assess the patients to determine their symptoms. However, her workload is currently at 3, which means she risks making a mistake. To avoid this, she decides to first assess Young, who is in Exam Room A.
+
+1. **Assess Young**: Hathaway assesses Young in Exam Room A to determine if they have Flaze or Jarkis. This action is necessary to identify the correct treatment for Young and reduce Hathaway's workload.
+
+2. **Treat Young**: After assessing Young, Hathaway finds that Young has a fever, indicating Flaze. She treats Young with antibiotics, which is the correct treatment for Flaze. This action is crucial for ensuring Young's health.
+
+3. **Walk to Admissions**: Hathaway then walks back to the Admissions room to assess Jones, who is still waiting. This action is necessary to continue her work and ensure all patients are treated.
+
+4. **Admit Jones to Exam Room B**: Finally, Hathaway admits Jones to Exam Room B. This action is necessary to ensure that Jones can be assessed and treated in a timely manner.
+
+### Explanation of Actions
+- **Assess Young**: This action is essential to determine Young's symptoms and avoid a potential misdiagnosis due to Hathaway's high workload.
+- **Treat Young**: This action directly contributes to Hathaway's goal of ensuring all patients are healthy by providing the correct treatment for Young's condition.
+- **Walk to Admissions**: This action allows Hathaway to check on Jones and continue her responsibilities as a doctor.
+- **Admit Jones to Exam Room B**: This action is necessary to ensure that Jones is assigned to an exam room where he can be assessed and treated.
+
+### Final Plan in JSON Format
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom, PatientRoomA)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Jones, PatientRoomB)"
+  ]
+}
+```

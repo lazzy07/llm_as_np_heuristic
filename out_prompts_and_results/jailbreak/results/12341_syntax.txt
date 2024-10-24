@@ -1,0 +1,48 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy moves from the cell block to the hallway to be closer to Ernest and the situation with the bully.
+
+2. **Action: vent(Roy, Highway)**  
+   - Roy crawls through the vents to reach the highway, allowing him to escape the prison.
+
+3. **Action: disguise(Roy, Clothes, Highway)**  
+   - Once on the highway, Roy puts on the civilian clothes he stole earlier to disguise himself, making it easier to escape unnoticed.
+
+4. **Action: escape(Roy, Highway)**  
+   - Roy successfully escapes from the prison, achieving his goal of staying alive and avoiding threats.
+
+5. **Action: next_day()**  
+   - The day ends, marking the transition to day two.
+
+6. **Action: go(Ernest, Hall)**  
+   - Ernest moves to the hallway to find a way to escape as well.
+
+7. **Action: vent(Ernest, Highway)**  
+   - Ernest crawls through the vents to reach the highway, following Roy's path.
+
+8. **Action: disguise(Ernest, Clothes, Highway)**  
+   - Ernest puts on the civilian clothes to disguise himself, preparing for his escape.
+
+9. **Action: escape(Ernest, Highway)**  
+   - Ernest escapes from the prison, achieving his goal of staying alive and avoiding threats.
+
+**Explanation of Actions:**
+- Roy and Ernest both need to escape the prison to ensure their survival and avoid the bully's threats. By moving to the hallway and using the vents, they can bypass the dangers of the prison. The disguise is crucial for both characters to avoid detection by guards. The actions are sequenced to ensure that both characters can escape successfully.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "next_day()",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Highway)",
+    "disguise(Ernest, Clothes, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

@@ -1,0 +1,24 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following actions will be taken:
+
+1. **walk(Bandit, Crossroads, Merchant)**: The bandit moves to the Merchant's location to confront her and potentially rob her of her sword or coins.
+
+2. **rob(Bandit, MerchantCoin, Merchant, Merchant)**: The bandit robs the Merchant, taking one of her coins. This action is possible because the Merchant is not armed with a sword, making her vulnerable to robbery.
+
+3. **walk(Bandit, Merchant, Camp)**: The bandit then walks back to the bandit camp, carrying the stolen coin.
+
+4. **take(Bandit, BanditCoin, Chest, Camp)**: Finally, the bandit places the stolen coin into the chest at the bandit camp, achieving her goal of having coins in the chest.
+
+This sequence of actions ensures that the bandit successfully increases her coin count without being killed or caught by the guard.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Merchant)",
+    "rob(Bandit, MerchantCoin, Merchant, Merchant)",
+    "walk(Bandit, Merchant, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

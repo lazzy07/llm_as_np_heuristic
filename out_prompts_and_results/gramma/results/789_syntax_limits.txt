@@ -1,0 +1,19 @@
+**Story Completion:**
+
+1. **Action:** rob(Bandit, BanditCoin, Tom, Market)  
+   **Explanation:** The Bandit, who is armed, robs Tom to take the coin he is carrying. This action is crucial for the Bandit to increase her coin count, which is part of her goal.
+
+2. **Action:** take(Bandit, BanditCoin, Chest, Camp)  
+   **Explanation:** After robbing Tom, the Bandit now has enough coins to return to her camp. She takes the coins she just acquired and places them in the chest at the bandit camp, fulfilling her goal of having coins in the chest.
+
+**Final Plan in JSON format:**
+```json
+{
+  "plan": [
+    "rob(Bandit, BanditCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+``` 
+
+This story is concise and directly leads to the Bandit achieving her goal of having coins in the chest at the bandit camp with only two necessary actions.

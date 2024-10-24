@@ -1,0 +1,32 @@
+**Story Completion:**
+
+1. **Assess Hathaway, Young, symptom: ?, room: PatientRoomC**  
+   - Explanation: Hathaway needs to assess Young to determine if they have Flaze or Jarkis. Since Young is currently in the admissions room, Hathaway must first walk to Young's location. This action is necessary to identify Young's symptoms and ensure they receive the correct treatment.
+
+2. **Walk(Hathaway, PatientRoomA, Admissions)**  
+   - Explanation: Hathaway walks back to the admissions room to assess Young. This is necessary to gather information about Young's health status.
+
+3. **Admit(Hathaway, Young, PatientRoomC)**  
+   - Explanation: Hathaway admits Young to exam room C, allowing for a proper assessment and treatment. This action is crucial for managing Young's health.
+
+4. **Assess(Hathaway, Young, symptom: ?, room: PatientRoomC)**  
+   - Explanation: Hathaway assesses Young again to determine their symptoms. This is necessary to decide on the appropriate treatment.
+
+5. **Treat(Hathaway, Young, treatment: steroids, room: PatientRoomC)**  
+   - Explanation: After assessing Young, Hathaway treats them with steroids if they show symptoms of Jarkis. This action is essential for ensuring Young's recovery.
+
+**Final Explanation:**
+The actions taken ensure that Hathaway can assess and treat Young effectively. By admitting Young to the correct exam room and assessing their symptoms, Hathaway can provide the appropriate treatment, fulfilling their goal of ensuring all patients are healthy.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom: ?, room: PatientRoomC)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Young, PatientRoomC)",
+    "assess(Hathaway, Young, symptom: ?, room: PatientRoomC)",
+    "treat(Hathaway, Young, treatment: steroids, room: PatientRoomC)"
+  ]
+}
+```

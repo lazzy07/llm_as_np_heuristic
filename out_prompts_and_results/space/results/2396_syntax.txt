@@ -1,0 +1,34 @@
+To complete the story, we will have Zoe and the Lizard take actions that lead to the volcano erupting, while also ensuring they become friends. The following sequence of actions will achieve this:
+
+1. **begin_erupt(Surface)**: The volcano starts to erupt, creating a dangerous situation on the surface. This action is necessary to set the stage for the eruption, which is one of the desired outcomes.
+
+2. **walk(Zoe, Cave, Surface)**: Zoe walks from the cave to the surface. This action is necessary for Zoe to be on the surface when the volcano erupts, which will lead to the next action.
+
+3. **erupt(Surface)**: The volcano erupts, causing danger on the surface. This action is crucial as it fulfills the requirement of having the volcano erupt.
+
+4. **kill(Zoe, Lizard, Surface)**: The eruption kills Zoe. This action is included to ensure that one character dies as a result of the eruption.
+
+5. **make_peace(Lizard, Zoe, Cave)**: After Zoe's death, the Lizard reflects on their time together and realizes the importance of friendship. This action is included to show that despite the tragic outcome, the Lizard has learned to value friendship, thus achieving the goal of making friends.
+
+The story ends with the volcano erupting, Zoe dying, and the Lizard making peace with Zoe's memory, signifying their friendship.
+
+Here’s the explanation of each action:
+- **begin_erupt**: Initiates the volcanic eruption, creating a dangerous environment.
+- **walk**: Moves Zoe to the surface, where the eruption will take place.
+- **erupt**: Causes the volcano to erupt, leading to Zoe's demise.
+- **kill**: Represents the consequence of the eruption, fulfilling the requirement of a character dying.
+- **make_peace**: Conveys the Lizard's realization of friendship, even after Zoe's death.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "begin_erupt(Surface)",
+    "walk(Zoe, Cave, Surface)",
+    "erupt(Surface)",
+    "kill(Zoe, Lizard, Surface)",
+    "make_peace(Lizard, Zoe, Cave)"
+  ]
+}
+```

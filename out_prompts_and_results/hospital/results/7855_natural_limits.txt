@@ -1,0 +1,39 @@
+Dr. Hathaway, wanting all hospital patients to be healthy, decides to assess the patients in the admissions room. 
+
+1. **Dr. Hathaway walks from Patient Room C to Admissions.**  
+   - This action is necessary for Dr. Hathaway to reach the patients who are currently in the admissions room, where Jones, Ross, and Young are located.
+
+2. **Dr. Hathaway admits Ross to Patient Room A.**  
+   - By admitting Ross to an exam room, Dr. Hathaway can begin to assess and treat him. This also increases Dr. Hathaway's workload to 3, which is critical for the next steps.
+
+3. **Dr. Hathaway admits Young to Patient Room B.**  
+   - This action allows Dr. Hathaway to manage both patients effectively. Now, Dr. Hathaway's workload is at 4, which is still manageable for the next assessment.
+
+4. **Dr. Hathaway assesses Ross in Patient Room A.**  
+   - Dr. Hathaway assesses Ross to determine his symptoms. Since Ross is experiencing unknown symptoms, Dr. Hathaway will have to make a decision based on the assumption that he might have either Flaze or Jarkis.
+
+5. **Dr. Hathaway treats Ross for Flaze.**  
+   - Assuming Ross has Flaze, Dr. Hathaway administers antibiotics. If Ross indeed has Flaze, he will become healthy. This action reduces Dr. Hathaway's workload back to 3.
+
+6. **Dr. Hathaway assesses Young in Patient Room B.**  
+   - Dr. Hathaway assesses Young to determine his symptoms. Again, since Young is experiencing unknown symptoms, Dr. Hathaway will have to make a decision based on the assumption that he might have either Flaze or Jarkis.
+
+7. **Dr. Hathaway treats Young for Jarkis.**  
+   - Assuming Young has Jarkis, Dr. Hathaway administers steroids. If Young indeed has Jarkis, he will become healthy. This action reduces Dr. Hathaway's workload back to 2.
+
+By the end of these actions, both Ross and Young are treated successfully, achieving Dr. Hathaway's goal of ensuring all hospital patients are healthy.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "Dr. Hathaway walks from Patient Room C to Admissions.",
+    "Dr. Hathaway admits Ross to Patient Room A.",
+    "Dr. Hathaway admits Young to Patient Room B.",
+    "Dr. Hathaway assesses Ross in Patient Room A.",
+    "Dr. Hathaway treats Ross for Flaze.",
+    "Dr. Hathaway assesses Young in Patient Room B.",
+    "Dr. Hathaway treats Young for Jarkis."
+  ]
+}
+```

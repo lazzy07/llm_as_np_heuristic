@@ -1,0 +1,23 @@
+In the Market, Tom is alive but unarmed, and he wants to get the medicine from the Merchant. The Merchant is armed and wants to sell the medicine for coins. The Guard has just killed the Bandit and is now looking for any remaining criminals. 
+
+To achieve the Guard's goal of killing criminals, the following actions take place:
+
+1. **report(Tom, Bandit, Market)**: Tom, seeing the Guard has just killed the Bandit, decides to report the Bandit’s location to the Guard. This action is crucial as it informs the Guard that the Bandit was present in the Market, confirming the criminal's presence and allowing the Guard to take further action.
+
+2. **walk(Guard, Market, Crossroads)**: After receiving the report from Tom, the Guard walks to the Crossroads to ensure that the area is secure and to look for any other potential criminals. This action is necessary for the Guard to fulfill his duty of eliminating any remaining threats.
+
+3. **attack(Guard, Merchant, Market)**: The Guard, now aware of the Merchant's potential for criminal activity (as she is armed and could be seen as a threat), decides to attack the Merchant. This action is the culmination of the Guard's goal to eliminate criminals, as the Merchant is armed and could be perceived as a danger.
+
+By taking these actions, the Guard successfully achieves his goal of killing a criminal.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "report(Tom, Bandit, Market)",
+    "walk(Guard, Market, Crossroads)",
+    "attack(Guard, Merchant, Market)"
+  ]
+}
+```

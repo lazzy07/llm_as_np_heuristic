@@ -16,7 +16,7 @@ public class LLMNaturalPromptBulder extends LLMPromptBuilder {
 
 	@Override
 	public String getAvailableActions() {
-		return getData("actions_natural");
+		return ""; //getData("actions_natural");
 	}
 
 	@Override

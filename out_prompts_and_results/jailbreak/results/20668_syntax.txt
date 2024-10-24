@@ -1,0 +1,36 @@
+**Story Completion:**
+
+1. **lock_gym(Ernest, Hall)**: Ernest has already locked the gym door, preventing the bully from escaping. This action is crucial as it ensures that the bully cannot threaten him or Roy while he is in the gym.
+
+2. **vent(Ernest, Gym)**: Ernest crawls through the vents to escape the gym. This action is necessary for him to leave the gym without confronting the bully directly, as he is currently threatened.
+
+3. **go(Ernest, Hall)**: After venting, Ernest finds himself in the hallway. This action is essential for him to access the laundry room where the civilian clothes are located.
+
+4. **go(Ernest, Laundry)**: Ernest moves to the laundry room to retrieve the civilian clothes. This action is necessary for him to disguise himself and prepare for his escape.
+
+5. **disguise(Ernest, Clothes, Laundry)**: Ernest puts on the civilian clothes. This action is crucial as it allows him to disguise himself, making it easier to escape without being recognized.
+
+6. **go(Ernest, Hall)**: Ernest returns to the hallway after disguising himself. This action is necessary to reach the highway.
+
+7. **vent(Ernest, Hall)**: Ernest crawls through the vents again, this time to reach the highway. This action is essential for his escape.
+
+8. **escape(Ernest, Highway)**: Finally, Ernest escapes from the prison. This action fulfills his goal of being alive and free.
+
+**Explanation of Actions:**
+- Each action taken by Ernest is aimed at avoiding confrontation with the bully while ensuring he can escape the prison. Locking the gym prevents the bully from threatening him, venting allows him to bypass danger, and disguising himself is crucial for a successful escape. The sequence of actions is designed to minimize risk and maximize the chance of survival.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "lock_gym(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "go(Ernest, Hall)",
+    "go(Ernest, Laundry)",
+    "disguise(Ernest, Clothes, Laundry)",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

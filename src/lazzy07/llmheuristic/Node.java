@@ -28,16 +28,8 @@ public class Node {
 	public String[] naturalLLMPlan;
 	public String[] naturalLLMLimitPlan;
 	
-	public String[] sabreLLMPlanLlama;
-	public String[] sabreLLMLimitPlanLlama;
-	public String[] naturalLLMPlanLlama;
-	public String[] naturalLLMLimitPlanLlama;
-	
 	public String naturalLLMSuggestion = "";
 	public String naturalWithLimitsLLMSuggestion = "";
-	
-	public String naturalLLMSuggestionLlama = "";
-	public String naturalWithLimitsLLMSuggestionLlama = "";
 	
 	public ArrayList<Node> children = new ArrayList<Node>();
 	public ArrayList<String> possibleNextActions = new ArrayList<String>();
@@ -143,6 +135,44 @@ public class Node {
 		}
 		
 		return isPredictionCorrect;
+	}
+	
+	private boolean planContainsCorrectActionSyntax(String[] plan) {
+		for(String action : plan) {
+			if(predictionCheck(action)) {
+				System.out.println("Predicting " + action + " successful for Node: " + this.id);
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	private boolean planContainsCorrectActionSyntax(ArrayList<String> plan) {
+		for(String action : plan) {
+			if(predictionCheck(action)) {
+				System.out.println("Predicting " + action + " successful for Node: " + this.id);
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	private boolean planContainsCorrectActionNatural(String[] plan) {
+		GptResponseManager responseManager = new GptResponseManager();
+		for(String action : plan) {
+			double[] naturalEmbedding = responseManager.getEmbedding(action);
+			
+			String closest = responseManager.closestAction(naturalEmbedding, Embeddings.natural);
+			
+			if(predictionCheck(closest)) {
+				System.out.println("Predicting " + closest + " successful for Node: " + this.id);
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	public String planToString(String[] plan) {
@@ -269,6 +299,34 @@ public class Node {
 	    return resultContent.toString();
 	}
 	
+	public boolean shouldCallLLM(FetchTypes fetch, String domain, String type) {
+		if(fetch == FetchTypes.ALL) {
+			System.out.println("Fetch type is ALL");
+			return true;
+		}else {
+			
+			 String directoryPath = "./out_prompts_and_results/" + domain + "/results";
+		     String filePath = directoryPath + "/" + this.id + "_" + type + ".txt";
+		     
+		     File f = new File(filePath);
+		     
+		     if(f.exists()) {
+		    	 
+		    	 if(f.length() > 0) {
+		    		 System.out.println("Fetch type is ONLY_MISSING_FILES, and file exists and size > 0 : " + filePath);
+		    		 return false;		    		 
+		    	 }else {
+		    		 System.out.println("Fetch type is ONLY_MISSING_FILES, and file exists but empty : " + filePath);
+		    		 return true;
+		    	 }
+		    	 
+		     }else {
+		    	 System.out.println("Fetch type is ONLY_MISSING_FILES, and file is missing : " + filePath);
+		    	 return true;
+		     }
+		}
+	}
+	
 	public String[] toCSV() {
 		String[] data = {
 				Integer.toString(id),
@@ -287,31 +345,22 @@ public class Node {
 				planToString(sabreLLMLimitPlan),
 				planToString(naturalLLMPlan),
 				planToString(naturalLLMLimitPlan),
-//				planToString(sabreLLMPlanLlama),
-//				planToString(sabreLLMLimitPlanLlama),
-//				planToString(naturalLLMPlanLlama),
-//				planToString(naturalLLMLimitPlanLlama),
 				naturalLLMSuggestion,
 				naturalWithLimitsLLMSuggestion,
-//				naturalLLMSuggestionLlama,
-//				naturalWithLimitsLLMSuggestionLlama,
 				Integer.toString(getPlanSize(sabreLLMPlan)),
 				Integer.toString(getPlanSize(sabreLLMLimitPlan)),
 				Integer.toString(getPlanSize(naturalLLMPlan)),
 				Integer.toString(getPlanSize(naturalLLMLimitPlan)),
-//				Integer.toString(getPlanSize(sabreLLMPlanLlama)),
-//				Integer.toString(getPlanSize(sabreLLMLimitPlanLlama)),
-//				Integer.toString(getPlanSize(naturalLLMPlanLlama)),
-//				Integer.toString(getPlanSize(naturalLLMLimitPlanLlama)),
 				Boolean.toString(planPredictionCheck(relaxedPlan)),
 				Boolean.toString(planPredictionCheck(sabreLLMPlan)),
 				Boolean.toString(planPredictionCheck(sabreLLMLimitPlan)),
 				Boolean.toString(planPredictionCheck(new String[] {naturalLLMSuggestion})),
 				Boolean.toString(planPredictionCheck(new String[] {naturalWithLimitsLLMSuggestion})),
-//				Boolean.toString(planPredictionCheck(sabreLLMPlanLlama)),
-//				Boolean.toString(planPredictionCheck(sabreLLMLimitPlanLlama)),
-//				Boolean.toString(planPredictionCheck(naturalLLMPlanLlama)),
-//				Boolean.toString(planPredictionCheck(naturalLLMLimitPlanLlama)),
+				Boolean.toString(planContainsCorrectActionSyntax(relaxedPlan)),
+				Boolean.toString(planContainsCorrectActionSyntax(sabreLLMPlan)),
+				Boolean.toString(planContainsCorrectActionSyntax(sabreLLMLimitPlan)),
+				Boolean.toString(planContainsCorrectActionNatural(naturalLLMPlan)),
+				Boolean.toString(planContainsCorrectActionNatural(naturalLLMLimitPlan)),
 		};
 		
 		return data;

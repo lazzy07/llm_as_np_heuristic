@@ -1,0 +1,55 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy moves from the gym to the hallway to find a way to escape or confront the bully.
+
+2. **Action: vent(Roy, Highway)**  
+   - Roy crawls through the vents to reach the highway, aiming to escape the prison.
+
+3. **Action: disguise(Roy, Clothes, Highway)**  
+   - Once on the highway, Roy puts on the civilian clothes to disguise himself, making it easier to escape without being recognized.
+
+4. **Action: escape(Roy, Highway)**  
+   - Roy successfully escapes from the prison, achieving his goal of staying alive and avoiding the bully's threats.
+
+5. **Action: next_day()**  
+   - The story transitions to day two, where Ernest is still in the cell block, threatened by the bully.
+
+6. **Action: go(Ernest, Hall)**  
+   - Ernest moves to the hallway, seeking a way to escape or confront the bully.
+
+7. **Action: lock_gym(Ernest, Hall)**  
+   - Ernest locks the gym door to prevent the bully from following him, ensuring his safety.
+
+8. **Action: vent(Ernest, Highway)**  
+   - Ernest crawls through the vents to reach the highway, following Roy's path to escape.
+
+9. **Action: disguise(Ernest, Clothes, Highway)**  
+   - Ernest puts on the civilian clothes to disguise himself, similar to Roy, to avoid detection.
+
+10. **Action: escape(Ernest, Highway)**  
+    - Ernest successfully escapes from the prison, achieving his goal of staying alive and avoiding the bully's threats.
+
+**Explanation of Actions:**
+- The actions taken by Roy and Ernest are focused on escaping the prison and avoiding the bully's threats. 
+- Roy's initial actions lead him to the hallway and then to the highway, where he disguises himself and escapes.
+- Ernest follows a similar path, ensuring he locks the gym door to prevent the bully from attacking him and then escapes as well.
+- The story ends with both characters successfully escaping, thus overcoming the bully's threats.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "next_day()",
+    "go(Ernest, Hall)",
+    "lock_gym(Ernest, Hall)",
+    "vent(Ernest, Highway)",
+    "disguise(Ernest, Clothes, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

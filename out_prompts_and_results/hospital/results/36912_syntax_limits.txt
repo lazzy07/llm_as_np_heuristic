@@ -1,0 +1,20 @@
+In this story, Hathaway, the doctor, needs to assess and treat the patients to ensure they are healthy. Given that Hathaway's workload is currently at 3, they risk making a mistake if they assess or treat more than one patient. Therefore, the best course of action is to focus on one patient at a time.
+
+1. **Assess Young in Exam Room A**: Hathaway will assess Young to determine their symptoms. Since Young is already assigned to Exam Room A, this action is valid and necessary to identify if Young has Flaze (fever) or Jarkis (rash).
+
+2. **Treat Young**: After assessing Young, Hathaway will treat them based on the symptoms identified. If Young has a fever, they will receive antibiotics for Flaze, or if they have a rash, they will receive steroids for Jarkis. This action is crucial to ensure Young becomes healthy.
+
+3. **Walk to Admissions**: After treating Young, Hathaway will walk to the Admissions room to assess and admit the next patient, Jones, who is currently waiting. This action is necessary to continue the process of ensuring all patients are healthy.
+
+By following these steps, Hathaway can effectively manage their workload and ensure that at least one patient is treated correctly, thus achieving their goal of having all hospital patients healthy.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom, PatientRoomA)",
+    "treat(Hathaway, Young, treatment, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)"
+  ]
+}
+```

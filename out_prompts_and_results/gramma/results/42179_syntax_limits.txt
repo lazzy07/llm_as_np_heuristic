@@ -1,0 +1,17 @@
+In the current situation, the Bandit is at the Market, where she has just attacked the Merchant. The Bandit’s goal is to carry as many coins as possible or to have coins in the chest at the bandit camp. Since the Merchant is dead, the Bandit can loot the Merchant for the coins she was carrying.
+
+**Action:**
+1. **loot(Bandit, TomCoin, Merchant, Market)** - The Bandit loots the Merchant to take the coins she was carrying. This action directly helps the Bandit achieve her goal of carrying more coins.
+
+After this action, the Bandit will have the coins, fulfilling her objective.
+
+**Explanation of the action:**
+- The Bandit loots the Merchant because the Merchant is dead, and the Bandit can take the coins without any risk of retaliation. This action is necessary for the Bandit to achieve her goal of carrying as many coins as possible.
+
+Here is the final plan in JSON format:
+
+```json
+{
+  "plan": ["loot(Bandit, TomCoin, Merchant, Market)"]
+}
+```

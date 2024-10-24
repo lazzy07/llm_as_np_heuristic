@@ -1,0 +1,19 @@
+In the current situation, the Bandit is at the Market, where she can see Tom, the Merchant, and the Guard. The Bandit wants to carry as many coins as possible or have coins in the chest at the bandit camp. Since the Bandit is armed and the Merchant is also armed, the Bandit cannot rob or attack the Merchant. However, the Bandit can take advantage of the situation by robbing Tom, who is unarmed.
+
+The Bandit decides to rob Tom to take his coin. This action will help the Bandit achieve her goal of carrying more coins.
+
+Here’s the action taken:
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit robs Tom, taking the coin he is carrying. This action is necessary for the Bandit to achieve her goal of carrying more coins.
+
+After this action, the Bandit will have one more coin, which fulfills her goal of carrying as many coins as she can.
+
+### Explanation of the Action:
+- The Bandit robs Tom because he is unarmed and has a coin. This is the only action that allows the Bandit to increase her coin count without risking her own safety, as both the Merchant and the Guard are armed.
+
+### Final Plan in JSON format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

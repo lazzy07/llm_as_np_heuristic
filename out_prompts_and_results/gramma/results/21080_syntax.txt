@@ -1,0 +1,32 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **Rob the Merchant**: The Bandit will rob the Merchant to take the medicine. This action is necessary because the Bandit needs to ensure that the Merchant does not have any items that could be used against her, and it also allows the Bandit to take an item that could be useful later.
+
+2. **Loot Tom's Corpse**: After attacking Tom, the Bandit will loot Tom's corpse to take the coins he was carrying. This is essential for the Bandit to achieve her goal of carrying as many coins as possible.
+
+3. **Walk to the Bandit Camp**: Finally, the Bandit will walk to the Bandit Camp to store the coins in the chest. This action is necessary to secure her coins and fulfill her goal.
+
+Here’s the complete sequence of actions:
+
+1. **Rob(Merchant, Medicine, Bandit, Market)**: The Bandit robs the Merchant to take the medicine, ensuring she has an item and removing a potential threat.
+2. **Attack(Bandit, Tom, Market)**: The Bandit attacks Tom, who is unarmed, to eliminate him as a threat.
+3. **Loot(Bandit, TomCoin, Tom, Market)**: The Bandit loots Tom's corpse to take the coins he was carrying.
+4. **Walk(Bandit, Market, Camp)**: The Bandit walks to the Bandit Camp to secure her coins in the chest.
+
+### Explanation of Actions:
+- **Robbing the Merchant**: This action is crucial for the Bandit to eliminate competition and gain an item that could be useful.
+- **Attacking Tom**: Since Tom is unarmed, this action is safe for the Bandit and allows her to remove a potential threat.
+- **Looting Tom's Corpse**: This action directly contributes to the Bandit's goal of acquiring coins.
+- **Walking to the Bandit Camp**: This final action secures the Bandit's coins, fulfilling her goal.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "rob(Bandit, Medicine, Merchant, Market)",
+    "attack(Bandit, Tom, Market)",
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

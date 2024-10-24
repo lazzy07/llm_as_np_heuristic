@@ -29,8 +29,21 @@ public abstract class LLMPromptBuilder {
 	public abstract String getCurrentState(Node node);
 	public abstract String getDomainExamples();
 	
+	private String characterMapper(String character) {
+		switch(character) {
+		case "C1":
+			return "Alex";
+		case "C2":
+			return "Blake";
+		case "C3":
+			return "Casey";
+		default:
+			return character;
+		}
+	}
+	
 	public String buildPrompt(Node node) {
-		String goal = node.epistemicToString().equals("Author") ? domain.authorGoal() : " where " + node.epistemicToString() + "  achieves their goal.";
+		String goal = node.epistemicToString().equals("Author") ? domain.authorGoal() : " where " + characterMapper(node.epistemicToString()) + "  achieves their goal.";
 		
 		String prompt = "\n I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. \n\n" + 
 			       getDomainDescription() + "\n\n " +

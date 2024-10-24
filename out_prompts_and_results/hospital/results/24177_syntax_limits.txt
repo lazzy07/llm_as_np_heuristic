@@ -1,0 +1,28 @@
+**Story Completion:**
+
+Hathaway, wanting all hospital patients to be healthy, decides to assess the patients in the exam rooms. 
+
+1. **Assess Ross**: Hathaway assesses Ross in PatientRoomB to determine his symptoms. Since Hathaway's workload is currently 2, he can accurately assess Ross without making a mistake. 
+
+2. **Assess Young**: After assessing Ross, Hathaway walks to Admissions to assess Young, who is waiting there. This will allow Hathaway to determine Young's symptoms as well.
+
+3. **Treat Ross**: After assessing both patients, Hathaway realizes that Ross has a fever, indicating he has Flaze. Hathaway treats Ross with antibiotics, successfully making him healthy.
+
+By assessing both patients, Hathaway ensures that he understands their conditions correctly and can provide the appropriate treatment. This leads to Ross becoming healthy, fulfilling Hathaway's goal of ensuring all patients are healthy.
+
+**Explanation of Actions:**
+- **Assess Ross**: This action is necessary to identify Ross's symptoms and determine the correct treatment.
+- **Walk to Admissions**: This action allows Hathaway to reach Young and assess his condition, ensuring no patient is overlooked.
+- **Treat Ross**: This action is crucial as it directly addresses Ross's condition, leading to his recovery and fulfilling Hathaway's goal.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, ?, PatientRoomB)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "assess(Hathaway, Young, ?, Admissions)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomB)"
+  ]
+}
+```

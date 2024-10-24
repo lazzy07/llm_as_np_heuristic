@@ -1,0 +1,50 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy moves from the Laundry to the Hallway to be closer to Ernest and the Gym, where the Bully is located.
+
+2. **Action: vent(Roy, Gym)**  
+   - Roy crawls through the vents to enter the Gym, where Ernest is. This allows him to join Ernest without being seen by the Bully.
+
+3. **Action: steal(Roy, Knife, Kitchen)**  
+   - While in the Gym, Roy quickly moves to the Kitchen through the vent and steals the Knife. This is crucial for their plan to deal with the Bully.
+
+4. **Action: lock_gym(Ernest, Gym)**  
+   - Ernest locks the Gym door to prevent the Bully from escaping. This ensures they can confront him without interference.
+
+5. **Action: revenge(Roy, Bully, Gym)**  
+   - With the Knife in hand, Roy kills the Bully. This action eliminates the threat to both him and Ernest, allowing them to feel safe.
+
+6. **Action: disguise(Ernest, Clothes, Gym)**  
+   - Ernest puts on the civilian clothes he had previously stolen. This is essential for their escape plan.
+
+7. **Action: go(Ernest, Hall)**  
+   - Ernest moves from the Gym to the Hallway, preparing to escape.
+
+8. **Action: escape(Ernest, Highway)**  
+   - Finally, Ernest escapes from the prison by going to the Highway while disguised in civilian clothes.
+
+**Explanation of Actions:**
+- Each action is strategically chosen to ensure that Ernest can achieve his goal of being alive and not threatened. 
+- Roy's movement to the Hall and then through the vents allows him to join Ernest without alerting the Bully.
+- Stealing the Knife is essential for Roy to confront the Bully and eliminate the threat.
+- Locking the Gym door ensures that the Bully cannot escape and that they can confront him safely.
+- Killing the Bully removes the immediate danger to both characters.
+- Disguising in civilian clothes is necessary for a successful escape.
+- Moving to the Hall and then escaping to the Highway completes the story with Ernest achieving his goal.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "steal(Roy, Knife, Kitchen)",
+    "lock_gym(Ernest, Gym)",
+    "revenge(Roy, Bully, Gym)",
+    "disguise(Ernest, Clothes, Gym)",
+    "go(Ernest, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

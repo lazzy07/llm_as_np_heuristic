@@ -1,0 +1,40 @@
+**Story Completion:**
+
+After walking to PatientRoomC, Hathaway assesses Ross to determine his symptoms. 
+
+1. **assess(Hathaway, Ross, symptom, PatientRoomC)**: Hathaway needs to assess Ross to identify his symptoms and determine the appropriate treatment. 
+
+After assessing Ross, Hathaway finds that he has a rash, indicating that he has Jarkis.
+
+2. **treat(Hathaway, Ross, steroids, PatientRoomC)**: Since Ross has Jarkis, Hathaway treats him with steroids, which is the correct treatment for this disease. This action ensures that Ross becomes healthy.
+
+Next, Hathaway walks back to the admissions room to assess Young.
+
+3. **walk(Hathaway, PatientRoomC, Admissions)**: Hathaway needs to return to the admissions room to assess Young, who has not yet been treated.
+
+Once in the admissions room, Hathaway assesses Young.
+
+4. **assess(Hathaway, Young, symptom, Admissions)**: Hathaway assesses Young to identify his symptoms.
+
+After assessing Young, Hathaway finds that he also has a rash, indicating that he has Jarkis.
+
+5. **treat(Hathaway, Young, steroids, Admissions)**: Hathaway treats Young with steroids, ensuring that he also becomes healthy.
+
+At this point, both Ross and Young are healthy, and Hathaway has successfully treated all patients, achieving their goal of ensuring all hospital patients are healthy.
+
+**Explanation of Actions:**
+- The actions taken are necessary for Hathaway to assess and treat the patients effectively. Each assessment is crucial to identify the correct disease, and each treatment is essential to ensure the patients recover.
+- The sequence of actions is designed to minimize the workload while ensuring that both patients are treated correctly.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, symptom, PatientRoomC)",
+    "treat(Hathaway, Ross, steroids, PatientRoomC)",
+    "walk(Hathaway, PatientRoomC, Admissions)",
+    "assess(Hathaway, Young, symptom, Admissions)",
+    "treat(Hathaway, Young, steroids, Admissions)"
+  ]
+}
+```

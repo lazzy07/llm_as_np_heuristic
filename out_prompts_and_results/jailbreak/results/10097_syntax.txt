@@ -1,0 +1,35 @@
+To complete the story, we need to ensure that either Ernest or Roy overcomes the bully's threats by escaping or getting revenge, while also considering the current situation and the actions available. Given that Roy is currently on the highway with the cigarettes, he has a chance to escape. However, Ernest is still in the cell block and is threatened by the bully. 
+
+Here’s the sequence of actions that will lead to the desired outcome:
+
+1. **disguise(Roy, Clothes, Highway)**: Roy will put on the civilian clothes to disguise himself. This is necessary for him to escape without being recognized by the guards.
+
+2. **escape(Roy, Highway)**: After disguising himself, Roy will escape from the prison. This action fulfills his goal of wanting to be alive and not threatened.
+
+3. **next_day()**: The day will end, marking the transition to day two. This is necessary to indicate the passage of time in the story.
+
+4. **kill(Bully, Ernest, Gym)**: On day two, the bully will threaten Ernest in the gym. Since Ernest is still alive and the bully is in the gym, he can take revenge by killing the bully. This action ensures that Ernest overcomes the bully's threats.
+
+5. **thwart(Ernest, Hall)**: After killing the bully, Ernest will be in the hallway. The guards will thwart him, leading to his death. This action ensures that the story ends with Ernest dying.
+
+This sequence of actions leads to the conclusion that Roy escapes successfully while Ernest ultimately dies after taking revenge on the bully.
+
+### Explanation of Actions:
+- **disguise**: This action is crucial for Roy to avoid detection and successfully escape.
+- **escape**: This is the primary goal for Roy, allowing him to be alive and free.
+- **next_day**: This marks the transition to day two, which is necessary for the story's progression.
+- **kill**: This action allows Ernest to take control of the situation and eliminate the bully, thus overcoming the threat.
+- **thwart**: This action leads to Ernest's demise, fulfilling the requirement that one of the main characters must die.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "next_day()",
+    "kill(Bully, Ernest, Gym)",
+    "thwart(Ernest, Hall)"
+  ]
+}
+```

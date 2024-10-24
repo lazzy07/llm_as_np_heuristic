@@ -113,6 +113,9 @@ public class SpaceText extends DomainText {
 			else str += arg0 + " is not the guardian of " + args.get(1);
 			break;
 		case "at":
+			if(value.equals("?")) {
+				str += arg0 + " can be anywhere";
+			}
 			str += arg0 + " is at " + value;
 			break;
 		case "safe":

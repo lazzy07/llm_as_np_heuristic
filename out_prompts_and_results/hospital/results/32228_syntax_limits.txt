@@ -1,0 +1,37 @@
+### Story Completion
+
+After Young walks to PatientRoomC, Hathaway decides to assess Young's symptoms. 
+
+1. **assess(Hathaway, Young, symptom, PatientRoomC)**: Hathaway assesses Young in PatientRoomC to determine if they have Flaze or Jarkis. This is necessary to understand Young's condition and decide on the appropriate treatment.
+
+After assessing Young, Hathaway finds that Young has no visible symptoms, which means they are healthy. 
+
+2. **walk(Hathaway, PatientRoomA, Admissions)**: Hathaway walks to the Admissions room to check on the other patients, Jones and Ross, who are still waiting.
+
+3. **admit(Hathaway, Jones, PatientRoomB)**: Hathaway admits Jones to PatientRoomB, increasing their workload to 2. This is necessary to ensure that Jones receives the attention they need.
+
+4. **assess(Hathaway, Jones, symptom, PatientRoomB)**: Hathaway assesses Jones in PatientRoomB to determine their symptoms. This is crucial to identify if Jones has Flaze or Jarkis.
+
+5. **treat(Hathaway, Jones, treatment, PatientRoomB)**: After assessing Jones, Hathaway finds that Jones has a fever, indicating Flaze. Hathaway treats Jones with antibiotics, successfully curing them.
+
+With both Young and Jones healthy, Hathaway has achieved their goal of ensuring all hospital patients are healthy.
+
+### Explanation of Actions
+- **assess**: This action is essential for diagnosing Young's condition.
+- **walk**: Hathaway needs to check on the other patients, ensuring they are not neglected.
+- **admit**: Admitting Jones is necessary to provide them with medical attention.
+- **assess**: Assessing Jones is crucial to determine the correct treatment.
+- **treat**: Treating Jones with the correct medication is the final step to ensure their health.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom, PatientRoomC)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Jones, PatientRoomB)",
+    "assess(Hathaway, Jones, symptom, PatientRoomB)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomB)"
+  ]
+}
+```

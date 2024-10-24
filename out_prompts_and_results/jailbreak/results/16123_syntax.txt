@@ -1,0 +1,41 @@
+**Story Completion:**
+
+Ernest is in the locked gym with the bully, who is currently unaware of the danger he is in. Ernest, holding the pack of cigarettes and the knife, decides to take action. 
+
+1. **revenge(Ernest, Bully, Gym)**: Ernest uses the knife to kill the bully. This action is crucial because it eliminates the immediate threat to both himself and Roy, allowing Ernest to feel safe and secure.
+
+After killing the bully, Ernest now has control over the situation. He can now focus on escaping the prison.
+
+2. **go(Ernest, Hall)**: Ernest moves from the gym to the hallway. This action is necessary to get closer to the exit.
+
+3. **go(Ernest, Laundry)**: Ernest heads to the laundry room to retrieve the civilian clothes. This is important because he needs the disguise to escape without being recognized.
+
+4. **disguise(Ernest, Clothes, Laundry)**: Ernest puts on the civilian clothes. This action is essential for his escape plan, as it will help him blend in outside the prison.
+
+5. **go(Ernest, Hall)**: Ernest returns to the hallway, preparing to make his final move.
+
+6. **vent(Ernest, Highway)**: Ernest crawls through the vents to reach the highway. This action is the final step in his escape plan.
+
+7. **escape(Ernest, Highway)**: Finally, Ernest escapes from the prison. This action fulfills his goal of being alive and free.
+
+**Explanation of Actions:**
+- **revenge**: This action is necessary to eliminate the bully, who poses a direct threat to Ernest and Roy.
+- **go**: Moving to the hallway and then to the laundry room is essential for accessing the civilian clothes needed for disguise.
+- **disguise**: Putting on the civilian clothes is crucial for escaping without being recognized.
+- **vent**: Crawling through the vents is a strategic move to avoid detection while reaching the highway.
+- **escape**: This final action achieves Ernest's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "revenge(Ernest, Bully, Gym)",
+    "go(Ernest, Hall)",
+    "go(Ernest, Laundry)",
+    "disguise(Ernest, Clothes, Laundry)",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

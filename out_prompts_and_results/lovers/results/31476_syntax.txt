@@ -1,0 +1,35 @@
+To achieve Blake's goal of being happy, we need to ensure that Blake gets the item they want, which is the chocolates (I2). The current situation indicates that I2 is in the bathroom (R12), but its location is unknown to Blake. 
+
+Here’s the shortest story to achieve Blake's goal:
+
+1. **move(C3, R22, R12)**: Casey moves to the bathroom to check for the chocolates.
+   - This action is necessary because Casey needs to find the chocolates to help Blake.
+
+2. **pick_up(C3, I2, R12)**: Casey picks up the chocolates from the bathroom.
+   - This action is necessary because Casey needs to have the chocolates to give them to Blake.
+
+3. **move(C3, R12, R22)**: Casey moves back to the dining room where Blake is.
+   - This action is necessary to bring the chocolates to Blake.
+
+4. **give(C3, I2, C2, R22)**: Casey gives the chocolates to Blake.
+   - This action is necessary because it directly fulfills Blake's desire for the chocolates, making Blake happy.
+
+After these actions, Blake will be happy because they have received the item they wanted.
+
+### Explanation of Actions:
+- **move(C3, R22, R12)**: Casey needs to go to the bathroom to find the chocolates.
+- **pick_up(C3, I2, R12)**: Casey picks up the chocolates to have them available for giving.
+- **move(C3, R12, R22)**: Casey returns to the dining room to deliver the chocolates to Blake.
+- **give(C3, I2, C2, R22)**: This action directly satisfies Blake's desire, making Blake happy.
+
+### Final Plan in JSON format:
+```json
+{
+  "plan": [
+    "move(C3, R22, R12)",
+    "pick_up(C3, I2, R12)",
+    "move(C3, R12, R22)",
+    "give(C3, I2, C2, R22)"
+  ]
+}
+```

@@ -1,0 +1,21 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, TomCoin, Tom, Market)**: The Bandit will loot the coin from Tom, who is currently in the Market and has just attacked the Merchant. This action is necessary for the Bandit to acquire coins directly from Tom, who is now vulnerable after the attack.
+
+2. **walk(Bandit, Market, Camp)**: After looting the coin, the Bandit will walk back to the Bandit Camp. This action is essential for the Bandit to secure the coins in the chest at the camp, fulfilling her goal.
+
+The Bandit successfully achieves her goal by acquiring a coin from Tom and then moving to the Bandit Camp to store it.
+
+### Explanation of Actions:
+- **Looting Tom**: This action is crucial because it allows the Bandit to gain coins without needing to commit further crimes or confront the Guard.
+- **Walking to the Camp**: This action ensures that the Bandit can safely store the coins in her chest, which is part of her goal.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

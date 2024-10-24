@@ -1,0 +1,29 @@
+### Story Completion
+
+After assessing Young in PatientRoomA, Hathaway realizes that Young is showing symptoms of Jarkis (a rash). To ensure Young's health, Hathaway decides to treat Young with steroids, the appropriate treatment for Jarkis.
+
+1. **treat(Hathaway, Young, steroids, PatientRoomA)**: Hathaway treats Young with steroids, which is the correct treatment for the symptoms Young is exhibiting. This action reduces Hathaway's workload by one and successfully makes Young healthy.
+
+Now that Young is healthy, Hathaway can focus on the other patients. However, since the goal is to ensure all patients are healthy, Hathaway needs to admit the other patients.
+
+2. **admit(Hathaway, Jones, PatientRoomB)**: Hathaway admits Jones to PatientRoomB, increasing their workload to 2. This action is necessary to ensure that Jones can be assessed and treated.
+
+3. **admit(Hathaway, Ross, PatientRoomC)**: Hathaway admits Ross to PatientRoomC, which allows Hathaway to manage their workload effectively while ensuring that Ross can also be assessed and treated.
+
+At this point, Hathaway has successfully treated Young and admitted the other patients, setting the stage for their health as well.
+
+### Explanation of Actions
+- **treat**: This action is crucial as it directly addresses Young's health issue, ensuring that one patient is now healthy.
+- **admit (Jones)**: This action is necessary to bring Jones into the system for assessment and treatment, which is essential for Hathaway's goal of having all patients healthy.
+- **admit (Ross)**: Similar to Jones, admitting Ross is necessary to ensure that all patients are accounted for and can receive the necessary care.
+
+### Final Plan in JSON Format
+```json
+{
+  "plan": [
+    "treat(Hathaway, Young, steroids, PatientRoomA)",
+    "admit(Hathaway, Jones, PatientRoomB)",
+    "admit(Hathaway, Ross, PatientRoomC)"
+  ]
+}
+```

@@ -1,0 +1,43 @@
+**Story Completion:**
+
+After locking the gym door, Ernest knows that Roy is in danger with the bully. He decides to take action to ensure both of their safety. 
+
+1. **vent(Ernest, Gym)**: Ernest crawls through the vents to the gym, where he knows Roy and the bully are located. This action is necessary for him to confront the bully and protect his friend.
+
+2. **revenge(Ernest, Bully, Gym)**: Once in the gym, Ernest uses the knife he stole from the kitchen to kill the bully. This action is crucial as it eliminates the threat to both him and Roy, allowing them to be safe.
+
+3. **next_day()**: The day ends, and now it is day two. This action signifies the transition to a new day, where Ernest and Roy can plan their escape.
+
+4. **disguise(Roy, Clothes, Gym)**: Roy puts on the civilian clothes that Ernest had stolen earlier. This action is essential for their escape plan, as it allows them to blend in and avoid detection.
+
+5. **go(Roy, Hall)**: Roy moves to the hallway, preparing to escape. This action is necessary to reach the highway.
+
+6. **go(Ernest, Hall)**: Ernest follows Roy into the hallway. This action ensures that both friends are together and ready to escape.
+
+7. **escape(Roy, Highway)**: Roy reaches the highway and escapes from the prison. This action fulfills his goal of being alive and free.
+
+8. **escape(Ernest, Highway)**: Ernest follows suit and escapes from the prison as well. This action ensures that he also achieves his goal of being alive and free.
+
+**Explanation of Actions:**
+- **vent**: Allows Ernest to reach Roy and confront the bully.
+- **revenge**: Eliminates the bully, ensuring both Ernest and Roy are no longer threatened.
+- **next_day**: Marks the transition to a new day, allowing for new actions.
+- **disguise**: Prepares Roy for a successful escape.
+- **go**: Moves both characters to the hallway, setting them up for escape.
+- **escape**: Achieves the ultimate goal of both characters being alive and free.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "vent(Ernest, Gym)",
+    "revenge(Ernest, Bully, Gym)",
+    "next_day()",
+    "disguise(Roy, Clothes, Gym)",
+    "go(Roy, Hall)",
+    "go(Ernest, Hall)",
+    "escape(Roy, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

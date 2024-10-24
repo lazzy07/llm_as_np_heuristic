@@ -1,0 +1,35 @@
+**Story Completion:**
+
+After Young walks to PatientRoomB, they find Jones in the admissions room. Young knows that Jones is a patient who needs help. Young decides to assess Jones to determine their symptoms.
+
+1. **assess(Hathaway, Jones, symptom, Admissions)**: Hathaway assesses Jones in the admissions room. Since Jones has not been treated yet, they may have either Flaze or Jarkis. Hathaway's workload is still manageable, so they can accurately assess Jones's symptoms.
+
+2. **treat(Hathaway, Jones, antibiotics, Admissions)**: After assessing Jones, Hathaway determines that Jones has Flaze due to the fever. Hathaway treats Jones with antibiotics, which is the correct treatment for Flaze. Jones becomes healthy.
+
+3. **walk(Young, PatientRoomB, Admissions)**: Young walks back to the admissions room to check on Ross, who is still there. Young wants to ensure that Ross also receives the necessary treatment.
+
+4. **assess(Hathaway, Ross, symptom, Admissions)**: Hathaway assesses Ross in the admissions room. Since Hathaway's workload is still manageable, they can accurately assess Ross's symptoms.
+
+5. **treat(Hathaway, Ross, steroids, Admissions)**: After assessing Ross, Hathaway determines that Ross has Jarkis due to the rash. Hathaway treats Ross with steroids, which is the correct treatment for Jarkis. Ross becomes healthy.
+
+By the end of these actions, both Jones and Ross are healthy, and Young has achieved their goal of ensuring that patients are alive and healthy.
+
+**Explanation of Actions:**
+- The assessment of Jones is crucial to determine the correct treatment and ensure they are healthy.
+- Treating Jones with antibiotics is necessary to cure Flaze, which is vital for Jones's health.
+- Young's walk to the admissions room is to check on Ross, ensuring that all patients are accounted for and healthy.
+- Assessing Ross allows Hathaway to determine the correct treatment for Ross's condition.
+- Treating Ross with steroids is essential to cure Jarkis, ensuring Ross's health.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Jones, symptom, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, Admissions)",
+    "walk(Young, PatientRoomB, Admissions)",
+    "assess(Hathaway, Ross, symptom, Admissions)",
+    "treat(Hathaway, Ross, steroids, Admissions)"
+  ]
+}
+```

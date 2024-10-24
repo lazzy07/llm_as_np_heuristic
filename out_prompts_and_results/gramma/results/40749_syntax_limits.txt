@@ -1,0 +1,15 @@
+In the current situation, the Bandit is already in the Market, where she has just attacked Tom, who is now dead. The Bandit has successfully acquired Tom's coin and is armed with a sword. To achieve her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, she can take the following action:
+
+1. **Take(Bandit, TomCoin, Chest, Camp)**: The Bandit takes the coin from Tom and moves to the bandit camp to place it in the chest. This action fulfills her goal of having coins in the chest at the bandit camp.
+
+This is the only action needed to complete the story, as it directly leads to the Bandit achieving her goal.
+
+### Explanation of the Action:
+- **Take(Bandit, TomCoin, Chest, Camp)**: The Bandit takes the coin from Tom, which she has just robbed, and moves to the bandit camp to store it in the chest. This action is necessary for the Bandit to achieve her goal of accumulating coins.
+
+### JSON Object:
+```json
+{
+  "plan": ["take(Bandit, TomCoin, Chest, Camp)"]
+}
+```

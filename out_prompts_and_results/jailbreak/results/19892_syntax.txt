@@ -1,0 +1,52 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   *Roy moves from the laundry room to the hallway to be closer to Ernest and the potential escape route.*
+
+2. **Action: go(Ernest, Hall)**  
+   *Ernest leaves the kitchen and joins Roy in the hallway, allowing them to strategize together.*
+
+3. **Action: vent(Roy, Highway)**  
+   *Roy crawls through the vents to reach the highway, where he can put on the civilian clothes and escape.*
+
+4. **Action: disguise(Roy, Clothes, Highway)**  
+   *Roy puts on the civilian clothes he stole earlier, disguising himself for the escape.*
+
+5. **Action: escape(Roy, Highway)**  
+   *Roy successfully escapes from the prison, achieving his goal of staying alive and free.*
+
+6. **Action: vent(Ernest, Highway)**  
+   *Ernest crawls through the vents to the highway as well, following Roy's path.*
+
+7. **Action: disguise(Ernest, Clothes, Highway)**  
+   *Ernest puts on the civilian clothes, disguising himself for the escape.*
+
+8. **Action: escape(Ernest, Highway)**  
+   *Ernest escapes from the prison, achieving his goal of staying alive and free.*
+
+**Explanation of Actions:**
+- **go(Roy, Hall)** and **go(Ernest, Hall)**: Both characters need to be in the hallway to access the vents leading to the highway.
+- **vent(Roy, Highway)**: Roy uses the vents to reach the highway, which is crucial for escaping the prison.
+- **disguise(Roy, Clothes, Highway)**: Roy disguises himself to avoid detection while escaping.
+- **escape(Roy, Highway)**: This action fulfills Roy's goal of staying alive and free.
+- **vent(Ernest, Highway)**: Following Roy, Ernest also uses the vents to reach the highway.
+- **disguise(Ernest, Clothes, Highway)**: Ernest disguises himself to ensure a successful escape.
+- **escape(Ernest, Highway)**: This action fulfills Ernest's goal of staying alive and free.
+
+Both characters successfully escape the prison, achieving their goals of survival and freedom.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "go(Ernest, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "vent(Ernest, Highway)",
+    "disguise(Ernest, Clothes, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

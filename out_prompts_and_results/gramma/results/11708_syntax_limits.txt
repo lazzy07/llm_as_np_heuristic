@@ -1,0 +1,17 @@
+In this story, the Bandit wants to carry as many coins as possible or have coins in the chest at the bandit camp. The Bandit has already attacked the Merchant and looted the Medicine. Now, the Bandit is in the Market with the goal of acquiring coins.
+
+The Bandit can take the following action to achieve her goal:
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit can rob Tom, who is currently in the Market and has a coin. Since Tom is not armed, the Bandit can successfully take the coin from him.
+
+This action allows the Bandit to achieve her goal of carrying more coins.
+
+### Explanation of the Action:
+- The Bandit robs Tom because he is an unarmed character in the same location. This action directly increases the Bandit's coin count, fulfilling her goal of carrying as many coins as possible.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

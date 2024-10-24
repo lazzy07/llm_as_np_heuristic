@@ -1,0 +1,18 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **walk(Bandit, Crossroads, Camp)**: The Bandit will walk to the bandit camp to secure the coins in the chest. This is necessary because the Bandit prefers to be at the camp to achieve her goal of accumulating coins.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will take the coins from the chest at the camp. This action directly fulfills her goal of having coins.
+
+The Bandit successfully achieves her goal by moving to the camp and taking the coins. The actions are straightforward and necessary to ensure that the Bandit ends up with the coins she desires.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

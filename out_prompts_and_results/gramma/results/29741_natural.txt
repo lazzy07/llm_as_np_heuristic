@@ -1,0 +1,28 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following actions will take place:
+
+1. **The bandit attacks the hero.** 
+   - The bandit is armed and can attack the hero, who is also armed. However, since the bandit is a criminal and the hero is not, the bandit will attempt to kill the hero to take the hero's sword and any coins the hero may have. 
+
+2. **The bandit loots the hero's coin.**
+   - After successfully attacking and killing the hero, the bandit will loot the hero's coin, which is the primary goal of the bandit.
+
+3. **The bandit walks to the bandit camp.**
+   - With the hero dead and the coin in hand, the bandit will walk back to the bandit camp to secure the coin in the chest there, achieving the goal of having coins in the chest.
+
+This sequence of actions ensures that the bandit successfully achieves her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- **Attack the hero:** This is necessary for the bandit to eliminate a non-criminal who could potentially interfere with her plans and to take the hero's possessions.
+- **Loot the hero's coin:** This action directly contributes to the bandit's goal of acquiring coins.
+- **Walk to the bandit camp:** This final action secures the coins in a safe location, fulfilling the bandit's objective.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "The bandit attacks the hero.",
+    "The bandit loots the hero's coin.",
+    "The bandit walks to the bandit camp."
+  ]
+}
+```

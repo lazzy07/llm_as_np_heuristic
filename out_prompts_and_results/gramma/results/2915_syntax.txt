@@ -1,0 +1,25 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, TomCoin, Tom, Market)**: The Bandit will loot the coin from Tom, who is currently in the Market and is armed. Since Tom is armed, the Bandit can only loot if Tom is not carrying a sword. However, since Tom is armed with a sword, the Bandit cannot loot him directly. Therefore, the Bandit will need to take a different approach.
+
+2. **attack(Bandit, Tom, Market)**: The Bandit will attack Tom, who is armed with a sword. This action is necessary because it allows the Bandit to eliminate Tom, making it easier to loot the coin without facing any resistance.
+
+3. **loot(Bandit, TomCoin, Tom, Market)**: After successfully attacking Tom, the Bandit will loot the coin from Tom's corpse. This action allows the Bandit to achieve her goal of carrying more coins.
+
+4. **walk(Bandit, Market, Camp)**: Finally, the Bandit will walk to the bandit camp, where she can store the coins in the chest. This action ensures that the Bandit has coins in the chest at the bandit camp, fulfilling her goal.
+
+### Explanation of Actions:
+- **attack(Bandit, Tom, Market)**: This action is necessary to eliminate Tom, who poses a threat and is carrying a coin that the Bandit wants.
+- **loot(Bandit, TomCoin, Tom, Market)**: After Tom is defeated, the Bandit can safely take the coin from him, which directly contributes to her goal of carrying more coins.
+- **walk(Bandit, Market, Camp)**: This final action allows the Bandit to secure her coins in the chest at the bandit camp, ensuring her goal is fully achieved.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "attack(Bandit, Tom, Market)",
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

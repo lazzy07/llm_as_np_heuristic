@@ -1,0 +1,49 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy moves from the gym to the hallway to find a way to escape or confront the bully.
+
+2. **Action: vent(Roy, Highway)**  
+   - Roy crawls through the vents to reach the highway, aiming to escape the prison.
+
+3. **Action: disguise(Roy, Clothes, Highway)**  
+   - Once on the highway, Roy puts on the civilian clothes to disguise himself, making it easier to escape without being recognized.
+
+4. **Action: escape(Roy, Highway)**  
+   - Roy successfully escapes from the prison, achieving his goal of staying alive and avoiding the bully's threats.
+
+5. **Action: next_day()**  
+   - The story transitions to day two, where Ernest is still in the cell block, threatened by the bully.
+
+6. **Action: go(Ernest, Hall)**  
+   - Ernest moves to the hallway, seeking a way to escape or confront the bully.
+
+7. **Action: vent(Ernest, Gym)**  
+   - Ernest crawls through the vents to reach the gym, where the bully is located.
+
+8. **Action: lock_gym(Ernest, Gym)**  
+   - Ernest locks the gym door, trapping the bully inside and preventing him from escaping.
+
+9. **Action: kill(Bully, Ernest, Gym)**  
+   - With the bully trapped, Ernest takes the opportunity to kill him, overcoming the threat and ensuring his own survival.
+
+**Explanation of Actions:**
+- The actions taken by Roy focus on escaping the prison to avoid the bully's threats. By moving to the hallway and then through the vents to the highway, he successfully disguises himself and escapes.
+- Ernest's actions are aimed at confronting the bully. By locking the gym door, he ensures that the bully cannot escape, allowing him to take revenge and eliminate the threat once and for all.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "next_day()",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "lock_gym(Ernest, Gym)",
+    "kill(Bully, Ernest, Gym)"
+  ]
+}
+```

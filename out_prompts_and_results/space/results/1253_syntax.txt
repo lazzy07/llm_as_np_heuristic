@@ -1,0 +1,29 @@
+Zoe, the space explorer, is currently in the cave while the Lizard is on the surface. The surface is dangerous due to the volcano that has begun to erupt. Zoe wants to be healthy and safe and to make friends with the Lizard. The Lizard, being the guardian of the planet, also desires health, safety, and friendship.
+
+To achieve her goals, Zoe will take the following actions:
+
+1. **walk(Zoe, Cave, Surface)**: Zoe walks from the cave to the surface to meet the Lizard. This action is necessary for Zoe to interact with the Lizard and work towards making friends.
+
+2. **make_peace(Zoe, Lizard, Surface)**: Once on the surface, Zoe attempts to make peace with the Lizard. This action is crucial for establishing a friendly relationship, which is one of Zoe's goals.
+
+3. **walk(Lizard, Surface, Cave)**: If the Lizard is willing to make peace, it will walk to the cave with Zoe. This action signifies that both characters are moving to a safer location away from the erupting volcano.
+
+4. **make_peace(Zoe, Lizard, Cave)**: In the cave, Zoe and the Lizard can solidify their friendship. This action ensures that both characters are now friends, fulfilling Zoe's goal of making friends with other creatures.
+
+5. **teleport_to_ship(Zoe, Cave, Ship)**: Finally, Zoe teleports back to her spaceship from the cave. This action ensures her safety, as the surface is still dangerous due to the volcano.
+
+By following these actions, Zoe achieves her goals of being healthy and safe while also making friends with the Lizard.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Zoe, Cave, Surface)",
+    "make_peace(Zoe, Lizard, Surface)",
+    "walk(Lizard, Surface, Cave)",
+    "make_peace(Zoe, Lizard, Cave)",
+    "teleport_to_ship(Zoe, Cave, Ship)"
+  ]
+}
+```

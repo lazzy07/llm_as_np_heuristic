@@ -1,0 +1,23 @@
+**Story Completion:**
+
+As Tom stands in the Market, he notices the Bandit approaching. The Bandit, armed with a sword, sees Tom as an easy target. The Bandit decides to rob Tom, knowing that he is unarmed and has coins. 
+
+1. **Action: rob(Bandit, TomCoin, Tom, Market)** - The Bandit robs Tom of the coins he is carrying. This action helps the Bandit achieve her goal of carrying as many coins as possible.
+
+With the coins now in her possession, the Bandit feels satisfied and decides to return to her camp.
+
+2. **Action: walk(Bandit, Market, Camp)** - The Bandit walks back to her camp, where she can store the coins in her chest, fulfilling her goal of having coins in the chest at the bandit camp.
+
+**Explanation of Actions:**
+- The first action (robbing Tom) is necessary for the Bandit to acquire coins, which is her primary goal. Since Tom is unarmed, the Bandit can successfully rob him without any risk.
+- The second action (walking to the camp) allows the Bandit to secure her coins in a safe location, ensuring that she has achieved her goal of having coins in the chest at the bandit camp.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

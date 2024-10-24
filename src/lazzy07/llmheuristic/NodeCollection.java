@@ -8,7 +8,7 @@ public class NodeCollection {
 	public static int SAMPLE_LIMIT = 0;
 	public static ArrayList<Node> ALL_NODES = new ArrayList<Node>();
 	public static ArrayList<Node> SELECTED_NODES = new ArrayList<Node>();
-	public static int MAX_PLAN_SIZE = 8;
+	public static int MAX_PLAN_SIZE = 4;
 	private static Random random = new Random(100);
 	
 	public static void sampleNodes() {
@@ -92,35 +92,26 @@ public class NodeCollection {
 				"hRelaxed",
 				"relaxedPlan",
 				"possibleActions",
-				"sabrePlan",
-				"sabreLimitPlan",
+				"syntaxPlan",
+				"syntaxLimitPlan",
 				"naturalPlan",
 				"naturalLimitPlan",
-//				"sabrePlanLlama",
-//				"sabreLimitPlanLlama",
-//				"naturalPlanLlama",
-//				"naturalLimitPlanLlama",
 				"closestNatural",
 				"closestNaturalLimits",
-//				"closestNaturalLlama",
-//				"closestNaturalLimitsLlama",
 				"hSabre",
 				"hSabreLimits",
 				"hNatural",
 				"hNaturalLimits",
-//				"hSabreLlama",
-//				"hSabreLimitsLlama",
-//				"hNaturalLlama",
-//				"hNaturalLimitsLlama",
 				"relaxedPrediction",
-				"sabrePrediction",
-				"sabreLimitPrediction",
+				"syntaxPrediction",
+				"syntaxLimitPrediction",
 				"naturalPrediction",
 				"naturalLimitPrediction",
-//				"sabrePredictionLlama",
-//				"sabreLimitPredictionLlama",
-//				"naturalPredictionLlama",
-//				"naturalLimitPredictionLlama"
+				"relaxedContains",
+				"syntaxContains",
+				"syntaxLimitContains",
+				"naturalContains",
+				"naturalLimitContains"
 		};
 		
 		ArrayList<String[]> data = new ArrayList<String[]>();

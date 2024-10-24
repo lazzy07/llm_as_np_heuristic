@@ -1,0 +1,30 @@
+**Story Completion:**
+
+Hathaway, with a workload of 3, is in Patient Room A. She knows she needs to assess her patients to determine their symptoms. 
+
+1. **Assess Ross**: Hathaway assesses Ross in Patient Room C. She believes Ross is alive and healthy, but she needs to confirm his symptoms. 
+   - **Reason**: This action is necessary to identify if Ross has Flaze or Jarkis, which will guide her treatment.
+
+2. **Assess Young**: Hathaway then walks to Admissions to assess Young, who is also waiting to be seen. 
+   - **Reason**: Young is another patient who needs to be assessed to ensure he receives the correct treatment.
+
+3. **Treat Ross**: After assessing, Hathaway determines that Ross has a fever (symptom of Flaze) and treats him with antibiotics. 
+   - **Reason**: This action is crucial as it directly addresses Ross's condition, ensuring he becomes healthy.
+
+4. **Treat Young**: Finally, Hathaway treats Young with steroids, believing he has a rash (symptom of Jarkis). 
+   - **Reason**: This action is necessary to ensure Young's health, as he also needs the correct treatment.
+
+By performing these actions, Hathaway successfully treats both patients, achieving her goal of ensuring all hospital patients are healthy.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, ?, PatientRoomC)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "assess(Hathaway, Young, ?, Admissions)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomC)",
+    "treat(Hathaway, Young, steroids, Admissions)"
+  ]
+}
+```

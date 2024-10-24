@@ -1,0 +1,35 @@
+**Story Completion:**
+
+After assessing Jones in Patient Room A, Hathaway realizes that Jones is showing symptoms of Jarkis (the rash). However, Hathaway's workload is at 3, which means there is a risk of making a mistake. To ensure that Jones receives the correct treatment, Hathaway decides to treat Jones immediately with steroids, the correct treatment for Jarkis.
+
+Next, Hathaway walks to Admissions to assess Ross, who is still waiting there. Upon assessing Ross, Hathaway finds that he is also showing symptoms of Jarkis. Hathaway treats Ross with steroids as well, ensuring that both patients are treated correctly.
+
+Finally, Hathaway walks to Admissions again to assess Young. Young is also showing symptoms of Jarkis, and Hathaway treats Young with steroids, completing the treatment for all patients.
+
+**Explanation of Actions:**
+
+1. **treat(Hathaway, Jones, steroids, PatientRoomA)**: This action is necessary to treat Jones correctly for Jarkis, ensuring he becomes healthy.
+2. **walk(Hathaway, PatientRoomA, Admissions)**: Hathaway needs to move to Admissions to assess Ross, who is waiting there.
+3. **assess(Hathaway, Ross, SymptomB, Admissions)**: This action allows Hathaway to determine Ross's symptoms and ensure he receives the correct treatment.
+4. **treat(Hathaway, Ross, steroids, Admissions)**: This action treats Ross correctly for Jarkis, ensuring he becomes healthy.
+5. **walk(Hathaway, Admissions, Admissions)**: Hathaway needs to assess Young next.
+6. **assess(Hathaway, Young, SymptomB, Admissions)**: This action allows Hathaway to determine Young's symptoms.
+7. **treat(Hathaway, Young, steroids, Admissions)**: This action treats Young correctly for Jarkis, ensuring he becomes healthy.
+
+**Final Plan in JSON Format:**
+
+```json
+{
+  "plan": [
+    "treat(Hathaway, Jones, steroids, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "assess(Hathaway, Ross, SymptomB, Admissions)",
+    "treat(Hathaway, Ross, steroids, Admissions)",
+    "walk(Hathaway, Admissions, Admissions)",
+    "assess(Hathaway, Young, SymptomB, Admissions)",
+    "treat(Hathaway, Young, steroids, Admissions)"
+  ]
+}
+``` 
+
+This plan ensures that all patients are treated correctly and become healthy, achieving Hathaway's goal.

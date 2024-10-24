@@ -1,0 +1,62 @@
+**Story Completion:**
+
+Dr. Hathaway, seeing that there are three patients in the admissions room, decides to admit them to the exam rooms to assess their conditions. 
+
+1. **Dr. Hathaway admits Jones to Exam Room A.** (This action is necessary to start the process of assessing and treating Jones.)
+2. **Dr. Hathaway admits Ross to Exam Room B.** (This action is necessary to start the process of assessing and treating Ross.)
+3. **Dr. Hathaway admits Young to Exam Room C.** (This action is necessary to start the process of assessing and treating Young.)
+
+Now that all patients are assigned to exam rooms, Dr. Hathaway can assess their conditions.
+
+4. **Dr. Hathaway walks from Admissions to Exam Room A.** (This action is necessary for Dr. Hathaway to assess Jones.)
+5. **Dr. Hathaway assesses Jones.** (This action is necessary to determine Jones's symptoms.)
+6. **Dr. Hathaway walks from Exam Room A to Exam Room B.** (This action is necessary for Dr. Hathaway to assess Ross.)
+7. **Dr. Hathaway assesses Ross.** (This action is necessary to determine Ross's symptoms.)
+8. **Dr. Hathaway walks from Exam Room B to Exam Room C.** (This action is necessary for Dr. Hathaway to assess Young.)
+9. **Dr. Hathaway assesses Young.** (This action is necessary to determine Young's symptoms.)
+
+After assessing all patients, Dr. Hathaway determines that:
+
+- Jones has a fever (Flaze).
+- Ross has a rash (Jarkis).
+- Young has a fever (Flaze).
+
+Now, Dr. Hathaway can treat each patient accordingly.
+
+10. **Dr. Hathaway walks from Exam Room C to Exam Room A.** (This action is necessary for Dr. Hathaway to treat Jones.)
+11. **Dr. Hathaway treats Jones with antibiotics.** (This action is necessary to cure Jones of Flaze.)
+12. **Dr. Hathaway walks from Exam Room A to Exam Room B.** (This action is necessary for Dr. Hathaway to treat Ross.)
+13. **Dr. Hathaway treats Ross with steroids.** (This action is necessary to cure Ross of Jarkis.)
+14. **Dr. Hathaway walks from Exam Room B to Exam Room C.** (This action is necessary for Dr. Hathaway to treat Young.)
+15. **Dr. Hathaway treats Young with antibiotics.** (This action is necessary to cure Young of Flaze.)
+
+With all patients treated successfully, Dr. Hathaway achieves their goal of ensuring all hospital patients are healthy.
+
+**Explanation of Actions:**
+- Admitting patients is essential to get them into exam rooms for assessment.
+- Walking between rooms is necessary for Dr. Hathaway to assess and treat each patient.
+- Assessing patients is crucial to determine their symptoms and the correct treatment.
+- Treating patients with the appropriate medication is vital to ensure they recover and achieve health.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "Dr. Hathaway admits Jones to Exam Room A.",
+    "Dr. Hathaway admits Ross to Exam Room B.",
+    "Dr. Hathaway admits Young to Exam Room C.",
+    "Dr. Hathaway walks from Admissions to Exam Room A.",
+    "Dr. Hathaway assesses Jones.",
+    "Dr. Hathaway walks from Exam Room A to Exam Room B.",
+    "Dr. Hathaway assesses Ross.",
+    "Dr. Hathaway walks from Exam Room B to Exam Room C.",
+    "Dr. Hathaway assesses Young.",
+    "Dr. Hathaway walks from Exam Room C to Exam Room A.",
+    "Dr. Hathaway treats Jones with antibiotics.",
+    "Dr. Hathaway walks from Exam Room A to Exam Room B.",
+    "Dr. Hathaway treats Ross with steroids.",
+    "Dr. Hathaway walks from Exam Room B to Exam Room C.",
+    "Dr. Hathaway treats Young with antibiotics."
+  ]
+}
+```

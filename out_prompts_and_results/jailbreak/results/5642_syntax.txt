@@ -1,0 +1,38 @@
+**Story Completion:**
+
+After completing their chores in the kitchen, Roy realizes that he needs to secure his safety and that of his friend Ernest. He knows the bully is a threat, especially since he has the pack of cigarettes that Roy stole earlier. 
+
+1. **Lock the Gym**: Roy decides to lock the gym door to prevent the bully from coming out and threatening them. This action is crucial because it creates a safe space for him and Ernest, reducing the immediate threat from the bully. 
+   - Action: `lock_gym(Roy, Kitchen)`
+
+2. **Disguise**: Next, Roy puts on the civilian clothes he stole from the laundry. This disguise will allow him to escape the prison later without being recognized. 
+   - Action: `disguise(Roy, Clothes, Kitchen)`
+
+3. **Go to the Hallway**: Roy then moves to the hallway, where he can access the vents leading outside. 
+   - Action: `go(Roy, Hall)`
+
+4. **Vent to the Highway**: Once in the hallway, Roy crawls through the vents to reach the highway. This action is essential for his escape plan. 
+   - Action: `vent(Roy, Highway)`
+
+5. **Escape**: Finally, Roy puts on the civilian clothes disguise and escapes from the prison. This is the culmination of his efforts to ensure his safety and achieve his goal of being alive and free. 
+   - Action: `escape(Roy, Highway)`
+
+**Explanation of Actions:**
+- **Locking the gym** prevents the bully from being a threat, ensuring both Roy and Ernest are safe.
+- **Disguising** allows Roy to avoid detection when he escapes.
+- **Moving to the hallway** is necessary to access the escape route.
+- **Crawling through the vents** is the only way to reach the outside without being seen.
+- **Escaping** is the final action that fulfills Roy's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "lock_gym(Roy, Kitchen)",
+    "disguise(Roy, Clothes, Kitchen)",
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

@@ -14,8 +14,8 @@ public class TreasureText extends DomainText {
 
 	public TreasureText(Expression initial, int goal) {
 		super(initial, goal);
-		agents.put("Hawkins","Jim Hawkins");
-		agents.put("Silver","Long John Silver");
+		agents.put("Hawkins","Hawkins");
+		agents.put("Silver","Silver");
 		places.put("Port","Port Royal");
 		places.put("Island","The island");
 		others.put("Treasure", "The treasure");
@@ -26,7 +26,7 @@ public class TreasureText extends DomainText {
 	public String authorGoal() {
 		return "that ends with Hawkins having the treasure.";
 	}
-		
+	
 	@Override
 	public String fluent(Fluent fluent, Expression value) {
 		String str = believes(fluent, value);

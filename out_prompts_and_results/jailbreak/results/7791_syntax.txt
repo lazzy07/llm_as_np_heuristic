@@ -1,0 +1,39 @@
+**Story Completion:**
+
+After completing their chores, Roy is in the hallway and knows that Ernest is in the kitchen with the cigarettes. Roy decides to take action to help both himself and Ernest. 
+
+1. **lock_gym(Roy, Hall)**: Roy locks the gym door to prevent the bully from coming out and threatening them. This action ensures that they are safe from the bully while they plan their next move.
+
+2. **go(Roy, Kitchen)**: Roy moves to the kitchen to join Ernest. He knows that they need to work together to escape the prison.
+
+3. **disguise(Roy, Clothes, Kitchen)**: Roy puts on the civilian clothes he stole from the laundry. This disguise will help him blend in and avoid detection when they attempt to escape.
+
+4. **go(Roy, Hall)**: After disguising himself, Roy heads back to the hallway with Ernest.
+
+5. **vent(Roy, Highway)**: Roy crawls through the vents to reach the highway. This action is crucial as it leads them to freedom.
+
+6. **disguise(Ernest, Clothes, Hall)**: Once in the hallway, Roy helps Ernest put on the civilian clothes as well, ensuring both of them are disguised.
+
+7. **escape(Ernest, Highway)**: Finally, both Ernest and Roy escape from the prison, successfully achieving their goal of staying alive and avoiding threats.
+
+**Explanation of Actions:**
+- **lock_gym**: This action is necessary to ensure the bully cannot threaten them while they plan their escape.
+- **go**: Moving to the kitchen allows Roy to join Ernest and strategize together.
+- **disguise**: Putting on civilian clothes is essential for both characters to avoid being recognized when they escape.
+- **vent**: Crawling through the vents is a stealthy way to reach the highway without being caught.
+- **escape**: This is the ultimate goal, allowing both characters to leave the prison safely.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "lock_gym(Roy, Hall)",
+    "go(Roy, Kitchen)",
+    "disguise(Roy, Clothes, Kitchen)",
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

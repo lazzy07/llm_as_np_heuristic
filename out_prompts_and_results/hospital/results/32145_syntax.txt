@@ -1,0 +1,47 @@
+To ensure that all patients are healthy, Hathaway must assess and treat each patient based on their symptoms. Since Young is already in PatientRoomB, Hathaway will first assess Young, then treat them if necessary. After that, Hathaway will return to the admissions room to assess and treat Jones and Ross.
+
+Here’s the completed story:
+
+1. **Assess Young**: Hathaway assesses Young in PatientRoomB to determine their symptoms. This is necessary to identify if Young has Flaze or Jarkis and to provide the correct treatment.
+   
+2. **Treat Young**: Based on the assessment, Hathaway treats Young with the appropriate treatment. This ensures that Young becomes healthy.
+
+3. **Walk to Admissions**: Hathaway walks back to the admissions room to assess the remaining patients, Jones and Ross.
+
+4. **Admit Ross to Exam Room A**: Hathaway admits Ross to Exam Room A, which allows Hathaway to assess Ross next.
+
+5. **Assess Jones**: Hathaway assesses Jones in the admissions room to determine their symptoms.
+
+6. **Assess Ross**: Hathaway assesses Ross in Exam Room A to determine their symptoms.
+
+7. **Treat Jones**: Based on the assessment, Hathaway treats Jones with the appropriate treatment, ensuring that Jones becomes healthy.
+
+8. **Treat Ross**: Based on the assessment, Hathaway treats Ross with the appropriate treatment, ensuring that Ross becomes healthy.
+
+By following these steps, Hathaway successfully treats all patients, achieving their goal of ensuring that all hospital patients are healthy.
+
+### Explanation of Actions:
+- **Assess Young**: Necessary to identify symptoms and determine treatment.
+- **Treat Young**: Ensures Young becomes healthy.
+- **Walk to Admissions**: Allows Hathaway to assess the other patients.
+- **Admit Ross to Exam Room A**: Prepares Ross for assessment.
+- **Assess Jones**: Necessary to identify symptoms and determine treatment.
+- **Assess Ross**: Necessary to identify symptoms and determine treatment.
+- **Treat Jones**: Ensures Jones becomes healthy.
+- **Treat Ross**: Ensures Ross becomes healthy.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, ?, PatientRoomB)",
+    "treat(Hathaway, Young, ?, PatientRoomB)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "admit(Hathaway, Ross, PatientRoomA)",
+    "assess(Hathaway, Jones, ?, Admissions)",
+    "assess(Hathaway, Ross, ?, PatientRoomA)",
+    "treat(Hathaway, Jones, ?, Admissions)",
+    "treat(Hathaway, Ross, ?, PatientRoomA)"
+  ]
+}
+```

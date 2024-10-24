@@ -1,0 +1,23 @@
+In this story, the Bandit is currently at the Market, where she has successfully robbed the Merchant of the Medicine and is armed with a sword. The Bandit’s goal is to carry as many coins as possible or to have coins in the chest at the bandit camp. Since she has already robbed Tom of his coin, she can now take the coins from the Merchant and then walk to the Bandit Camp to secure her loot.
+
+The Bandit will take the following action:
+
+1. **rob(Bandit, TomCoin, Merchant, Market)**: The Bandit will rob the Merchant of the coin she has, which will help her achieve her goal of carrying as many coins as possible.
+
+2. **walk(Bandit, Market, Camp)**: After robbing the Merchant, the Bandit will walk to the Bandit Camp to secure her coins in the chest.
+
+This sequence of actions allows the Bandit to achieve her goal of having coins in the chest at the Bandit Camp.
+
+### Explanation of Actions:
+- **rob(Bandit, TomCoin, Merchant, Market)**: This action is necessary for the Bandit to increase her coin count, which is essential for her goal.
+- **walk(Bandit, Market, Camp)**: This action is necessary for the Bandit to move to a safe location (the Bandit Camp) where she can store her coins.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Merchant, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

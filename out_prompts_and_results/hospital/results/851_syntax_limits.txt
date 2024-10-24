@@ -1,0 +1,31 @@
+**Story Completion:**
+
+1. **Assess Ross**: Hathaway assesses Ross in Exam Room A to determine his symptoms. This is necessary to identify whether Ross has Flaze or Jarkis, which will inform the treatment plan.
+
+2. **Treat Ross**: After assessing Ross, Hathaway treats him with antibiotics if he shows symptoms of Flaze, or with steroids if he shows symptoms of Jarkis. This action is crucial to ensure Ross becomes healthy.
+
+3. **Assess Young**: Hathaway then assesses Young in Exam Room C to determine his symptoms. This is important to identify the correct treatment for Young as well.
+
+4. **Treat Young**: After assessing Young, Hathaway treats him with antibiotics if he shows symptoms of Flaze, or with steroids if he shows symptoms of Jarkis. This ensures Young also becomes healthy.
+
+5. **Admit Jones**: Finally, Hathaway admits Jones to Exam Room B. This is necessary to ensure that Jones is seen and treated as well.
+
+6. **Assess Jones**: Hathaway assesses Jones in Exam Room B to determine his symptoms. This is the last step to ensure that all patients are healthy.
+
+**Explanation of Actions:**
+- Each action is taken to ensure that Hathaway can assess and treat all patients effectively, which aligns with Hathaway's goal of ensuring all hospital patients are healthy.
+- The sequence of actions is designed to minimize the workload on Hathaway while ensuring that each patient is treated appropriately based on their symptoms.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, symptom(Ross), PatientRoomA)",
+    "treat(Hathaway, Ross, treatment(Ross), PatientRoomA)",
+    "assess(Hathaway, Young, symptom(Young), PatientRoomC)",
+    "treat(Hathaway, Young, treatment(Young), PatientRoomC)",
+    "admit(Hathaway, Jones, PatientRoomB)",
+    "assess(Hathaway, Jones, symptom(Jones), PatientRoomB)"
+  ]
+}
+```

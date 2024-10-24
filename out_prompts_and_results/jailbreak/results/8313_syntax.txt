@@ -1,0 +1,49 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy leaves the gym and moves to the hallway to find a way to escape or confront the bully.
+
+2. **Action: vent(Roy, Highway)**  
+   - Roy crawls through the vents to reach the highway, aiming to escape the prison.
+
+3. **Action: disguise(Roy, Clothes, Highway)**  
+   - Once on the highway, Roy puts on the civilian clothes to disguise himself, making it easier to escape without being recognized.
+
+4. **Action: escape(Roy, Highway)**  
+   - Roy successfully escapes from the prison, achieving his goal of staying alive and avoiding the bully's threats.
+
+5. **Action: next_day()**  
+   - The story transitions to day two, where Roy is free, but Ernest remains in the prison.
+
+6. **Action: go(Ernest, Hall)**  
+   - Ernest, feeling threatened by the bully, decides to leave the laundry room and head to the hallway.
+
+7. **Action: vent(Ernest, Gym)**  
+   - Ernest crawls through the vents to reach the gym, where he knows the bully is located.
+
+8. **Action: lock_gym(Ernest, Gym)**  
+   - Once inside the gym, Ernest locks the door to prevent the bully from escaping.
+
+9. **Action: kill(Bully, Ernest, Gym)**  
+   - With the bully trapped, Ernest takes the opportunity to kill him, overcoming the threat he posed.
+
+**Explanation of Actions:**
+- The actions taken by Roy focus on escaping the prison to ensure his survival. By moving to the hallway and then through the vents, he avoids confrontation with the bully and secures his freedom.
+- Ernest's actions are driven by the need to confront the bully and eliminate the threat. By locking the gym door, he ensures that the bully cannot escape, allowing him to take revenge and secure his own safety.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "next_day()",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "lock_gym(Ernest, Gym)",
+    "kill(Bully, Ernest, Gym)"
+  ]
+}
+```

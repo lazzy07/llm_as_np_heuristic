@@ -1,0 +1,21 @@
+To ensure the guard achieves his goal of killing criminals, the following sequence of actions will take place:
+
+1. **report(Guard, Bandit, Market)**: The guard will report the location of the bandit to himself, confirming that the bandit is present in the market. This action is necessary for the guard to focus on the criminal he needs to eliminate.
+
+2. **attack(Guard, Bandit, Market)**: The guard will attack the bandit in the market. This action is crucial as it directly leads to the guard's goal of killing a criminal.
+
+3. **loot(Guard, BanditSword, Bandit, Market)**: After successfully attacking the bandit, the guard will loot the bandit’s sword. This action is not necessary for achieving the guard's goal but is a logical follow-up to ensure he is better armed for any future encounters.
+
+The story is concise and focuses solely on the actions that lead to the guard achieving his goal of killing a criminal.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "report(Guard, Bandit, Market)",
+    "attack(Guard, Bandit, Market)",
+    "loot(Guard, BanditSword, Bandit, Market)"
+  ]
+}
+```

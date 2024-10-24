@@ -126,7 +126,7 @@ public class RaidersText extends DomainText {
 			if(value.equals("True"))
 				str += arg0 + " is dangerous";
 			else
-				str += arg0 + " is not dangerous";
+				str += arg0 + " is safe";
 			break;
 		case "at":
 			if(value.equals("?")) {

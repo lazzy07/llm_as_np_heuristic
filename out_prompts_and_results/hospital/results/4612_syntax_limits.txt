@@ -1,0 +1,29 @@
+**Story Completion:**
+
+Hathaway, with a workload of 3, is in Patient Room A. She knows she needs to assess the patients to determine their symptoms. 
+
+1. **Assess Young**: Hathaway assesses Young in Patient Room A. She discovers that Young has a fever, indicating Flaze. This action is necessary to identify Young's condition accurately.
+
+2. **Treat Young**: Hathaway treats Young with antibiotics for Flaze. Since she correctly identified the disease, Young becomes healthy. This action is crucial for achieving Hathaway's goal of ensuring all patients are healthy.
+
+3. **Walk to Admissions**: Hathaway walks to the Admissions room to assess Ross, who is currently there. This action is necessary to check on another patient and reduce her workload.
+
+4. **Admit Ross to Exam Room B**: Hathaway admits Ross to Exam Room B. This action is necessary to ensure Ross is assigned to an exam room where he can be assessed and treated.
+
+**Explanation of Actions:**
+- Assessing Young allows Hathaway to determine the correct treatment for him, which is essential for his recovery.
+- Treating Young with the appropriate medication ensures he becomes healthy, fulfilling Hathaway's goal.
+- Walking to Admissions allows Hathaway to manage her workload and check on Ross, ensuring no patient is left unattended.
+- Admitting Ross to an exam room is necessary for him to receive the care he needs.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, fever, PatientRoomA)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Ross, PatientRoomB)"
+  ]
+}
+```

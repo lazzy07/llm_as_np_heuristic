@@ -1,0 +1,33 @@
+**Story Completion:**
+
+Hathaway, the doctor, is currently in Patient Room C with a workload of 2. To ensure all patients are healthy, Hathaway needs to assess and treat the patients in the admissions room. 
+
+1. **Assess Young**: Hathaway walks to the admissions room to assess Young, who is currently unassigned and has an unknown symptom. This action is necessary to determine if Young has Flaze or Jarkis.
+   
+2. **Assess Jones**: After assessing Young, Hathaway assesses Jones in the admissions room. This is important to check for any symptoms that could indicate either disease.
+
+3. **Treat Young**: If Young is diagnosed with Flaze, Hathaway treats Young with antibiotics. This is crucial for Young's recovery.
+
+4. **Treat Jones**: If Jones is diagnosed with Jarkis, Hathaway treats Jones with steroids. This ensures that both patients are treated appropriately based on their symptoms.
+
+5. **Final Assessment**: Hathaway checks the health status of both Young and Jones to confirm they are now healthy.
+
+**Explanation of Actions:**
+- **Assess Young**: This action is necessary to identify Young's condition and determine the appropriate treatment.
+- **Assess Jones**: Similar to Young, assessing Jones is essential to ensure he receives the correct treatment.
+- **Treat Young**: If Young has Flaze, treating him with antibiotics is the correct course of action to ensure he becomes healthy.
+- **Treat Jones**: If Jones has Jarkis, treating him with steroids is necessary for his recovery.
+- **Final Assessment**: This confirms that both patients are healthy, fulfilling Hathaway's goal.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "walk(Hathaway, PatientRoomC, Admissions)",
+    "assess(Hathaway, Young, symptom(Young), Admissions)",
+    "assess(Hathaway, Jones, symptom(Jones), Admissions)",
+    "treat(Hathaway, Young, antibiotics, Admissions)",
+    "treat(Hathaway, Jones, steroids, Admissions)"
+  ]
+}
+```

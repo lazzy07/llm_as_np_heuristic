@@ -1,0 +1,37 @@
+**Story Completion:**
+
+After digging up the Ark of the Covenant in Tanis, Indiana Jones realizes that the Nazis are also in the vicinity and are aware of the Ark's power. Knowing that the Ark is dangerous, he decides to take immediate action to ensure it does not fall into the wrong hands.
+
+1. **take(Nazis, Ark, Jones, Tanis)**: The Nazis, armed and desperate for immortality, attempt to take the Ark from Indiana by force. This action is necessary as it sets up the conflict that will lead to Indiana's next move.
+
+2. **open(Jones, Ark, Tanis)**: Indiana, understanding the risks, decides to open the Ark himself. He believes that if he can control the situation, he can either gain its power or protect it from the Nazis. This action is crucial as it leads to the potential outcome of immortality or death.
+
+3. **status(Jones) = Immortal**: Since the Ark is dangerous, Indiana's action results in his death. However, the story's goal is for Indiana to achieve his aim of ensuring the Ark does not fall into the hands of the Nazis.
+
+4. **status(Nazis) = Alive**: The Nazis, witnessing Indiana's fate, realize the Ark's danger and decide to retreat, leaving the Ark behind. This action is necessary to ensure that the Ark remains in a state where it cannot be used for evil.
+
+5. **travel(USArmy, USA, Tanis)**: The US Army, having believed that the Ark was in Tanis, arrives just in time to see the aftermath. They secure the area, ensuring that the Ark is protected from any further threats.
+
+6. **give(USArmy, Ark, Jones, Tanis)**: The US Army, recognizing Indiana's sacrifice, decides to take the Ark into their custody, fulfilling Indiana's original goal of having the Ark with the US Army.
+
+**Explanation of Actions:**
+- The first action establishes the conflict between Indiana and the Nazis, which is essential for the story's tension.
+- The second action is pivotal as it leads to the climax where Indiana attempts to control the Ark's power.
+- The third action, while resulting in Indiana's death, serves the purpose of ensuring the Ark is not misused by the Nazis.
+- The fourth action shows the Nazis' realization of the Ark's danger, leading them to abandon their pursuit.
+- The fifth action brings in the US Army, which is crucial for the resolution of the story.
+- The final action ensures that Indiana's goal is achieved, as the Ark is now in the hands of the US Army.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "take(Nazis, Ark, Jones, Tanis)",
+    "open(Jones, Ark, Tanis)",
+    "status(Jones) = Immortal",
+    "status(Nazis) = Alive",
+    "travel(USArmy, USA, Tanis)",
+    "give(USArmy, Ark, Jones, Tanis)"
+  ]
+}
+```

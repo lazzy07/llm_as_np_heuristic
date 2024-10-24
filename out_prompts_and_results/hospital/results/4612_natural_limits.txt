@@ -1,0 +1,47 @@
+Dr. Hathaway, with a workload of 3, is in Patient Room A. To ensure all patients are healthy, she needs to assess and treat them. 
+
+1. **Action: Dr. Hathaway walks to Patient Room C.**  
+   - **Reason:** Dr. Hathaway needs to assess Young, who is in Patient Room C, to determine their symptoms. 
+
+2. **Action: Dr. Hathaway assesses Young.**  
+   - **Reason:** This action allows Dr. Hathaway to identify Young's symptoms. Since Young is in Patient Room C, she can now determine if Young has Flaze or Jarkis.
+
+3. **Action: Dr. Hathaway treats Young with steroids.**  
+   - **Reason:** Assuming Young has Jarkis (the only unknown symptom), treating with steroids will make Young healthy. This reduces Dr. Hathaway's workload by one.
+
+4. **Action: Dr. Hathaway walks to Patient Room A.**  
+   - **Reason:** Dr. Hathaway needs to return to Patient Room A to assess and treat Jones, who is currently in Patient Room C.
+
+5. **Action: Dr. Hathaway assesses Jones.**  
+   - **Reason:** This allows Dr. Hathaway to identify Jones's symptoms. 
+
+6. **Action: Dr. Hathaway treats Jones with antibiotics.**  
+   - **Reason:** Assuming Jones has Flaze (the only unknown symptom), treating with antibiotics will make Jones healthy. This reduces Dr. Hathaway's workload by one.
+
+7. **Action: Dr. Hathaway walks to Patient Room B.**  
+   - **Reason:** Dr. Hathaway needs to assess and treat Ross, who is in Patient Room B.
+
+8. **Action: Dr. Hathaway assesses Ross.**  
+   - **Reason:** This allows Dr. Hathaway to identify Ross's symptoms.
+
+9. **Action: Dr. Hathaway treats Ross with antibiotics.**  
+   - **Reason:** Assuming Ross has Flaze (the only unknown symptom), treating with antibiotics will make Ross healthy. This reduces Dr. Hathaway's workload by one.
+
+By following these actions, Dr. Hathaway successfully treats all patients, achieving her goal of ensuring they are healthy.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "Dr. Hathaway walks to Patient Room C.",
+    "Dr. Hathaway assesses Young.",
+    "Dr. Hathaway treats Young with steroids.",
+    "Dr. Hathaway walks to Patient Room A.",
+    "Dr. Hathaway assesses Jones.",
+    "Dr. Hathaway treats Jones with antibiotics.",
+    "Dr. Hathaway walks to Patient Room B.",
+    "Dr. Hathaway assesses Ross.",
+    "Dr. Hathaway treats Ross with antibiotics."
+  ]
+}
+```

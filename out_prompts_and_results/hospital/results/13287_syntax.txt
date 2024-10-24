@@ -1,0 +1,52 @@
+To complete the story and ensure that Hathaway achieves their goal of making all hospital patients healthy, we need to take the following actions:
+
+1. **Assess Young**: Since Hathaway is currently in PatientRoomA and has a workload of 2, they can assess Young, who is in Admissions. This will help determine if Young has any symptoms that need to be treated.
+
+2. **Admit Young to Exam Room B**: After assessing Young, Hathaway can admit them to an exam room. This will allow Hathaway to treat Young based on their symptoms.
+
+3. **Walk to Exam Room B**: Hathaway needs to walk to Exam Room B to treat Young.
+
+4. **Assess Young Again**: Once in Exam Room B, Hathaway can assess Young to see what symptoms they are showing.
+
+5. **Treat Young**: Based on the assessment, Hathaway can treat Young with the appropriate treatment.
+
+6. **Assess Ross**: After treating Young, Hathaway can assess Ross in Exam Room A to confirm their symptoms.
+
+7. **Treat Ross**: Based on the assessment, Hathaway can treat Ross with the appropriate treatment.
+
+8. **Assess Jones**: Finally, Hathaway can walk back to Admissions and assess Jones to determine their symptoms.
+
+9. **Treat Jones**: Based on the assessment, Hathaway can treat Jones with the appropriate treatment.
+
+By following these steps, Hathaway will ensure that all patients are assessed and treated correctly, leading to their health.
+
+### Explanation of Actions:
+- **Assess Young**: Necessary to determine if Young has any symptoms that need treatment.
+- **Admit Young to Exam Room B**: Required to allow Hathaway to treat Young.
+- **Walk to Exam Room B**: Needed for Hathaway to be in the correct location to treat Young.
+- **Assess Young Again**: Important to confirm Young's symptoms before treatment.
+- **Treat Young**: Essential to provide the correct treatment based on symptoms.
+- **Assess Ross**: Necessary to confirm Ross's symptoms for treatment.
+- **Treat Ross**: Required to provide the correct treatment based on symptoms.
+- **Assess Jones**: Important to determine Jones's symptoms for treatment.
+- **Treat Jones**: Essential to provide the correct treatment based on symptoms.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, ?, Admissions)",
+    "admit(Hathaway, Young, PatientRoomB)",
+    "walk(Hathaway, PatientRoomA, PatientRoomB)",
+    "assess(Hathaway, Young, ?, PatientRoomB)",
+    "treat(Hathaway, Young, steroids, PatientRoomB)",
+    "assess(Hathaway, Ross, SymptomB, PatientRoomA)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "assess(Hathaway, Jones, ?, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, Admissions)"
+  ]
+}
+``` 
+
+This plan ensures that Hathaway assesses and treats all patients correctly, achieving their goal of making them healthy.

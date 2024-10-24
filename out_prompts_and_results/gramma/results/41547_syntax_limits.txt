@@ -1,0 +1,17 @@
+In this story, the Bandit wants to be carrying as many coins as possible or to have coins in the chest at the bandit camp. The Bandit is currently at the Cottage and has a sword, which allows her to rob Tom, who is also at the Cottage but is unarmed. 
+
+The Bandit takes the following action:
+
+1. **rob(Bandit, TomCoin, Tom, Cottage)**: The Bandit robs Tom, taking the coin he is carrying. This action is necessary for the Bandit to achieve her goal of carrying more coins.
+
+After this action, the Bandit successfully has one more coin, which contributes to her goal of having as many coins as possible.
+
+### Explanation of the Action:
+- The Bandit is armed and can rob Tom, who is unarmed. This action directly increases the Bandit's coin count, fulfilling her goal of accumulating coins.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Cottage)"]
+}
+```

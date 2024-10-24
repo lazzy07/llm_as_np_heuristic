@@ -1,0 +1,21 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, TomCoin, Tom, Market)**: The Bandit will loot the coin from Tom, who is currently unarmed and unable to defend himself. This action allows the Bandit to increase her coin count directly.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will then take the coins from the chest at the bandit camp, ensuring that she has the maximum amount of coins possible.
+
+This sequence of actions allows the Bandit to achieve her goal efficiently.
+
+### Explanation of Actions:
+- **Looting Tom**: The Bandit successfully loots Tom for his coin because he is unarmed and cannot defend himself. This action directly increases the Bandit's coin count.
+- **Taking Coins from the Chest**: By taking the coins from the chest at the bandit camp, the Bandit ensures that she has a secure stash of coins, fulfilling her goal of carrying as many coins as possible.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

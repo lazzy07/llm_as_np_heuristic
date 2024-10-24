@@ -1,0 +1,23 @@
+**Story Completion:**
+
+1. **Assess Hathaway, Young, symptom: fever, room: PatientRoomA**  
+   - Explanation: Hathaway assesses Young in PatientRoomA to determine their symptoms. Since Young is already in the exam room, this action is necessary to identify if Young has Flaze (fever) or Jarkis (rash). 
+
+2. **Treat Hathaway, Young, treatment: antibiotics, room: PatientRoomA**  
+   - Explanation: After assessing Young and finding that they have a fever, Hathaway treats Young with antibiotics, which is the correct treatment for Flaze. This action is crucial for ensuring Young becomes healthy.
+
+3. **Walk Hathaway, PatientRoomA, to: Admissions**  
+   - Explanation: After treating Young, Hathaway walks to the Admissions room to assess and admit the other patients, Jones and Ross, who are still in the admissions room. This action is necessary for Hathaway to continue their work in helping all patients.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, fever, PatientRoomA)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)"
+  ]
+}
+``` 
+
+This story ensures that Hathaway achieves their goal of making patients healthy by treating Young correctly and preparing to assist the other patients.

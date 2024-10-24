@@ -1,0 +1,33 @@
+**Story Completion:**
+
+After the events that have transpired, Roy, disguised in civilian clothes, is in the hallway. He knows that Ernest is in the gym, threatened by the bully. To ensure both of their safety and to help Ernest, Roy decides to take action.
+
+1. **vent(Roy, Gym)**: Roy crawls through the vents to reach the gym. This action is necessary because it allows him to enter the gym without being seen by the bully, who is currently preoccupied.
+
+2. **kill(Bully, Roy, Gym)**: Once inside the gym, Roy uses the knife he stole from the kitchen to kill the bully. This action is crucial as it eliminates the immediate threat to both him and Ernest.
+
+3. **next_day()**: The day transitions to day two, allowing Roy to plan his escape.
+
+4. **go(Roy, Hall)**: Roy moves back to the hallway after dealing with the bully. This action is necessary to position himself for the escape.
+
+5. **escape(Roy, Highway)**: Finally, Roy puts on the civilian clothes disguise and escapes from the prison via the highway. This action fulfills Roy's goal of being alive and free.
+
+**Explanation of Actions:**
+- **vent(Roy, Gym)**: This action allows Roy to sneak into the gym without alerting the bully, ensuring he can confront the threat without being seen.
+- **kill(Bully, Roy, Gym)**: This is the pivotal action that removes the bully from the equation, ensuring both Roy and Ernest are no longer threatened.
+- **next_day()**: Transitioning to the next day is necessary to signify the end of the first day and the beginning of new opportunities for escape.
+- **go(Roy, Hall)**: Moving to the hallway is essential for Roy to access the highway where he can escape.
+- **escape(Roy, Highway)**: This final action achieves Roy's goal of being alive and free from the prison.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "vent(Roy, Gym)",
+    "kill(Bully, Roy, Gym)",
+    "next_day()",
+    "go(Roy, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

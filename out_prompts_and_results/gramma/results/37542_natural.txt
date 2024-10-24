@@ -1,0 +1,34 @@
+To achieve the bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will take place:
+
+1. **The bandit walks from the cottage to the crossroads.**  
+   - This action is necessary for the bandit to move closer to the market where the merchant is located, as the bandit needs to interact with the merchant to obtain coins.
+
+2. **The bandit walks from the crossroads to the market.**  
+   - The bandit needs to reach the market to confront the merchant and potentially rob her of the coins she has.
+
+3. **The bandit robs the merchant.**  
+   - Since the merchant is not armed, the bandit can successfully take the hero's coin from the merchant. This action directly helps the bandit achieve her goal of carrying more coins.
+
+4. **The bandit walks from the market to the crossroads.**  
+   - After acquiring the coin, the bandit needs to return to the crossroads to either head back to the camp or further her plans.
+
+5. **The bandit walks from the crossroads to the bandit camp.**  
+   - Finally, the bandit returns to her camp, where she can store the newly acquired coin in the chest, thus achieving her goal of having coins in the chest at the bandit camp.
+
+### Explanation of Actions:
+- The bandit starts at the cottage and needs to move to the market to interact with the merchant. 
+- By robbing the merchant, the bandit successfully acquires a coin, which is essential for her goal.
+- The movement back to the crossroads and then to the bandit camp allows her to secure the coin in her chest, fulfilling her objective.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "The bandit walks from the cottage to the crossroads.",
+    "The bandit walks from the crossroads to the market.",
+    "The bandit robs the merchant.",
+    "The bandit walks from the market to the crossroads.",
+    "The bandit walks from the crossroads to the bandit camp."
+  ]
+}
+```

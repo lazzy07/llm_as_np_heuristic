@@ -1,0 +1,29 @@
+**Story Completion:**
+
+After completing his chores in the kitchen, Ernest is worried about Roy's safety in the hallway, especially with the bully around. He decides to head to the hallway to check on Roy. Meanwhile, Roy, who has just stolen the pack of cigarettes, feels threatened by the bully and knows he needs to act quickly. 
+
+Roy takes a deep breath and decides to crawl through the vents to the gym, where he knows the bully is. He locks the gym door behind him, ensuring they are safe from any outside interference. With the knife he found in the kitchen, Roy confronts the bully. In a moment of desperation and fear, he kills the bully, finally freeing himself and Ernest from the threat.
+
+With the bully gone, Roy can now safely put on the civilian clothes he stole earlier. He heads to the hallway, disguises himself, and makes his way to the highway. With a final glance back at the prison, he escapes, finally achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+1. **go(Roy, Hall)** - Roy moves to the hallway to assess the situation and find a way to escape.
+2. **vent(Roy, Gym)** - Roy crawls through the vents to confront the bully in the gym, where he feels he can take action.
+3. **lock_gym(Roy, Gym)** - Roy locks the gym door to prevent the bully from escaping or anyone else from entering, ensuring a private confrontation.
+4. **kill(Bully, Roy, Gym)** - Roy kills the bully, removing the immediate threat to both himself and Ernest.
+5. **disguise(Roy, Clothes, Hall)** - After the confrontation, Roy puts on the civilian clothes to disguise himself for the escape.
+6. **escape(Roy, Highway)** - Finally, Roy escapes from the prison, achieving his goal of being alive and free.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "lock_gym(Roy, Gym)",
+    "kill(Bully, Roy, Gym)",
+    "disguise(Roy, Clothes, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

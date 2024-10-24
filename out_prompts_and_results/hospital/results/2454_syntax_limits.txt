@@ -1,0 +1,36 @@
+**Story Completion:**
+
+Hathaway, wanting all hospital patients to be healthy, decides to assess the patients in the admissions room. 
+
+1. **Assess Ross**: Hathaway assesses Ross to determine his symptoms. Since Ross is in the admissions room, Hathaway can do this without admitting him to an exam room. This action is necessary to understand what treatment Ross needs.
+
+2. **Assess Jones**: Hathaway then assesses Jones in the admissions room. This is also necessary to identify Jones's symptoms and determine the appropriate treatment.
+
+3. **Admit Ross to Exam Room B**: After assessing both patients, Hathaway admits Ross to Exam Room B. This action is necessary to prepare Ross for treatment.
+
+4. **Admit Jones to Exam Room A**: Hathaway admits Jones to Exam Room A. This is necessary to ensure that both patients can receive treatment.
+
+5. **Treat Ross**: Hathaway treats Ross with steroids, assuming he has Jarkis based on the assessment. This action is necessary to help Ross become healthy.
+
+6. **Treat Jones**: Hathaway treats Jones with antibiotics, assuming he has Flaze based on the assessment. This action is necessary to help Jones become healthy.
+
+By following these steps, Hathaway successfully treats both patients, ensuring they are healthy.
+
+**Explanation of Actions:**
+- Assessing Ross and Jones allows Hathaway to identify their symptoms and determine the correct treatment.
+- Admitting Ross and Jones to their respective exam rooms is necessary for them to receive treatment.
+- Treating both patients with the appropriate medications ensures they recover and achieve Hathaway's goal of having all patients healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, symptom(Ross), Admissions)",
+    "assess(Hathaway, Jones, symptom(Jones), Admissions)",
+    "admit(Hathaway, Ross, ExamRoomB)",
+    "admit(Hathaway, Jones, ExamRoomA)",
+    "treat(Hathaway, Ross, steroids, ExamRoomB)",
+    "treat(Hathaway, Jones, antibiotics, ExamRoomA)"
+  ]
+}
+```

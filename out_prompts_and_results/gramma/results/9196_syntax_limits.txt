@@ -1,0 +1,21 @@
+In this story, the Bandit wants to be carrying as many coins as possible or to have coins in the chest at the bandit camp. The Bandit is currently at the Crossroads, where Tom has just been attacked and killed. The Bandit can take advantage of the situation to achieve her goal.
+
+1. **loot(Bandit, TomCoin, Tom, Crossroads)**: The Bandit loots Tom's corpse to take the coins he was carrying. This action is necessary because it allows the Bandit to increase her coin count without any risk of being caught, as the guard is not present at the Crossroads.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit then takes the coins from the chest at the bandit camp. This action is necessary to ensure that the Bandit has coins stored in her camp, fulfilling her goal of having coins in the chest.
+
+With these two actions, the Bandit successfully achieves her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- **Looting Tom**: This action is crucial as it allows the Bandit to gain coins without any confrontation, especially since Tom is now dead and cannot defend himself.
+- **Taking Coins from the Chest**: This action ensures that the Bandit has coins secured in her camp, which is another aspect of her goal.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Crossroads)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

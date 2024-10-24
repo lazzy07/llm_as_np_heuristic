@@ -1,0 +1,35 @@
+Dr. Hathaway, currently at Patient Room B, realizes that her workload is too high and she needs to assess the patients to determine their symptoms. She decides to assess Ross first, who is in Patient Room B. 
+
+1. **Assess Ross**: Dr. Hathaway assesses Ross to determine his symptoms. Since Ross is experiencing unknown symptoms, Dr. Hathaway mistakenly believes he has Jarkis due to her high workload. 
+
+2. **Treat Ross**: Dr. Hathaway treats Ross with steroids, the treatment for Jarkis. Since Ross does not actually have Jarkis, he dies. However, this action reduces Dr. Hathaway's workload by one.
+
+Next, Dr. Hathaway walks back to Admissions to admit Young, who is also waiting there. 
+
+3. **Admit Young to Patient Room A**: Dr. Hathaway admits Young to Patient Room A, which is now available since Ross has been treated. 
+
+4. **Assess Young**: Dr. Hathaway assesses Young, who is also experiencing unknown symptoms. Due to her workload being reduced to 2, she correctly identifies Young's symptoms as Flaze and treats him with antibiotics.
+
+5. **Treat Young**: Dr. Hathaway treats Young with antibiotics, successfully curing him of Flaze.
+
+In the end, Dr. Hathaway has successfully treated one patient, Young, achieving her goal of ensuring that at least one patient is healthy.
+
+### Explanation of Actions:
+- **Assess Ross**: Necessary to determine symptoms and decide on treatment.
+- **Treat Ross**: Although it results in Ross's death, it reduces the workload, allowing for a correct assessment of Young later.
+- **Admit Young**: Necessary to ensure Young is seen and treated.
+- **Assess Young**: Important to identify the correct disease and treatment.
+- **Treat Young**: This is the successful treatment that achieves Dr. Hathaway's goal of having a healthy patient.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "Assess Ross",
+    "Treat Ross",
+    "Admit Young to Patient Room A",
+    "Assess Young",
+    "Treat Young"
+  ]
+}
+```

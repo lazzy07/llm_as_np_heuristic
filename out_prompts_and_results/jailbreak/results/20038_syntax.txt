@@ -1,0 +1,42 @@
+**Story Completion:**
+
+After the events that have transpired, Roy is in the kitchen, and he knows he needs to act quickly to ensure both he and Ernest can escape the prison. 
+
+1. **Action: go(Roy, Hall)**  
+   - Roy leaves the kitchen and moves to the hallway. This is necessary for him to access the gym where Ernest is locked in with the bully.
+
+2. **Action: vent(Roy, Gym)**  
+   - Roy crawls through the vents to reach the gym. This allows him to bypass the locked door and get to Ernest without alerting the bully.
+
+3. **Action: kill(Bully, Roy, Gym)**  
+   - Once inside the gym, Roy uses the knife he stole from the kitchen to kill the bully. This action is crucial as it removes the immediate threat to both him and Ernest, allowing them to escape safely.
+
+4. **Action: go(Ernest, Hall)**  
+   - After killing the bully, Roy calls out to Ernest, who can now safely leave the gym and join him in the hallway.
+
+5. **Action: disguise(Ernest, Clothes, Hall)**  
+   - Ernest puts on the civilian clothes that Roy had stolen earlier. This disguise is essential for their escape from the prison.
+
+6. **Action: escape(Ernest, Highway)**  
+   - With the disguise on, Ernest moves to the highway and successfully escapes from the prison.
+
+7. **Action: escape(Roy, Highway)**  
+   - Following Ernest, Roy also escapes from the prison, ensuring both of them are free.
+
+**Explanation of Actions:**
+- Each action taken by Roy is aimed at ensuring both he and Ernest can escape the prison without being threatened by the bully. The actions are sequential and build upon each other, leading to the ultimate goal of freedom. The killing of the bully is a pivotal moment that allows for the escape to happen without further threats.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "kill(Bully, Roy, Gym)",
+    "go(Ernest, Hall)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

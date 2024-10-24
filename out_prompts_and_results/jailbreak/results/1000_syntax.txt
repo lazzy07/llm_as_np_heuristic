@@ -1,0 +1,50 @@
+**Story Completion:**
+
+After locking the gym door, Roy knows he needs to act quickly to ensure both he and Ernest can escape the prison. He decides to take the knife he stole from the kitchen and confront the bully.
+
+1. **revenge(Roy, Bully, Gym)**: Roy uses the knife to kill the bully in the gym. This action is necessary because the bully poses a direct threat to both Roy and Ernest, and eliminating him will ensure their safety.
+
+With the bully dead, Roy feels a sense of relief. He knows he must now get to Ernest and help him escape.
+
+2. **go(Roy, Hall)**: Roy moves from the hallway to the cell block where Ernest is located. This action is essential to reunite with his friend and ensure they can escape together.
+
+3. **disguise(Roy, Clothes, Laundry)**: Roy goes to the laundry room to put on the civilian clothes he found earlier. This disguise is crucial for their escape plan, as it will help them avoid detection by the guards.
+
+4. **go(Roy, Hall)**: After disguising himself, Roy returns to the hallway to find Ernest.
+
+5. **go(Ernest, Hall)**: Roy calls out to Ernest, and they both move to the hallway together.
+
+6. **disguise(Ernest, Clothes, Laundry)**: Roy helps Ernest put on the civilian clothes as well, ensuring they both look like ordinary civilians.
+
+7. **vent(Roy, Highway)**: Roy crawls through the vents to reach the highway outside the prison. This action is necessary to escape the confines of the prison.
+
+8. **vent(Ernest, Highway)**: Ernest follows Roy through the vents to the highway.
+
+9. **escape(Roy, Highway)**: Once outside, Roy takes a moment to breathe in the fresh air and realizes they are free.
+
+10. **escape(Ernest, Highway)**: Ernest follows suit, and they both successfully escape the prison.
+
+**Explanation of Actions:**
+- **revenge**: Eliminates the bully, ensuring safety for both characters.
+- **go**: Moves Roy to the cell block to reunite with Ernest.
+- **disguise**: Prepares both characters for their escape by disguising them as civilians.
+- **vent**: Allows both characters to reach the highway without being detected.
+- **escape**: Finalizes their freedom from the prison.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "revenge(Roy, Bully, Gym)",
+    "go(Roy, Hall)",
+    "disguise(Roy, Clothes, Laundry)",
+    "go(Roy, Hall)",
+    "go(Ernest, Hall)",
+    "disguise(Ernest, Clothes, Laundry)",
+    "vent(Roy, Highway)",
+    "vent(Ernest, Highway)",
+    "escape(Roy, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

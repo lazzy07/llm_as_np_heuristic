@@ -1,0 +1,17 @@
+In the current situation, Tom has just attacked the merchant and looted the medicine, making him a criminal. The guard, who is at the market, sees Tom as a threat and wants to eliminate him. The bandit is also present in the market, but she is not the guard's target. 
+
+To achieve the guard's goal of killing criminals, the guard will take the following action:
+
+1. **attack(Guard, Tom, Market)**: The guard attacks Tom, who is now a criminal after killing the merchant. This action is necessary for the guard to fulfill his goal of eliminating criminals.
+
+After this action, Tom will be dead, and the guard will have successfully achieved his goal.
+
+### Explanation of the Action:
+- The guard attacks Tom because he is the only criminal present in the market. The guard's primary objective is to kill criminals, and since Tom has just committed murder, he is the target.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["attack(Guard, Tom, Market)"]
+}
+```

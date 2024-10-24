@@ -1,0 +1,23 @@
+To achieve the goal of the Merchant, who wants to get as many coins as she can without becoming a criminal, we need to ensure that she can sell the medicine to Tom while avoiding any criminal activity. Here’s the shortest story that accomplishes this:
+
+1. **Merchant buys the medicine from herself**: The Merchant can sell the medicine to Tom for the coin he has. This is a legal transaction and allows her to gain a coin without becoming a criminal.
+   - Action: `buy(Merchant, Medicine, TomCoin, Market)`
+
+2. **Tom walks to the cottage**: After acquiring the medicine, Tom can now walk back to the cottage, fulfilling his goal of being there with the medicine.
+   - Action: `walk(Tom, Market, Cottage)`
+
+This sequence of actions ensures that the Merchant successfully sells the medicine to Tom, gaining a coin in the process, while Tom achieves his goal of being at the cottage with the medicine.
+
+### Explanation of Actions:
+- **buy(Merchant, Medicine, TomCoin, Market)**: This action allows the Merchant to sell the medicine to Tom, which is a legal transaction. The Merchant gains a coin, which is her goal.
+- **walk(Tom, Market, Cottage)**: This action allows Tom to fulfill his desire to be at the cottage with the medicine.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "buy(Merchant, Medicine, TomCoin, Market)",
+    "walk(Tom, Market, Cottage)"
+  ]
+}
+```

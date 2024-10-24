@@ -1,0 +1,27 @@
+**Story Completion:**
+
+After assessing Jones in Exam Room A, Hathaway realizes that Jones is showing symptoms of Jarkis (the rash). To ensure Jones receives the correct treatment, Hathaway decides to treat Jones with steroids, which is the appropriate treatment for Jarkis.
+
+Next, Hathaway walks back to the admissions room to admit Young, who is still waiting there. Hathaway assigns Young to Exam Room B, where Young can be assessed later.
+
+Finally, Hathaway treats Jones with steroids in Exam Room A. Since this is the correct treatment for Jarkis, Jones becomes healthy.
+
+**Explanation of Actions:**
+
+1. **treat(Hathaway, Jones, steroids, PatientRoomA)**: This action is necessary because Hathaway needs to treat Jones for the correct disease (Jarkis) to ensure he becomes healthy. Since Jones is showing symptoms of Jarkis, administering steroids will achieve Hathaway's goal of making all patients healthy.
+
+2. **walk(Hathaway, PatientRoomA, Admissions)**: This action is included to allow Hathaway to go back to the admissions room to admit Young, ensuring that all patients are attended to and that Hathaway's workload is managed.
+
+3. **admit(Hathaway, Young, PatientRoomB)**: This action is necessary to assign Young to an exam room, allowing Hathaway to assess Young later and ensure that he also receives the appropriate treatment.
+
+**Final Plan in JSON Format:**
+
+```json
+{
+  "plan": [
+    "treat(Hathaway, Jones, steroids, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "admit(Hathaway, Young, PatientRoomB)"
+  ]
+}
+```

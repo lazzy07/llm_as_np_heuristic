@@ -1,0 +1,17 @@
+In this story, the Merchant's goal is to get as many coins as she can without becoming a criminal. Given the current situation, the Merchant is at the Bandit Camp, where she can take advantage of the Bandit, who is a criminal and likely has coins.
+
+The Merchant can take the following action:
+
+1. **rob(Merchant, BanditCoin, Bandit, Camp)**: The Merchant, armed with a sword, can rob the Bandit, who is not armed with a sword. This action allows the Merchant to take the Bandit's coins without becoming a criminal herself, as she is not attacking or killing anyone.
+
+This single action achieves the Merchant's goal of acquiring coins while remaining within the bounds of legality.
+
+### Explanation of the Action:
+- **rob(Merchant, BanditCoin, Bandit, Camp)**: This action is necessary because it allows the Merchant to gain coins directly from the Bandit without resorting to criminal behavior. The Merchant is armed, and the Bandit is not, making this action valid and effective for the Merchant's goal.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": ["rob(Merchant, BanditCoin, Bandit, Camp)"]
+}
+```

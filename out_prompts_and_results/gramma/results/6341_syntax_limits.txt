@@ -1,0 +1,19 @@
+In this story, the Bandit aims to carry as many coins as possible or have coins in the chest at the bandit camp. Given the current situation, the Bandit is already at the Market, where the Merchant has some medicine and Tom is dead. The Bandit can take advantage of the situation to achieve her goal.
+
+1. **rob(Bandit, BanditCoin, Merchant, Market)**: The Bandit can rob the Merchant, who is armed but is currently dead. This action allows the Bandit to take the coins from the Merchant, which helps her achieve her goal of carrying more coins.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: After robbing the Merchant, the Bandit can then take the coins she has acquired and place them in the chest at the bandit camp. This action ensures that the Bandit has coins secured in her camp, fulfilling her goal.
+
+### Explanation of Actions:
+- The first action is necessary because it allows the Bandit to acquire coins from the Merchant, which is essential for her goal of carrying as many coins as possible.
+- The second action is crucial as it secures the coins in the chest at the bandit camp, ensuring that the Bandit has achieved her goal of having coins stored.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "rob(Bandit, BanditCoin, Merchant, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

@@ -1,0 +1,37 @@
+**Story Completion:**
+
+After venting to the highway, Ernest is now outside the prison, disguised in civilian clothes. He knows that Roy is still in the gym, threatened by the bully. To ensure both of their safety and to help Roy escape, Ernest decides to take action.
+
+1. **go(Ernest, Hall)**: Ernest moves back into the prison hallway to find a way to help Roy.
+   - *Explanation*: This action is necessary for Ernest to get back into the prison and assist Roy.
+
+2. **lock_gym(Ernest, Hall)**: Ernest locks the gym door to prevent the bully from reaching Roy.
+   - *Explanation*: Locking the gym door ensures that the bully cannot threaten or harm Roy while Ernest is planning their next move.
+
+3. **vent(Ernest, Gym)**: Ernest crawls through the vents to reach the gym.
+   - *Explanation*: This action allows Ernest to enter the gym without being seen by the bully, ensuring he can help Roy safely.
+
+4. **kill(Bully, Ernest, Gym)**: Once inside, Ernest uses the knife he has in the kitchen to kill the bully.
+   - *Explanation*: This action eliminates the threat posed by the bully, ensuring both Ernest and Roy can escape safely.
+
+5. **go(Roy, Hall)**: After the bully is dealt with, Roy can now safely leave the gym and move to the hallway.
+   - *Explanation*: This action allows Roy to join Ernest in the hallway without fear of being threatened.
+
+6. **escape(Roy, Highway)**: Finally, both Ernest and Roy, now free from the bully's threat, can escape the prison together.
+   - *Explanation*: This action fulfills their goal of being alive and free, away from the prison.
+
+**Final Explanation**: Each action taken by Ernest is aimed at ensuring both he and Roy can escape the prison safely. By locking the gym, he prevents the bully from harming Roy, and by killing the bully, he removes the immediate threat. The final escape action allows both characters to achieve their goal of being alive and free.
+
+**JSON Object with Final Plan**:
+```json
+{
+  "plan": [
+    "go(Ernest, Hall)",
+    "lock_gym(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "kill(Bully, Ernest, Gym)",
+    "go(Roy, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

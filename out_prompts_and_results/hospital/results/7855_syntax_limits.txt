@@ -1,0 +1,41 @@
+**Story Completion:**
+
+Hathaway, wanting all hospital patients to be healthy, assesses Young in Exam Room A to determine their symptoms. 
+
+1. **assess(Hathaway, Young, symptom, PatientRoomA)**: Hathaway assesses Young to check for symptoms. This is necessary to identify if Young has Flaze or Jarkis, which will guide the treatment.
+
+After assessing Young, Hathaway finds that Young has a fever, indicating Flaze.
+
+2. **treat(Hathaway, Young, antibiotics, PatientRoomA)**: Hathaway treats Young with antibiotics, the correct treatment for Flaze. This action is crucial as it directly contributes to Hathaway's goal of ensuring Young's health.
+
+Next, Hathaway walks back to the admissions room to assess and treat Jones.
+
+3. **walk(Hathaway, PatientRoomA, Admissions)**: Hathaway walks to the admissions room to see Jones, who is waiting to be assessed. This action is necessary to continue providing care to the patients.
+
+Once in the admissions room, Hathaway assesses Jones.
+
+4. **assess(Hathaway, Jones, symptom, Admissions)**: Hathaway assesses Jones to determine his symptoms. This is essential to identify the correct treatment for Jones.
+
+Hathaway discovers that Jones has a rash, indicating Jarkis.
+
+5. **treat(Hathaway, Jones, steroids, Admissions)**: Hathaway treats Jones with steroids, the correct treatment for Jarkis. This ensures that Jones also becomes healthy, fulfilling Hathaway's goal.
+
+With both Young and Jones treated successfully, Hathaway has achieved their goal of ensuring all hospital patients are healthy.
+
+**Explanation of Actions:**
+- Assessing Young and Jones is necessary to identify their symptoms and determine the correct treatment.
+- Treating Young with antibiotics and Jones with steroids is essential to ensure both patients recover.
+- Walking between rooms is required to facilitate the assessment and treatment process.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom, PatientRoomA)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, Admissions)",
+    "assess(Hathaway, Jones, symptom, Admissions)",
+    "treat(Hathaway, Jones, steroids, Admissions)"
+  ]
+}
+```

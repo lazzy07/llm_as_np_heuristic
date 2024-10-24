@@ -1,0 +1,36 @@
+**Story Completion:**
+
+After walking to Exam Room B, Hathaway assesses Ross to determine his symptoms. 
+
+1. **Assess Ross**: Hathaway assesses Ross in Exam Room B. This action is necessary to identify whether Ross has Flaze or Jarkis, which will inform the treatment decision. 
+
+   - **Outcome**: Hathaway discovers that Ross has a rash, indicating he has Jarkis.
+
+2. **Treat Ross**: Hathaway treats Ross with steroids in Exam Room B. This action is crucial because it directly addresses Ross's condition, ensuring he becomes healthy.
+
+   - **Outcome**: Ross is treated successfully and becomes healthy.
+
+3. **Walk to Admissions**: Hathaway walks to the Admissions room to assess Jones, who is still waiting. This action is necessary to ensure that all patients are attended to and to maintain Hathaway's goal of having all patients healthy.
+
+4. **Assess Jones**: Hathaway assesses Jones in the Admissions room. This action is essential to determine Jones's symptoms and provide appropriate treatment.
+
+   - **Outcome**: Hathaway finds that Jones has a fever, indicating he has Flaze.
+
+5. **Treat Jones**: Hathaway treats Jones with antibiotics in the Admissions room. This action is vital to ensure Jones recovers from Flaze.
+
+   - **Outcome**: Jones is treated successfully and becomes healthy.
+
+By completing these actions, Hathaway successfully treats both Ross and Jones, achieving the goal of ensuring all hospital patients are healthy.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, rash, PatientRoomB)",
+    "treat(Hathaway, Ross, steroids, PatientRoomB)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "assess(Hathaway, Jones, fever, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, Admissions)"
+  ]
+}
+```

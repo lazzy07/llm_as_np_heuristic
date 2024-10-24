@@ -1,0 +1,48 @@
+**Story Completion:**
+
+After the events that have transpired, Roy is in the laundry room, and he knows he needs to help Ernest, who is currently in the gym and threatened by the bully. 
+
+1. **Action: go(Roy, Hall)**  
+   - Roy moves from the laundry room to the hallway to get closer to Ernest and the bully.
+
+2. **Action: vent(Roy, Gym)**  
+   - Roy crawls through the vents to reach the gym, where he knows Ernest is being threatened by the bully.
+
+3. **Action: lock_gym(Roy, Gym)**  
+   - Once in the gym, Roy locks the door to prevent the bully from escaping and to ensure that he and Ernest can confront the bully without interference.
+
+4. **Action: steal(Roy, Knife, Kitchen)**  
+   - While in the gym, Roy remembers that the knife is in the kitchen. He quickly goes back through the vents to grab the knife, which he will need to protect himself and Ernest.
+
+5. **Action: revenge(Ernest, Bully, Gym)**  
+   - With the gym locked and the knife in hand, Roy and Ernest confront the bully. They work together to kill the bully, ensuring their safety.
+
+6. **Action: disguise(Roy, Clothes, Hall)**  
+   - After dealing with the bully, Roy puts on the civilian clothes he stole earlier to disguise himself.
+
+7. **Action: escape(Roy, Highway)**  
+   - Finally, Roy exits the gym, goes through the hallway, and makes his way to the highway, successfully escaping the prison.
+
+**Explanation of Actions:**
+- **go(Roy, Hall)**: This action is necessary for Roy to move closer to Ernest and the bully.
+- **vent(Roy, Gym)**: Crawling through the vents allows Roy to reach the gym without being detected by the bully.
+- **lock_gym(Roy, Gym)**: Locking the gym door is crucial to prevent the bully from escaping and to ensure they can confront him safely.
+- **steal(Roy, Knife, Kitchen)**: Acquiring the knife is essential for self-defense against the bully.
+- **revenge(Ernest, Bully, Gym)**: This action is the climax where they eliminate the threat posed by the bully.
+- **disguise(Roy, Clothes, Hall)**: Putting on the civilian clothes is necessary for Roy to disguise himself for the escape.
+- **escape(Roy, Highway)**: This final action achieves Roy's goal of escaping the prison.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "lock_gym(Roy, Gym)",
+    "steal(Roy, Knife, Kitchen)",
+    "revenge(Ernest, Bully, Gym)",
+    "disguise(Roy, Clothes, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

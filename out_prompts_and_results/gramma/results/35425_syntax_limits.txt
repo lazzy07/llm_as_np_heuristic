@@ -1,0 +1,15 @@
+To achieve the bandit's goal of carrying as many coins as possible, the bandit can take the following action:
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The bandit can rob Tom, who is currently at the Market and is not armed. This action allows the bandit to take the coins that Tom is carrying.
+
+This action is necessary because it directly contributes to the bandit's goal of acquiring coins. Since Tom is unarmed, the bandit can successfully rob him without facing any resistance.
+
+After this action, the bandit will have the coins that Tom was carrying, thus achieving her goal.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

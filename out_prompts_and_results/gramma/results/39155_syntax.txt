@@ -1,0 +1,21 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, TomCoin, Tom, Market)**: The Bandit will loot the coin from Tom's corpse after Tom has been attacked and killed. This action is necessary for the Bandit to acquire coins, which is part of her goal.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will take the coins from the chest at the bandit camp. This action ensures that the Bandit has coins stored in her camp, fulfilling her goal of having coins in the chest.
+
+The Bandit successfully achieves her goal by first looting Tom for his coin and then taking the coins from the chest at the camp.
+
+### Explanation of Actions:
+- **loot(Bandit, TomCoin, Tom, Market)**: This action allows the Bandit to gain coins from Tom, who is now dead. It is essential for the Bandit to increase her coin count.
+- **take(Bandit, BanditCoin, Chest, Camp)**: This action allows the Bandit to secure her coins in the chest at the camp, which is another aspect of her goal.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

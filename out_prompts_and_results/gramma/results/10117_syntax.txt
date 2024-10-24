@@ -1,0 +1,21 @@
+To ensure the Guard achieves their goal of killing criminals, the following sequence of actions will take place:
+
+1. **report(Merchant, spot: Crossroads, place: Bandit Camp)**: The Merchant, who is not a criminal, will report the location of the Bandit to the Guard. This action is necessary because it provides the Guard with the information needed to locate and confront the Bandit.
+
+2. **walk(Guard, Crossroads, Bandit Camp)**: The Guard will then walk to the Bandit Camp based on the information provided by the Merchant. This action is essential for the Guard to reach the Bandit and fulfill their goal.
+
+3. **attack(Guard, Bandit, Bandit Camp)**: Upon arriving at the Bandit Camp, the Guard will attack the Bandit. This action is crucial as it directly leads to the Guard achieving their goal of killing a criminal.
+
+This sequence of actions is the shortest path to ensure the Guard successfully kills the Bandit, thereby achieving their goal.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "report(Merchant, Crossroads, Bandit Camp)",
+    "walk(Guard, Crossroads, Bandit Camp)",
+    "attack(Guard, Bandit, Bandit Camp)"
+  ]
+}
+```

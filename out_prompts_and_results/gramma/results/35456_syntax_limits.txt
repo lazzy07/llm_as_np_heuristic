@@ -1,0 +1,20 @@
+In this story, the Bandit wants to be carrying as many coins as possible or have coins in the chest at the bandit camp. Given the current situation, the Bandit has already looted a coin from Tom and can now take the coins from the chest at the bandit camp.
+
+The Bandit will take the action to walk to the bandit camp and take the coins from the chest. This action directly fulfills the Bandit's goal of having coins in her possession.
+
+### Story:
+The Bandit, having just attacked Tom and looted a coin from him, decides to head back to her camp. She walks to the bandit camp, where she has a chest filled with coins. Upon arriving, she takes the coins from the chest, successfully achieving her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+1. **walk(Bandit, Crossroads, Camp)**: The Bandit moves to her camp, which is necessary to access the coins in the chest.
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit takes the coins from the chest, fulfilling her goal of having coins.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

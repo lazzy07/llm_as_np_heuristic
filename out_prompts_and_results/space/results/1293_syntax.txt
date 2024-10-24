@@ -1,0 +1,33 @@
+To complete the story, we need to ensure that the volcano erupts, resulting in a character dying, while also allowing Zoe and the Lizard to become friends. The following sequence of actions will achieve this:
+
+1. **walk(Lizard, Surface, Cave)**: The Lizard is already on the surface, so it can walk to the cave. This action is necessary to set up the next action where the Lizard will be in a position to make peace with Zoe.
+
+2. **walk(Zoe, Ship, Surface)**: Zoe will teleport back to the surface from the ship. This action is necessary because Zoe needs to be on the surface to interact with the Lizard and to be present when the volcano erupts.
+
+3. **make_peace(Zoe, Lizard, Surface)**: Now that both characters are on the surface, they can make peace. This action is crucial as it allows them to become friends, fulfilling one of their goals.
+
+4. **begin_erupt(Surface)**: The volcano begins to erupt. This action is necessary to set the stage for the eruption that will lead to a character's demise.
+
+5. **erupt(Surface)**: The volcano erupts, which will kill any characters on the surface. Since both Zoe and the Lizard are now friends, this action will result in the Lizard dying, as Zoe is safe on the ship.
+
+The final sequence of actions leads to the desired outcome: the volcano erupts, the Lizard dies, and Zoe and the Lizard become friends before the eruption.
+
+### Explanation of Actions:
+- **walk(Lizard, Surface, Cave)**: Moves the Lizard to the surface, preparing for interaction.
+- **walk(Zoe, Ship, Surface)**: Brings Zoe back to the surface to interact with the Lizard.
+- **make_peace(Zoe, Lizard, Surface)**: Establishes friendship between Zoe and the Lizard.
+- **begin_erupt(Surface)**: Initiates the volcanic eruption.
+- **erupt(Surface)**: Causes the eruption to occur, resulting in the Lizard's death.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "walk(Lizard, Surface, Cave)",
+    "walk(Zoe, Ship, Surface)",
+    "make_peace(Zoe, Lizard, Surface)",
+    "begin_erupt(Surface)",
+    "erupt(Surface)"
+  ]
+}
+```

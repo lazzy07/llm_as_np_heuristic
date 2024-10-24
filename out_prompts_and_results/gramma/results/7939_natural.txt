@@ -1,0 +1,20 @@
+The bandit, having just looted the medicine from the merchant, is now at the crossroads with the hero's corpse nearby. The guard is at the market, unaware of the bandit's actions. The bandit wants to carry as many coins as possible or have coins in the chest at the bandit camp. Since the bandit already has the medicine, her next goal is to ensure she has coins.
+
+1. The bandit walks from the crossroads to the bandit camp. (This action allows the bandit to access the chest where her coins are stored.)
+2. The bandit loots the coins from the chest. (This action allows the bandit to achieve her goal of carrying as many coins as possible.)
+
+At this point, the bandit has successfully achieved her goal of carrying coins.
+
+### Explanation of Actions:
+- **Walking to the bandit camp**: This is necessary for the bandit to access her coins, as they are stored in the chest at the camp.
+- **Looting the coins from the chest**: This action directly fulfills the bandit's goal of having coins, either on her person or in the chest.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "The bandit walks from the crossroads to the bandit camp.",
+    "The bandit loots the coins from the chest."
+  ]
+}
+```

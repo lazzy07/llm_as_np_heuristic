@@ -1,0 +1,36 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following actions will take place:
+
+1. **The bandit walks from the crossroads to the market.**  
+   - This action is necessary for the bandit to confront the hero and the guard at the market, where she can attempt to take coins.
+
+2. **The bandit attacks the hero.**  
+   - The bandit is armed and the hero is not, making this a viable action. By attacking the hero, the bandit can attempt to take the medicine and any coins the hero may have.
+
+3. **The bandit loots the hero's corpse.**  
+   - After successfully attacking the hero, the bandit can loot the hero's corpse to take the medicine and any coins the hero had. This action directly contributes to the bandit's goal of carrying more coins.
+
+4. **The bandit walks from the market to the bandit camp.**  
+   - This action allows the bandit to return to her camp with the stolen items, ensuring she has the medicine and any coins she has acquired.
+
+5. **The bandit places the coins in the chest at the bandit camp.**  
+   - This final action secures the coins in the chest, fulfilling the bandit's goal of having coins in her possession.
+
+### Explanation of Actions:
+- The bandit needs to confront the hero and the guard to achieve her goal, which is why she walks to the market.
+- Attacking the hero is a strategic move since the hero is unarmed, allowing the bandit to take items without risk.
+- Looting the hero's corpse ensures that the bandit gains the medicine and any coins, directly contributing to her goal.
+- Walking back to the bandit camp is necessary to secure her gains.
+- Placing the coins in the chest at the bandit camp finalizes her goal of having coins stored safely.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "The bandit walks from the crossroads to the market.",
+    "The bandit attacks the hero.",
+    "The bandit loots the hero's corpse.",
+    "The bandit walks from the market to the bandit camp.",
+    "The bandit places the coins in the chest at the bandit camp."
+  ]
+}
+```

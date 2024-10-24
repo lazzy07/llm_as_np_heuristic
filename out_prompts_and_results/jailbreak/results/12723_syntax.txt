@@ -1,0 +1,51 @@
+To complete the story, we need to ensure that either Ernest or Roy overcomes the bully's threats by escaping or getting revenge. Given the current situation, we will have Roy take actions that lead to a confrontation with the bully, while Ernest will focus on escaping.
+
+### Story Completion:
+
+1. **Roy goes to the Gym**: Since Roy is currently in the Laundry, he needs to move to the Gym where the Bully is located. This is necessary for him to confront the Bully and protect himself and Ernest.
+   
+   - **Action**: `go(Roy, Gym)`
+
+2. **Roy locks the Gym door**: Once in the Gym, Roy locks the door to prevent the Bully from escaping. This ensures that they can confront the Bully without interference.
+
+   - **Action**: `lock_gym(Roy, Gym)`
+
+3. **Ernest crawls through the vents to the Hallway**: While Roy is dealing with the Bully, Ernest needs to find a way to escape. He crawls through the vents to the Hallway, which is a safe move since he is currently threatened.
+
+   - **Action**: `vent(Ernest, Hall)`
+
+4. **Ernest puts on the civilian clothes**: In the Hallway, Ernest finds the civilian clothes that were previously confiscated. He puts them on to disguise himself for the escape.
+
+   - **Action**: `disguise(Ernest, Clothes, Hall)`
+
+5. **Ernest escapes to the Highway**: Now disguised, Ernest can safely escape from the prison by moving to the Highway.
+
+   - **Action**: `escape(Ernest, Highway)`
+
+6. **Roy confronts the Bully**: While Ernest escapes, Roy confronts the Bully in the locked Gym. He has the opportunity to get revenge for the threats made against them.
+
+   - **Action**: `revenge(Roy, Bully, Gym)`
+
+### Explanation of Actions:
+- **Roy goes to the Gym**: This is essential for him to confront the Bully and protect both himself and Ernest.
+- **Roy locks the Gym door**: This prevents the Bully from escaping and ensures a direct confrontation.
+- **Ernest crawls through the vents**: This is a stealthy way for Ernest to avoid the Bully and find a way to escape.
+- **Ernest puts on the civilian clothes**: Disguising himself is crucial for a successful escape from the prison.
+- **Ernest escapes to the Highway**: This action fulfills Ernest's goal of being alive and free.
+- **Roy confronts the Bully**: This action allows Roy to take control of the situation and eliminate the threat posed by the Bully.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "go(Roy, Gym)",
+    "lock_gym(Roy, Gym)",
+    "vent(Ernest, Hall)",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)",
+    "revenge(Roy, Bully, Gym)"
+  ]
+}
+``` 
+
+This plan ensures that Ernest successfully escapes while Roy confronts and eliminates the threat posed by the Bully, achieving the story's goals.

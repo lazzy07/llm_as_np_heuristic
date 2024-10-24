@@ -1,0 +1,29 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **walk(Bandit, Cottage, Crossroads)**: The Bandit starts at the Cottage and moves to the Crossroads to find the Merchant and the Guard, who are both at the Crossroads.
+
+2. **rob(Bandit, TomCoin, Merchant, Crossroads)**: The Bandit, armed with a sword, robs the Merchant, taking the coins she is carrying. This action is crucial as it allows the Bandit to acquire coins without killing anyone, thus avoiding immediate confrontation with the Guard.
+
+3. **walk(Bandit, Crossroads, Camp)**: After robbing the Merchant, the Bandit walks to the Bandit Camp to store the coins in the chest. This action is necessary to fulfill the Bandit's goal of having coins in the chest.
+
+4. **take(Bandit, BanditCoin, Chest, Camp)**: Finally, the Bandit takes the coins from the chest at the Bandit Camp, ensuring that she has as many coins as possible.
+
+This sequence of actions allows the Bandit to achieve her goal efficiently without drawing the attention of the Guard or risking her life.
+
+### Explanation of Each Action:
+- **walk(Bandit, Cottage, Crossroads)**: The Bandit needs to move to a location where she can interact with other characters to achieve her goal.
+- **rob(Bandit, TomCoin, Merchant, Crossroads)**: This action allows the Bandit to gain coins without killing, which is essential for her goal of accumulating wealth.
+- **walk(Bandit, Crossroads, Camp)**: Moving to the Bandit Camp is necessary to secure the coins she has acquired.
+- **take(Bandit, BanditCoin, Chest, Camp)**: This final action ensures that the Bandit has successfully stored her coins, fulfilling her goal.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "walk(Bandit, Cottage, Crossroads)",
+    "rob(Bandit, TomCoin, Merchant, Crossroads)",
+    "walk(Bandit, Crossroads, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

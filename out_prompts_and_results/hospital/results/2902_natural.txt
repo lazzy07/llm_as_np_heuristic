@@ -1,0 +1,53 @@
+**Story Completion:**
+
+Dr. Hathaway, wanting to ensure all patients are healthy, decides to assess the patients in the admissions room. 
+
+1. **Action: Dr. Hathaway admits Young to Patient Room B.**  
+   - Explanation: This action is necessary to ensure that all patients are assigned to an exam room for assessment and treatment. Dr. Hathaway's workload increases to 3.
+
+2. **Action: Dr. Hathaway walks from Patient Room A to Patient Room B.**  
+   - Explanation: Dr. Hathaway needs to assess Young, who has just been admitted to Patient Room B.
+
+3. **Action: Dr. Hathaway assesses Young in Patient Room B.**  
+   - Explanation: This is crucial to determine Young's symptoms. Since Dr. Hathaway's workload is now 3, there is a risk of making a mistake, but for the sake of this story, we will assume Dr. Hathaway correctly identifies Young's symptoms as Unknown.
+
+4. **Action: Dr. Hathaway treats Young in Patient Room B with steroids.**  
+   - Explanation: Assuming Young has Jarkis (the rash), this treatment is appropriate. This action reduces Dr. Hathaway's workload back to 2 and ensures Young becomes healthy.
+
+5. **Action: Dr. Hathaway walks from Patient Room B to Patient Room A.**  
+   - Explanation: Dr. Hathaway needs to return to Patient Room A to assess and treat Jones.
+
+6. **Action: Dr. Hathaway assesses Jones in Patient Room A.**  
+   - Explanation: This is necessary to determine Jones's symptoms. Again, we assume Dr. Hathaway correctly identifies Jones's symptoms as Unknown.
+
+7. **Action: Dr. Hathaway treats Jones in Patient Room A with antibiotics.**  
+   - Explanation: Assuming Jones has Flaze (the fever), this treatment is appropriate. This action reduces Dr. Hathaway's workload to 1 and ensures Jones becomes healthy.
+
+8. **Action: Dr. Hathaway walks from Patient Room A to Patient Room C.**  
+   - Explanation: Dr. Hathaway needs to assess and treat Ross.
+
+9. **Action: Dr. Hathaway assesses Ross in Patient Room C.**  
+   - Explanation: This is necessary to determine Ross's symptoms. We assume Dr. Hathaway correctly identifies Ross's symptoms as Unknown.
+
+10. **Action: Dr. Hathaway treats Ross in Patient Room C with antibiotics.**  
+    - Explanation: Assuming Ross has Flaze (the fever), this treatment is appropriate. This action reduces Dr. Hathaway's workload to 0 and ensures Ross becomes healthy.
+
+At the end of these actions, all patients—Jones, Ross, and Young—are healthy, achieving Dr. Hathaway's goal.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "Dr. Hathaway admits Young to Patient Room B.",
+    "Dr. Hathaway walks from Patient Room A to Patient Room B.",
+    "Dr. Hathaway assesses Young in Patient Room B.",
+    "Dr. Hathaway treats Young in Patient Room B with steroids.",
+    "Dr. Hathaway walks from Patient Room B to Patient Room A.",
+    "Dr. Hathaway assesses Jones in Patient Room A.",
+    "Dr. Hathaway treats Jones in Patient Room A with antibiotics.",
+    "Dr. Hathaway walks from Patient Room A to Patient Room C.",
+    "Dr. Hathaway assesses Ross in Patient Room C.",
+    "Dr. Hathaway treats Ross in Patient Room C with antibiotics."
+  ]
+}
+```

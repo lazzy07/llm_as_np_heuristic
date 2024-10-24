@@ -1,0 +1,35 @@
+To achieve the bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **The bandit walks from the crossroads to the market.**  
+   - This action is necessary for the bandit to reach the market where the hero and the merchant are located, allowing her to interact with them.
+
+2. **The bandit robs the hero of the hero's coin.**  
+   - The bandit is armed and can rob the hero, who is not armed. This action allows the bandit to take the hero's coin, increasing her total coins.
+
+3. **The bandit walks from the market to the crossroads.**  
+   - After robbing the hero, the bandit needs to return to the crossroads to either keep the coins or store them in the chest at the bandit camp.
+
+4. **The bandit walks from the crossroads to the bandit camp.**  
+   - This action allows the bandit to reach her camp, where she can store the coins in the chest, fulfilling her goal of having coins in the chest.
+
+5. **The bandit places the coins in the chest.**  
+   - This final action ensures that the bandit has successfully achieved her goal of having coins in the chest at the bandit camp.
+
+### Explanation of Actions:
+- The first action is essential for the bandit to access the market where the hero is located.
+- The second action is crucial as it directly contributes to the bandit's goal of acquiring coins.
+- The third and fourth actions are necessary for the bandit to return to her camp, where she can secure her loot.
+- The final action confirms that the bandit has successfully stored her coins, achieving her goal.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "The bandit walks from the crossroads to the market.",
+    "The bandit robs the hero of the hero's coin.",
+    "The bandit walks from the market to the crossroads.",
+    "The bandit walks from the crossroads to the bandit camp.",
+    "The bandit places the coins in the chest."
+  ]
+}
+```

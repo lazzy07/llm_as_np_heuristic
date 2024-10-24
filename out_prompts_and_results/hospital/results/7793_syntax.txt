@@ -1,0 +1,37 @@
+To complete the story, we need to ensure that Hathaway, the doctor, assesses and treats both patients, Jones and Ross, in a way that leads to their health. Since Young is already assigned to Exam Room B, we will focus on admitting and treating Jones and Ross.
+
+Here’s the sequence of actions:
+
+1. **Admit(Hathaway, Jones, PatientRoomA)**: Hathaway admits Jones to Exam Room A. This action is necessary to assign Jones to an exam room so that Hathaway can assess and treat him later. This increases Hathaway's workload to 2.
+
+2. **Admit(Hathaway, Ross, PatientRoomC)**: Hathaway admits Ross to Exam Room C. This action is necessary to assign Ross to an exam room for assessment and treatment. This increases Hathaway's workload to 3.
+
+3. **Assess(Hathaway, Young, symptom(Young), PatientRoomB)**: Hathaway assesses Young in Exam Room B. Since Young is already in the room, this action is necessary to determine if Young has any symptoms. However, we don't know Young's symptoms yet, so we will assume Young has no symptoms of either disease.
+
+4. **Assess(Hathaway, Jones, symptom(Jones), PatientRoomA)**: Hathaway assesses Jones in Exam Room A. This action is necessary to determine Jones's symptoms. We will assume Jones has a fever, indicating he has Flaze.
+
+5. **Treat(Hathaway, Jones, antibiotics, PatientRoomA)**: Hathaway treats Jones with antibiotics in Exam Room A. This action is necessary because Jones has Flaze, and antibiotics will make him healthy.
+
+6. **Assess(Hathaway, Ross, symptom(Ross), PatientRoomC)**: Hathaway assesses Ross in Exam Room C. This action is necessary to determine Ross's symptoms. We will assume Ross has a rash, indicating he has Jarkis.
+
+7. **Treat(Hathaway, Ross, steroids, PatientRoomC)**: Hathaway treats Ross with steroids in Exam Room C. This action is necessary because Ross has Jarkis, and steroids will make him healthy.
+
+At the end of these actions, both Jones and Ross are treated successfully, achieving Hathaway's goal of ensuring all hospital patients are healthy.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "admit(Hathaway, Jones, PatientRoomA)",
+    "admit(Hathaway, Ross, PatientRoomC)",
+    "assess(Hathaway, Young, symptom(Young), PatientRoomB)",
+    "assess(Hathaway, Jones, symptom(Jones), PatientRoomA)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomA)",
+    "assess(Hathaway, Ross, symptom(Ross), PatientRoomC)",
+    "treat(Hathaway, Ross, steroids, PatientRoomC)"
+  ]
+}
+``` 
+
+Each action is necessary to ensure that Hathaway can assess and treat both patients correctly, leading to their health and fulfilling Hathaway's goal.

@@ -1,0 +1,39 @@
+### Story Completion
+
+After admitting Jones to Exam Room A, Hathaway walks back to the Admissions room to assess the next patient. 
+
+1. **Assess Ross**: Hathaway assesses Ross in the Admissions room. Since Ross has not shown any symptoms yet, Hathaway cannot determine if he has Flaze or Jarkis. However, Hathaway believes Ross is alive and healthy.
+
+2. **Admit Ross to Exam Room B**: Hathaway admits Ross to Exam Room B to ensure he receives proper attention.
+
+3. **Assess Young**: Hathaway then assesses Young in Exam Room C. Young has not shown any symptoms yet, but Hathaway believes he is alive and healthy.
+
+4. **Treat Jones**: Hathaway returns to Exam Room A to treat Jones. Since Jones has a fever, Hathaway treats him with antibiotics for Flaze, which is the correct treatment. Jones becomes healthy.
+
+5. **Treat Ross**: Hathaway then treats Ross in Exam Room B. Since Ross has not shown any symptoms, Hathaway mistakenly believes he has Flaze and treats him with antibiotics. Ross becomes healthy.
+
+6. **Treat Young**: Finally, Hathaway treats Young in Exam Room C. Young has not shown any symptoms, but Hathaway mistakenly believes he has Flaze and treats him with antibiotics. Young becomes healthy.
+
+By the end of these actions, all patients are healthy, achieving Hathaway's goal.
+
+### Explanation of Actions
+- **Assess Ross**: This action is necessary to determine Ross's condition, even if no symptoms are present.
+- **Admit Ross to Exam Room B**: This ensures Ross is monitored and treated appropriately.
+- **Assess Young**: Similar to Ross, assessing Young is crucial to determine his health status.
+- **Treat Jones**: This is the first treatment action, and since Jones has a fever, the correct treatment is applied.
+- **Treat Ross**: Although Hathaway makes a mistake in diagnosis, the treatment still results in Ross becoming healthy.
+- **Treat Young**: Again, despite the mistake, Young receives treatment and becomes healthy.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, ?, Admissions)",
+    "admit(Hathaway, Ross, PatientRoomB)",
+    "assess(Hathaway, Young, ?, PatientRoomC)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomA)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomB)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomC)"
+  ]
+}
+```

@@ -1,0 +1,32 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible, the following actions will be taken:
+
+1. **Rob Tom**: The Bandit will rob Tom to take the Medicine he is carrying. This action is necessary because the Bandit needs to eliminate Tom as a threat and also gain an item that could be useful for her.
+
+2. **Loot Tom**: After Tom is dead, the Bandit will loot Tom's corpse to take the coins he has. This action is essential for the Bandit to increase her coin count.
+
+3. **Walk to the Bandit Camp**: The Bandit will then walk to the Bandit Camp to store the coins in the chest. This action is necessary for the Bandit to secure her coins and fulfill her goal.
+
+Here’s the complete story with explanations:
+
+1. **Rob(Tom, Medicine, Bandit, Market)**: The Bandit robs Tom, taking the Medicine. This action eliminates Tom as a competitor and allows the Bandit to gain an item that could be useful for her.
+
+2. **Attack(Bandit, Tom, Market)**: The Bandit attacks and kills Tom. This action is necessary to remove Tom from the scene, as he poses a threat to the Bandit’s plans.
+
+3. **Loot(Bandit, TomCoin, Tom, Market)**: The Bandit loots Tom's corpse to take the coins he had. This action increases the Bandit's coin count, which is crucial for her goal.
+
+4. **Walk(Bandit, Market, Camp)**: The Bandit walks to the Bandit Camp to secure her coins in the chest. This action ensures that the coins are safe and fulfills her goal of having coins in the chest.
+
+The Bandit successfully achieves her goal of carrying as many coins as possible by the end of these actions.
+
+Here’s the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "rob(Bandit, Medicine, Tom, Market)",
+    "attack(Bandit, Tom, Market)",
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

@@ -1,0 +1,41 @@
+**Story Completion:**
+
+Dr. Hathaway, currently at Patient Room B, decides to admit Young to Patient Room C to ensure all patients are assigned to an exam room. This action increases Hathaway's workload to 3.
+
+Next, Hathaway assesses Young in Patient Room C and observes a rash. Since Hathaway's workload is now 3, there is a risk of making a mistake, but Hathaway correctly identifies Young's symptoms and recognizes that Young has Jarkis.
+
+Hathaway then treats Young with steroids, the correct treatment for Jarkis, which successfully makes Young healthy. This reduces Hathaway's workload back to 2.
+
+After treating Young, Hathaway returns to Patient Room B to assess and treat Ross, who is experiencing fever. Hathaway correctly identifies that Ross has Flaze and treats him with antibiotics, making Ross healthy as well. This reduces Hathaway's workload to 1.
+
+Finally, Hathaway returns to Patient Room A to assess and treat Jones, who is also experiencing fever. Hathaway treats Jones with antibiotics, successfully making him healthy too. This reduces Hathaway's workload to 0.
+
+At the end of these actions, all patients are healthy, achieving Hathaway's goal.
+
+**Explanation of Actions:**
+1. **Admit Young to Patient Room C**: This ensures all patients are assigned to an exam room, which is necessary for assessment and treatment.
+2. **Assess Young in Patient Room C**: This is needed to identify Young's symptoms and determine the correct treatment.
+3. **Treat Young with steroids**: This is the correct treatment for Jarkis, ensuring Young becomes healthy.
+4. **Return to Patient Room B**: Hathaway needs to go back to treat Ross.
+5. **Assess Ross in Patient Room B**: This is necessary to identify Ross's symptoms.
+6. **Treat Ross with antibiotics**: This is the correct treatment for Flaze, ensuring Ross becomes healthy.
+7. **Return to Patient Room A**: Hathaway needs to go back to treat Jones.
+8. **Assess Jones in Patient Room A**: This is necessary to identify Jones's symptoms.
+9. **Treat Jones with antibiotics**: This is the correct treatment for Flaze, ensuring Jones becomes healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "Admit Young to Patient Room C",
+    "Assess Young in Patient Room C",
+    "Treat Young with steroids",
+    "Return to Patient Room B",
+    "Assess Ross in Patient Room B",
+    "Treat Ross with antibiotics",
+    "Return to Patient Room A",
+    "Assess Jones in Patient Room A",
+    "Treat Jones with antibiotics"
+  ]
+}
+```

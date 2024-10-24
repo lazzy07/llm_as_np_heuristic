@@ -1,0 +1,19 @@
+**Story Completion:**
+
+1. **Action:** rob(Bandit, TomCoin, Tom, Market)  
+   **Explanation:** The Bandit, armed with a sword, robs Tom, who is not armed. This action allows the Bandit to take the coin that Tom has, which helps the Bandit achieve her goal of carrying as many coins as possible.
+
+2. **Action:** take(Bandit, BanditCoin, Chest, Camp)  
+   **Explanation:** The Bandit then takes the coins from the chest at the bandit camp. This action further increases the Bandit's total coins, fulfilling her goal of having coins in her possession.
+
+**Final Explanation:** The Bandit successfully robs Tom of his coin and then retrieves the coins from the chest at the camp, achieving her goal of carrying as many coins as possible.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Tom, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

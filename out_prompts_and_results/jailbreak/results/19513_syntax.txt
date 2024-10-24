@@ -1,0 +1,31 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy is already in the hallway after venting from the highway. This action allows him to move back into the prison where he can plan his next steps.
+
+2. **Action: lock_gym(Roy, Hall)**  
+   - Roy locks the gym door to prevent the bully from coming out. This ensures that the bully cannot threaten him or Ernest while they are vulnerable.
+
+3. **Action: go(Roy, Highway)**  
+   - After locking the gym, Roy returns to the highway where he can safely put on his civilian clothes and prepare for escape.
+
+4. **Action: escape(Roy, Highway)**  
+   - Roy, now disguised in civilian clothes, successfully escapes from the prison, achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+- The first action of moving to the hallway is necessary for Roy to access the gym and lock it, ensuring his safety and that of Ernest.
+- Locking the gym is crucial to prevent the bully from threatening them, as the bully is currently in the gym and poses a danger.
+- Returning to the highway allows Roy to utilize the civilian clothes he stole earlier, which is essential for his escape.
+- Finally, escaping is the ultimate goal, allowing Roy to be alive and free, fulfilling his desires.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "lock_gym(Roy, Hall)",
+    "go(Roy, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

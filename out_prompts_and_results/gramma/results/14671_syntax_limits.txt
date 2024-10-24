@@ -1,0 +1,19 @@
+**Story Completion:**
+
+1. **Action:** walk(Bandit, Crossroads, Market)  
+   **Explanation:** The Bandit moves to the Market, where she can potentially confront Tom and the Merchant. This action is necessary as it brings the Bandit closer to the Merchant, who is trying to achieve her goal of collecting coins.
+
+2. **Action:** rob(Bandit, TomCoin, Merchant, Market)  
+   **Explanation:** The Bandit, armed with a sword, robs the Merchant of her coins. This action is crucial because it allows the Bandit to take the coins that the Merchant has, which aligns with the Bandit's goal of acquiring coins. The Merchant's goal is to collect coins without becoming a criminal, but in this scenario, she loses her coins to the Bandit.
+
+**Final Explanation:** The Merchant's goal of collecting coins is thwarted by the Bandit, who successfully robs her. The story is short and direct, with only two actions leading to the Bandit's success in acquiring coins, while the Merchant's goal is not achieved.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Market)",
+    "rob(Bandit, TomCoin, Merchant, Market)"
+  ]
+}
+```

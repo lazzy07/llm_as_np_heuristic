@@ -1,0 +1,52 @@
+**Story Completion:**
+
+Hathaway, the doctor, is in Patient Room A, where Jones is currently located in the admissions room. Hathaway decides to assess Jones to determine his symptoms. 
+
+1. **assess(Hathaway, Jones, symptom, Admissions)**: Hathaway assesses Jones to find out if he has Flaze or Jarkis. This is necessary to understand how to treat him effectively.
+
+After assessing, Hathaway discovers that Jones has a fever, indicating he has Flaze.
+
+2. **treat(Hathaway, Jones, antibiotics, Admissions)**: Hathaway treats Jones with antibiotics, which is the correct treatment for Flaze. This action is crucial for ensuring Jones becomes healthy.
+
+Next, Hathaway walks to Patient Room B to assess Ross.
+
+3. **walk(Hathaway, PatientRoomA, PatientRoomB)**: Hathaway moves to Patient Room B to assess Ross, as he is also a patient who needs attention.
+
+4. **assess(Hathaway, Ross, symptom, PatientRoomB)**: Hathaway assesses Ross to determine his symptoms. This is necessary to provide the right treatment.
+
+After assessing, Hathaway finds that Ross has a rash, indicating he has Jarkis.
+
+5. **treat(Hathaway, Ross, steroids, PatientRoomB)**: Hathaway treats Ross with steroids, which is the correct treatment for Jarkis. This ensures Ross becomes healthy as well.
+
+Finally, Hathaway walks to Admissions to assess Young.
+
+6. **walk(Hathaway, PatientRoomB, Admissions)**: Hathaway moves back to Admissions to check on Young.
+
+7. **assess(Hathaway, Young, symptom, Admissions)**: Hathaway assesses Young to determine his symptoms.
+
+After assessing, Hathaway finds that Young has a fever, indicating he has Flaze.
+
+8. **treat(Hathaway, Young, antibiotics, Admissions)**: Hathaway treats Young with antibiotics, ensuring he becomes healthy.
+
+By the end of these actions, all patients are treated correctly, and Hathaway achieves their goal of ensuring all hospital patients are healthy.
+
+**Explanation of Actions:**
+- Assessing each patient is necessary to determine their symptoms and provide the correct treatment.
+- Treating each patient with the appropriate medication is essential for their recovery.
+- Walking between rooms allows Hathaway to see and treat all patients effectively.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Jones, symptom, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, Admissions)",
+    "walk(Hathaway, PatientRoomA, PatientRoomB)",
+    "assess(Hathaway, Ross, symptom, PatientRoomB)",
+    "treat(Hathaway, Ross, steroids, PatientRoomB)",
+    "walk(Hathaway, PatientRoomB, Admissions)",
+    "assess(Hathaway, Young, symptom, Admissions)",
+    "treat(Hathaway, Young, antibiotics, Admissions)"
+  ]
+}
+```

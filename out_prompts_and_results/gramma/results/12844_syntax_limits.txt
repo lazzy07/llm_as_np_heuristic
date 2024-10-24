@@ -1,0 +1,23 @@
+**Story Completion:**
+
+After Tom buys the medicine at the crossroads, he decides to head back to the cottage to deliver it. However, he notices the merchant is still at the crossroads. The merchant, seeing Tom with the medicine, realizes that she can make a profit by selling him a coin. 
+
+1. **Action:** buy(Merchant, TomCoin, MerchantCoin, Crossroads)  
+   - The merchant sells a coin to Tom for a price that he can afford, thus achieving her goal of acquiring more coins without becoming a criminal.
+
+2. **Action:** walk(Tom, Crossroads, Cottage)  
+   - Tom walks back to the cottage, carrying the medicine, fulfilling his own goal.
+
+**Explanation of Actions:**
+- The first action allows the merchant to gain a coin legally, which is her primary goal. She does this by selling an item to Tom, who is willing to buy it.
+- The second action allows Tom to return to the cottage with the medicine, which is his goal. This action is necessary to complete the story while ensuring the merchant achieves her goal.
+
+**Final Plan in JSON format:**
+```json
+{
+  "plan": [
+    "buy(Merchant, TomCoin, MerchantCoin, Crossroads)",
+    "walk(Tom, Crossroads, Cottage)"
+  ]
+}
+```

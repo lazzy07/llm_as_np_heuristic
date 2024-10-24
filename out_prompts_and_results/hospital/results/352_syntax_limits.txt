@@ -1,0 +1,27 @@
+**Story Completion:**
+
+1. **Admit Hathaway, Young, ExamRoomB**: Hathaway decides to admit Young to Exam Room B to ensure that all patients are assessed and treated. This action increases Hathaway's workload to 2, but it is necessary to help Young.
+
+2. **Walk Hathaway, ExamRoomC, ExamRoomB**: Hathaway walks to Exam Room B to assess Young. This action is essential for Hathaway to evaluate Young's symptoms and determine the appropriate treatment.
+
+3. **Assess Hathaway, Young, Symptom, ExamRoomB**: Hathaway assesses Young in Exam Room B. This action is crucial as it allows Hathaway to identify whether Young has Flaze or Jarkis, which will inform the treatment decision.
+
+4. **Treat Hathaway, Young, Treatment, ExamRoomB**: After assessing Young, Hathaway treats Young with the correct treatment based on the identified symptoms. This action is vital for ensuring Young's health and achieving Hathaway's goal of having all patients healthy.
+
+5. **Walk Hathaway, ExamRoomB, Admissions**: Finally, Hathaway walks back to the Admissions room to check on the remaining patients, ensuring that they are also attended to.
+
+**Explanation of Actions:**
+- Each action is taken to ensure that Hathaway can assess and treat all patients effectively. The sequence is designed to minimize workload while maximizing patient care, ultimately leading to the goal of having all patients healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "admit(Hathaway, Young, ExamRoomB)",
+    "walk(Hathaway, ExamRoomC, ExamRoomB)",
+    "assess(Hathaway, Young, symptom, ExamRoomB)",
+    "treat(Hathaway, Young, treatment, ExamRoomB)",
+    "walk(Hathaway, ExamRoomB, Admissions)"
+  ]
+}
+```

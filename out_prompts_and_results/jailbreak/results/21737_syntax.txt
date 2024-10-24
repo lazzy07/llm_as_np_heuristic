@@ -1,0 +1,38 @@
+**Story Completion:**
+
+Ernest is in the locked gym with Roy and the bully. Knowing that they are threatened, Ernest decides to take action. He has a knife, and he knows that the bully is a danger to both him and Roy. 
+
+1. **kill(Bully, Ernest, Gym)**: Ernest uses the knife to kill the bully. This action is necessary because it removes the immediate threat to both him and Roy, allowing them to feel safe.
+
+After killing the bully, the gym door is still locked, but the threat is gone. 
+
+2. **next_day()**: The day ends, and it is now day two. This action is included to signify the passage of time and to allow for the next steps in their escape plan.
+
+3. **disguise(Ernest, Clothes, Gym)**: Ernest puts on the civilian clothes he stole from the laundry. This is crucial for his disguise, which will help him escape the prison without being recognized.
+
+4. **vent(Ernest, Gym)**: Ernest crawls through the vents to get to the hallway. This action is necessary to leave the gym without being seen.
+
+5. **go(Ernest, Hall)**: Once in the hallway, Ernest can now access the outside.
+
+6. **escape(Ernest, Highway)**: Finally, Ernest puts on the civilian clothes and escapes from the prison via the highway. This is the ultimate goal, as it ensures his survival and freedom.
+
+**Explanation of Actions:**
+- Killing the bully was essential to eliminate the threat to both Ernest and Roy.
+- Moving to the next day allows for the progression of the story and the opportunity to escape.
+- Disguising himself is necessary for Ernest to avoid detection while escaping.
+- Venting to the hallway is a strategic move to bypass the locked gym door.
+- Escaping is the final action that fulfills Ernest's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "kill(Bully, Ernest, Gym)",
+    "next_day()",
+    "disguise(Ernest, Clothes, Gym)",
+    "vent(Ernest, Gym)",
+    "go(Ernest, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

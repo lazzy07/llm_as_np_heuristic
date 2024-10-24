@@ -1,0 +1,32 @@
+**Story Completion:**
+
+1. **Dr. Hathaway admits Jones to Exam Room A.**  
+   *Explanation:* This action assigns Jones to an exam room, allowing Dr. Hathaway to assess him later. It also increases Dr. Hathaway's workload to 1.
+
+2. **Dr. Hathaway admits Ross to Exam Room B.**  
+   *Explanation:* This action assigns Ross to an exam room, allowing Dr. Hathaway to assess him later. It increases Dr. Hathaway's workload to 2.
+
+3. **Dr. Hathaway assesses Young in Exam Room C.**  
+   *Explanation:* Dr. Hathaway checks Young's symptoms. Since Young is the only patient in Exam Room C, this action is necessary to determine if Young has Flaze or Jarkis.
+
+4. **Dr. Hathaway treats Young for Flaze.**  
+   *Explanation:* Assuming Young has a fever (symptom of Flaze), Dr. Hathaway treats him with antibiotics. This action is crucial for Young to become healthy.
+
+5. **Dr. Hathaway treats Jones for Jarkis.**  
+   *Explanation:* After assessing Jones, if he shows a rash, Dr. Hathaway treats him with steroids. This ensures that both patients are healthy, but Young's health is the priority.
+
+**Final Explanation:**  
+The actions taken ensure that Young is assessed and treated correctly, allowing him to achieve his goal of being alive and healthy. The story is kept concise with only five actions, focusing on the necessary steps to ensure Young's health while also considering the other patients.
+
+**JSON Object:**
+```json
+{
+  "plan": [
+    "Dr. Hathaway admits Jones to Exam Room A.",
+    "Dr. Hathaway admits Ross to Exam Room B.",
+    "Dr. Hathaway assesses Young in Exam Room C.",
+    "Dr. Hathaway treats Young for Flaze.",
+    "Dr. Hathaway treats Jones for Jarkis."
+  ]
+}
+```

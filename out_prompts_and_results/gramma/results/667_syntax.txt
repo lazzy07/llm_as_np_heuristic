@@ -1,0 +1,23 @@
+To ensure Tom achieves his goal of being at the cottage carrying the medicine, we need to create a sequence of actions that allows him to leave the market and reach the cottage without being hindered by the other characters. Here’s the shortest story:
+
+1. **walk(Tom, Market, Crossroads)**: Tom leaves the market to head towards the crossroads, which is the only path available to him from the market.
+
+2. **walk(Tom, Crossroads, Cottage)**: From the crossroads, Tom continues on the path to the cottage, where he wants to be.
+
+Now, Tom is at the cottage carrying the medicine, achieving his goal.
+
+### Explanation of Actions:
+- **walk(Tom, Market, Crossroads)**: This action is necessary for Tom to leave the market, where he currently is, and move towards the crossroads, which is the only route to the cottage.
+- **walk(Tom, Crossroads, Cottage)**: This action allows Tom to reach his final destination, the cottage, where he wants to be carrying the medicine.
+
+The other characters (Merchant, Guard, and Bandit) do not interfere with Tom's actions because they are either at the market or the bandit camp, and their goals do not conflict with Tom's immediate need to reach the cottage.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Tom, Market, Crossroads)",
+    "walk(Tom, Crossroads, Cottage)"
+  ]
+}
+```

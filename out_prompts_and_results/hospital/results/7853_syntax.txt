@@ -1,0 +1,40 @@
+To complete the story, we need to ensure that Hathaway, the doctor, successfully assesses and treats both patients, Jones and Ross, to achieve the goal of having all hospital patients healthy. 
+
+Here’s the sequence of actions:
+
+1. **walk(Hathaway, Admissions, PatientRoomB)**: Hathaway walks to the admissions room to assess Jones, who is assigned to exam room B. This action is necessary to get closer to the patient who needs assessment.
+
+2. **assess(Hathaway, Jones, symptom(Jones), PatientRoomB)**: Hathaway assesses Jones to determine his symptoms. This is crucial for identifying whether Jones has Flaze or Jarkis, which will inform the treatment.
+
+3. **treat(Hathaway, Jones, antibiotics, PatientRoomB)**: Assuming Jones has Flaze (fever), Hathaway treats him with antibiotics. This action is necessary to ensure Jones becomes healthy.
+
+4. **walk(Hathaway, Admissions, PatientRoomC)**: Hathaway walks back to the admissions room to assess Ross, who is still in the admissions room and has not been assigned to an exam room yet.
+
+5. **admit(Hathaway, Ross, PatientRoomC)**: Hathaway admits Ross to exam room C. This action is necessary to assign Ross to an exam room for assessment.
+
+6. **walk(Hathaway, Admissions, PatientRoomC)**: Hathaway walks to exam room C to assess Ross.
+
+7. **assess(Hathaway, Ross, symptom(Ross), PatientRoomC)**: Hathaway assesses Ross to determine his symptoms. This is crucial for identifying whether Ross has Flaze or Jarkis.
+
+8. **treat(Hathaway, Ross, steroids, PatientRoomC)**: Assuming Ross has Jarkis (rash), Hathaway treats him with steroids. This action is necessary to ensure Ross becomes healthy.
+
+By following these actions, Hathaway successfully treats both patients, achieving the goal of having all hospital patients healthy.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Hathaway, Admissions, PatientRoomB)",
+    "assess(Hathaway, Jones, symptom(Jones), PatientRoomB)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomB)",
+    "walk(Hathaway, Admissions, PatientRoomC)",
+    "admit(Hathaway, Ross, PatientRoomC)",
+    "walk(Hathaway, Admissions, PatientRoomC)",
+    "assess(Hathaway, Ross, symptom(Ross), PatientRoomC)",
+    "treat(Hathaway, Ross, steroids, PatientRoomC)"
+  ]
+}
+``` 
+
+Each action is necessary to ensure that Hathaway can assess and treat both patients effectively, leading to their recovery and achieving the goal of health for all patients.

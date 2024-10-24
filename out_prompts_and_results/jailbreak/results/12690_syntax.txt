@@ -1,0 +1,34 @@
+To complete the story, we need to ensure that either Ernest or Roy overcomes the bully's threats by escaping or getting revenge, while also considering the constraints of the actions available. Given the current situation, the following sequence of actions will lead to a resolution:
+
+1. **lock_gym(Roy, Gym)**: Roy locks the gym door while the bully is inside. This action prevents the bully from leaving and ensures that he cannot threaten either Ernest or Roy while they are in the gym. It is a strategic move to gain control over the situation.
+
+2. **kill(Bully, Roy, Gym)**: With the gym locked, Roy can now kill the bully using the knife. This action eliminates the immediate threat posed by the bully, allowing Roy to feel safe and no longer threatened.
+
+3. **disguise(Roy, Clothes, Hall)**: After killing the bully, Roy can take the civilian clothes from the laundry room (which he had previously stolen) and disguise himself. This action is crucial for his escape plan.
+
+4. **vent(Roy, Highway)**: Roy crawls through the vents to reach the highway. This action allows him to bypass the prison guards and any other threats that may be present in the prison.
+
+5. **escape(Roy, Highway)**: Finally, Roy escapes from the prison while disguised in civilian clothes. This action fulfills his goal of being alive and free from threats.
+
+This sequence of actions ensures that Roy overcomes the bully's threats and successfully escapes the prison. Ernest, however, is left in a precarious situation, as he is still in the laundry room and has not taken any actions to escape or defend himself.
+
+Here’s the explanation of each action:
+- **lock_gym**: This action is necessary to prevent the bully from escaping and threatening Roy.
+- **kill**: This action is essential to eliminate the bully, who poses a direct threat to both Roy and Ernest.
+- **disguise**: This action allows Roy to prepare for his escape without being recognized as a prisoner.
+- **vent**: This action is a means of transportation that allows Roy to reach the outside of the prison without being caught.
+- **escape**: This action is the final step in achieving Roy's goal of being alive and free.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "lock_gym(Roy, Gym)",
+    "kill(Bully, Roy, Gym)",
+    "disguise(Roy, Clothes, Hall)",
+    "vent(Roy, Highway)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

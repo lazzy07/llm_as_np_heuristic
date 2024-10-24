@@ -1,0 +1,21 @@
+**Story Completion:**
+
+1. **Action:** walk(Tom, Market, Crossroads)  
+   **Explanation:** Tom is currently at the Market and needs to reach the Crossroads to get to the Merchant, who has the medicine he wants. This action moves him closer to his goal.
+
+2. **Action:** buy(Tom, Medicine, TomCoin, Crossroads)  
+   **Explanation:** Now that Tom is at the Crossroads, he can buy the medicine from the Merchant using one of the coins he is carrying. This action directly helps Tom achieve his goal of being at the cottage carrying the medicine.
+
+3. **Action:** walk(Tom, Crossroads, Cottage)  
+   **Explanation:** With the medicine in hand, Tom can now walk to the cottage, fulfilling his ultimate goal of being at the cottage carrying the medicine.
+
+**Final Plan in JSON format:**
+```json
+{
+  "plan": [
+    "walk(Tom, Market, Crossroads)",
+    "buy(Tom, Medicine, TomCoin, Crossroads)",
+    "walk(Tom, Crossroads, Cottage)"
+  ]
+}
+```

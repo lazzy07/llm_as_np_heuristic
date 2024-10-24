@@ -1,0 +1,59 @@
+**Story Completion:**
+
+1. **Day 1: Ernest in the Kitchen**
+   - Ernest is in the kitchen and sees the knife. He decides to take it because it could be useful for self-defense against the bully. 
+   - Action: `steal(Ernest, Knife, Kitchen)`
+
+2. **Day 1: Ernest Moves to the Hallway**
+   - After taking the knife, Ernest moves to the hallway to plan his next move. 
+   - Action: `go(Ernest, Hall)`
+
+3. **Day 1: Ernest Locks the Gym Door**
+   - Knowing the bully is in the gym, Ernest locks the gym door to prevent the bully from escaping and to confront him safely. 
+   - Action: `lock_gym(Ernest, Hall)`
+
+4. **Day 1: Ernest Crawls Through the Vents to the Gym**
+   - Ernest crawls through the vents to get to the gym, where he can confront the bully. 
+   - Action: `vent(Ernest, Gym)`
+
+5. **Day 1: Ernest Gets Revenge on the Bully**
+   - Once in the gym, Ernest uses the knife to kill the bully, ensuring that he and Roy are no longer threatened. 
+   - Action: `revenge(Ernest, Bully, Gym)`
+
+6. **Day 1: Day Ends**
+   - With the bully dead, Ernest is no longer threatened. He can now focus on escaping. 
+   - Action: `next_day()`
+
+7. **Day 2: Ernest Disguises Himself**
+   - On day two, Ernest puts on the civilian clothes he stole earlier to disguise himself for the escape. 
+   - Action: `disguise(Ernest, Clothes, Hall)`
+
+8. **Day 2: Ernest Escapes to the Highway**
+   - Finally, Ernest makes his way to the highway, where he can escape from the prison. 
+   - Action: `escape(Ernest, Highway)`
+
+**Explanation of Actions:**
+- **Stealing the Knife:** This action is crucial for self-defense against the bully, allowing Ernest to protect himself and Roy.
+- **Moving to the Hallway:** This action positions Ernest to take control of the situation with the bully.
+- **Locking the Gym Door:** Preventing the bully from escaping ensures that Ernest can confront him without fear of retaliation.
+- **Crawling Through the Vents:** This action allows Ernest to access the gym undetected, setting up for the confrontation.
+- **Getting Revenge on the Bully:** This is the pivotal action that removes the threat from both Ernest and Roy, allowing them to feel safe.
+- **Ending Day One:** This signifies a transition to a new day where Ernest can plan his escape.
+- **Disguising Himself:** This is necessary for Ernest to avoid detection while escaping.
+- **Escaping to the Highway:** This final action achieves Ernest's goal of being alive and free.
+
+**Final Plan JSON:**
+```json
+{
+  "plan": [
+    "steal(Ernest, Knife, Kitchen)",
+    "go(Ernest, Hall)",
+    "lock_gym(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "revenge(Ernest, Bully, Gym)",
+    "next_day()",
+    "disguise(Ernest, Clothes, Hall)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

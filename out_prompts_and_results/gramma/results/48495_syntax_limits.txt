@@ -1,0 +1,17 @@
+In this story, the Bandit wants to be carrying as many coins as possible or have coins in the chest at the bandit camp. The Bandit is currently at the Crossroads, while the Merchant is at the Market with two coins. The Guard is also at the Market, and Tom has been killed by the Bandit.
+
+To achieve the Bandit's goal, the Bandit can take the following action:
+
+1. **Take(Bandit, TomCoin, Chest, Camp)**: The Bandit walks to the Market, takes the two coins from Tom's corpse, and then walks back to the Bandit Camp to place the coins in the chest. This action allows the Bandit to achieve her goal of having coins in the chest at the bandit camp.
+
+This is the only action needed to fulfill the Bandit's objective, as it directly leads to her goal of accumulating coins.
+
+### Explanation of the Action:
+- **Take(Bandit, TomCoin, Chest, Camp)**: This action is necessary because it allows the Bandit to collect the coins from Tom's corpse and secure them in the chest at the bandit camp, thus achieving her goal of having coins.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": ["take(Bandit, TomCoin, Chest, Camp)"]
+}
+```

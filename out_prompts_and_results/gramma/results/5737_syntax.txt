@@ -1,0 +1,25 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following sequence of actions will take place:
+
+1. **Rob Tom**: The bandit will rob Tom, who is unarmed and carrying a coin. This action allows the bandit to take one of Tom's coins, increasing her total.
+
+2. **Walk to the Bandit Camp**: After robbing Tom, the bandit will walk back to the bandit camp, where she can store her coins safely.
+
+3. **Take Coins from the Chest**: Once at the bandit camp, the bandit will take the coins from the chest, further increasing her total.
+
+This sequence of actions ensures that the bandit achieves her goal of carrying as many coins as possible.
+
+### Explanation of Actions:
+- **Robbing Tom**: This action is necessary because it allows the bandit to gain a coin without risking confrontation with the guard or merchant, as Tom is unarmed.
+- **Walking to the Bandit Camp**: This action is essential for the bandit to secure her stolen coin and any coins she has in the chest, moving to a location where she is safe from the guard.
+- **Taking Coins from the Chest**: This final action allows the bandit to maximize her coin count, fulfilling her goal.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "rob(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

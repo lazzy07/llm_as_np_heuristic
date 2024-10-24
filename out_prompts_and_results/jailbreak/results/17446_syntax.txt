@@ -1,0 +1,39 @@
+**Story Completion:**
+
+After locking the gym door, Ernest knows he must act quickly to ensure both his and Roy's safety. He decides to crawl through the vents to get back into the prison. 
+
+1. **vent(Ernest, Gym)**: Ernest crawls through the vents to the gym, where he knows the bully is currently located. This action is necessary for him to confront the bully and ensure Roy's safety.
+
+2. **revenge(Ernest, Bully, Gym)**: Once in the gym, Ernest uses the knife he stole from the kitchen to kill the bully. This action is crucial as it eliminates the threat posed by the bully, allowing both him and Roy to be safe.
+
+3. **go(Ernest, Hall)**: After dealing with the bully, Ernest moves to the hallway to regroup and plan his next steps.
+
+4. **go(Ernest, Cells)**: Ernest heads to the cell block to find Roy. He needs to inform Roy that the bully is no longer a threat.
+
+5. **disguise(Roy, Clothes, Cells)**: Ernest helps Roy put on the civilian clothes he stole earlier, disguising him so they can escape together.
+
+6. **go(Ernest, Highway)**: They both move to the highway, where they can finally escape.
+
+7. **escape(Ernest, Highway)**: With the disguise on, Ernest successfully escapes from the prison, achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+- **vent**: This action allows Ernest to access the gym where the bully is, which is necessary for confronting the threat.
+- **revenge**: Killing the bully is essential to ensure that neither he nor Roy will be threatened anymore.
+- **go**: Moving to the hallway and then to the cells is necessary for regrouping and preparing for escape.
+- **disguise**: This action is crucial for Roy to avoid detection by the guards while escaping.
+- **escape**: This final action fulfills Ernest's goal of being alive and free.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "vent(Ernest, Gym)",
+    "revenge(Ernest, Bully, Gym)",
+    "go(Ernest, Hall)",
+    "go(Ernest, Cells)",
+    "disguise(Roy, Clothes, Cells)",
+    "go(Ernest, Highway)",
+    "escape(Ernest, Highway)"
+  ]
+}
+```

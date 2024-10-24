@@ -1,0 +1,44 @@
+To complete the story, we need to ensure that Hathaway, the doctor, assesses and treats all patients correctly to achieve the goal of having all patients healthy. Given the current situation, we will focus on assessing and treating the patients in the admissions room.
+
+### Story Completion:
+
+1. **Assess Young in Admissions**: 
+   - Action: `assess(Hathaway, Young, symptom(Young), Admissions)`
+   - Explanation: Hathaway needs to assess Young to determine if they have Flaze or Jarkis. This is necessary to provide the correct treatment.
+
+2. **Assess Ross in Admissions**: 
+   - Action: `assess(Hathaway, Ross, symptom(Ross), Admissions)`
+   - Explanation: After assessing Young, Hathaway should assess Ross to determine his symptoms as well. This ensures that all patients are evaluated.
+
+3. **Assess Jones in Admissions**: 
+   - Action: `assess(Hathaway, Jones, symptom(Jones), Admissions)`
+   - Explanation: Finally, Hathaway assesses Jones to complete the evaluation of all patients in the admissions room.
+
+4. **Treat Young**: 
+   - Action: `treat(Hathaway, Young, steroids, Admissions)`
+   - Explanation: Assuming Young shows a rash (indicating Jarkis), Hathaway treats Young with steroids, which is the correct treatment.
+
+5. **Treat Ross**: 
+   - Action: `treat(Hathaway, Ross, steroids, Admissions)`
+   - Explanation: If Ross also shows a rash, Hathaway treats him with steroids as well.
+
+6. **Treat Jones**: 
+   - Action: `treat(Hathaway, Jones, antibiotics, Admissions)`
+   - Explanation: If Jones shows a fever (indicating Flaze), Hathaway treats him with antibiotics.
+
+### Final Explanation:
+- Each action is taken to ensure that Hathaway assesses and treats all patients correctly based on their symptoms. By assessing each patient, Hathaway can determine the appropriate treatment, which is crucial for achieving the goal of having all patients healthy. The sequence of actions ensures that Hathaway does not exceed a workload of three, thus avoiding mistakes in diagnosis.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "assess(Hathaway, Young, symptom(Young), Admissions)",
+    "assess(Hathaway, Ross, symptom(Ross), Admissions)",
+    "assess(Hathaway, Jones, symptom(Jones), Admissions)",
+    "treat(Hathaway, Young, steroids, Admissions)",
+    "treat(Hathaway, Ross, steroids, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, Admissions)"
+  ]
+}
+```

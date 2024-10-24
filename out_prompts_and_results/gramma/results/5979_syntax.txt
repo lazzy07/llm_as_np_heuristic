@@ -1,0 +1,31 @@
+To achieve the bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **Rob Tom**: The bandit will rob Tom to take the coins he has. Since Tom is currently armed with a sword, this action is not possible. Therefore, the bandit will need to take a different approach.
+
+2. **Attack Tom**: The bandit will attack Tom to kill him and loot his items. This is a necessary action because it allows the bandit to eliminate a threat and gain the coins Tom has.
+
+3. **Loot Tom**: After Tom is killed, the bandit will loot Tom's body to take the coins he has. This will help the bandit achieve her goal of carrying more coins.
+
+4. **Walk to the Bandit Camp**: Finally, the bandit will walk to the bandit camp to store the coins in the chest, ensuring that she has achieved her goal of having coins in the chest.
+
+Here’s the complete sequence of actions:
+
+1. **Attack(Tom, Bandit, Market)**: The bandit attacks Tom, who is currently in the market. This action is necessary to eliminate Tom and take his items.
+2. **Loot(Bandit, TomCoin, Tom, Market)**: The bandit loots Tom's body to take the coins he was carrying. This action helps the bandit achieve her goal of carrying more coins.
+3. **Walk(Bandit, Market, Camp)**: The bandit walks to the bandit camp to store the coins in the chest. This action ensures that the bandit has coins in the chest, fulfilling her goal.
+
+### Explanation of Actions:
+- **Attack**: This action is necessary to remove Tom as a competitor and gain access to his items.
+- **Loot**: This action allows the bandit to collect the coins from Tom, which is essential for her goal.
+- **Walk**: This action is required to move to the bandit camp, where the bandit can secure her coins.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "attack(Bandit, Tom, Market)",
+    "loot(Bandit, TomCoin, Tom, Market)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

@@ -1,0 +1,17 @@
+In this story, the Bandit is currently at the Market, where she has just attacked the Merchant and is now in possession of the Merchant's sword. Tom, who is also at the Market, has just looted the medicine from the Merchant's corpse. The Guard is also present at the Market, and he is armed and ready to deal with any criminals.
+
+To achieve her goal of carrying as many coins as possible, the Bandit can take the following action:
+
+1. **rob(Tom, TomCoin, Bandit, Market)**: The Bandit can rob Tom, who is currently unarmed and has the Merchant's coin. This action allows the Bandit to take the coin from Tom, increasing her wealth.
+
+This single action is sufficient for the Bandit to achieve her goal of carrying more coins, as she will now have both the coin she took from Tom and the coins in her chest at the bandit camp.
+
+### Explanation of the Action:
+- **rob**: The Bandit uses her sword to rob Tom, who is unarmed. This action is necessary for the Bandit to increase her coin count without becoming a criminal in the eyes of the Guard, as Tom is not a criminal.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["rob(Bandit, TomCoin, Tom, Market)"]
+}
+```

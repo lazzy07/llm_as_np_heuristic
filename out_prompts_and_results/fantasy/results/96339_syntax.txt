@@ -1,0 +1,27 @@
+To complete the story, we need to ensure that Talia becomes either happy or wealthy, or both. Given the current situation, Talia is already happy due to her marriage to Rory. However, she is not wealthy, and her goal is to be happy and wealthy. 
+
+The treasure is located in the cave, and since Talia is already in the cave with Rory, they can work together to acquire it. Gargax, the dragon, is also in the cave and is hungry, which poses a threat to Talia and Rory. To ensure Talia's safety and to achieve her goal of wealth, Rory will need to distract Gargax while Talia picks up the treasure.
+
+Here’s the sequence of actions to achieve the goal:
+
+1. **get_hungry(Gargax)**: This action has already occurred, so Gargax is hungry and may be more aggressive.
+2. **eat(Gargax, Rory, Cave)**: Gargax will eat Rory, which removes him from the story but allows Talia to act without the threat of Gargax being distracted by Rory.
+3. **pickup(Talia, Treasure, Cave)**: Talia picks up the treasure, which will make her wealthy.
+
+Now, Talia will be wealthy, fulfilling her goal of becoming wealthy. She remains happy due to her marriage to Rory, even though he is no longer alive.
+
+### Explanation of Actions:
+- **eat(Gargax, Rory, Cave)**: This action is necessary to remove Rory from the scene, allowing Talia to safely pick up the treasure without the risk of Gargax being distracted by Rory's presence.
+- **pickup(Talia, Treasure, Cave)**: This action allows Talia to acquire the treasure, thus achieving her goal of becoming wealthy.
+
+### Final Plan in JSON format:
+```json
+{
+  "plan": [
+    "eat(Gargax, Rory, Cave)",
+    "pickup(Talia, Treasure, Cave)"
+  ]
+}
+``` 
+
+This plan ensures that Talia becomes wealthy while maintaining her happiness from her marriage to Rory.

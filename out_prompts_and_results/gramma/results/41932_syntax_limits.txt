@@ -1,0 +1,21 @@
+In this story, the Bandit wants to be carrying as many coins as possible or to have coins in the chest at the bandit camp. The Bandit is currently at the Market, where Tom, the Merchant, and the Guard are also present. 
+
+To achieve her goal, the Bandit can take the following action:
+
+1. **rob(Bandit, TomCoin, Tom, Market)**: The Bandit can rob Tom, who is carrying the Merchant's coin. Since Tom is armed with a sword, this action is not possible. Therefore, the Bandit cannot rob Tom directly.
+
+Since the Bandit cannot rob Tom, she needs to take a different approach. The Bandit can instead:
+
+1. **walk(Bandit, Market, Camp)**: The Bandit can walk to the Bandit Camp, where she can access the coins in the chest.
+
+This action allows the Bandit to achieve her goal of having coins in the chest at the Bandit Camp.
+
+### Explanation of Actions:
+- **walk(Bandit, Market, Camp)**: This action is necessary for the Bandit to reach her preferred location, the Bandit Camp, where she can access the coins in the chest. 
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": ["walk(Bandit, Market, Camp)"]
+}
+```

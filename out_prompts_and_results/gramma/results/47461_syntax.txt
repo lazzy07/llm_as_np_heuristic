@@ -1,0 +1,34 @@
+To achieve the Bandit's goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **Attack the Guard**: The Bandit will attack the Guard in the Market. This is necessary because the Guard is armed and poses a threat to the Bandit. By eliminating the Guard, the Bandit can operate freely without the risk of being reported or attacked.
+
+2. **Loot the Guard**: After successfully attacking the Guard, the Bandit will loot the Guard's corpse to take the Guard's sword. This action is important because it allows the Bandit to become armed, which will enable her to defend herself against any future threats.
+
+3. **Take the Coins from the Merchant**: The Bandit will then take the coins from the Merchant's chest. This is crucial as it directly contributes to the Bandit's goal of carrying as many coins as possible.
+
+4. **Walk to the Bandit Camp**: Finally, the Bandit will walk to the Bandit Camp to store the coins in the chest there. This action ensures that the Bandit achieves her goal of having coins in the chest at the bandit camp.
+
+Here’s the complete sequence of actions:
+
+1. **attack(Bandit, Guard, Market)**: The Bandit attacks the Guard to eliminate the threat.
+2. **loot(Bandit, GuardSword, Guard, Market)**: The Bandit loots the Guard to acquire a sword for self-defense.
+3. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit takes the coins from the Merchant's chest.
+4. **walk(Bandit, Market, Camp)**: The Bandit walks to the Bandit Camp to secure the coins.
+
+### Explanation of Actions:
+- **Attack the Guard**: This action is necessary to remove the only armed character who could threaten the Bandit.
+- **Loot the Guard**: By taking the Guard's sword, the Bandit ensures she is armed and can defend herself against any future threats.
+- **Take the Coins**: This action directly fulfills the Bandit's goal of acquiring coins.
+- **Walk to the Bandit Camp**: This final action secures the coins in a safe location, achieving the Bandit's ultimate goal.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "attack(Bandit, Guard, Market)",
+    "loot(Bandit, GuardSword, Guard, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)",
+    "walk(Bandit, Market, Camp)"
+  ]
+}
+```

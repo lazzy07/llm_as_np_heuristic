@@ -1,0 +1,40 @@
+**Story Completion:**
+
+1. **Action: go(Roy, Hall)**  
+   - Roy leaves the kitchen and moves to the hallway. This action is necessary for him to access the gym where Ernest is located.
+
+2. **Action: vent(Roy, Gym)**  
+   - Roy crawls through the vents to reach the gym. This allows him to enter the gym without being seen by the bully, who is currently there with Ernest.
+
+3. **Action: lock_gym(Roy, Gym)**  
+   - Once inside the gym, Roy locks the door to prevent the bully from escaping. This is crucial for ensuring that they can confront the bully without the risk of him fleeing or getting help.
+
+4. **Action: revenge(Roy, Bully, Gym)**  
+   - With the knife he stole from the kitchen, Roy kills the bully. This action eliminates the threat to both him and Ernest, allowing them to be safe.
+
+5. **Action: disguise(Roy, Clothes, Gym)**  
+   - After dealing with the bully, Roy puts on the civilian clothes to disguise himself. This is necessary for him to escape the prison without being recognized.
+
+6. **Action: go(Roy, Hall)**  
+   - Roy exits the gym and moves back to the hallway, preparing to escape.
+
+7. **Action: escape(Roy, Highway)**  
+   - Finally, Roy makes his way to the highway and escapes from the prison, achieving his goal of being alive and free.
+
+**Explanation of Actions:**
+- Each action taken by Roy is aimed at ensuring his survival and freedom. Moving to the hallway and venting into the gym allows him to confront the bully without direct confrontation initially. Locking the gym door secures the area, making it impossible for the bully to escape or call for help. Killing the bully removes the immediate threat to both him and Ernest. Disguising himself is essential for a successful escape, and finally, moving to the highway allows him to leave the prison.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Gym)",
+    "lock_gym(Roy, Gym)",
+    "revenge(Roy, Bully, Gym)",
+    "disguise(Roy, Clothes, Gym)",
+    "go(Roy, Hall)",
+    "escape(Roy, Highway)"
+  ]
+}
+```

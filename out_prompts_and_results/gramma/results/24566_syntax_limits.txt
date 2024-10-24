@@ -1,0 +1,23 @@
+In this story, the guard's goal is to kill criminals, and the only criminal present is the bandit. The bandit is currently at an unknown location, but Tom believes the bandit is at the cottage. To achieve the guard's goal, the guard needs to find the bandit and eliminate her.
+
+Here’s the shortest story that allows the guard to achieve their goal:
+
+1. **Action: report(Tom, location(Bandit), Crossroads)** - Tom, who is at the market, believes the bandit is at the cottage. He reports this information to the guard, indicating that the bandit is at the cottage. This action is necessary because it provides the guard with the information needed to locate the bandit.
+
+2. **Action: walk(Guard, Crossroads, Cottage)** - The guard walks to the cottage based on the information provided by Tom. This action is essential for the guard to reach the bandit.
+
+3. **Action: attack(Guard, Bandit, Cottage)** - Upon arriving at the cottage, the guard attacks the bandit, successfully killing her. This action fulfills the guard's goal of eliminating a criminal.
+
+The story is concise and directly leads to the guard achieving their goal with minimal actions.
+
+Here’s the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "report(Tom, location(Bandit), Crossroads)",
+    "walk(Guard, Crossroads, Cottage)",
+    "attack(Guard, Bandit, Cottage)"
+  ]
+}
+```

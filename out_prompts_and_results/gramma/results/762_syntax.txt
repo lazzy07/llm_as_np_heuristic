@@ -1,0 +1,25 @@
+To ensure the guard achieves their goal of killing criminals, the following actions will take place:
+
+1. **report(Tom, spot: Market, place: Bandit Camp)**: Tom, who is not a criminal, will report the location of the bandit to the guard. This action is necessary because it informs the guard about the presence of a criminal (the bandit) and allows the guard to take action.
+
+2. **walk(Guard, Market, Bandit Camp)**: The guard will walk to the bandit camp based on the information provided by Tom. This action is essential for the guard to confront the bandit.
+
+3. **attack(Guard, Bandit, Bandit Camp)**: The guard will attack the bandit at the bandit camp. This action is crucial as it directly fulfills the guard's goal of killing a criminal.
+
+After these actions, the guard successfully kills the bandit, achieving their goal.
+
+### Explanation of Actions:
+- **report**: Tom reports the bandit's location, which is a critical step for the guard to know where to go.
+- **walk**: The guard moves to the bandit camp to confront the bandit, which is necessary to carry out the attack.
+- **attack**: The guard attacks the bandit, which is the final action needed to achieve the guard's goal of killing a criminal.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "report(Tom, spot: Market, place: Bandit Camp)",
+    "walk(Guard, Market, Bandit Camp)",
+    "attack(Guard, Bandit, Bandit Camp)"
+  ]
+}
+```

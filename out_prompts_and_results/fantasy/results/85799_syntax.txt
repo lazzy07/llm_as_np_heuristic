@@ -1,0 +1,46 @@
+To ensure Rory achieves their goal of being happy, wealthy, and not hungry, we need to focus on actions that will lead to Rory marrying Talia, acquiring the treasure, and ensuring he is not hungry. Here’s the shortest story that accomplishes this:
+
+1. **accept(Rory, Talia, Cave)**: Rory accepts Talia's marriage proposal. This action makes both Rory and Talia happy, which is essential for Rory's goal of happiness.
+
+2. **pickup(Rory, Treasure, Cave)**: Rory picks up the treasure from the cave. This action increases Rory's wealth, fulfilling his goal of being wealthy.
+
+3. **travel(Rory, Cave, Village)**: Rory travels back to the village. This action is necessary for Rory to be in a location where he can ensure he is not hungry.
+
+4. **get_hungry(Rory)**: Rory becomes hungry. This action is included to illustrate the need for Rory to address his hunger, but it is not necessary for achieving his goal.
+
+5. **travel(Rory, Village, Cave)**: Rory travels back to the cave to be with Talia and ensure he can eat.
+
+6. **eat(Gargax, Rory, Cave)**: Gargax eats Rory. This action is included to illustrate the potential danger Rory faces, but it ultimately leads to Rory's demise, which contradicts his goal.
+
+However, to ensure Rory achieves his goal without being eaten, we can modify the actions:
+
+1. **accept(Rory, Talia, Cave)**: Rory accepts Talia's proposal, making them both happy.
+
+2. **pickup(Rory, Treasure, Cave)**: Rory picks up the treasure, increasing his wealth.
+
+3. **travel(Rory, Cave, Village)**: Rory travels back to the village to ensure he is not hungry.
+
+4. **get_hungry(Rory)**: Rory becomes hungry, but this is not necessary for achieving his goal.
+
+5. **travel(Rory, Village, Cave)**: Rory travels back to the cave to be with Talia.
+
+6. **eat(Rory, Talia, Cave)**: Rory eats Talia, ensuring he is not hungry anymore.
+
+In this final version, Rory successfully marries Talia, acquires the treasure, and ensures he is not hungry, achieving his goals.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "accept(Rory, Talia, Cave)",
+    "pickup(Rory, Treasure, Cave)",
+    "travel(Rory, Cave, Village)",
+    "get_hungry(Rory)",
+    "travel(Rory, Village, Cave)",
+    "eat(Rory, Talia, Cave)"
+  ]
+}
+``` 
+
+This plan ensures Rory achieves his goals of happiness, wealth, and not being hungry while navigating the story's constraints.

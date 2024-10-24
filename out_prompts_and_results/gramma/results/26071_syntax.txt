@@ -1,0 +1,26 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **rob(Bandit, BanditCoin, Merchant, Market)**: The Bandit will rob the Merchant after attacking her. Since the Merchant is already dead, the Bandit can loot the coins from her. This action is necessary for the Bandit to acquire coins.
+
+2. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit will then take the coins she just acquired and place them in the chest at the bandit camp. This action ensures that the Bandit has coins secured in her camp, fulfilling her goal.
+
+Here’s the complete story with explanations:
+
+1. **The Bandit attacks the Merchant**: This action has already occurred, leaving the Merchant dead and allowing the Bandit to loot her items.
+   
+2. **The Bandit robs the Merchant**: The Bandit takes the coins from the Merchant's corpse. This is crucial for the Bandit to increase her coin count.
+
+3. **The Bandit takes the coins to the chest at the camp**: By placing the coins in the chest, the Bandit secures her loot and achieves her goal of having coins in the chest.
+
+The Bandit successfully achieves her goal through these actions, ensuring she has the coins she desires.
+
+Here’s the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "rob(Bandit, BanditCoin, Merchant, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

@@ -1,0 +1,35 @@
+To complete the story, we need to ensure that Hathaway, the doctor, assesses and treats all patients correctly to achieve the goal of having all patients healthy. Given the current situation, we will take the following actions:
+
+1. **Assess Jones**: Hathaway will assess Jones in PatientRoomC to determine his symptoms. This is necessary because Hathaway needs to know what disease Jones has to treat him correctly.
+
+2. **Assess Young**: After assessing Jones, Hathaway will assess Young in PatientRoomC to determine his symptoms. This is also necessary for the same reason as above.
+
+3. **Assess Ross**: Finally, Hathaway will assess Ross in Admissions to determine his symptoms. This is important to ensure that all patients are evaluated.
+
+4. **Treat Jones**: Based on the assessment of Jones, Hathaway will treat him with the appropriate treatment. If Jones has a fever, he will be treated with antibiotics for Flaze; if he has a rash, he will be treated with steroids for Jarkis.
+
+5. **Treat Young**: After treating Jones, Hathaway will treat Young with the appropriate treatment based on his symptoms.
+
+6. **Treat Ross**: Lastly, Hathaway will treat Ross with the appropriate treatment based on his symptoms.
+
+By following this sequence, Hathaway will ensure that all patients are assessed and treated correctly, leading to their health.
+
+### Explanation of Actions:
+- **Assessing each patient** is crucial to determine their symptoms and ensure the correct treatment is administered.
+- **Treating each patient** with the correct treatment based on their symptoms will lead to their recovery, fulfilling Hathaway's goal of having all patients healthy.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "assess(Hathaway, Jones, ?, PatientRoomC)",
+    "assess(Hathaway, Young, ?, PatientRoomC)",
+    "assess(Hathaway, Ross, ?, Admissions)",
+    "treat(Hathaway, Jones, antibiotics, PatientRoomC)",
+    "treat(Hathaway, Young, antibiotics, PatientRoomC)",
+    "treat(Hathaway, Ross, antibiotics, Admissions)"
+  ]
+}
+``` 
+
+This plan ensures that Hathaway achieves their goal of making all patients healthy by assessing and treating them appropriately.

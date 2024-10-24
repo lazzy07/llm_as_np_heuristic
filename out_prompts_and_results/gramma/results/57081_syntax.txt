@@ -1,0 +1,27 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **walk(Bandit, Crossroads, Market)**: The Bandit moves to the Market where she can confront the Merchant and take the coins she desires.
+
+2. **rob(Bandit, TomCoin, Merchant, Market)**: The Bandit, armed with her sword, robs the Merchant, taking the coins she has. This action is possible because the Merchant is not armed, allowing the Bandit to take the coins without any resistance.
+
+3. **walk(Bandit, Market, Crossroads)**: After successfully robbing the Merchant, the Bandit returns to the Crossroads, where she can then head back to her camp.
+
+4. **take(Bandit, BanditCoin, Chest, Camp)**: Finally, the Bandit takes the coins she just acquired and places them in the chest at the bandit camp, achieving her goal of having coins in the chest.
+
+### Explanation of Actions:
+- The Bandit starts by moving to the Market to confront the Merchant, who has coins. 
+- The rob action allows the Bandit to take the coins without killing anyone, which aligns with her goal of acquiring coins without drawing too much attention.
+- Returning to the Crossroads is necessary to get back to her camp.
+- Finally, placing the coins in the chest at the camp fulfills her goal of having coins secured.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "walk(Bandit, Crossroads, Market)",
+    "rob(Bandit, TomCoin, Merchant, Market)",
+    "walk(Bandit, Market, Crossroads)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

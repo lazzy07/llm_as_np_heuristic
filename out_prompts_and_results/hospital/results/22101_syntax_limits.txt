@@ -1,0 +1,37 @@
+**Story Completion:**
+
+After assessing Jones in Patient Room A, Hathaway realizes that Jones is showing symptoms of Flaze due to the fever. To ensure Jones receives the correct treatment, Hathaway decides to treat Jones with antibiotics.
+
+Next, Hathaway walks to Patient Room C, where Ross is assigned but has not yet been assessed. Hathaway assesses Ross to determine his symptoms. After the assessment, Hathaway finds that Ross is also showing symptoms of Flaze. Hathaway treats Ross with antibiotics as well.
+
+Finally, Hathaway walks to the admissions room to admit Young to Patient Room B. Hathaway assesses Young and finds that he is showing symptoms of Jarkis. Hathaway treats Young with steroids, which is the correct treatment for Jarkis.
+
+With all patients treated correctly, Hathaway achieves their goal of ensuring all hospital patients are healthy.
+
+**Explanation of Actions:**
+1. **treat(Hathaway, Jones, antibiotics, PatientRoomA)**: This action is necessary to treat Jones for Flaze, ensuring he becomes healthy.
+2. **walk(Hathaway, PatientRoomA, PatientRoomC)**: Hathaway needs to move to Ross's location to assess and treat him.
+3. **assess(Hathaway, Ross, SymptomB, PatientRoomC)**: This action is necessary to determine Ross's symptoms before treatment.
+4. **treat(Hathaway, Ross, antibiotics, PatientRoomC)**: This action treats Ross for Flaze, ensuring he becomes healthy.
+5. **walk(Hathaway, PatientRoomC, Admissions)**: Hathaway needs to move to the admissions room to admit Young.
+6. **admit(Hathaway, Young, PatientRoomB)**: This action is necessary to assign Young to an exam room for assessment.
+7. **assess(Hathaway, Young, SymptomC, PatientRoomB)**: This action is necessary to determine Young's symptoms before treatment.
+8. **treat(Hathaway, Young, steroids, PatientRoomB)**: This action treats Young for Jarkis, ensuring he becomes healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "treat(Hathaway, Jones, antibiotics, PatientRoomA)",
+    "walk(Hathaway, PatientRoomA, PatientRoomC)",
+    "assess(Hathaway, Ross, SymptomB, PatientRoomC)",
+    "treat(Hathaway, Ross, antibiotics, PatientRoomC)",
+    "walk(Hathaway, PatientRoomC, Admissions)",
+    "admit(Hathaway, Young, PatientRoomB)",
+    "assess(Hathaway, Young, SymptomC, PatientRoomB)",
+    "treat(Hathaway, Young, steroids, PatientRoomB)"
+  ]
+}
+``` 
+
+This plan ensures that all patients are treated correctly and become healthy, fulfilling Hathaway's goal.

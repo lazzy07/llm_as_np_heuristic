@@ -1,0 +1,39 @@
+**Story Completion:**
+
+Dr. Hathaway assesses Jones in Patient Room C and confirms that he has a fever, indicating that he has Flaze. Since Hathaway's workload is 3, there is a risk of making a mistake, but she correctly identifies the disease. She then treats Jones with antibiotics, successfully curing him.
+
+Next, Dr. Hathaway walks back to the admissions room to assess Ross, who is still there. She admits Ross to Patient Room B and assesses him. Since Ross's symptoms are unknown, Hathaway cannot determine if he has Flaze or Jarkis. However, she decides to treat him with steroids, assuming he might have Jarkis. Unfortunately, this is a mistake, and Ross dies.
+
+Finally, Dr. Hathaway returns to the admissions room to admit Young to Patient Room A. She assesses Young and finds that he has a rash, indicating Jarkis. This time, Hathaway treats Young with steroids, successfully curing him.
+
+In the end, Jones and Young are healthy, while Ross has died. Despite the loss, Dr. Hathaway has achieved her goal of ensuring that at least some patients are healthy.
+
+**Explanation of Actions:**
+1. **Assess Jones**: This action is necessary to determine Jones's symptoms and confirm he has Flaze.
+2. **Treat Jones with antibiotics**: This is the correct treatment for Flaze, ensuring Jones becomes healthy.
+3. **Walk to Admissions**: Hathaway needs to check on Ross, who is still in the admissions room.
+4. **Admit Ross to Patient Room B**: This action is necessary to assign Ross to an exam room for assessment.
+5. **Assess Ross**: This is needed to determine Ross's symptoms, but they are unknown.
+6. **Treat Ross with steroids**: Although this is a mistake, it is necessary to attempt to treat Ross based on the unknown symptoms.
+7. **Walk to Admissions**: Hathaway needs to check on Young next.
+8. **Admit Young to Patient Room A**: This action is necessary to assign Young to an exam room for assessment.
+9. **Assess Young**: This is needed to determine Young's symptoms.
+10. **Treat Young with steroids**: This is the correct treatment for Jarkis, ensuring Young becomes healthy.
+
+**Final JSON Object:**
+```json
+{
+  "plan": [
+    "assess Jones",
+    "treat Jones with antibiotics",
+    "walk to Admissions",
+    "admit Ross to Patient Room B",
+    "assess Ross",
+    "treat Ross with steroids",
+    "walk to Admissions",
+    "admit Young to Patient Room A",
+    "assess Young",
+    "treat Young with steroids"
+  ]
+}
+```

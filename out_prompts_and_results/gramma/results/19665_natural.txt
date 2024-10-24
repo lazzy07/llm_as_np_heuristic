@@ -1,0 +1,35 @@
+### Story Completion
+
+1. **The bandit walks from the cottage to the crossroads.**  
+   - The bandit needs to move towards the market to interact with the other characters and potentially acquire coins.
+
+2. **The bandit walks from the crossroads to the market.**  
+   - The bandit is now at the market where the merchant and the guard are present, allowing for potential actions to acquire coins.
+
+3. **The bandit attacks the merchant and kills her.**  
+   - The bandit is armed and can attack the merchant, who is not armed. This action allows the bandit to take the coins the merchant has.
+
+4. **The bandit loots the merchant's corpse.**  
+   - After killing the merchant, the bandit can loot her body to acquire the hero's coin that the merchant was carrying.
+
+5. **The bandit walks from the market to the bandit camp.**  
+   - With the coin acquired, the bandit returns to the camp to secure the coin in the chest, achieving her goal.
+
+### Explanation of Actions
+- The bandit first moves to the crossroads and then to the market to confront the merchant and the guard. 
+- By attacking and killing the merchant, the bandit eliminates a non-threatening character and gains access to the coin. 
+- Looting the merchant's corpse allows the bandit to fulfill her goal of acquiring coins. 
+- Finally, returning to the bandit camp ensures that the coins are safely stored, completing her objective.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "The bandit walks from the cottage to the crossroads.",
+    "The bandit walks from the crossroads to the market.",
+    "The bandit attacks the merchant and kills her.",
+    "The bandit loots the merchant's corpse.",
+    "The bandit walks from the market to the bandit camp."
+  ]
+}
+```

@@ -1,0 +1,31 @@
+To complete the story, Zoe needs to make friends with the Lizard while ensuring both characters remain safe. The current situation indicates that Zoe is in the cave, and the Lizard is on the surface, where it is dangerous due to the volcano that has begun to erupt. 
+
+Here’s the sequence of actions that Zoe will take to achieve her goal:
+
+1. **walk(Zoe, Cave, Surface)**: Zoe walks from the cave to the surface to meet the Lizard. This action is necessary because Zoe needs to be in the same location as the Lizard to interact with it and potentially make peace.
+
+2. **make_peace(Zoe, Lizard, Surface)**: Once Zoe is on the surface, she attempts to make peace with the Lizard. This action is crucial as it directly addresses Zoe's goal of making friends with the Lizard.
+
+3. **erupt(Surface)**: The volcano erupts after Zoe has made peace with the Lizard. This action is included to show the danger of the environment, but since Zoe and the Lizard are now friends, they can work together to escape the danger.
+
+4. **walk(Zoe, Surface, Cave)**: After making peace, Zoe and the Lizard can walk back to the cave together, ensuring their safety from the eruption.
+
+5. **teleport_to_ship(Zoe, Cave, Ship)**: Finally, Zoe teleports back to her spaceship from the cave, ensuring her safety and completing her journey.
+
+This sequence of actions ensures that Zoe achieves her goal of making friends with the Lizard while also maintaining their safety.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Zoe, Cave, Surface)",
+    "make_peace(Zoe, Lizard, Surface)",
+    "erupt(Surface)",
+    "walk(Zoe, Surface, Cave)",
+    "teleport_to_ship(Zoe, Cave, Ship)"
+  ]
+}
+``` 
+
+Each action is chosen to ensure that Zoe can safely interact with the Lizard, make peace, and ultimately escape the danger posed by the erupting volcano.

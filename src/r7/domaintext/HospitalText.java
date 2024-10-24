@@ -25,10 +25,10 @@ public class HospitalText extends DomainText {
 		places.put("PatientRoomB","Patient Room B");
 		places.put("PatientRoomC","Patient Room C");
 		others.put("Healthy", "No symptoms");
-		others.put("SymptomA", "Symptom A");
-		others.put("SymptomB", "Symptom B");
-		others.put("TreatmentA", "Treatment A");
-		others.put("TreatmentB", "Treatment B");
+		others.put("SymptomA", "Fever");
+		others.put("SymptomB", "Rash");
+		others.put("TreatmentA", "Antibiotics");
+		others.put("TreatmentB", "Steroids");
 	}
 	
 	@Override

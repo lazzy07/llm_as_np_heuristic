@@ -1,0 +1,27 @@
+
+ I will describe a setting and the first part of a story. Your job is to complete the story to ensure it has a specific ending. 
+
+There are four locations in this story: the bedroom, the bathroom, the dining room, and the living room. The bed room is connected to the bathroom and the dining room. The bathroom is connected to the bedroom and living room. The dining room is connected to the bedroom and the living room. The living room is connected to the bathroom and the dining room. There are three items in this story: flowers, chocolates, and jewelry.There are three characters in this story. Alex wants to be happy and also wants Casey to be happy. Blake wants to be happy and also wants Alex to be happy. Casey wants to be happy and also wants Blake to be happy. A character is happy if they have the item they want.There are six kinds of actions characters can take in the story. One character can tell a second character what item the first character wants, but this can be a lie. A character can pick up an item that is in the same room. A character can put an item they are holding down in the room they are in. One character can give an item they have to a second character. Two characters can trade items they have. A character can move from one room to another if the rooms are connected.
+
+ 
+
+ Available actions for you are : 
+tell(speaker : character, hearer : character, item : item, room : room),pick_up(character : character, item : item, room : room),put_down(character : character, item : item, room : room),give(giver : character, item : item, receiver : character, room : room),trade(c1 : character, i1 : item, c2 : character, i2 : item, room : room),move(character : character, from : room, to : room)
+
+
+ These events have already happened in the story: 
+move(C2, R12, R22); move(C1, R12, R22); tell(C1, C2, I1, R22); give(C2, I3, C1, R22); move(C3, R22, R21)
+
+
+ This is the current situation after those events:
+at(C1) = R22; at(C2) = R22; at(C3) = R21; at(I1) = C3; at(I2) = R21; at(I3) = C1; happy(C1) = False; happy(C2) = False; happy(C3) = False; wants(C1) = I1; wants(C2) = I2; wants(C3) = I3; believes(C1, at(C1)) = R22; believes(C1, at(C2)) = R22; believes(C1, at(C3)) = R21; believes(C1, at(I1)) = C3; believes(C1, at(I2)) = R21; believes(C1, at(I3)) = C1; believes(C1, wants(C1)) = I1; believes(C1, wants(C2)) = I2; believes(C1, wants(C3)) = I3; believes(C1, believes(C2, at(I2))) = R21; believes(C2, at(C1)) = R22; believes(C2, at(C2)) = R22; believes(C2, at(C3)) = R21; believes(C2, at(I1)) = C3; believes(C2, at(I2)) = R21; believes(C2, at(I3)) = C1; believes(C2, wants(C1)) = I1; believes(C2, wants(C2)) = I2; believes(C2, wants(C3)) = I3; believes(C3, at(C1)) = R22; believes(C3, at(C2)) = R22; believes(C3, at(C3)) = R21; believes(C3, at(I1)) = C3; believes(C3, at(I2)) = R21; believes(C3, at(I3)) = C1; believes(C3, wants(C1)) = I1; believes(C3, wants(C2)) = I2; believes(C3, wants(C3)) = I3; 
+
+
+ Complete the story using only these locations, items, characters, and actions. Do not invent new locations, items, characters, or actions. Characters should only take actions that help to achieve their goals, and the story should only include actions which are necessary to achieve the ending. Give me the shortest story 
+
+ where Casey  achieves their goal.
+
+
+ Explain why each action is in the story. After the explanation of the whole story, give a JSON object with the final plan. The JSON should include an array called 'plan' with the sequence of actions (as a string) taken to achieve the goal. Example format: {plan: ['action1', 'action2', 'action3']}.
+
+ While keeping the story complete, a smaller story is preferred. Suggested maximum number of the actions in the story: 1.

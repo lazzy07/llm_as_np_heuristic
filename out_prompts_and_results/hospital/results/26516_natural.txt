@@ -1,0 +1,39 @@
+**Story Completion:**
+
+Dr. Hathaway assesses Ross in Patient Room A to determine his symptoms. Since Dr. Hathaway's workload is 2, he is still able to accurately assess Ross. He discovers that Ross has a fever, indicating that he has Flaze. Dr. Hathaway then treats Ross with antibiotics, successfully curing him.
+
+Next, Dr. Hathaway walks from Patient Room A to Admissions to admit Young to Patient Room C. Young is currently in Admissions and is alive, so Dr. Hathaway can assign him to an exam room without increasing his workload to a risky level.
+
+After admitting Young to Patient Room C, Dr. Hathaway assesses Young to check for symptoms. He finds that Young has a rash, indicating that he has Jarkis. Dr. Hathaway treats Young with steroids, successfully curing him as well.
+
+Finally, Dr. Hathaway returns to Admissions to assess Jones. Since Jones is still in Admissions and has not been assigned to an exam room, Dr. Hathaway can assess him without increasing his workload. He discovers that Jones has a fever, indicating that he has Flaze. Dr. Hathaway treats Jones with antibiotics, successfully curing him.
+
+At the end of these actions, all patients are healthy, achieving Dr. Hathaway's goal.
+
+**Explanation of Actions:**
+1. **Assess Ross**: Necessary to determine Ross's symptoms and identify the disease (Flaze).
+2. **Treat Ross**: Required to cure Ross of Flaze, ensuring he becomes healthy.
+3. **Walk to Admissions**: Needed to admit Young to an exam room, keeping the workflow manageable.
+4. **Admit Young**: Essential to assign Young to an exam room for assessment and treatment.
+5. **Assess Young**: Important to identify Young's symptoms and determine the correct treatment (Jarkis).
+6. **Treat Young**: Required to cure Young of Jarkis, ensuring he becomes healthy.
+7. **Walk to Admissions**: Needed to assess Jones, ensuring he is treated as well.
+8. **Assess Jones**: Important to identify Jones's symptoms and determine the correct treatment (Flaze).
+9. **Treat Jones**: Required to cure Jones of Flaze, ensuring he becomes healthy.
+
+**Final JSON Object:**
+```json
+{
+  "plan": [
+    "assess Ross",
+    "treat Ross",
+    "walk to Admissions",
+    "admit Young",
+    "assess Young",
+    "treat Young",
+    "walk to Admissions",
+    "assess Jones",
+    "treat Jones"
+  ]
+}
+```

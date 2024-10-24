@@ -1,0 +1,51 @@
+**Story Completion:**
+
+1. **go(Roy, Hall)**: Roy decides to leave the gym and head to the hallway to find Ernest and discuss their situation. This action is necessary for Roy to connect with Ernest and strategize their next move.
+
+2. **vent(Roy, Highway)**: Once in the hallway, Roy crawls through the vents to reach the highway. This action is crucial as it allows Roy to escape the prison without being seen by the bully or guards.
+
+3. **disguise(Roy, Clothes, Highway)**: After reaching the highway, Roy puts on the civilian clothes he stole earlier. This disguise is essential for him to blend in and avoid detection while escaping.
+
+4. **escape(Roy, Highway)**: With the disguise on, Roy successfully escapes from the prison. This action fulfills his goal of being alive and free from the bully's threats.
+
+5. **next_day()**: The story transitions to day two, where the consequences of the previous actions unfold.
+
+6. **go(Ernest, Hall)**: On day two, Ernest decides to leave the cell block and head to the hallway to find Roy, unaware of Roy's escape. This action is necessary for Ernest to seek help or companionship.
+
+7. **vent(Ernest, Gym)**: Ernest crawls through the vents to reach the gym, hoping to find Roy there. This action is important as it allows him to explore the prison further.
+
+8. **lock_gym(Ernest, Gym)**: Once in the gym, Ernest locks the door to prevent the bully from entering. This action is a defensive move to protect himself from the bully's threats.
+
+9. **go(Ernest, Kitchen)**: After locking the gym, Ernest decides to go to the kitchen to find a knife. This action is necessary for him to arm himself in case of an encounter with the bully.
+
+10. **steal(Ernest, Knife, Kitchen)**: Ernest steals the knife from the kitchen. This action is crucial as it gives him a means to defend himself against the bully.
+
+11. **go(Ernest, Hall)**: Ernest returns to the hallway, preparing to confront the bully if necessary. This action is important for him to position himself strategically.
+
+12. **go(Ernest, Cells)**: Ernest heads to the cells to confront the bully directly. This action is necessary for him to face the threat head-on.
+
+13. **kill(Bully, Ernest, Cells)**: In a final confrontation, Ernest uses the knife to kill the bully. This action allows Ernest to overcome the bully's threats and ensures his survival, albeit at a cost.
+
+**Explanation of Actions:**
+- Each action is designed to either help Roy escape or allow Ernest to confront the bully. The story emphasizes the need for survival and the consequences of their choices in a dangerous environment. The actions taken by Roy lead to his successful escape, while Ernest's actions culminate in a confrontation that results in the bully's death, allowing him to overcome the threat.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "go(Roy, Hall)",
+    "vent(Roy, Highway)",
+    "disguise(Roy, Clothes, Highway)",
+    "escape(Roy, Highway)",
+    "next_day()",
+    "go(Ernest, Hall)",
+    "vent(Ernest, Gym)",
+    "lock_gym(Ernest, Gym)",
+    "go(Ernest, Kitchen)",
+    "steal(Ernest, Knife, Kitchen)",
+    "go(Ernest, Hall)",
+    "go(Ernest, Cells)",
+    "kill(Bully, Ernest, Cells)"
+  ]
+}
+```

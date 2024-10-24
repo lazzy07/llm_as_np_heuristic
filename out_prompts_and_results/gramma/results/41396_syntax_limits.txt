@@ -1,0 +1,17 @@
+In this story, the Bandit wants to carry as many coins as possible or have coins in the chest at the bandit camp. The Bandit has already successfully attacked the Merchant and is now in possession of the Merchant's sword and the medicine. The Bandit can now take the coins from the chest at the camp to achieve her goal.
+
+**Story:**
+1. The Bandit walks from the Camp to the Chest and takes the BanditCoin.
+
+**Explanation of the Action:**
+- **walk(Bandit, Camp, Chest)**: The Bandit moves to the location of the chest where the coins are stored. This action is necessary for the Bandit to access the coins and fulfill her goal of carrying as many coins as possible.
+- **take(Bandit, BanditCoin, Chest)**: The Bandit takes the coins from the chest, which directly contributes to her goal of having coins.
+
+This single action sequence allows the Bandit to achieve her goal efficiently.
+
+**JSON Object:**
+```json
+{
+  "plan": ["walk(Bandit, Camp, Chest)", "take(Bandit, BanditCoin, Chest)"]
+}
+```

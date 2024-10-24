@@ -1,0 +1,25 @@
+In this story, the Merchant's goal is to acquire as many coins as possible without becoming a criminal. Given the current situation, the Merchant is at the Camp, and the Bandit is at the Market, where they can potentially rob the Merchant. 
+
+To achieve her goal, the Merchant can take the following action:
+
+1. **walk(Merchant, Camp, Market)**: The Merchant walks from the Camp to the Market to confront the Bandit. This action is necessary because the Merchant needs to be in the same location as the Bandit to either negotiate or defend her interests.
+
+Once the Merchant arrives at the Market, she can then take the following action:
+
+2. **buy(Merchant, BanditCoin, MerchantCoin, Market)**: The Merchant can buy the Bandit's coins using her own coins. This action allows the Merchant to acquire coins without resorting to criminal activity, thus achieving her goal.
+
+The story concludes with the Merchant successfully acquiring coins while remaining within the bounds of the law.
+
+### Explanation of Actions:
+- **walk(Merchant, Camp, Market)**: This action is essential for the Merchant to reach the Bandit and engage in a transaction.
+- **buy(Merchant, BanditCoin, MerchantCoin, Market)**: This action allows the Merchant to gain coins legally, fulfilling her goal of maximizing her coin collection without becoming a criminal.
+
+### JSON Object:
+```json
+{
+  "plan": [
+    "walk(Merchant, Camp, Market)",
+    "buy(Merchant, BanditCoin, MerchantCoin, Market)"
+  ]
+}
+```

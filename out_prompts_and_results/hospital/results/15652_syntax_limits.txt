@@ -1,0 +1,31 @@
+### Story Completion
+
+After the events that have already occurred, Hathaway decides to take action to ensure all patients are healthy. 
+
+1. **Assess Jones in Admissions**: Hathaway assesses Jones to determine his symptoms. This is necessary to understand if Jones has Flaze or Jarkis, which will guide the treatment.
+
+2. **Assess Ross in Admissions**: Hathaway then assesses Ross to determine his symptoms as well. This is crucial to ensure that both patients are evaluated before making any treatment decisions.
+
+3. **Admit Ross to Exam Room C**: After assessing both patients, Hathaway admits Ross to Exam Room C. This action is necessary to prepare Ross for treatment.
+
+4. **Treat Young in Exam Room A**: Finally, Hathaway treats Young in Exam Room A. Since Young is already assigned to this room, Hathaway can provide the appropriate treatment based on Young's symptoms.
+
+By following these steps, Hathaway ensures that all patients are assessed and treated appropriately, achieving the goal of having all patients healthy.
+
+### Explanation of Actions
+- **Assess Jones**: This action is necessary to identify Jones's condition and determine the correct treatment.
+- **Assess Ross**: Similar to Jones, assessing Ross is essential to ensure he receives the right treatment based on his symptoms.
+- **Admit Ross to Exam Room C**: This action is required to facilitate Ross's treatment, as he needs to be in an exam room to receive care.
+- **Treat Young**: This action is the final step to ensure that Young receives the correct treatment, leading to his recovery.
+
+### JSON Object
+```json
+{
+  "plan": [
+    "assess(Hathaway, Jones, ?, Admissions)",
+    "assess(Hathaway, Ross, ?, Admissions)",
+    "admit(Hathaway, Ross, PatientRoomC)",
+    "treat(Hathaway, Young, ?, PatientRoomA)"
+  ]
+}
+```

@@ -1,0 +1,25 @@
+**Story Completion:**
+
+After walking back to the admissions room, Hathaway decides to assess the patients who are currently in the admissions room. 
+
+1. **Assess Ross**: Hathaway assesses Ross in the admissions room. Since Ross has not been assigned to an exam room yet, Hathaway can determine his symptoms. 
+2. **Assess Young**: Hathaway then assesses Young in the admissions room to check for any symptoms. 
+3. **Admit Ross to Exam Room B**: After assessing both patients, Hathaway admits Ross to exam room B, where he can be treated based on his symptoms.
+
+This sequence of actions ensures that Hathaway can identify the symptoms of both patients and admit Ross for treatment, which is essential for achieving the goal of having all patients healthy.
+
+**Explanation of Actions:**
+- **Assess Ross**: This action is necessary to determine Ross's symptoms and ensure he receives the correct treatment.
+- **Assess Young**: This action is also necessary to determine Young's symptoms, ensuring that Hathaway has a complete understanding of the patients' conditions.
+- **Admit Ross to Exam Room B**: This action is crucial as it allows Hathaway to treat Ross based on the symptoms identified during the assessment.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess(Hathaway, Ross, symptom, Admissions)",
+    "assess(Hathaway, Young, symptom, Admissions)",
+    "admit(Hathaway, Ross, ExamRoomB)"
+  ]
+}
+```

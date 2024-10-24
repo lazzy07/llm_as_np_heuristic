@@ -1,0 +1,35 @@
+**Story Completion:**
+
+1. Dr. Hathaway walks from Admissions to Patient Room B. (Dr. Hathaway needs to assess Ross, who is currently in Admissions and has unknown symptoms.)
+2. Dr. Hathaway admits Ross to Patient Room B. (This action assigns Ross to an exam room, allowing Hathaway to assess him.)
+3. Dr. Hathaway assesses Ross and observes Unknown symptoms. (Hathaway needs to determine Ross's condition to provide appropriate treatment.)
+4. Dr. Hathaway treats Ross with steroids. (Since Ross's symptoms are unknown, Hathaway takes a risk and treats him for Jarkis, which is the only other disease.)
+5. Dr. Hathaway walks from Patient Room B to Admissions. (Hathaway needs to check on Young, who is still in Admissions.)
+6. Dr. Hathaway admits Young to Patient Room C. (This action assigns Young to an exam room, allowing Hathaway to assess him.)
+7. Dr. Hathaway assesses Young and observes Unknown symptoms. (Hathaway needs to determine Young's condition to provide appropriate treatment.)
+8. Dr. Hathaway treats Young with steroids. (Again, Hathaway takes a risk and treats him for Jarkis, as it is the only other disease.)
+9. Dr. Hathaway walks from Patient Room C to Admissions. (Hathaway needs to return to Admissions to check on Jones.)
+10. Dr. Hathaway treats Jones with antibiotics. (Since Jones has a fever, Hathaway correctly treats him for Flaze.)
+
+**Explanation of Actions:**
+- Each action is necessary to ensure that all patients are assessed and treated appropriately. Dr. Hathaway's goal is to make all patients healthy, and by assessing and treating each one, he can achieve this.
+- The risk taken with Ross and Young is due to the unknown symptoms, but since Jarkis is the only other disease, it is a calculated risk to ensure they receive treatment.
+- The final treatment of Jones with antibiotics is crucial as it directly addresses his known symptom of fever, ensuring he becomes healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "Dr. Hathaway walks from Admissions to Patient Room B.",
+    "Dr. Hathaway admits Ross to Patient Room B.",
+    "Dr. Hathaway assesses Ross and observes Unknown symptoms.",
+    "Dr. Hathaway treats Ross with steroids.",
+    "Dr. Hathaway walks from Patient Room B to Admissions.",
+    "Dr. Hathaway admits Young to Patient Room C.",
+    "Dr. Hathaway assesses Young and observes Unknown symptoms.",
+    "Dr. Hathaway treats Young with steroids.",
+    "Dr. Hathaway walks from Patient Room C to Admissions.",
+    "Dr. Hathaway treats Jones with antibiotics."
+  ]
+}
+```

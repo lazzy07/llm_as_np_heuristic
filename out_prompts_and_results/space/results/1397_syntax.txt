@@ -1,0 +1,32 @@
+To complete the story, we will have Zoe and the Lizard work towards making peace while the volcano is about to erupt. The goal is to ensure that the volcano erupts, leading to a character dying, while also allowing Zoe and the Lizard to become friends. 
+
+Here’s the sequence of actions:
+
+1. **walk(Zoe, Cave, Surface)**: Zoe walks from the cave to the surface to be closer to the Lizard and the volcano. This action is necessary to facilitate interaction with the Lizard and to be in a position where the eruption can affect them.
+
+2. **make_peace(Zoe, Lizard, Surface)**: Zoe makes peace with the Lizard on the surface. This action is crucial as it allows them to become friends, fulfilling Zoe's goal of making friends with other creatures.
+
+3. **erupt(Surface)**: The volcano erupts. This action is necessary to fulfill the condition of the story where a character dies due to the eruption.
+
+4. **kill(Lizard, Lizard, Surface)**: The Lizard dies as a result of the eruption. This action is included to ensure that one character dies, which is part of the ending conditions.
+
+The final story sequence leads to the Lizard's death due to the eruption while also achieving the goal of friendship between Zoe and the Lizard before the eruption occurs.
+
+Here’s the explanation of each action:
+- **walk(Zoe, Cave, Surface)**: Zoe needs to be on the surface to interact with the Lizard and to be in the vicinity of the volcano.
+- **make_peace(Zoe, Lizard, Surface)**: This action allows Zoe and the Lizard to establish a friendship, which is one of Zoe's goals.
+- **erupt(Surface)**: The eruption is a critical event that leads to the death of the Lizard, fulfilling the story's requirement for a character to die.
+- **kill(Lizard, Lizard, Surface)**: This action confirms the Lizard's death due to the eruption, completing the story's conditions.
+
+Here’s the final plan in JSON format:
+
+```json
+{
+  "plan": [
+    "walk(Zoe, Cave, Surface)",
+    "make_peace(Zoe, Lizard, Surface)",
+    "erupt(Surface)",
+    "kill(Lizard, Lizard, Surface)"
+  ]
+}
+```

@@ -92,7 +92,7 @@ public abstract class DomainText {
 				return "where " + arg0 + " is";							
 			}
 			
-			return "location of " + arg0 + " is unknown";
+			return "Location of " + arg0 + " is unknown";
 		}
 		return value + " has " + arg0;
 	}
@@ -128,6 +128,8 @@ public abstract class DomainText {
 			return new SpaceText(problem.initial, goal);
 		case "treasure":
 			return new TreasureText(problem.initial, goal);
+		case "lovers":
+			return new LoversText(problem.initial, goal);
 		default:
 			return null;
 		}

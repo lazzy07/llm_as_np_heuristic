@@ -1,0 +1,39 @@
+**Story Completion:**
+
+Dr. Hathaway assesses Young in Patient Room A to determine his symptoms. Since Dr. Hathaway's workload is 2, he is able to accurately assess Young without making a mistake. He discovers that Young has a fever, indicating that he has Flaze. Dr. Hathaway then treats Young with antibiotics, successfully curing him.
+
+Next, Dr. Hathaway walks from Patient Room A to Admissions to admit Jones to Patient Room B. He then walks back to Patient Room B to assess Jones. He finds that Jones is experiencing a fever as well, indicating Flaze. Dr. Hathaway treats Jones with antibiotics, successfully curing him.
+
+Finally, Dr. Hathaway walks from Patient Room B to Admissions to admit Ross to Patient Room C. He then walks back to Patient Room C to assess Ross. He finds that Ross has a rash, indicating Jarkis. Dr. Hathaway treats Ross with steroids, successfully curing him.
+
+At the end of these actions, all patients are healthy, achieving Dr. Hathaway's goal.
+
+**Explanation of Actions:**
+1. **Assess Young**: This action is necessary to determine Young's symptoms and ensure he receives the correct treatment.
+2. **Treat Young**: Administering antibiotics cures Young of Flaze, which is essential for achieving the goal of having healthy patients.
+3. **Walk to Admissions**: This action is needed to admit Jones to an exam room, allowing for his assessment and treatment.
+4. **Assess Jones**: This action is necessary to identify Jones's symptoms and ensure he receives the correct treatment.
+5. **Treat Jones**: Administering antibiotics cures Jones of Flaze, contributing to the goal of having healthy patients.
+6. **Walk to Admissions**: This action is needed to admit Ross to an exam room, allowing for his assessment and treatment.
+7. **Assess Ross**: This action is necessary to identify Ross's symptoms and ensure he receives the correct treatment.
+8. **Treat Ross**: Administering steroids cures Ross of Jarkis, completing the goal of having all patients healthy.
+
+**Final Plan in JSON Format:**
+```json
+{
+  "plan": [
+    "assess Young",
+    "treat Young",
+    "walk to Admissions",
+    "admit Jones to Patient Room B",
+    "walk to Patient Room B",
+    "assess Jones",
+    "treat Jones",
+    "walk to Admissions",
+    "admit Ross to Patient Room C",
+    "walk to Patient Room C",
+    "assess Ross",
+    "treat Ross"
+  ]
+}
+```

@@ -1,0 +1,23 @@
+In this story, the Merchant's goal is to acquire as many coins as possible without becoming a criminal. Given the current situation, the Merchant is at the Camp, and Tom has just robbed the Merchant of a coin. The Merchant can take action to achieve her goal by walking to the Crossroads and then to the Market, where she can sell her items or find opportunities to earn more coins.
+
+Here’s the shortest story where the Merchant achieves her goal:
+
+1. **walk(Merchant, Camp, Crossroads)**: The Merchant moves from the Camp to the Crossroads to get closer to the Market, where she can find more opportunities to earn coins.
+
+2. **walk(Merchant, Crossroads, Market)**: The Merchant continues to the Market, where she can engage in trade and potentially earn more coins.
+
+This sequence of actions allows the Merchant to reach the Market, where she can maximize her coin collection without engaging in criminal activities.
+
+### Explanation of Actions:
+- **walk(Merchant, Camp, Crossroads)**: This action is necessary for the Merchant to leave the Camp and head towards the Market, which is her preferred location for earning coins.
+- **walk(Merchant, Crossroads, Market)**: This action takes the Merchant directly to the Market, where she can engage in trade and potentially earn more coins.
+
+### JSON Object with Final Plan:
+```json
+{
+  "plan": [
+    "walk(Merchant, Camp, Crossroads)",
+    "walk(Merchant, Crossroads, Market)"
+  ]
+}
+```

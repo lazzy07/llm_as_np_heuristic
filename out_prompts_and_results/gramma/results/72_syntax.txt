@@ -1,0 +1,32 @@
+To achieve the bandit's goal of carrying as many coins as possible, the following sequence of actions will take place:
+
+1. **Rob the Merchant**: The Bandit will rob the Merchant to take the medicine. This action is necessary because the Bandit needs to ensure that the Merchant does not have any coins to use against her and to take the medicine, which could be valuable for future dealings.
+
+2. **Loot the Merchant's Corpse**: After robbing the Merchant, the Bandit will kill the Merchant to loot any coins she might have. This is essential for the Bandit to maximize her coin collection.
+
+3. **Take Coins from the Chest**: The Bandit will then take the coins from the chest at the Bandit Camp. This action is necessary to fulfill her goal of having as many coins as possible.
+
+Here’s the complete story with explanations for each action:
+
+1. **rob(Bandit, Medicine, Merchant, Market)**: The Bandit robs the Merchant to take the medicine. This action is crucial as it allows the Bandit to eliminate a potential threat and gain an item that could be useful.
+
+2. **attack(Bandit, Merchant, Market)**: The Bandit attacks and kills the Merchant. This action is necessary to ensure that the Merchant cannot retaliate or report her actions to the Guard.
+
+3. **loot(Bandit, TomCoin, Merchant, Market)**: The Bandit loots the Merchant's corpse to take any coins she might have. This is essential for the Bandit to achieve her goal of collecting coins.
+
+4. **take(Bandit, BanditCoin, Chest, Camp)**: The Bandit takes the coins from the chest at the Bandit Camp. This action is necessary to maximize her coin collection.
+
+The Bandit successfully achieves her goal of carrying as many coins as possible through these actions.
+
+Here’s the JSON object with the final plan:
+
+```json
+{
+  "plan": [
+    "rob(Bandit, Medicine, Merchant, Market)",
+    "attack(Bandit, Merchant, Market)",
+    "loot(Bandit, TomCoin, Merchant, Market)",
+    "take(Bandit, BanditCoin, Chest, Camp)"
+  ]
+}
+```

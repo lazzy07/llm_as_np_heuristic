@@ -1,0 +1,21 @@
+To ensure the Bandit achieves her goal of carrying as many coins as possible or having coins in the chest at the bandit camp, the following actions will be taken:
+
+1. **loot(Bandit, Medicine, Tom, Market)**: The Bandit will loot the medicine from Tom, who is currently unarmed and unable to defend himself. This action is necessary for the Bandit to take the medicine, which she has already purchased, and to ensure Tom is left with nothing.
+
+2. **take(Bandit, TomCoin, Chest, Camp)**: The Bandit will then take the coins from Tom and place them in the chest at the bandit camp. This action is crucial as it allows the Bandit to secure the coins she has stolen from Tom, thus achieving her goal of having coins in the chest.
+
+After these actions, the Bandit will have successfully achieved her goal of carrying coins and having them secured in the chest at the bandit camp.
+
+### Explanation of Actions:
+- **Looting the Medicine**: This action is necessary because it allows the Bandit to take an item from Tom, who is currently vulnerable. It also prevents Tom from having any items that could help him in the future.
+- **Taking the Coins to the Chest**: This action secures the stolen coins in a safe location, fulfilling the Bandit's goal of having coins in the chest at the bandit camp.
+
+### Final Plan in JSON Format:
+```json
+{
+  "plan": [
+    "loot(Bandit, Medicine, Tom, Market)",
+    "take(Bandit, TomCoin, Chest, Camp)"
+  ]
+}
+```
