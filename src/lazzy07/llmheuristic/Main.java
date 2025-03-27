@@ -2,6 +2,8 @@ package lazzy07.llmheuristic;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import edu.uky.cs.nil.sabre.Session;
 import edu.uky.cs.nil.sabre.io.ParseException;
@@ -22,13 +24,76 @@ import r7.domaintext.SpaceText;
 import r7.domaintext.TreasureText;
 
 public class Main {
+	 public static Map<String, String> parseArguments(String[] args) {
+        Map<String, String> argsMap = new HashMap<>();
+
+        // Iterate over the command-line arguments
+        for (String arg : args) {
+            // Check if the argument is a valid key (starts with '--')
+            if (arg.startsWith("--")) {
+                // Split the argument into key and value
+                String[] keyValue = arg.substring(2).split("=");
+                
+                // If the key-value pair is valid, store it in the map
+                if (keyValue.length == 2) {
+                    argsMap.put(keyValue[0], keyValue[1]);
+                } else {
+                    System.out.println("Invalid argument: " + arg);
+                }
+            } else {
+                System.out.println("Invalid argument format: " + arg);
+            }
+        }
+        return argsMap;
+    }
+	
 	public static void main(String[] args) {
-		final boolean PROMPT_ONLY = true;
-		final HeuristicSearchTypes SEARCH_TYPE = HeuristicSearchTypes.NONE;
-		final FetchTypes FETCH_TYPE = FetchTypes.ALL;
+		Map<String, String> parsedArgs = parseArguments(args);
+		
+		boolean PROMPT_ONLY = true;
+		HeuristicSearchTypes SEARCH_TYPE = HeuristicSearchTypes.NONE;
+		FetchTypes FETCH_TYPE = FetchTypes.ALL;
 		NodeCollection.SAMPLE_LIMIT = 1000;
 		String MODEL = "ChatGpt-4o-Mini";
 		String PROBLEM = "treasure";
+		
+		if(parsedArgs.containsKey("nodes")) {
+			NodeCollection.SAMPLE_LIMIT = Integer.parseInt(parsedArgs.get("nodes"));
+		}
+		
+		if(parsedArgs.containsKey("problem")) {
+			PROBLEM = parsedArgs.get("problem");
+		}
+		
+		if(parsedArgs.containsKey("seed")) {
+			NodeCollection.setSeed(Long.parseLong(parsedArgs.get("seed")));
+		}
+		
+		if(parsedArgs.containsKey("query")) {
+			if(parsedArgs.get("query").toLowerCase().equals("true")) {
+				PROMPT_ONLY = false;
+			}else {
+				PROMPT_ONLY = true;
+			}
+		}
+		
+		if(parsedArgs.containsKey("execute")) {
+			if(parsedArgs.get("execute").toLowerCase().equals("syntax")) {
+				SEARCH_TYPE = HeuristicSearchTypes.SYNTAX_ONLY;
+			} else if(parsedArgs.get("execute").toLowerCase().equals("natural")) {
+				SEARCH_TYPE = HeuristicSearchTypes.NATURAL_ONLY;
+			} else if(parsedArgs.get("execute").toLowerCase().equals("both")) {
+				SEARCH_TYPE = HeuristicSearchTypes.SYNTAX_AND_NATURAL;
+			} else if(parsedArgs.get("execute").toLowerCase().equals("none")) {
+				SEARCH_TYPE = HeuristicSearchTypes.NONE;
+			}
+		}
+		
+		if(parsedArgs.containsKey("maxLength")) {
+			NodeCollection.MAX_PLAN_SIZE = Integer.parseInt(parsedArgs.get("maxLength"));
+		}
+		
+		
 		String CSV_FILE = "./data_new/" + PROBLEM + ".csv";
 		String PROBLEM_FILE = "./problems/" + PROBLEM + ".txt";
 		String DESCRIPTION_PATH = "./descriptions_new";
@@ -47,6 +112,7 @@ public class Main {
 		
 		int GOAL = 1;
 		
+		
 		DomainText domain = DomainText.get(s.getCompiledProblem(), GOAL);
 		
 		if(!PROMPT_ONLY) {
@@ -55,6 +121,7 @@ public class Main {
 		
 		ReadCSV csv = new ReadCSV();
 		csv.readNodeDataFromCSV(CSV_FILE);
+//		NodeCollection.setSeed(100);
 		NodeCollection.sampleNodes();
 		System.out.println("Selected Node size: " + NodeCollection.SELECTED_NODES.size());
 		try {

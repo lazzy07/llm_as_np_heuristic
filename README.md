@@ -42,15 +42,15 @@ This project leverages an LLM (via the ChatGPT API) to analyze narrative plans, 
 - `--nodes`: Defines the number of nodes to sample from the narrative planner. For example, `--nodes=1000`.
 - `--seed`: Sets the random seed used for node sampling. For example, `--seed=100`.
 - `--execute`: Specifies the type of prompts to use when querying the LLM. Available options are:
-    - `prompts`: Generate prompts only, the program won't query LLM.
     - `syntax`: Use syntactical prompts only when queriying the LLM.
     - `natural`: Use natural language prompts only when queriying the LLM.
     - `both`: Use both syntactical and natural language prompts when queriying the LLM.
+- `--query`: if True, this will query the LLM, otherwise the program will only generate the prompts.
 
 ### Example
 
 ```bash
-java -jar dist/narrative-analyzer.jar --maxlength=10 --problem=gramma --nodes=1000 --seed=100 --execute=prompts
+java -jar dist/narrative-analyzer.jar --maxlength=10 --problem=gramma --nodes=1000 --seed=100 --execute=both --query=True
 ```
 
 This command will:

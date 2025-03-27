@@ -30,6 +30,10 @@ public class NodeCollection {
 		}
 	}
 	
+	public static void setSeed(long seed) {
+		NodeCollection.random.setSeed(seed);
+	}
+	
 	private static long randLong(long max) {
 	    return random.nextLong(max);
 	}
